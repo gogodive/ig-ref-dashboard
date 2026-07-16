@@ -153,19 +153,29 @@ def main() -> int:
     cfg = load_config(ROOT / "config.yaml")
     now = datetime.now(KST)
 
-    targets = fetch_target_accounts(cfg["notion"]["accounts_db_id"], cfg["notion"]["version"])
+    all_targets = fetch_target_accounts(cfg["notion"]["accounts_db_id"], cfg["notion"]["version"])
     if args.only:
         wanted = {u.strip() for u in args.only.split(",")}
-        targets = [a for a in targets if a["username"] in wanted]
-    log.info("분석 대상 %d개 계정", len(targets))
+        targets = [a for a in all_targets if a["username"] in wanted]
+    else:
+        targets = all_targets
+    log.info("분석 대상 %d개 계정 (전체 %d개)", len(targets), len(all_targets))
     if not targets:
         print("모니터링 ON 계정이 없습니다", file=sys.stderr)
         return 1
 
     if args.backfill:
         log.info("백필 모드: 계정당 최대 %d개 수집", cfg["apify"]["backfill_limit"])
-    accounts = [process_account(a, cfg, ROOT / "data", now, args.dry_run, args.backfill)
-                for a in targets]
+    processed = {a["username"]: process_account(a, cfg, ROOT / "data", now,
+                                                args.dry_run, args.backfill)
+                 for a in targets}
+    # --only 로 일부만 처리해도 대시보드는 항상 전체 계정으로 렌더
+    accounts = [processed.get(a["username"])
+                or {**load_stored(ROOT / "data", a["username"]), **a,
+                    "brand": a["name"] or f"@{a['username']}"}
+                for a in all_targets]
+    for a in accounts:
+        a.setdefault("posts", [])
 
     site = ROOT / "site"
     site.mkdir(exist_ok=True)
