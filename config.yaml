@@ -1,0 +1,21 @@
+# 레퍼런스(타사) 인스타 분석기 설정
+apify:
+  actor: apify~instagram-scraper
+  results_type: details      # details = 프로필(팔로워)+최신글
+  posts_limit: 10
+
+display_limit: 60            # 대시보드에 계정당 최대 표시 게시물 수
+freeze_days: 30              # 게시 후 이 일수가 지나면 지표 동결(확정)
+hot_ratio: 2.0               # 조회수가 계정 중앙값의 이 배수 이상이면 🔥
+weekly_summary_weekday: 0    # 주간 종합 요일 (0=월요일)
+
+claude:
+  model: claude-sonnet-4-6
+  max_tokens_post: 500       # 게시물 한줄 분석
+  max_tokens_hot: 1000       # 히트 심층 분석
+  max_tokens_weekly: 2000    # 주간 종합
+
+notion:
+  accounts_db_id: 85c2aeea0a2949b0885e3959e1bc098d   # 레퍼런스 계정 (분석 대상)
+  log_db_id: bc6a309f0ccc430dac75809d6582efa1        # 레퍼런스 분석 로그
+  version: "2022-06-28"

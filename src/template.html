@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>레퍼런스 인스타 분석 대시보드</title>
+<style>
+  :root { --line:#dbdbdb; --sub:#737373; --accent:#0095f6; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+         background:#fafafa; color:#262626; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:14px 16px;
+           display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  header h1 { font-size:17px; }
+  header .updated { color:var(--sub); font-size:12px; }
+  nav { background:#fff; border-bottom:1px solid var(--line); display:flex;
+        overflow-x:auto; position:sticky; top:0; z-index:5; }
+  nav button { flex:1; min-width:120px; padding:12px 8px; border:0; background:none;
+               font-size:13px; cursor:pointer; border-bottom:2px solid transparent; color:var(--sub);
+               display:flex; flex-direction:column; align-items:center; gap:3px; }
+  nav button.active { color:#262626; font-weight:600; border-bottom-color:#262626; }
+  nav .bbadge { font-size:10px; padding:1px 7px; border-radius:8px; color:#fff; }
+  .meta { padding:12px 16px; font-size:13px; color:var(--sub); }
+  .notice { max-width:900px; margin:0 auto 8px; padding:0 16px; font-size:12px; color:var(--sub); }
+  .summary { max-width:900px; margin:0 auto 16px; padding:14px 16px; background:#fff;
+             border:1px solid var(--line); border-radius:8px; }
+  .summarywrap { max-width:900px; margin:0 auto 16px; padding:0 16px; }
+  .summary h3 { font-size:14px; margin-bottom:8px; }
+  .summary .headline { font-size:14px; font-weight:600; margin-bottom:10px; }
+  .summary ul { padding-left:18px; font-size:13px; }
+  .summary li { margin-bottom:4px; }
+  .summary .themes { margin-top:8px; font-size:12px; color:var(--sub); }
+  .summary .when { font-size:11px; color:var(--sub); margin-top:8px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
+          max-width:900px; margin:0 auto; padding:0 16px 40px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .thumb { position:relative; display:block; aspect-ratio:1/1; background:#eee; }
+  .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+  .thumb .noimg { display:flex; align-items:center; justify-content:center; height:100%;
+                  color:var(--sub); font-size:12px; }
+  .badge { position:absolute; top:8px; left:8px; font-size:11px; padding:2px 8px;
+           border-radius:10px; color:#fff; }
+  .badge.live { background:var(--accent); }
+  .badge.frozen { background:#8e8e8e; }
+  .badge.hot { left:auto; right:8px; background:#ff5722; font-weight:700;
+               font-size:15px; padding:5px 12px; border-radius:14px;
+               box-shadow:0 2px 8px rgba(255,87,34,.5); }
+  .card.hot { border:3px solid #ff9800; box-shadow:0 0 12px rgba(255,152,0,.45); }
+  .chartwrap { max-width:900px; margin:0 auto 20px; padding:0 16px; }
+  .chartbox { position:relative; height:280px; background:#fff;
+              border:1px solid var(--line); border-radius:8px; padding:12px; }
+  .chartlegend { display:flex; flex-wrap:wrap; gap:14px; font-size:12px;
+                 color:var(--sub); margin:0 0 6px; align-items:center; }
+  .chartlegend .dot { display:inline-block; width:9px; height:9px; border-radius:50%;
+                      margin-right:5px; vertical-align:-1px; }
+  .chartlegend .dot.big { width:12px; height:12px; }
+  .chartlegend .dash { display:inline-block; width:16px; border-top:2px dashed #898781;
+                       margin-right:5px; vertical-align:3px; }
+  .chartlegend .hint { margin-left:auto; }
+  @media (max-width:600px){ .chartbox{ height:220px; } .chartlegend .hint{ display:none; } }
+  .info { padding:10px 12px; }
+  .date { font-size:12px; color:var(--sub); }
+  .caption { font-size:13px; margin:4px 0 8px; overflow:hidden; white-space:nowrap;
+             text-overflow:ellipsis; }
+  .metrics { display:flex; flex-wrap:wrap; gap:8px 12px; font-size:12px; }
+  .metrics span b { font-weight:600; }
+  .ai { margin-top:8px; padding:8px 10px; background:#f3f8ff; border-radius:6px;
+        font-size:12px; line-height:1.5; }
+  .ai .tag { font-weight:700; color:#1565c0; margin-right:4px; }
+  .ai.hotai { background:#fff3e0; }
+  .ai.hotai .tag { color:#e65100; }
+  .empty { text-align:center; color:var(--sub); padding:60px 0; grid-column:1/-1; }
+  .stale { background:#fff8e1; border:1px solid #ffe082; border-radius:6px;
+           margin:12px 16px; padding:8px 12px; font-size:12px; color:#8d6e00; }
+  section { display:none; } section.active { display:block; }
+  @media (max-width:600px){ .grid{ grid-template-columns:repeat(2,1fr); gap:8px; padding:0 8px 40px; }
+    .info{ padding:6px 8px; } .caption{ display:none; }
+    .metrics{ gap:4px 8px; font-size:10px; } .ai{ font-size:11px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>레퍼런스 인스타 분석</h1>
+  <span class="updated">마지막 갱신: {{ generated_label }} (매일 07:30 자동 갱신)</span>
+</header>
+<nav>
+  {% for acc in accounts %}
+  <button data-tab="{{ loop.index0 }}"{% if loop.first %} class="active"{% endif %}>
+    <span>{{ acc.brand }}</span>
+    {% if acc.benchmark %}<span class="bbadge" style="background:{{ acc._color }}">{{ acc.benchmark }}</span>{% endif %}
+  </button>
+  {% endfor %}
+</nav>
+<div class="notice">ℹ️ 타사 계정은 공개 지표(조회·좋아요·댓글)만 수집됩니다. 저장·공유·도달은 계정 주인만 볼 수 있는 값입니다.</div>
+{% for acc in accounts %}
+<section id="tab-{{ loop.index0 }}"{% if loop.first %} class="active"{% endif %}>
+  <div class="meta">@{{ acc.username }}
+    {% if acc.followers_count %}· 팔로워 {{ acc.followers_count | num }}{% endif %}
+    {% if acc.category %}· {{ acc.category }}{% endif %}</div>
+  {% if acc._stale_date %}
+  <div class="stale">⚠️ 이 계정은 {{ acc._stale_date }} 데이터입니다 (최근 수집 실패)</div>
+  {% endif %}
+  {% if acc.weekly_summary %}
+  <div class="summarywrap"><div class="summary">
+    <h3>🧠 주간 종합 분석</h3>
+    <div class="headline">{{ acc.weekly_summary.headline }}</div>
+    {% if acc.weekly_summary.implications %}
+    <ul>{% for imp in acc.weekly_summary.implications %}<li>{{ imp }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if acc.weekly_summary.themes %}
+    <div class="themes">반복 주제: {{ acc.weekly_summary.themes | join(', ') }}
+      {% if acc.weekly_summary.cadence %} · {{ acc.weekly_summary.cadence }}{% endif %}</div>
+    {% endif %}
+    <div class="when">{{ acc.weekly_summary.summarized_at | date }} 기준 · 매주 월요일 갱신</div>
+  </div></div>
+  {% endif %}
+  {% if acc._has_chart %}
+  <div class="chartwrap">
+    <div class="chartlegend">
+      <span><i class="dot" style="background:#2a78d6"></i>일반</span>
+      <span><i class="dot big" style="background:#eb6834"></i>히트 (중앙값 2배↑)</span>
+      <span><i class="dash"></i>중앙값</span>
+      <span class="hint">y축: 조회수(로그) · x축: 게시일 · 점 위에 마우스를 올리면 상세</span>
+    </div>
+    <div class="chartbox"><canvas id="chart-{{ loop.index0 }}"></canvas></div>
+  </div>
+  {% endif %}
+  <div class="grid">
+    {% for p in acc.posts %}
+    <div class="card{% if p._hot %} hot{% endif %}">
+      <a class="thumb" href="{{ p.permalink }}" target="_blank" rel="noopener">
+        {% if p.frozen %}<span class="badge frozen">확정</span>
+        {% else %}<span class="badge live">집계중 D+{{ p._days }}</span>{% endif %}
+        {% if p._hot %}<span class="badge hot">{{ p._hot }}</span>{% endif %}
+        {% if p.thumbnail %}<img src="{{ p.thumbnail }}" alt="" loading="lazy"
+             onerror="this.outerHTML='&lt;div class=noimg&gt;이미지 만료&lt;/div&gt;'">
+        {% else %}<div class="noimg">이미지 없음</div>{% endif %}
+      </a>
+      <div class="info">
+        <div class="date">{{ p.posted_at | date }}</div>
+        <div class="caption">{{ p.caption }}</div>
+        <div class="metrics">
+          <span>▶ <b>{{ p.metrics.views | num }}</b></span>
+          <span>❤️ <b>{{ p.metrics.likes | num }}</b></span>
+          <span>💬 <b>{{ p.metrics.comments | num }}</b></span>
+        </div>
+        {% if p.analysis and p.analysis.why_hot %}
+        <div class="ai hotai"><span class="tag">🔥 왜 터졌나</span>{{ p.analysis.why_hot }}
+          {% if p.analysis.apply %}<br><span class="tag">→ 적용</span>{{ p.analysis.apply }}{% endif %}</div>
+        {% elif p.analysis and p.analysis.one_liner %}
+        <div class="ai"><span class="tag">AI</span>{{ p.analysis.one_liner }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% else %}
+    <div class="empty">아직 수집된 데이터가 없습니다</div>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const CHART_DATA = {{ chart_json | safe }};
+const madeCharts = {};
+
+function fmtViews(v) {
+  if (v >= 10000) return (Math.round(v / 1000) / 10).toLocaleString() + "만";
+  if (v >= 1000) return (Math.round(v / 100) / 10).toLocaleString() + "천";
+  return String(Math.round(v));
+}
+
+function initChart(i) {
+  const cd = CHART_DATA[i];
+  if (madeCharts[i] || !cd || !window.Chart) return;
+  madeCharts[i] = true;
+  const BLUE = "#2a78d6", ORANGE = "#eb6834", GRID = "#e1e0d9", MUTED = "#898781";
+  const pts = cd.points.map(r => ({x: new Date(r[0]).getTime(), y: r[1], hot: r[2] === 1, d: r[0], c: r[3]}));
+  const median = cd.median;
+  const vmin = Math.min(...pts.map(p => p.y)), vmax = Math.max(...pts.map(p => p.y));
+  const medianLine = {id: "ml" + i, afterDatasetsDraw(ch) {
+    const a = ch.chartArea, yv = ch.scales.y.getPixelForValue(median);
+    const ctx = ch.ctx;
+    ctx.save(); ctx.setLineDash([5, 4]); ctx.strokeStyle = MUTED; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(a.left, yv); ctx.lineTo(a.right, yv); ctx.stroke();
+    ctx.setLineDash([]); ctx.fillStyle = MUTED; ctx.font = "11px sans-serif";
+    ctx.fillText("중앙값 " + fmtViews(median), a.left + 4, yv - 5); ctx.restore();
+  }};
+  new Chart(document.getElementById("chart-" + i), {
+    type: "scatter",
+    data: {datasets: [
+      {data: pts.filter(p => !p.hot), backgroundColor: BLUE, borderColor: "#fff", borderWidth: 1.5, pointRadius: 4, pointHoverRadius: 7},
+      {data: pts.filter(p => p.hot), backgroundColor: ORANGE, borderColor: "#fff", borderWidth: 1.5, pointRadius: 6, pointHoverRadius: 9}
+    ]},
+    options: {
+      responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: {
+        legend: {display: false},
+        tooltip: {displayColors: false, callbacks: {
+          title: items => items[0].raw.d,
+          label: it => ["조회수 " + it.raw.y.toLocaleString() + "회" +
+                        (it.raw.hot ? " (중앙값의 " + (it.raw.y / median).toFixed(1) + "배)" : ""),
+                        it.raw.c ? it.raw.c + "…" : ""]
+        }}
+      },
+      scales: {
+        x: {type: "linear", grid: {display: false}, border: {color: GRID},
+            ticks: {color: MUTED, maxTicksLimit: 8, callback: v => {
+              const d = new Date(v);
+              return String(d.getFullYear()).slice(2) + "." + (d.getMonth() + 1);
+            }}},
+        y: {type: "logarithmic", min: vmin * 0.7, max: vmax * 1.4,
+            grid: {color: GRID}, border: {display: false},
+            ticks: {color: MUTED, callback: v => {
+              const m = v / Math.pow(10, Math.floor(Math.log10(v)));
+              return [1, 2, 3, 5].includes(Number(m.toFixed(2))) ? fmtViews(v) : null;
+            }}}
+      }
+    },
+    plugins: [medianLine]
+  });
+}
+
+document.querySelectorAll("nav button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
+    initChart(Number(btn.dataset.tab));
+  });
+});
+initChart(0);
+</script>
+</body>
+</html>
