@@ -114,6 +114,8 @@ def weekly_summary(acc: dict, posts: list[dict], cfg: dict, now: datetime) -> di
         f"팔로워 {acc.get('followers_count')}\n"
         f"# 최근 게시물\n{lines}\n\n"
         f"# 게시물별 기존 분석 메모\n{analyses or '(없음)'}\n\n"
+        "# 지침: 성과 해석은 릴스 조회수를 중심으로 하라. 이미지/캐러셀은 조회수가 "
+        "비공개이므로 성과 비교 대상이 아니라 콘텐츠 소재·기획 관찰용으로만 다뤄라.\n\n"
         '# 출력: {"headline": "이 계정 최근 콘텐츠 전략을 한 문장으로 (핵심 인사이트)", '
         '"implications": ["우리 계정에 바로 적용할 구체적 액션 3~5개"], '
         '"themes": ["반복 주제/소재 3~5개"], '

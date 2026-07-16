@@ -10,6 +10,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape, Undefined
 
+from src.merge import is_reel
+
 KST = timezone(timedelta(hours=9))
 _TEMPLATE_DIR = Path(__file__).parent
 
@@ -53,7 +55,8 @@ def _fmt_date(ts: str) -> str:
 
 
 def _annotate_hot(posts: list[dict], hot_ratio: float = HOT_RATIO) -> None:
-    views = [p.get("metrics", {}).get("views") for p in posts]
+    """릴스 조회수 중앙값 기준 히트 배지 (릴스만 대상)."""
+    views = [p.get("metrics", {}).get("views") for p in posts if is_reel(p)]
     views = [v for v in views if isinstance(v, int) and v > 0]
     if len(views) < HOT_MIN_POSTS:
         return
@@ -61,6 +64,8 @@ def _annotate_hot(posts: list[dict], hot_ratio: float = HOT_RATIO) -> None:
     if median <= 0:
         return
     for p in posts:
+        if not is_reel(p):
+            continue
         v = p.get("metrics", {}).get("views")
         if isinstance(v, int) and v / median >= hot_ratio:
             ratio = v / median
@@ -68,11 +73,13 @@ def _annotate_hot(posts: list[dict], hot_ratio: float = HOT_RATIO) -> None:
 
 
 def _chart_payload(posts: list[dict]) -> dict | None:
+    """릴스 조회수 산점도 데이터."""
     pts = [
         [_fmt_date(p["posted_at"]), p["metrics"]["views"],
          1 if p.get("_hot") else 0, (p.get("caption") or "")[:30]]
         for p in posts
-        if isinstance(p.get("metrics", {}).get("views"), int) and p["metrics"]["views"] > 0
+        if is_reel(p)
+        and isinstance(p.get("metrics", {}).get("views"), int) and p["metrics"]["views"] > 0
     ]
     if len(pts) < HOT_MIN_POSTS:
         return None
@@ -101,6 +108,7 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
                 acc["_stale_date"] = fdt.strftime("%Y-%m-%d")
         for p in acc.get("posts", []):
             p["_days"] = (generated_at - _parse_ts(p["posted_at"])).days
+            p["_fmt"] = "reels" if is_reel(p) else "feed"
         _annotate_hot(acc.get("posts", []), hot_ratio)
         payload = _chart_payload(acc.get("posts", []))
         acc["_has_chart"] = payload is not None

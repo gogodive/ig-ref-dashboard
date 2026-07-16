@@ -47,15 +47,22 @@ def load_stored(data_dir: Path, username: str) -> dict:
 
 
 def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
-                    dry_run: bool) -> dict:
-    """계정 하나: 수집→병합→분석→저장→노션. 실패 시 저장분 그대로 반환."""
+                    dry_run: bool, backfill: bool = False) -> dict:
+    """계정 하나: 수집→병합→분석→저장→노션. 실패 시 저장분 그대로 반환.
+
+    backfill 모드: resultsType=posts 로 backfill_limit 개 수집,
+    한줄 분석·노션 카드는 생략하고 히트 심층분석만 전부 실행.
+    """
     username = acc_meta["username"]
     stored = load_stored(data_dir, username)
 
     # 1) 수집
+    if backfill:
+        results_type, limit = "posts", cfg["apify"]["backfill_limit"]
+    else:
+        results_type, limit = cfg["apify"]["results_type"], cfg["apify"]["posts_limit"]
     try:
-        snap = fetch_account(username, cfg["apify"]["actor"],
-                             cfg["apify"]["results_type"], cfg["apify"]["posts_limit"])
+        snap = fetch_account(username, cfg["apify"]["actor"], results_type, limit)
     except Exception as e:  # noqa: BLE001
         log.warning("수집 실패 @%s: %s — 저장분 유지", username, e)
         return {**stored, **acc_meta, "brand": acc_meta["name"]} if stored else {
@@ -78,11 +85,12 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     # 3) 분석 (캐시 없는 것만)
     claude_cfg = cfg["claude"]
     new_posts = [p for p in merged if p["post_id"] in set(new_ids)]
-    for p in new_posts:
-        if not p.get("analysis", {}).get("one_liner"):
-            result = az.analyze_new_post(account, p, claude_cfg, now)
-            if result:
-                p["analysis"] = {**p.get("analysis", {}), **result}
+    if not backfill:  # 백필 시 수백 건 한줄 분석 방지 — 과거분은 히트 분석만
+        for p in new_posts:
+            if not p.get("analysis", {}).get("one_liner"):
+                result = az.analyze_new_post(account, p, claude_cfg, now)
+                if result:
+                    p["analysis"] = {**p.get("analysis", {}), **result}
 
     hot_ids = hot_post_ids(merged, ratio=cfg["hot_ratio"])
     hot_analyzed: list[dict] = []
@@ -97,7 +105,7 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
             hot_analyzed.append(p)
 
     weekly = None
-    if now.weekday() == cfg["weekly_summary_weekday"] and merged:
+    if not backfill and now.weekday() == cfg["weekly_summary_weekday"] and merged:
         already = (stored.get("weekly_summary") or {}).get("summarized_at", "")
         if not already.startswith(now.strftime("%Y-%m-%d")):
             weekly = az.weekly_summary(account, merged, claude_cfg, now)
@@ -109,8 +117,8 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     (data_dir / f"{username}.json").write_text(
         json.dumps(account, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 5) 노션 카드 (새 게시물 또는 주간 종합 있을 때만)
-    if not dry_run and (new_posts or hot_analyzed or weekly):
+    # 5) 노션 카드 (새 게시물 또는 주간 종합 있을 때만 · 백필 시 생략)
+    if not backfill and not dry_run and (new_posts or hot_analyzed or weekly):
         url = write_log_card(account, new_posts, hot_analyzed, weekly, now,
                              cfg["notion"]["log_db_id"], cfg["notion"]["version"],
                              DASHBOARD_URL)
@@ -128,6 +136,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="노션 카드 작성 생략")
     ap.add_argument("--only", default=None, help="특정 username 만 (콤마 구분)")
+    ap.add_argument("--backfill", action="store_true",
+                    help="1회성 백필: 계정당 backfill_limit개 수집, 히트 분석만 실행")
     args = ap.parse_args()
 
     for key in ("NOTION_TOKEN", "ANTHROPIC_API_KEY", "APIFY_TOKEN"):
@@ -147,7 +157,10 @@ def main() -> int:
         print("모니터링 ON 계정이 없습니다", file=sys.stderr)
         return 1
 
-    accounts = [process_account(a, cfg, ROOT / "data", now, args.dry_run) for a in targets]
+    if args.backfill:
+        log.info("백필 모드: 계정당 최대 %d개 수집", cfg["apify"]["backfill_limit"])
+    accounts = [process_account(a, cfg, ROOT / "data", now, args.dry_run, args.backfill)
+                for a in targets]
 
     site = ROOT / "site"
     site.mkdir(exist_ok=True)

@@ -71,6 +71,11 @@
   .ai.hotai { background:#fff3e0; }
   .ai.hotai .tag { color:#e65100; }
   .empty { text-align:center; color:var(--sub); padding:60px 0; grid-column:1/-1; }
+  .filters { max-width:900px; margin:0 auto 12px; padding:0 16px; display:flex; gap:8px; }
+  .filters button { padding:6px 16px; border:1px solid var(--line); border-radius:16px;
+                    background:#fff; font-size:13px; cursor:pointer; color:var(--sub); }
+  .filters button.active { background:#262626; color:#fff; border-color:#262626; font-weight:600; }
+  .filterempty { display:none; text-align:center; color:var(--sub); padding:40px 0; grid-column:1/-1; }
   .stale { background:#fff8e1; border:1px solid #ffe082; border-radius:6px;
            margin:12px 16px; padding:8px 12px; font-size:12px; color:#8d6e00; }
   section { display:none; } section.active { display:block; }
@@ -118,17 +123,22 @@
   {% if acc._has_chart %}
   <div class="chartwrap">
     <div class="chartlegend">
-      <span><i class="dot" style="background:#2a78d6"></i>일반</span>
-      <span><i class="dot big" style="background:#eb6834"></i>히트 (중앙값 2배↑)</span>
+      <span><i class="dot" style="background:#2a78d6"></i>릴스</span>
+      <span><i class="dot big" style="background:#eb6834"></i>히트 (릴스 중앙값 2배↑)</span>
       <span><i class="dash"></i>중앙값</span>
-      <span class="hint">y축: 조회수(로그) · x축: 게시일 · 점 위에 마우스를 올리면 상세</span>
+      <span class="hint">릴스 조회수 기준 · y축: 조회수(로그) · x축: 게시일</span>
     </div>
     <div class="chartbox"><canvas id="chart-{{ loop.index0 }}"></canvas></div>
   </div>
   {% endif %}
+  <div class="filters" data-sec="{{ loop.index0 }}">
+    <button data-fmt="reels" class="active">릴스</button>
+    <button data-fmt="all">전체</button>
+    <button data-fmt="feed">피드</button>
+  </div>
   <div class="grid">
     {% for p in acc.posts %}
-    <div class="card{% if p._hot %} hot{% endif %}">
+    <div class="card{% if p._hot %} hot{% endif %}" data-fmt="{{ p._fmt }}">
       <a class="thumb" href="{{ p.permalink }}" target="_blank" rel="noopener">
         {% if p.frozen %}<span class="badge frozen">확정</span>
         {% else %}<span class="badge live">집계중 D+{{ p._days }}</span>{% endif %}
@@ -157,6 +167,7 @@
     {% else %}
     <div class="empty">아직 수집된 데이터가 없습니다</div>
     {% endfor %}
+    {% if acc.posts %}<div class="filterempty">이 필터에 해당하는 게시물이 없습니다</div>{% endif %}
   </div>
 </section>
 {% endfor %}
@@ -232,6 +243,30 @@ document.querySelectorAll("nav button").forEach(btn => {
   });
 });
 initChart(0);
+
+// 포맷 필터 (기본: 릴스)
+function applyFilter(sec, fmt) {
+  const grid = sec.querySelector(".grid");
+  let visible = 0;
+  grid.querySelectorAll(".card").forEach(c => {
+    const show = fmt === "all" || c.dataset.fmt === fmt;
+    c.style.display = show ? "" : "none";
+    if (show) visible++;
+  });
+  const fe = grid.querySelector(".filterempty");
+  if (fe) fe.style.display = visible === 0 ? "block" : "none";
+}
+document.querySelectorAll(".filters").forEach(f => {
+  const sec = document.getElementById("tab-" + f.dataset.sec);
+  f.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      f.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      applyFilter(sec, btn.dataset.fmt);
+    });
+  });
+  applyFilter(sec, "reels");  // 기본값
+});
 </script>
 </body>
 </html>

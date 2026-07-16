@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "30 22 * * *"   # 22:30 UTC = 07:30 KST (자사 대시보드와 30분 시차)
   workflow_dispatch:
+    inputs:
+      backfill:
+        description: "1회성 백필 (계정당 180개 수집, 과거 히트 분석)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +39,7 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: python -m src.main
+        run: python -m src.main ${{ inputs.backfill && '--backfill' || '' }}
 
       - name: Commit updated data
         run: |

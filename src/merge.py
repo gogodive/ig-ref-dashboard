@@ -71,9 +71,18 @@ def merge_posts(
     return merged[:limit], new_ids
 
 
+def is_reel(post: dict) -> bool:
+    return post.get("product") == "REELS" or post.get("media_type") == "VIDEO"
+
+
 def hot_post_ids(posts: list[dict], ratio: float = 2.0, min_posts: int = 5) -> set[str]:
-    """조회수가 계정 중앙값의 ratio 배 이상인 게시물 id 집합."""
-    views = [(p["post_id"], p.get("metrics", {}).get("views")) for p in posts]
+    """조회수가 릴스 중앙값의 ratio 배 이상인 **릴스** id 집합.
+
+    성과 비교는 릴스로 한정한다 — 조회수는 릴스에만 공개되는 지표라
+    이미지/캐러셀을 섞으면 중앙값이 왜곡된다.
+    """
+    views = [(p["post_id"], p.get("metrics", {}).get("views"))
+             for p in posts if is_reel(p)]
     valid = [(pid, v) for pid, v in views if isinstance(v, int) and v > 0]
     if len(valid) < min_posts:
         return set()

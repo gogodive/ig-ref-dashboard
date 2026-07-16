@@ -70,3 +70,30 @@ def test_render_empty_account():
     acc["weekly_summary"] = None
     html = render_html([acc], NOW)
     assert "아직 수집된 데이터가 없습니다" in html
+
+
+def test_render_filter_chips_and_fmt_attrs():
+    acc = _account()
+    acc["posts"][1]["media_type"] = "IMAGE"
+    acc["posts"][1]["product"] = "FEED"
+    html = render_html([acc], NOW)
+    assert '<button data-fmt="reels" class="active">릴스</button>' in html
+    assert '<button data-fmt="all">전체</button>' in html
+    assert '<button data-fmt="feed">피드</button>' in html
+    assert 'data-fmt="reels"' in html and 'data-fmt="feed"' in html
+    assert "이 필터에 해당하는 게시물이 없습니다" in html
+
+
+def test_chart_and_hot_are_reels_only():
+    acc = _account(n_posts=6, viral_views=100)  # 릴스는 전부 조회수 100 → 히트 없음
+    big_image = {
+        **acc["posts"][0], "post_id": "bigimg", "media_type": "IMAGE",
+        "product": "FEED", "metrics": {"views": 99999, "likes": 1, "comments": 0},
+        "analysis": {},
+    }
+    acc["posts"].append(big_image)
+    for p in acc["posts"]:
+        p["analysis"] = {}  # 분석 패널의 🔥 텍스트 배제, 배지만 검사
+    html = render_html([acc], NOW)
+    assert 'badge hot' not in html  # 이미지 조회수는 히트 판별에서 제외
+    assert 'class="card hot"' not in html

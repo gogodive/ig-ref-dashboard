@@ -103,3 +103,17 @@ def test_hot_post_ids():
 def test_hot_needs_min_posts():
     posts = [_post("a", 0, views=100), _post("b", 1, views=500)]
     assert hot_post_ids(posts, ratio=2.0) == set()
+
+
+def test_hot_is_reels_only():
+    # 릴스 5개(중앙값 100) + 조회수 큰 이미지 게시물 → 이미지는 히트 불가·중앙값에도 미포함
+    posts = [_post(f"r{i}", i, views=100) for i in range(5)]
+    image = _post("img", 0, views=999)
+    image["media_type"] = "IMAGE"
+    image["product"] = "FEED"
+    posts.append(image)
+    viral = _post("viral", 0, views=300)
+    posts.append(viral)
+    hot = hot_post_ids(posts, ratio=2.0)
+    assert "img" not in hot
+    assert "viral" in hot  # 릴스 중앙값 100 기준 3배

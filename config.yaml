@@ -2,9 +2,10 @@
 apify:
   actor: apify~instagram-scraper
   results_type: details      # details = 프로필(팔로워)+최신글
-  posts_limit: 10
+  posts_limit: 30            # 일일 비교·갱신 창 (새 게시물 감지 + 30일 내 지표 갱신)
+  backfill_limit: 180        # --backfill 1회 실행 시 계정당 수집 개수
 
-display_limit: 60            # 대시보드에 계정당 최대 표시 게시물 수
+display_limit: 180           # 대시보드에 계정당 최대 표시 게시물 수
 freeze_days: 30              # 게시 후 이 일수가 지나면 지표 동결(확정)
 hot_ratio: 2.0               # 조회수가 계정 중앙값의 이 배수 이상이면 🔥
 weekly_summary_weekday: 0    # 주간 종합 요일 (0=월요일)
