@@ -29,7 +29,9 @@ def _map_post(m: dict) -> dict:
         "thumbnail": m.get("displayUrl"),
         "posted_at": m.get("timestamp"),
         "metrics": {
-            "views": m.get("videoPlayCount") or m.get("videoViewCount") or m.get("videoViews"),
+            # 조회수 필드명이 actor 버전/게시물 유형에 따라 달라 폭넓게 폴백
+            "views": (m.get("videoPlayCount") or m.get("videoViewCount")
+                      or m.get("videoViews") or m.get("igPlayCount") or m.get("playCount")),
             "likes": m.get("likesCount"),
             "comments": m.get("commentsCount"),
         },

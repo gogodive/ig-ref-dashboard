@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import statistics
+import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -31,6 +32,14 @@ def _fmt_num(v) -> str:
     if v is None or isinstance(v, Undefined):
         return "–"
     return f"{v:,}"
+
+
+def _thumb_proxy(url) -> str:
+    """인스타 CDN 은 릴스 등 일부 이미지에 CORP: same-origin 을 걸어
+    외부 사이트 삽입을 차단하므로, weserv 이미지 프록시를 경유시킨다."""
+    if not url or isinstance(url, Undefined):
+        return ""
+    return "https://images.weserv.nl/?url=" + urllib.parse.quote(str(url), safe="")
 
 
 def _parse_ts(ts: str) -> datetime:
@@ -77,6 +86,7 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
     )
     env.filters["num"] = _fmt_num
     env.filters["date"] = _fmt_date
+    env.filters["thumb"] = _thumb_proxy
     tpl = env.get_template("template.html")
     gen_date = generated_at.astimezone(KST).date()
 
