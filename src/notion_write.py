@@ -59,6 +59,18 @@ def _summary_metrics(posts: list[dict], followers) -> dict:
             "engagement": eng, "formats": top_fmts, "count": len(recent)}
 
 
+def update_account_followers(page_id: str, followers: int, notion_version: str) -> None:
+    """계정 DB 행의 '팔로워 수' 속성을 최신값으로 갱신 (없는 컬럼이면 조용히 무시)."""
+    res = requests.patch(
+        f"{API}/pages/{page_id}",
+        headers=_headers(notion_version),
+        json={"properties": {"팔로워 수": {"number": followers}}},
+        timeout=60,
+    )
+    if not res.ok:
+        log.debug("팔로워 수 갱신 실패 %s: %s", page_id, res.text[:200])
+
+
 def write_log_card(
     acc: dict,
     new_posts: list[dict],

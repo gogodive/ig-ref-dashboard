@@ -22,7 +22,7 @@ from src import analysis as az
 from src.apify_client import fetch_account
 from src.merge import hot_post_ids, merge_posts
 from src.notion_source import fetch_target_accounts
-from src.notion_write import write_log_card
+from src.notion_write import update_account_followers, write_log_card
 from src.render import render_html
 
 KST = timezone(timedelta(hours=9))
@@ -116,6 +116,11 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     data_dir.mkdir(exist_ok=True)
     (data_dir / f"{username}.json").write_text(
         json.dumps(account, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # 4.5) 계정 DB에 팔로워 수 최신화
+    if not dry_run and account.get("followers_count") and acc_meta.get("page_id"):
+        update_account_followers(acc_meta["page_id"], account["followers_count"],
+                                 cfg["notion"]["version"])
 
     # 5) 노션 카드 (새 게시물 또는 주간 종합 있을 때만 · 백필 시 생략)
     if not backfill and not dry_run and (new_posts or hot_analyzed or weekly):
