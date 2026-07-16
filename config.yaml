@@ -1,7 +1,7 @@
 # 레퍼런스(타사) 인스타 분석기 설정
 apify:
   actor: apify~instagram-scraper
-  results_type: details      # details = 프로필(팔로워)+최신글
+  results_type: posts        # posts = 게시물 상세(조회수 포함). details는 조회수가 없어 사용 금지
   posts_limit: 30            # 일일 비교·갱신 창 (새 게시물 감지 + 30일 내 지표 갱신)
   backfill_limit: 180        # --backfill 1회 실행 시 계정당 수집 개수
 

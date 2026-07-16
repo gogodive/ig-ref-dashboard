@@ -105,6 +105,16 @@ def test_hot_needs_min_posts():
     assert hot_post_ids(posts, ratio=2.0) == set()
 
 
+def test_fresh_none_metric_does_not_clobber_stored():
+    # 수집 모드에 따라 조회수가 비어 와도 저장된 값을 지우면 안 됨
+    stored = [_post("a", 3, views=5000, updated="2026-07-16T09:00:00+00:00")]
+    fresh = [_post("a", 3, views=None)]
+    fresh[0]["metrics"]["likes"] = 99  # 좋아요는 갱신값 있음
+    merged, _ = merge_posts(stored, fresh, NOW)
+    assert merged[0]["metrics"]["views"] == 5000  # 유지
+    assert merged[0]["metrics"]["likes"] == 99    # 갱신
+
+
 def test_hot_is_reels_only():
     # 릴스 5개(중앙값 100) + 조회수 큰 이미지 게시물 → 이미지는 히트 불가·중앙값에도 미포함
     posts = [_post(f"r{i}", i, views=100) for i in range(5)]

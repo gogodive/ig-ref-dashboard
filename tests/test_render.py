@@ -72,6 +72,21 @@ def test_render_empty_account():
     assert "아직 수집된 데이터가 없습니다" in html
 
 
+def test_render_brand_grouping():
+    acc1 = _account()                                  # 고고다이브
+    acc2 = _account(username="getbarrel", n_posts=6)
+    acc2["brand"] = "배럴"; acc2["benchmark"] = "라세린"
+    html = render_html([acc1, acc2], NOW)
+    # 상단 탭 = 브랜드
+    assert "고고다이브" in html and "라세린" in html
+    assert html.count('<section class="brand') == 2
+    # 서브탭 = 통합 피드 + 계정
+    assert html.count("통합 피드") == 2
+    assert "딥스 프리다이빙" in html and "배럴" in html
+    # 통합 피드 카드에 계정 표시
+    assert 'class="byline">@deeps_freediving' in html
+
+
 def test_render_filter_chips_and_fmt_attrs():
     acc = _account()
     acc["posts"][1]["media_type"] = "IMAGE"

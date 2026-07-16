@@ -49,6 +49,11 @@ def merge_posts(
         post["frozen"] = frozen
         has_stored_metrics = bool((old or {}).get("metrics_updated_at"))
         if not frozen or not has_stored_metrics:
+            # 필드 단위 병합: 수집값이 None 이면 저장값을 절대 덮어쓰지 않음
+            # (수집 모드에 따라 일부 필드가 비어 올 수 있음 — 예: 조회수)
+            old_metrics = (old or {}).get("metrics", {})
+            fresh_metrics = {k: v for k, v in post.get("metrics", {}).items() if v is not None}
+            post["metrics"] = {**old_metrics, **fresh_metrics}
             post["metrics_updated_at"] = now.isoformat()
         else:
             post["metrics"] = old.get("metrics", {})

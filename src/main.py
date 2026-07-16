@@ -19,7 +19,7 @@ from pathlib import Path
 import yaml
 
 from src import analysis as az
-from src.apify_client import fetch_account
+from src.apify_client import fetch_account, fetch_followers
 from src.merge import hot_post_ids, merge_posts
 from src.notion_source import fetch_target_accounts
 from src.notion_write import update_account_followers, write_log_card
@@ -73,10 +73,18 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
         stored.get("posts", []), snap["posts"], now,
         freeze_days=cfg["freeze_days"], limit=cfg["display_limit"])
 
+    # posts 모드는 팔로워를 안 주므로 초경량 details 호출로 보충
+    followers = snap["followers_count"]
+    if not followers:
+        try:
+            followers = fetch_followers(username, cfg["apify"]["actor"])
+        except Exception as e:  # noqa: BLE001
+            log.warning("팔로워 조회 실패 @%s: %s", username, str(e).splitlines()[0])
+
     account = {
         **acc_meta,
         "brand": acc_meta["name"] or f"@{acc_meta['username']}",
-        "followers_count": snap["followers_count"] or stored.get("followers_count"),
+        "followers_count": followers or stored.get("followers_count"),
         "fetched_at": now.isoformat(),
         "weekly_summary": stored.get("weekly_summary"),
         "posts": merged,

@@ -38,6 +38,24 @@ def _map_post(m: dict) -> dict:
     }
 
 
+def fetch_followers(username: str, actor: str) -> int | None:
+    """팔로워 수만 초경량 조회 (details 1건). posts 모드엔 팔로워가 없어서 별도 호출."""
+    token = os.environ["APIFY_TOKEN"]
+    url = f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items"
+    payload = {
+        "directUrls": [f"https://www.instagram.com/{username}/"],
+        "resultsType": "details",
+        "resultsLimit": 1,
+        "addParentData": False,
+    }
+    res = requests.post(url, params={"token": token}, json=payload, timeout=180)
+    res.raise_for_status()
+    items = res.json()
+    if not items:
+        return None
+    return items[0].get("followersCount") or items[0].get("ownerFollowersCount")
+
+
 def fetch_account(username: str, actor: str, results_type: str, limit: int) -> dict:
     """한 계정의 스냅샷: {followers_count, posts:[...]}. posts 는 최신순."""
     token = os.environ["APIFY_TOKEN"]

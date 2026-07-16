@@ -86,6 +86,36 @@ def _chart_payload(posts: list[dict]) -> dict | None:
     return {"median": statistics.median(x[1] for x in pts), "points": pts}
 
 
+BRAND_ORDER = ["고고다이브", "인투더블루", "딥바이브", "라세린", "시크릿스", "공통"]
+MERGED_FEED_LIMIT = 120  # 통합 피드 최대 표시 수
+
+
+def _build_groups(accounts: list[dict]) -> list[dict]:
+    """계정을 벤치마크 브랜드로 묶고 브랜드별 통합 피드(최신순)를 만든다."""
+    by_brand: dict[str, list[dict]] = {}
+    for acc in accounts:
+        by_brand.setdefault(acc.get("benchmark") or "공통", []).append(acc)
+    order = [b for b in BRAND_ORDER if b in by_brand] + \
+            [b for b in by_brand if b not in BRAND_ORDER]
+    groups = []
+    for b in order:
+        accs = by_brand[b]
+        merged: list[dict] = []
+        for acc in accs:
+            for p in acc.get("posts", []):
+                p["_by"] = f"@{acc['username']}"
+                merged.append(p)
+        merged.sort(key=lambda p: p["posted_at"], reverse=True)
+        groups.append({
+            "name": b,
+            "color": BRAND_COLORS.get(b, "#616161"),
+            "accounts": accs,
+            "merged": merged[:MERGED_FEED_LIMIT],
+            "post_total": len(merged),
+        })
+    return groups
+
+
 def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float = HOT_RATIO) -> str:
     env = Environment(
         loader=FileSystemLoader(_TEMPLATE_DIR),
@@ -97,9 +127,7 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
     tpl = env.get_template("template.html")
     gen_date = generated_at.astimezone(KST).date()
 
-    charts: dict[int, dict] = {}
-    for i, acc in enumerate(accounts):
-        acc["_color"] = BRAND_COLORS.get(acc.get("benchmark") or "", "#616161")
+    for acc in accounts:
         fetched = acc.get("fetched_at")
         acc["_stale_date"] = None
         if fetched:
@@ -109,15 +137,24 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
         for p in acc.get("posts", []):
             p["_days"] = (generated_at - _parse_ts(p["posted_at"])).days
             p["_fmt"] = "reels" if is_reel(p) else "feed"
-        _annotate_hot(acc.get("posts", []), hot_ratio)
-        payload = _chart_payload(acc.get("posts", []))
-        acc["_has_chart"] = payload is not None
+        _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
+
+    groups = _build_groups(accounts)
+    charts: dict[str, dict] = {}
+    for gi, g in enumerate(groups):
+        payload = _chart_payload(g["merged"])
+        g["_has_chart"] = payload is not None
         if payload:
-            charts[i] = payload
+            charts[f"{gi}-all"] = payload
+        for ai, acc in enumerate(g["accounts"]):
+            payload = _chart_payload(acc.get("posts", []))
+            acc["_has_chart"] = payload is not None
+            if payload:
+                charts[f"{gi}-{ai}"] = payload
 
     chart_json = json.dumps(charts, ensure_ascii=False).replace("<", "\\u003c")
     return tpl.render(
-        accounts=accounts,
+        groups=groups,
         chart_json=chart_json,
         generated_label=generated_at.astimezone(KST).strftime("%Y-%m-%d %H:%M"),
     )
