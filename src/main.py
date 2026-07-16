@@ -75,7 +75,7 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
 
     account = {
         **acc_meta,
-        "brand": acc_meta["name"],
+        "brand": acc_meta["name"] or f"@{acc_meta['username']}",
         "followers_count": snap["followers_count"] or stored.get("followers_count"),
         "fetched_at": now.isoformat(),
         "weekly_summary": stored.get("weekly_summary"),
