@@ -46,14 +46,19 @@ def fetch_target_accounts(db_id: str, version: str) -> list[dict]:
         for page in body.get("results", []):
             p = page["properties"]
 
-            def sel(key: str):
-                return (p.get(key, {}).get("select") or {}).get("name")
+            def sel(needle: str):
+                # 컬럼명이 바뀌어도 견디도록 이름에 needle 이 포함된 select 를 찾는다
+                # (예: '벤치마크 대상' → '벤치마크 브랜드' 로 개명돼도 동작)
+                for key, prop in p.items():
+                    if needle in key and prop.get("type") == "select":
+                        return (prop.get("select") or {}).get("name")
+                return None
 
             acc = {
                 "page_id": page["id"],
                 "name": _plain_text(p.get("계정명", {})),
                 "username": _plain_text(p.get("username", {})),
-                "benchmark": sel("벤치마크 대상"),
+                "benchmark": sel("벤치마크"),
                 "category": sel("카테고리"),
             }
             if acc["username"]:
