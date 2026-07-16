@@ -9,6 +9,10 @@ on:
         description: "1회성 백필 (계정당 180개 수집, 과거 히트 분석)"
         type: boolean
         default: false
+      only:
+        description: "특정 username만 (콤마 구분, 비우면 전체)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -39,7 +43,7 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: python -m src.main ${{ inputs.backfill && '--backfill' || '' }}
+        run: python -m src.main ${{ inputs.backfill && '--backfill' || '' }} ${{ inputs.only && format('--only {0}', inputs.only) || '' }}
 
       - name: Commit updated data
         run: |
