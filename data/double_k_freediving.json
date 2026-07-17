@@ -6,7 +6,7 @@
   "category": "프리다이빙",
   "brand": "더블케이프리다이빙",
   "followers_count": 19520,
-  "fetched_at": "2026-07-17T08:27:35.814347+09:00",
+  "fetched_at": "2026-07-18T08:27:15.066526+09:00",
   "weekly_summary": null,
   "posts": [
     {
@@ -251,7 +251,7 @@
         "likes": 292,
         "comments": 18
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-17T08:27:35.814347+09:00"
     },
     {

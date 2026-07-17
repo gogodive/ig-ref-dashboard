@@ -6,7 +6,7 @@
   "category": "수영복",
   "brand": "루프루프",
   "followers_count": 32766,
-  "fetched_at": "2026-07-17T08:27:35.814347+09:00",
+  "fetched_at": "2026-07-18T08:27:15.066526+09:00",
   "weekly_summary": null,
   "posts": [
     {
@@ -382,7 +382,7 @@
         "likes": 116,
         "comments": 5
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-17T08:27:35.814347+09:00"
     },
     {

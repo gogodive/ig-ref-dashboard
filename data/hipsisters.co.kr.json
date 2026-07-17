@@ -6,7 +6,7 @@
   "category": "애슬레저",
   "brand": "힙시스터즈",
   "followers_count": 47434,
-  "fetched_at": "2026-07-17T08:27:35.814347+09:00",
+  "fetched_at": "2026-07-18T08:27:15.066526+09:00",
   "weekly_summary": null,
   "posts": [
     {
@@ -219,7 +219,7 @@
         "likes": 62,
         "comments": 12
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-17T08:27:35.814347+09:00"
     },
     {
@@ -235,7 +235,7 @@
         "likes": 3,
         "comments": 11
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-17T08:27:35.814347+09:00"
     },
     {
@@ -251,7 +251,7 @@
         "likes": 3,
         "comments": 18
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-17T08:27:35.814347+09:00"
     },
     {

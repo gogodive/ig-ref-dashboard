@@ -6,7 +6,7 @@
   "category": "다이빙장비",
   "brand": "디플리",
   "followers_count": 3457,
-  "fetched_at": "2026-07-17T08:27:35.814347+09:00",
+  "fetched_at": "2026-07-18T08:27:15.066526+09:00",
   "weekly_summary": null,
   "posts": [
     {
@@ -166,7 +166,7 @@
         "likes": 3,
         "comments": 5
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-17T08:27:35.814347+09:00",
       "analysis": {
         "one_liner": "시즌 세일 오픈 알림을 캐러셀로 풀며 날짜·할인율·신상 3요소를 순차 공개해 클릭·저장 욕구를 자극하는 이벤트 앵커 포스팅",
