@@ -6,9 +6,53 @@
 
 from __future__ import annotations
 
+import logging
 import os
+import time
 
 import requests
+
+log = logging.getLogger(__name__)
+
+API = "https://api.apify.com/v2"
+POLL_INTERVAL_S = 10
+RUN_TIMEOUT_S = 900  # 계정당 최대 대기 (무거운 계정 대비)
+
+
+def _run_actor(actor: str, payload: dict, timeout_s: int = RUN_TIMEOUT_S) -> list:
+    """actor 를 비동기로 실행하고 완료까지 폴링 후 결과를 받는다.
+
+    run-sync 엔드포인트는 ~300초를 넘기면 서버가 연결을 끊어버려
+    게시물이 많은 계정에서 실패한다 → 비동기 실행 + 폴링으로 대체.
+    """
+    token = os.environ["APIFY_TOKEN"]
+    res = requests.post(f"{API}/acts/{actor}/runs", params={"token": token},
+                        json=payload, timeout=60)
+    res.raise_for_status()
+    run_id = res.json()["data"]["id"]
+
+    deadline = time.time() + timeout_s
+    while time.time() < deadline:
+        time.sleep(POLL_INTERVAL_S)
+        st = requests.get(f"{API}/actor-runs/{run_id}", params={"token": token}, timeout=60)
+        st.raise_for_status()
+        data = st.json()["data"]
+        status = data["status"]
+        if status == "SUCCEEDED":
+            items = requests.get(
+                f"{API}/datasets/{data['defaultDatasetId']}/items",
+                params={"token": token, "clean": "true", "limit": 1000}, timeout=180)
+            items.raise_for_status()
+            return items.json()
+        if status in ("FAILED", "ABORTED", "TIMED-OUT"):
+            raise RuntimeError(f"Apify run {status} (run_id={run_id})")
+
+    # 시간 초과 → 크레딧 낭비 방지를 위해 중단 요청
+    try:
+        requests.post(f"{API}/actor-runs/{run_id}/abort", params={"token": token}, timeout=60)
+    except requests.RequestException:
+        pass
+    raise RuntimeError(f"Apify run 폴링 시간 초과 {timeout_s}s (run_id={run_id})")
 
 
 def _map_post(m: dict) -> dict:
@@ -40,17 +84,13 @@ def _map_post(m: dict) -> dict:
 
 def fetch_followers(username: str, actor: str) -> int | None:
     """팔로워 수만 초경량 조회 (details 1건). posts 모드엔 팔로워가 없어서 별도 호출."""
-    token = os.environ["APIFY_TOKEN"]
-    url = f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items"
     payload = {
         "directUrls": [f"https://www.instagram.com/{username}/"],
         "resultsType": "details",
         "resultsLimit": 1,
         "addParentData": False,
     }
-    res = requests.post(url, params={"token": token}, json=payload, timeout=180)
-    res.raise_for_status()
-    items = res.json()
+    items = _run_actor(actor, payload, timeout_s=300)
     if not items:
         return None
     return items[0].get("followersCount") or items[0].get("ownerFollowersCount")
@@ -58,17 +98,13 @@ def fetch_followers(username: str, actor: str) -> int | None:
 
 def fetch_account(username: str, actor: str, results_type: str, limit: int) -> dict:
     """한 계정의 스냅샷: {followers_count, posts:[...]}. posts 는 최신순."""
-    token = os.environ["APIFY_TOKEN"]
-    url = f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items"
     payload = {
         "directUrls": [f"https://www.instagram.com/{username}/"],
         "resultsType": results_type,
         "resultsLimit": limit,
         "addParentData": False,
     }
-    res = requests.post(url, params={"token": token}, json=payload, timeout=300)
-    res.raise_for_status()
-    items = res.json()
+    items = _run_actor(actor, payload)
     if not items:
         return {"followers_count": None, "posts": []}
 
