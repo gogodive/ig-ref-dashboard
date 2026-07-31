@@ -91,11 +91,9 @@ def update_status_callout(page_id: str, text: str, emoji: str, color: str,
     """허브 페이지 최상단 상태 콜아웃을 갱신한다. 없으면 새로 만든다."""
     headers = _headers(notion_version)
     rich = [
-        {"type": "text", "text": {"content": f"{STATUS_MARKER}: "},
-         "annotations": {"bold": True}},
-        {"type": "text", "text": {"content": text[:1800]}},
-        {"type": "text", "text": {"content": "  대시보드 열기",
-                                  "link": {"url": dashboard_url}}},
+        {"type": "text", "text": {"content": STATUS_MARKER}, "annotations": {"bold": True}},
+        {"type": "text", "text": {"content": f": {text[:1800]} · "}},
+        {"type": "text", "text": {"content": "대시보드 열기", "link": {"url": dashboard_url}}},
     ]
     body = {"callout": {"rich_text": rich, "icon": {"emoji": emoji}, "color": color}}
 
