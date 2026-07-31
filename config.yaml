@@ -19,4 +19,5 @@ claude:
 notion:
   accounts_db_id: 85c2aeea0a2949b0885e3959e1bc098d   # 레퍼런스 계정 (분석 대상)
   log_db_id: bc6a309f0ccc430dac75809d6582efa1        # 레퍼런스 분석 로그
+  hub_page_id: 37d39eba97ed81abb7c1c835753befc3      # 허브 페이지 (최상단 실행상태 콜아웃)
   version: "2022-06-28"

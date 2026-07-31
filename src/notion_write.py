@@ -59,6 +59,76 @@ def _summary_metrics(posts: list[dict], followers) -> dict:
             "engagement": eng, "formats": top_fmts, "count": len(recent)}
 
 
+STATUS_MARKER = "마지막 실행"  # 허브 페이지 상태 콜아웃을 찾는 표식
+
+
+def build_status_text(now: datetime, stats: list[dict], dashboard_url: str) -> tuple[str, str, str]:
+    """실행 요약 한 줄. (텍스트, 이모지, 노션 색상) 반환."""
+    ok = [s for s in stats if s["ok"]]
+    failed = [s for s in stats if not s["ok"]]
+    new_posts = sum(s["new"] for s in ok)
+    hot = sum(s["hot"] for s in ok)
+
+    parts = [
+        f"{now.strftime('%Y-%m-%d %H:%M')} KST",
+        f"계정 {len(ok)}/{len(stats)}개 수집",
+        f"새 게시물 {new_posts}개",
+        f"🔥히트 분석 {hot}건",
+    ]
+    if failed:
+        names = ", ".join("@" + s["username"] for s in failed[:3])
+        more = f" 외 {len(failed) - 3}개" if len(failed) > 3 else ""
+        parts.append(f"⚠️ 수집 실패 {len(failed)}개 ({names}{more}) — 기존 데이터 유지됨")
+        emoji, color = "⚠️", "yellow_background"
+    else:
+        parts.append("전체 정상")
+        emoji, color = "✅", "green_background"
+    return " · ".join(parts), emoji, color
+
+
+def update_status_callout(page_id: str, text: str, emoji: str, color: str,
+                          notion_version: str, dashboard_url: str) -> bool:
+    """허브 페이지 최상단 상태 콜아웃을 갱신한다. 없으면 새로 만든다."""
+    headers = _headers(notion_version)
+    rich = [
+        {"type": "text", "text": {"content": f"{STATUS_MARKER}: "},
+         "annotations": {"bold": True}},
+        {"type": "text", "text": {"content": text[:1800]}},
+        {"type": "text", "text": {"content": "  대시보드 열기",
+                                  "link": {"url": dashboard_url}}},
+    ]
+    body = {"callout": {"rich_text": rich, "icon": {"emoji": emoji}, "color": color}}
+
+    try:
+        res = requests.get(f"{API}/blocks/{page_id}/children",
+                           headers=headers, params={"page_size": 20}, timeout=60)
+        res.raise_for_status()
+        for block in res.json().get("results", []):
+            if block.get("type") != "callout":
+                continue
+            plain = "".join(t.get("plain_text", "")
+                            for t in block["callout"].get("rich_text", []))
+            if STATUS_MARKER in plain:
+                r = requests.patch(f"{API}/blocks/{block['id']}",
+                                   headers=headers, json=body, timeout=60)
+                if r.ok:
+                    return True
+                log.warning("상태 콜아웃 갱신 실패: %s", r.text[:300])
+                return False
+
+        # 표식을 못 찾으면 페이지 끝에 새로 추가 (사용자가 지운 경우 대비)
+        r = requests.patch(f"{API}/blocks/{page_id}/children", headers=headers,
+                           json={"children": [{"object": "block", "type": "callout", **body}]},
+                           timeout=60)
+        if r.ok:
+            log.info("상태 콜아웃을 새로 생성했습니다 (페이지 하단)")
+            return True
+        log.warning("상태 콜아웃 생성 실패: %s", r.text[:300])
+    except requests.RequestException as e:
+        log.warning("상태 콜아웃 처리 중 오류: %s", e)
+    return False
+
+
 def update_account_followers(page_id: str, followers: int, notion_version: str) -> None:
     """계정 DB 행의 '팔로워 수' 속성을 최신값으로 갱신 (없는 컬럼이면 조용히 무시)."""
     res = requests.patch(

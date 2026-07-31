@@ -22,7 +22,8 @@ from src import analysis as az
 from src.apify_client import fetch_account, fetch_followers
 from src.merge import hot_post_ids, merge_posts
 from src.notion_source import fetch_target_accounts
-from src.notion_write import update_account_followers, write_log_card
+from src.notion_write import (build_status_text, update_account_followers,
+                              update_status_callout, write_log_card)
 from src.render import render_html
 
 KST = timezone(timedelta(hours=9))
@@ -47,14 +48,16 @@ def load_stored(data_dir: Path, username: str) -> dict:
 
 
 def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
-                    dry_run: bool, backfill: bool = False) -> dict:
-    """계정 하나: 수집→병합→분석→저장→노션. 실패 시 저장분 그대로 반환.
+                    dry_run: bool, backfill: bool = False) -> tuple[dict, dict]:
+    """계정 하나: 수집→병합→분석→저장→노션. (account, stats) 반환.
 
+    수집 실패 시 저장분을 그대로 쓰고 stats.ok=False 로 표시한다.
     backfill 모드: resultsType=posts 로 backfill_limit 개 수집,
     한줄 분석·노션 카드는 생략하고 히트 심층분석만 전부 실행.
     """
     username = acc_meta["username"]
     stored = load_stored(data_dir, username)
+    stats = {"username": username, "ok": True, "new": 0, "hot": 0, "error": None}
 
     # 1) 수집
     if backfill:
@@ -65,8 +68,10 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
         snap = fetch_account(username, cfg["apify"]["actor"], results_type, limit)
     except Exception as e:  # noqa: BLE001
         log.warning("수집 실패 @%s: %s — 저장분 유지", username, e)
-        return {**stored, **acc_meta, "brand": acc_meta["name"]} if stored else {
-            **acc_meta, "brand": acc_meta["name"], "posts": []}
+        stats.update(ok=False, error=str(e).splitlines()[0][:200])
+        fallback = {**stored, **acc_meta, "brand": acc_meta["name"] or f"@{username}"} \
+            if stored else {**acc_meta, "brand": acc_meta["name"] or f"@{username}", "posts": []}
+        return fallback, stats
 
     # 2) 병합
     merged, new_ids = merge_posts(
@@ -140,7 +145,8 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
 
     log.info("@%s: 게시물 %d (새 %d, 히트분석 %d%s)", username, len(merged),
              len(new_posts), len(hot_analyzed), ", 주간종합" if weekly else "")
-    return account
+    stats.update(new=len(new_posts), hot=len(hot_analyzed))
+    return account, stats
 
 
 def main() -> int:
@@ -174,9 +180,14 @@ def main() -> int:
 
     if args.backfill:
         log.info("백필 모드: 계정당 최대 %d개 수집", cfg["apify"]["backfill_limit"])
-    processed = {a["username"]: process_account(a, cfg, ROOT / "data", now,
-                                                args.dry_run, args.backfill)
-                 for a in targets}
+    processed: dict[str, dict] = {}
+    run_stats: list[dict] = []
+    for a in targets:
+        account, stats = process_account(a, cfg, ROOT / "data", now,
+                                         args.dry_run, args.backfill)
+        processed[a["username"]] = account
+        run_stats.append(stats)
+
     # --only 로 일부만 처리해도 대시보드는 항상 전체 계정으로 렌더
     accounts = [processed.get(a["username"])
                 or {**load_stored(ROOT / "data", a["username"]), **a,
@@ -189,6 +200,16 @@ def main() -> int:
     site.mkdir(exist_ok=True)
     (site / "index.html").write_text(
         render_html(accounts, now, hot_ratio=cfg["hot_ratio"]), encoding="utf-8")
+
+    # 허브 페이지 최상단 실행 상태 콜아웃 갱신
+    if not args.dry_run and cfg["notion"].get("hub_page_id"):
+        text, emoji, color = build_status_text(now, run_stats, DASHBOARD_URL)
+        if args.backfill:
+            text = "[백필] " + text
+        update_status_callout(cfg["notion"]["hub_page_id"], text, emoji, color,
+                              cfg["notion"]["version"], DASHBOARD_URL)
+        log.info("허브 상태: %s %s", emoji, text)
+
     print(f"완료: {len(accounts)}개 계정 → site/index.html")
     return 0
 
