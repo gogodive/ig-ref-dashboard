@@ -5,8 +5,8 @@
   "benchmark": "라세린",
   "category": "수영복",
   "brand": "루프루프",
-  "followers_count": 32988,
-  "fetched_at": "2026-07-31T08:34:07.750643+09:00",
+  "followers_count": 32963,
+  "fetched_at": "2026-08-01T08:32:08.218816+09:00",
   "weekly_summary": {
     "headline": "아티스틱 스위밍 등 니치 스포츠 커뮤니티 주인공화로 브랜드 세계관을 쌓고, 인플루언서 협업 릴스(조회수 9,000~10,500)가 팝업·라이브·자사몰 전환의 깔때기 상단을 담당하는 구조",
     "implications": [
@@ -28,19 +28,39 @@
   },
   "posts": [
     {
+      "post_id": "DbdBIKUy22f",
+      "caption": "여의도 한강수영장에서 고객님들과 깜짝 밋업🤍\n\n늘 루프루프를 아껴주시는 분들께 직접 감사 인사를 전하고 싶어 준비한 작은 만남이었어요.\n\n함께해 주신 모든 분들 정말 감사합니다!\n다음에도 또 만나요✨",
+      "media_type": "VIDEO",
+      "product": "REELS",
+      "permalink": "https://www.instagram.com/p/DbdBIKUy22f/",
+      "thumbnail": "https://instagram.flcj1-1.fna.fbcdn.net/v/t51.82787-15/762128601_18101134805614056_7052947512270238065_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.flcj1-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFm1GzTXuZSXH48ROXdQTcotu0yMfWtWwy4fuNy6ISIk6RmPbN_lxFnIASDY3pYJjA&_nc_ohc=tGiNQ-LX-JkQ7kNvwEdEuWx&_nc_gid=xe3MO-m4TOnEQjRagSJFCw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFmGToKuf0uKAVr0vggCewxkqAkFz4QIcyof7E2aQEnPw&oe=6A73182C&_nc_sid=c6f216",
+      "posted_at": "2026-07-31T10:12:35.000Z",
+      "metrics": {
+        "views": 6169,
+        "likes": 107,
+        "comments": 19
+      },
+      "frozen": false,
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
+      "analysis": {
+        "one_liner": "팝업 대신 한강 밋업으로 브랜드 팬심을 오프라인 접점으로 전환해 커뮤니티 소속감을 자극한 릴스",
+        "analyzed_at": "2026-08-01T08:32:08.218816+09:00"
+      }
+    },
+    {
       "post_id": "DbaqG3Fn5k2",
       "caption": "𝚂𝚝𝚒𝚝𝚌𝚑𝚎𝚍 𝚠𝚒𝚝𝚑 𝙻𝚘𝚟𝚎🤍🍒",
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbaqG3Fn5k2/",
-      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/760424928_18100998179614056_1901401289741386971_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEzHNod1mKZu8X-IStlVBGh7Z8E9zYpC99_9m5gMvU9nI6Z-5o9vECv-yXw8iAMX18&_nc_ohc=mD80Bw9Ui8EQ7kNvwHGKxKR&_nc_gid=qhpyyfagilJA9QGECa0wMQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQF7nNZCZPRSQsmGNmekLXeytdIBOltzuqKMBp_xPIq8iw&oe=6A71C216&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-man2-1.cdninstagram.com/v/t51.82787-15/760424928_18100998179614056_1901401289741386971_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gGjLn50HhOTDAfkb1CKJ01wqz05vj_Alzolvhb2vatBYAT6xraAav0WdLe4NHfic7I&_nc_ohc=mD80Bw9Ui8EQ7kNvwG8_0Y1&_nc_gid=oddq6gOxtFspqSJtU_GNyg&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEBFyY4su3ludyH9mogwZ_geQyHc99WnkAsSLq4QcpZXg&oe=6A731396&_nc_sid=c6f216",
       "posted_at": "2026-07-30T12:10:32.000Z",
       "metrics": {
-        "likes": 16,
+        "likes": 22,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "감성 타이포 캡션과 체리·하트 이모지로 무드만으로 브랜드 정체성을 전달하는 미니멀 큐레이션 전략",
         "analyzed_at": "2026-07-31T08:34:07.750643+09:00"
@@ -52,14 +72,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbVg87EH9vo/",
-      "thumbnail": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/757979289_18100704641614056_6586104004446349656_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEILI8WX9FjvoggXoGQn7Jf_yRn1_q6nrobAbyUJxjk1cc6W3mKGdNXyQsTi97EK2-Z-FFsnlx70hb3qA2GFSEC&_nc_ohc=iSFsgOYMlMcQ7kNvwGXx-az&_nc_gid=hcESe7DLr6mN0X-FTngnjA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHRnRFWYK0tmqtyOyFflxiMs1VQ6QPqaysr4HDns1tgYw&oe=6A71CCA2&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/757979289_18100704641614056_6586104004446349656_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gECxeP10JQUIJiMVDzkdiaBbKAtNdnd6PcTesYcLad6UL__3-EU0JVmKAO-jiO4hdE&_nc_ohc=iSFsgOYMlMcQ7kNvwHiDUlC&_nc_gid=id9bMrCEnIybHegYI-DBIA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFjiR2-WrSMwXBBOjL7kS4mdBKyRRkGlvmwEzM8ZX2mAQ&oe=6A731E22&_nc_sid=c6f216",
       "posted_at": "2026-07-28T12:14:20.000Z",
       "metrics": {
-        "likes": 17,
+        "likes": 19,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "레트로 캐릭터 IP(베티붑) 협업으로 향수 감성을 자극, 체리 이모지로 여름 시즌 비치 무드를 강화한 팬덤 유입형 캐러셀.",
         "analyzed_at": "2026-07-29T08:31:46.430724+09:00"
@@ -90,14 +110,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbKpXCcnwq2/",
-      "thumbnail": "https://instagram.fedi1-1.fna.fbcdn.net/v/t51.82787-15/756661709_18100042655614056_879871477350562780_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fedi1-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gEk2AN5mru5hIK6H6acmEtr2cJ_bQJQSp6PqknCU8iOzibIakpYX_Ds7PMQFLIBwgM&_nc_ohc=cU_H015LR3IQ7kNvwGtmfx5&_nc_gid=FOn6FHuCjuA1WDsnhh1lEQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFxk7-iRPzptXRykKf3JBbhGAlphEA1kJJgNgggWgcPXQ&oe=6A71D6A0&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/756661709_18100042655614056_879871477350562780_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFQm9YE3ywQLMS6kYK8592n-ViRCpWDqygOZOa_IZJZikPymoA0MqT4rHM8W0lqoCp89ComczsNkRPd-6E4bH4I&_nc_ohc=cU_H015LR3IQ7kNvwEJpfoo&_nc_gid=TRLUZMpue8ztC4paUPkU9g&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGC5Hmd6YNthE0zJrKgloTw9awaXNvwuk3eSlxGnVnfmg&oe=6A72EFE0&_nc_sid=c6f216",
       "posted_at": "2026-07-24T06:56:09.000Z",
       "metrics": {
-        "likes": 38,
+        "likes": 39,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "품절 이력·재입고 희소성·오프라인 팝업 연계로 구매 긴박감을 3단 레이어로 쌓은 수요 환기 공식",
         "analyzed_at": "2026-07-25T08:35:01.964160+09:00"
@@ -109,14 +129,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbIA6fgn6vr/",
-      "thumbnail": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/754323378_18099901895614056_3911178081120239511_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gGZwcT-1Eb5qya1ksi_eUXB4Wt5nL4K-LwxksZC1Sp5OkMoHtUsfnwQBKysfcTqKVI&_nc_ohc=nRUYEHYMn_0Q7kNvwFbPrpd&_nc_gid=M6QdE4AZPUA-D9e3SQ9yyQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGyxtKKPGgjj8KyqS-STGVxgrQ9GF6SHvzIIqeqngG5dg&oe=6A71B256&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/754323378_18099901895614056_3911178081120239511_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHxd2Oo8koWEHgmW0wegJcUfN1hlBRsLCJtsuBMBd5OLZcHivCbs0wXz7nzEwok4AY&_nc_ohc=uDNg5Pa_tYoQ7kNvwG2rCwf&_nc_gid=27Fj4ILqSmHHiWAYiOHoBQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQF1jKWXVyXQyr61x-ZALFEw27gS9pdSByz1-DfccrN8Fg&oe=6A7303D6&_nc_sid=c6f216",
       "posted_at": "2026-07-23T06:24:15.000Z",
       "metrics": {
-        "likes": 60,
+        "likes": 61,
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "시즌 마감 긴박감·30% 할인·한정 사은품 3종을 겹쳐 팝업 방문 동기를 극대화한 오프라인 전환 캐러셀",
         "analyzed_at": "2026-07-25T08:35:01.964160+09:00"
@@ -128,14 +148,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbFEw0AHzsf/",
-      "thumbnail": "https://scontent-fco2-1.cdninstagram.com/v/t51.82787-15/753320164_18099737759614056_936263684634020250_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-fco2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHqfyBIrv0dzmB2wxF9R_rs5LCAmnmN92e03Zn6O_JQYtbK9ce6xqBR-l2Cx3HIJ5M&_nc_ohc=eD39CVb114YQ7kNvwEzvMNd&_nc_gid=Ab88q_f7cl15BclRvZ1P-w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHRB7uiSlbqcab4kK4xLmDXysnNhaY-WyftM_C-LKe7Iw&oe=6A71B5AA&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-yyz1-1.cdninstagram.com/v/t51.82787-15/753320164_18099737759614056_936263684634020250_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gH5utfvLbuvrGzawCsDld9BHD2dhDCT9z32M5kvCbMZiF-68_nVfNeFcvQDmzF9SZk&_nc_ohc=eD39CVb114YQ7kNvwE-9Yu9&_nc_gid=6Fv9g3rrNO2-TKYJzUQepQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHMzQalrSFNrUzL7VGj0UMSYcdmMigxPBAmxydJR_zm1A&oe=6A73072A&_nc_sid=c6f216",
       "posted_at": "2026-07-22T03:00:09.000Z",
       "metrics": {
         "likes": 56,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "팝업 정보를 캐러셀로 정리해 일정·장소·컬렉션 라인업을 한눈에 전달하는 오프라인 이벤트 고지 포맷",
         "analyzed_at": "2026-07-23T08:32:06.895411+09:00"
@@ -224,15 +244,15 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DasL1YWz0y0/",
-      "thumbnail": "https://instagram.fwaw7-1.fna.fbcdn.net/v/t51.82787-15/746004060_18098199032614056_7592268531610932500_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fwaw7-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gGaNo4zj5SuzE78j33kcTJpmJ9hyRLVz6zHc9Yykr5DF7EeiN_InT-IcHxMnEmXvwI&_nc_ohc=f6fs9VVkG_wQ7kNvwEk0WIJ&_nc_gid=GLSRBjYns-n-jS6FIjs6RA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHpaCLeG8Sj2rrVcgOAvj43EVhtTiV-Ecu0h3QYlQ2qcw&oe=6A71D483&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/746004060_18098199032614056_7592268531610932500_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=MzkzOTU3NTgyMDgzODcxODY0NDE4MDk4MTk5MDI5NjE0MDU2.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=O17PrCqlW_gQ7kNvwF68ENe&_nc_oc=Adp26mg25GI0ECXc1bqQ8J_mPZSTA2D7OZ3dHBswhc8Xn2nxMnTfQguVudcBd2y4s7LI3Vt2ggW7ZpRbNj3K4eQq&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=5rCHAJlh4FcFnCKF723N8w&_nc_ss=7c689&oh=00_AQGpeApaqJRYckb25V0uDs2V1MxeAIsYQrovag6fLtBN9w&oe=6A732603",
       "posted_at": "2026-07-12T11:00:05.000Z",
       "metrics": {
-        "views": 9348,
-        "likes": 218,
+        "views": 65,
+        "likes": 219,
         "comments": 6
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "아티스틱 스위밍 인플루언서 콜라보로 비주얼 퍼포먼스를 앞세우고 팝업·자사몰 전환까지 연결한 릴스 깔때기 구조",
         "analyzed_at": "2026-07-17T01:19:30.060278+09:00"
@@ -244,15 +264,15 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DakOi-tSzsI/",
-      "thumbnail": "https://instagram.fpbc2-3.fna.fbcdn.net/v/t51.82787-15/741285895_18097759550614056_3676102354915876425_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fpbc2-3.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gF7WQ4Dx7HBZs1G6iRrDkKLlrNtm7rPaLee5zcbV9STTFeOfrIWwRUlP-BgTSdELg4&_nc_ohc=KOfkNVAMORwQ7kNvwEwkSLR&_nc_gid=nztF9hM_njOxeJ2NnuZ4MQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQF3hOhPf-CPgsJd1iUctbhILVN-4e3JJsMWNhT--h0azw&oe=6A71B8DB&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/741285895_18097759550614056_3676102354915876425_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gExDuWAQo1RQWYV0vKPu3619quGIl_zR2e2wqhLL_BIrhCHFQKiKMCviuBeRGrnDzbfFWFW3QrfhoOc7V2qjFAf&_nc_ohc=PLO8iji23eMQ7kNvwEklTgs&_nc_gid=l-Kz55neoOfr2mTrV8E9EA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQE-3rH37s17azVYbMPswKazYcz0B9CQzNyR7wdV9hamWA&oe=6A730A5B&_nc_sid=c6f216",
       "posted_at": "2026-07-09T08:51:51.000Z",
       "metrics": {
-        "views": 10220,
+        "views": 10254,
         "likes": 165,
         "comments": 56
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "니치 스포츠 취미 인터뷰로 공감·호기심을 동시에 자극하고, 댓글 이벤트로 차기 상품 아이디어까지 수집하는 참여형 기획",
         "analyzed_at": "2026-07-17T01:19:30.060278+09:00"
@@ -264,15 +284,15 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DahCFepS2hw/",
-      "thumbnail": "https://instagram.fman4-1.fna.fbcdn.net/v/t51.82787-15/728253928_18097578161614056_1276531261261324948_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fman4-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gHQQSPBv4uWAvb7RAVVHB-Tpts1qn1kTtciEWqSQwRo-oArQah203erMt0vzCRSrT4&_nc_ohc=Srxz73sPBW8Q7kNvwEFpkWF&_nc_gid=Jeu-hWiJ86pX_Nnr8HOpgw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEz6Y9uYtafAJrgmuYx_aV0_G6qzRq5bqNOa_KGWTWw8w&oe=6A71A868&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-man2-1.cdninstagram.com/v/t51.82787-15/728253928_18097578161614056_1276531261261324948_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHacK5ImNxOFy0n6xIbvRlzYGxvGn9ttYMSgXW9r5jvOV-GMgzuFcYyYnfGFyWW_HM&_nc_ohc=Srxz73sPBW8Q7kNvwFao_RS&_nc_gid=G-sgADD2tOH7By9SDoTOBA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGQgcD2vGoQ-oZb135y_h-Oi9sl3kAh3Vd6vvLqTK1aGA&oe=6A72F9E8&_nc_sid=c6f216",
       "posted_at": "2026-07-08T03:05:10.000Z",
       "metrics": {
-        "views": 10681,
+        "views": 10717,
         "likes": 199,
         "comments": 27
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "취미 커뮤니티 주인공화 + 시리즈 매거진 포맷으로 브랜드 세계관을 확장하며 구매 전환까지 연결한 스토리텔링 릴스",
         "analyzed_at": "2026-07-17T01:19:30.060278+09:00"
@@ -284,7 +304,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dae_X2KEQ-7/",
-      "thumbnail": "https://scontent-atl3-2.cdninstagram.com/v/t51.82787-15/740836261_18140801470554662_7521411203458547545_n.heic?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gHyyMIYyScYyMMay-bDCw_GlkZoWtUC1bPqU4Qrk5eYvSCiY_ueMGV5fiwMIunH_MjrVotSf-9TeAn9UzgUj0Sf&_nc_ohc=w10b_2rnfkAQ7kNvwH092VE&_nc_gid=4SYUFYOpx9koTU0OL8bx5A&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGkCM4Z2vWLs9i2_RCythwZ0iWd8RvgYt-JfMC3TXUGAg&oe=6A71BE35&_nc_sid=c6f216",
+      "thumbnail": "https://instagram.fagc3-1.fna.fbcdn.net/v/t51.82787-15/740836261_18140801470554662_7521411203458547545_n.heic?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fagc3-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2gE_4qRzemQsctJz_PxkFFBanKB4D5-iX2W3OJtYReVdidOaykhNLlxH5LsH0bMS2zx-aErmlk24ci5HtJ7UTnZe&_nc_ohc=82FehVM7oLMQ7kNvwHm1w6k&_nc_gid=KGJyUZWlA7a_dTkL2WI8jg&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEd9cWm-S6O8FfT8fgBeWE2bDjpfcMKtq7r2eWt7HaOjw&oe=6A730FB5&_nc_sid=c6f216",
       "posted_at": "2026-07-07T08:01:55.000Z",
       "metrics": {
         "views": null,
@@ -292,7 +312,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "브랜드 콜라보 증정 이벤트를 '수영 전후 루틴' 스토리로 포장해 구매 명분과 긴급성을 동시에 자극한 캐러셀 기획",
         "analyzed_at": "2026-07-17T01:19:30.060278+09:00"
@@ -304,7 +324,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dac7gLzHyTR/",
-      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/739986385_18097314086614056_3630220112858934567_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=MzkzNTI4MTM0MTI3Mjc5MjQ0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=sUWp6eUEw-QQ7kNvwH_1EOq&_nc_oc=AdqFf968iXegb3huW2HsmwuKgTkOl9MelWp3Lm1mWUYp1I3hwTOj58VQlYX3dje4XqM&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=Qgu-tWAX86bX4tIbHLB4qw&_nc_ss=7ca8c&oh=00_AQFhdt8XoELMmV_JjPUnbYBENKgpa2MgulwjlTZrBWglfg&oe=6A71C3A5",
+      "thumbnail": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-15/739986385_18097314086614056_3630220112858934567_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFOOo3LflcBImB3Oe50sQpkbzA_QXoyxj32aakpSQ5K33cYH_isgYvIheq2dgQC368&_nc_ohc=zxIYDi2CYCAQ7kNvwH3spOk&_nc_gid=MPYpNDV4vxhFecvV5G9RaQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEmrQv5FnZ46wU-drvn4nZ1LF2ECHenu171zPSX7KfRwA&oe=6A731525&_nc_sid=c6f216",
       "posted_at": "2026-07-06T12:49:37.000Z",
       "metrics": {
         "views": null,
@@ -312,7 +332,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "스테디셀러에 캐릭터 콜라보 에디션을 입혀 '익숙함+신선함'으로 기존 팬심과 신규 관심을 동시에 자극하는 한정판 재해석 전략",
         "analyzed_at": "2026-07-17T01:19:30.060278+09:00"
@@ -324,7 +344,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DaXpreDH_ZG/",
-      "thumbnail": "https://instagram.flhr4-4.fna.fbcdn.net/v/t51.82787-15/734785332_18096989093614056_4785966049655123525_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.flhr4-4.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFmUygkTdwv8EZwXQIcYNyy0YZySgCr3xPvpcRQ2ED7z79GQPyjQ-K5Z6_1OpXjdN4L5zFoEjdxXIpDW7bCjGOC&_nc_ohc=Oo23xNaw-QgQ7kNvwFh9TUh&_nc_gid=ffX_HbxVNVwdD9f8bXR_WQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGTaamfUL3jB1URJXgAQwEPwNhqO4fwU-nD9HE81fxWSg&oe=6A71BC9A&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/734785332_18096989093614056_4785966049655123525_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEHeZokSBpmliw9sPO1UbIkOcDhBiz7ltt1yk-SK4JvahwItcn9yuv-j1u2Mba5VMUABHZXkr2eueR-fqpyYQyd&_nc_ohc=Thxdkbf2gOcQ7kNvwFVSYjh&_nc_gid=IsdeitqounRjizSotvHSag&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHsCHNV9pWFXXX1Mb-6xBaRwma2y1m0UtyOuvuVE9JzkA&oe=6A730E1A&_nc_sid=c6f216",
       "posted_at": "2026-07-04T11:37:40.000Z",
       "metrics": {
         "views": null,
@@ -332,7 +352,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-07-31T08:34:07.750643+09:00",
+      "metrics_updated_at": "2026-08-01T08:32:08.218816+09:00",
       "analysis": {
         "one_liner": "IP 콜라보 굿즈를 아이템별 넘버링 캐러셀로 묶어 '패키지 세계관' 구매 욕구를 자극하는 ACC 기획",
         "analyzed_at": "2026-07-17T01:19:30.060278+09:00"
@@ -364,7 +384,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DaKeFy6n3RR/",
-      "thumbnail": "https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/731147262_18096199676614056_8737389101110420644_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gGDJo3NBtjEFnxpuq-hzTwKbpnFn1bJNeL7fg0DlkBJItaK_Ada5FouLiWQztmuSi7Vrxjdw-W_RYmx66nx8fG_&_nc_ohc=iglc__qhyowQ7kNvwHYTIrD&_nc_gid=HCHZP6yjK9gOE8bFvj3vqQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHWIEKxFtaX5GtKRMYCyqH3-AZlyxa1PTrF1awNzxv63w&oe=6A71A692&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/731147262_18096199676614056_8737389101110420644_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFRP3BB34S2EyoKbC1k34P7BMBRnQA5_T3Uj6_Hoy4hQ8P8hC5FSQ4T8qLoA4NjMlk&_nc_ohc=iglc__qhyowQ7kNvwEQ-rIm&_nc_gid=fu91QV5lKAbMW655QTuRUQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHJClW5EuckGtxFBkkZ2K00QSj7mhVKrj3LnITfrcmEeQ&oe=6A72F812&_nc_sid=c6f216",
       "posted_at": "2026-06-29T08:46:17.000Z",
       "metrics": {
         "views": null,
@@ -384,7 +404,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DaII2uUn07v/",
-      "thumbnail": "https://instagram.fcen1-1.fna.fbcdn.net/v/t51.82787-15/731645111_18096051797614056_8129740378740566874_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fcen1-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gGgsQTG7zKSK0TVGfhmFDJT35PXn0ByeiDXeIYbRy8WNOYi1b2UtcD9egv5s0hAdsw&_nc_ohc=sxqGE6jeSIEQ7kNvwFflu5s&_nc_gid=2RqpepbY7ZVkT3uHzXNQ_Q&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGfAbOsEX03u6iAEWcFefmNr8nmeaYo6CLZ2IPb5Y6CuA&oe=6A71BB17&_nc_sid=c6f216",
+      "thumbnail": "https://instagram.ftow4-1.fna.fbcdn.net/v/t51.82787-15/731645111_18096051797614056_8129740378740566874_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.ftow4-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFuAnc2IOkCaTl1ExbBTIgVF3xL7N82H-f9lemu7vld61o3ARDVlEE_qpT6PMTjARQ&_nc_ohc=sxqGE6jeSIEQ7kNvwHZTuJR&_nc_gid=H_S0DfePBBqmC2o-Kjyq4w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGJ-tEPdbyw8JInTxeH004CyVZDdnmih5MfLF8Gkmi3Pg&oe=6A730C97&_nc_sid=c6f216",
       "posted_at": "2026-06-28T11:02:15.000Z",
       "metrics": {
         "views": null,
@@ -404,7 +424,7 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DZ_bY7Ny7ah/",
-      "thumbnail": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/730182766_18095500940614056_8318064681503378334_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEEHTgMEEWsYH69wxl2QdB6iEbHY6vOLWYznW4mgWgN7FsGNLXLFEB8BfV2dJzVhps&_nc_ohc=5hYqVfwJUmgQ7kNvwF1PXPF&_nc_gid=1QR3wr0rTDq60kCuA12miQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEcIt1hfVafJebA6T489RRsjhjogUsx8yNSKQM0-ePBJQ&oe=6A71BA1C&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/730182766_18095500940614056_8318064681503378334_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEDqzCO0Bt-9RQozrSDps-zVjcC2__07l3UdaI3-URl58-fSIRyqAVnbEqiPve2fB8&_nc_ohc=KLfV-mQgfDUQ7kNvwE-ES2B&_nc_gid=nW4wdHvC9NaTNMUYuCF_cw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQF5q1NmZYx189K36z2dI2-ixp0fXFZpnQLxP-WHfba1NQ&oe=6A730B9C&_nc_sid=c6f216",
       "posted_at": "2026-06-25T01:53:19.000Z",
       "metrics": {
         "views": 9709,
@@ -420,7 +440,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZ9KUkuyO0G/",
-      "thumbnail": "https://instagram.fhmo2-4.fna.fbcdn.net/v/t51.82787-15/730160753_18095374601614056_1746445174154519200_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fhmo2-4.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gEiSa_hVoVFbGYrH2yR0eYkC9j-X7xD9YBo6fqJLOYVnNfI5FbAZZPvcGFowMY-RpsY_lazO9Ek-Oak7MImKXsN&_nc_ohc=zu_lGgXsPSwQ7kNvwFelhFc&_nc_gid=9yKYKompM_lf3okym-vLmw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGNE9Ybv15WXPAjbfB9yqieghnAgMpQuobI0KUc__hcWg&oe=6A71D0DE&_nc_sid=c6f216",
+      "thumbnail": "https://instagram.fper5-1.fna.fbcdn.net/v/t51.82787-15/730160753_18095374601614056_1746445174154519200_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fper5-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gE6QVSqmR2BBnnbKN5QlkxjxG2DlPfHJddpcN4zlTTlJy7NMFe6iJnVX5-AAoOR8d4&_nc_ohc=0cxd0iDeBwkQ7kNvwF7i9kA&_nc_gid=JIwCAf6GAG6Z4AuWwoAqaA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGSALOewaH4WQw9gmuIgYSkYCPwaoos7JKJ-UltH3bjjg&oe=6A73225E&_nc_sid=c6f216",
       "posted_at": "2026-06-24T04:45:42.000Z",
       "metrics": {
         "views": null,
@@ -436,7 +456,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZ7Nta9n0wY/",
-      "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/730331593_18095260067614056_6096710311710380671_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFYzCVw9w4A5XFhkHV0xNdNrNkn9bj8sME1QbtZCmspDyw7BPW5ra0vEPvnPCC9fEfZh_CDzM-FJiS_ay3jf5HS&_nc_ohc=obLg1IcTgKYQ7kNvwHjbEP3&_nc_gid=naM78wlEFedzvYHwMsXB2g&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQH2u4yqLs3KXJt7zxpe7aJUW3-kHoSbXIs5MKTlkfi7GQ&oe=6A71CFF1&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-mad1-1.cdninstagram.com/v/t51.82787-15/730331593_18095260067614056_6096710311710380671_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFBBUvdViKBBqRzNOib8Ox976CL_bQ3tkMtkizALxrs8QMM0kLbu4jfH9wl7KI3xHw&_nc_ohc=bPbtA6iQNPIQ7kNvwF7MK9e&_nc_gid=2HIepA9pPmjg89UI1gCK6Q&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFcSTkHSWGh78d7PlibGlMiwDH5fg8MdmgYu2iKeWFKgg&oe=6A732171&_nc_sid=c6f216",
       "posted_at": "2026-06-23T10:34:32.000Z",
       "metrics": {
         "views": null,
@@ -452,7 +472,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZ6sU4hn6U8/",
-      "thumbnail": "https://scontent-sjc6-1.cdninstagram.com/v/t51.82787-15/728081631_18095234741614056_1725258699282872219_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-sjc6-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gET-NFt2VRdYhCUOEqHBpF3I0g5ghxiICIx14pdQ4Y5yh7NZn6msJvZgXzqkZJq28I&_nc_ohc=UHOlv6t24S8Q7kNvwHbaQDC&_nc_gid=9TAsMgHctzZel1eVIQwRXg&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFRWLbK8_W2ikKfV6Xc5EKGhtGmNRF_mWdirsYsA2qQug&oe=6A71D64B&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/728081631_18095234741614056_1725258699282872219_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHKafU6GYcjcd0ySxhQ_iuNgeFeJJ2bU6ci8CViwQWRzgu4KlKGs-loX720Zc5wASE&_nc_ohc=UHOlv6t24S8Q7kNvwECPko6&_nc_gid=XV5riXM2peZ-tlm6r30EPw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHpUsMgQ2mqBafz2S_uYw57vXg3i3TU7_LSYtHNHAbcJQ&oe=6A72EF8B&_nc_sid=c6f216",
       "posted_at": "2026-06-23T05:42:50.000Z",
       "metrics": {
         "views": null,
@@ -468,7 +488,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZ4fNlmj_U4/",
-      "thumbnail": "https://instagram.fltn4-1.fna.fbcdn.net/v/t51.82787-15/727952725_18095106419614056_6711965628718111893_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fltn4-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gE2WqHB7Z4UL-gdlBbnB4_xmp3uGpwx3d-V3sKKhkDtgm-5yRf8MhURZ3e3QhfyaFl839P2cRaRqU5rwSPfT-ww&_nc_ohc=J2XpJGdUEJgQ7kNvwGvnQqX&_nc_gid=tNOCIcMkwEaFoiR8n-yRlQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFQbIQc-m-MRBKHbL5JjXIDSop61HmpM7JaNC5iAPsGQQ&oe=6A71CB55&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-mad1-1.cdninstagram.com/v/t51.82787-15/727952725_18095106419614056_6711965628718111893_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHvemTDnw9dxL7PFnYBJ3u1sxQx2oJuJGTVsnECRmh8Wzch0H7Xp9srkDDa98yKseA&_nc_ohc=A1rBlnBGLBUQ7kNvwFhEaVL&_nc_gid=M0weRUIShaibDSkp9uOLnQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEmLc7Qw0BU-kKNMsPPh9ys8-joorCiFTrIrBbQkBJlyg&oe=6A731CD5&_nc_sid=c6f216",
       "posted_at": "2026-06-22T09:09:45.000Z",
       "metrics": {
         "views": null,
@@ -484,7 +504,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZ2LyrWH6g2/",
-      "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/727845474_18094968398614056_788866211598884524_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHGu3F41Yc35Bcf2lFJAllSHp-sBydadkipbY9_MwlZdfvS-Yf1z6-LAOIKvuQgQeI&_nc_ohc=Z2bJZG-RlGsQ7kNvwFG3hCp&_nc_gid=oL8e-5MgniPmBAKXSB0SZw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHfmjQGlbonl3Dc8R4cOj4g_UV7veld3cBHoA9HhNGHJA&oe=6A71BA9E&_nc_sid=c6f216",
+      "thumbnail": "https://instagram.fpbc2-3.fna.fbcdn.net/v/t51.82787-15/727845474_18094968398614056_788866211598884524_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fpbc2-3.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gHDtiN-52QRYHUPLzlKySiPIjnkyPhxsg7PDwWuMbUh5TCL5E0ICV4yKBjDlVE8c3I&_nc_ohc=Z2bJZG-RlGsQ7kNvwFqlnz3&_nc_gid=OGAJi6UNU8zuRUXfBzoaOw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFYqLtxykoramxHry071c-XHzi3hTuFfFhgl9SXWDs7mg&oe=6A730C1E&_nc_sid=c6f216",
       "posted_at": "2026-06-21T11:41:35.000Z",
       "metrics": {
         "views": null,
@@ -500,7 +520,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZ1yndRn-uQ/",
-      "thumbnail": "https://instagram.fmel18-1.fna.fbcdn.net/v/t51.82787-15/726987616_18094943831614056_6285832221623987281_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fmel18-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gGE8NleTAPGF0nbmx7reERqNQhLK3jJnWx1OEIaoSuWB_AQds4PBpSIBjYkBb3hFCY&_nc_ohc=6VULXtkLa3gQ7kNvwEx2Ha7&_nc_gid=PdGPkGu3Ka7uEucDHpTvsQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFbJ0DglJcYFMCHLHmv1K1N6-vXrhErgoxXHxEzIbw0Hg&oe=6A71C5E2&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-fco2-1.cdninstagram.com/v/t51.82787-15/726987616_18094943831614056_6285832221623987281_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-fco2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gE6YDkRnFoprDMc9ikGy4Wq8BUgT3i6_FvUJjJvRu9c3c5WopqfLfWd5O3CyHJ12Cw&_nc_ohc=6VULXtkLa3gQ7kNvwGBAj4k&_nc_gid=A4n17EvAvspDZ5dhKs_0nQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGOAm7bYI5sth8001azU8ip0BEIgrHASIc4a7o5XuHkwA&oe=6A731762&_nc_sid=c6f216",
       "posted_at": "2026-06-21T08:01:35.000Z",
       "metrics": {
         "views": null,
@@ -516,7 +536,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZzQM6Dn962/",
-      "thumbnail": "https://instagram.fsvq4-2.fna.fbcdn.net/v/t51.82787-15/728093323_18094790876614056_4541542245503233058_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fsvq4-2.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gEG_5Dpuqw9zKEYxxWZUqVx-XIweD9fHNAt8AJd-4LbDmrZ_ovqn79tKs4hESDMpmwaA71giHJDkAEcwSvf6ldl&_nc_ohc=8eMVUm0LU2wQ7kNvwGY4yAk&_nc_gid=GunmP7o32Nkr3ALD1CPkcQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEUnPXVegvIXJ4_HIxcc5oIa6GyfkMhWoPBILDfMF1AhQ&oe=6A71BCBB&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-mad1-1.cdninstagram.com/v/t51.82787-15/728093323_18094790876614056_4541542245503233058_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gGPRtPKF_8gFhqZsD4wyOSPd6aTI4-73dzp3s38BsrU8JEikQ57xsPZM4bCZCXDuTo&_nc_ohc=8eMVUm0LU2wQ7kNvwGAy81O&_nc_gid=zC4HsdNaL0sac28upE0Wog&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFs_0m4aA9_kiJdyaM4Z8r9abg9nhpC-h1zznHQE2G5qQ&oe=6A730E3B&_nc_sid=c6f216",
       "posted_at": "2026-06-20T08:22:23.000Z",
       "metrics": {
         "views": null,
@@ -532,7 +552,7 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DZyjnWdSe9b/",
-      "thumbnail": "https://scontent-nrt1-2.cdninstagram.com/v/t51.71878-15/726987899_2422808891479621_9221285776350289163_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gEyevFKt28KTy0mgqgX0vKnwr5lcJwiKy-CVe5mxMDHAJJyYwk6XfqJ-gFBtQxyXYfHI3ZJGbgtU-qX04F9dMEC&_nc_ohc=xRQn1dNeiZUQ7kNvwEwx387&_nc_gid=hFLpOO-IkY7sViC79qotkw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQE7nDmj2GM9Ve0kvP27ev33jEXyUcVZe1U9KMS_RoSaaw&oe=6A71AECD&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/726987899_2422808891479621_9221285776350289163_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gGkH6vtydbzWT9azS-iKglWkIwaXmbK7LJ1eSYCLfHyBKOFbfMy2c2AtuqnUz11G5U&_nc_ohc=xRQn1dNeiZUQ7kNvwFWENzH&_nc_gid=B-IcZZwlAlYyxLItHyPRXg&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHp5JbEpPl2wDIKAg9RqSiQxuJFCIfl1MkiE_heDaHO6Q&oe=6A73004D&_nc_sid=c6f216",
       "posted_at": "2026-06-20T01:54:05.000Z",
       "metrics": {
         "views": 7445,
@@ -548,7 +568,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZuOcGwH0Bz/",
-      "thumbnail": "https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/726439865_18094498916614056_2078491332242193478_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gH9tirUJKA4CrtkGH221t9jVl7WXdqluNcSfpdz8op6Wi2ydPvy-rc2RO89zasmA40&_nc_ohc=BxT8C_6evesQ7kNvwFTB7b4&_nc_gid=99ifsa1F2NjuHxED8re6ng&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGT179AuuPaGiNMIwUfMFZgYfSOCyPRjv9kBSDCSHbt4g&oe=6A71A75A&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-phx1-1.cdninstagram.com/v/t51.82787-15/726439865_18094498916614056_2078491332242193478_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-phx1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFcg780A4T4hdPZA4GHtz6MfL3GvRW3RNoIh3cwYjxsF3KUzUlLWIUWjlRUp3bvk54&_nc_ohc=BxT8C_6evesQ7kNvwG3l7g_&_nc_gid=vjsu9zhzhEbQOKh1Ru1ZgA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFkNYqAoZBA0wnf-qHbVlBG7v1-vZMXxjtNwyGGTIHRxw&oe=6A72F8DA&_nc_sid=c6f216",
       "posted_at": "2026-06-18T09:30:47.000Z",
       "metrics": {
         "views": null,
@@ -564,7 +584,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZrtUOsn8J1/",
-      "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/725946907_18094361960614056_7756180590206836053_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFXMoDTVGHD0QHullYMN5r_9FMSlcsey2RlOtwoi1JKVULxuEwWM_pswVD0aXd1cNCfF_c0swMY1CidE0PJsvXC&_nc_ohc=_9SADEQW4e4Q7kNvwFVfCM7&_nc_gid=MHgrLsjF9yfYWrKMDy0wmg&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHCu40s7ZkM_cXHFOrnMKiHCFqPs4oXZt_RIgz55uZImA&oe=6A71CEEB&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-hkg4-1.cdninstagram.com/v/t51.82787-15/725946907_18094361960614056_7756180590206836053_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-hkg4-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEbBCrTmn93CtRgJIA0P_UyDLi_ecg3EvYj7zwTui59H80hWER7cZfVheTbQxmS0yg&_nc_ohc=KIZ3r8nDGPoQ7kNvwEG1_Y4&_nc_gid=ECda4vVmLIF4blakFs_c-A&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQF8VKVk2JjNBnIyE5BlOTtbfPOF5oVIhb234HGFSaZIgw&oe=6A73206B&_nc_sid=c6f216",
       "posted_at": "2026-06-17T10:02:52.000Z",
       "metrics": {
         "views": null,
@@ -580,7 +600,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZmtwaKH9gN/",
-      "thumbnail": "https://instagram.fmel12-1.fna.fbcdn.net/v/t51.82787-15/725302634_18094089680614056_5006263615440488695_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fmel12-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gECKLfbY26dduTa5v4SDwLsK3RDXEKjRfSUmNK0vX1ssiwomeHA-LgXwEoYj8RBHCk&_nc_ohc=OA-x6HQOVuUQ7kNvwF3ACWb&_nc_gid=xemCxVu42kEO4PY4US8JzQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGxWpE21r43hoKVl1riauVMN7oNJ4Se7_2KlsF0ZxAtXA&oe=6A71AAD4&_nc_sid=c6f216",
+      "thumbnail": "https://instagram.fnap7-1.fna.fbcdn.net/v/t51.82787-15/725302634_18094089680614056_5006263615440488695_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fnap7-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gE5-V4huBuTpkSVuMO4BnEEimzU5hMU5DbQw0pFUR0ldb6nFHLBc0rN4eysIHf49Lw&_nc_ohc=bdhhB7UhhyEQ7kNvwHxVtPj&_nc_gid=DEmRMm8GSHSlk3Hk1qnijw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFIUn5AT3VQ5AqPHXOCGE2GnmdyVxxQz2PxOVDQYgBc0w&oe=6A72FC54&_nc_sid=c6f216",
       "posted_at": "2026-06-15T11:30:04.000Z",
       "metrics": {
         "views": null,
@@ -596,7 +616,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZmaJnZy39C/",
-      "thumbnail": "https://scontent-yyz1-1.cdninstagram.com/v/t51.82787-15/724216428_18094085657614056_852928611951747366_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHCIAi2IQ2Q9gb0nP-WwB2uyGCktuqkSAvglIYaBgZwE3cs5rYJD84xKHFQ0fvO-l0&_nc_ohc=bA8T6XYbpnwQ7kNvwE-EHGH&_nc_gid=3MoenKHMIodIN_2y6MorfQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHQZKz8m691_AUHPjRz0Uwai97P-WycI36c7Y_xds6k0A&oe=6A71A208&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/724216428_18094085657614056_852928611951747366_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gGFgSw1VlLHn2h-Yx5yjlMJHaomTv7j1-CgzfkTI3WRoAoAAVVrHeUQu6_QhN09u4U&_nc_ohc=Ge4l8FzYuf0Q7kNvwFW2ND2&_nc_gid=RynY0hPvN9Sa0F-n3bd0aA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGLPnjZ1-rYyKbQRy_4KqyVFhXRpTOyY3IUPGqvAu2pPw&oe=6A72F388&_nc_sid=c6f216",
       "posted_at": "2026-06-15T08:41:34.000Z",
       "metrics": {
         "views": null,
@@ -612,7 +632,7 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DZhuDeLSY4B/",
-      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.71878-15/722469474_1490310382872475_7062031905127326412_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gE90-9spa6rYcGA_FA6d_EpGpYc-IpAp10ReK3zVMeyfSqx0V9gBv_c_d9vZW0h9gQ&_nc_ohc=1sblVRNA2dwQ7kNvwEd2rGc&_nc_gid=wFaSSmxSqEfDPJ6wiRoqow&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGii2UC0RPauKkEKPdQ25urdZIK9zqqDC6lcqWrFiTwoQ&oe=6A71A30A&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-cdg4-2.cdninstagram.com/v/t51.71878-15/722469474_1490310382872475_7062031905127326412_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFlWrwJT9ihUtOAzVv4SyrxBJF2tZyib-vlVg5kaNcraoj3l2dgVmyCzfXWsKHR0AQ&_nc_ohc=1sblVRNA2dwQ7kNvwHEcGxX&_nc_gid=Qnt8BnF_0cWZQyBA9oz6KQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGJsKQH6omwqFAKKVIWBIYGWwSrtX4npdgpZJF7s3uKrQ&oe=6A72F48A&_nc_sid=c6f216",
       "posted_at": "2026-06-13T12:59:24.000Z",
       "metrics": {
         "views": 5354,
@@ -628,7 +648,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZelcs3jy9_/",
-      "thumbnail": "https://scontent-yyz1-1.cdninstagram.com/v/t51.82787-15/723904565_18093666896614056_1492965983982188122_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEtJ_4pUF2J7pMfiugr9AHm-Z-ntfE3uS_wNpr_BZOuUsyk6iS_lIOvGzkh8gc0w2M&_nc_ohc=zXybNM6tgpoQ7kNvwEOqfKY&_nc_gid=867hZ8xvkho2oqW_iNj_6Q&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQE8HIC44CN2R-WDSg5onxQe93vErCoWnn3dXmVnf5Zxig&oe=6A71D14C&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-ord5-3.cdninstagram.com/v/t51.82787-15/723904565_18093666896614056_1492965983982188122_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHtHDw3PYoBtkgM1mremP4Ob58qUZdU_PlXIYnSC0aj4WJm6N32C7p91nQ4ROunCic&_nc_ohc=5pk3ea0sFu4Q7kNvwEy0Lty&_nc_gid=4BXY3JSO0Fl4bCOKMRb55w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFzf-iSeslEh8uilXjCbB9jjueHtQNAB5rJMr2SapEanw&oe=6A7322CC&_nc_sid=c6f216",
       "posted_at": "2026-06-12T07:44:00.000Z",
       "metrics": {
         "views": null,
@@ -644,7 +664,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DZXOBqkH1WY/",
-      "thumbnail": "https://instagram.fymq2-1.fna.fbcdn.net/v/t51.82787-15/720050855_18093284930614056_7011385918192560701_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFUTWiPHV8VbiA14bEaf5hc7AkFmhfZLHVEzDPUpzTK5ahFqazTVwLrfBUPtFAMmt3RNeedwmYFNQI_2yXjgQbK&_nc_ohc=33uLZlExHJ0Q7kNvwE0fswD&_nc_gid=Wj3-nzsoNIaQ3QYXPqvqWg&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEvf4Rz-i5G9IPQIU0YiW7GChq3MlyCxTFVQY0PJIQNEA&oe=6A71B3A8&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/720050855_18093284930614056_7011385918192560701_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gG9RvdQROlG9uCv_4wptqLf1Ncj4nZkeouEOJ174OUoFJJj-owgaLdSdzB6v2iBvAs&_nc_ohc=33uLZlExHJ0Q7kNvwG9M6Qb&_nc_gid=rlCBEiq5lbFBHp3aiH3VIw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGXfIRZWHNlewLwiNvAQy2r4lM3bs8RMbBvNKhJ-arbCw&oe=6A730528&_nc_sid=c6f216",
       "posted_at": "2026-06-09T11:04:38.000Z",
       "metrics": {
         "views": null,
