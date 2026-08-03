@@ -201,13 +201,18 @@ def write_log_card(
         blocks.append(_h2("🔥 히트 게시물 분석"))
         for p in hot_posts:
             a = p.get("analysis", {})
-            blocks.append(_bullet(f"왜 터졌나: {a.get('why_hot', '')} — {p.get('permalink', '')}"))
+            hook = f"[{a['hook_type']}] " if a.get("hook_type") else ""
+            blocks.append(_bullet(f"{hook}왜 터졌나: {a.get('why_hot', '')} — {p.get('permalink', '')}"))
+            if a.get("pattern"):
+                blocks.append(_bullet(f"📐 재사용 패턴: {a['pattern']}"))
             if a.get("apply"):
                 blocks.append(_bullet(f"→ 자사 적용: {a['apply']}"))
 
     if weekly:
         blocks.append(_h2("🧠 주간 종합"))
         blocks.append(_para(weekly.get("headline", "")))
+        if weekly.get("hook_patterns"):
+            blocks.append(_bullet("반복 훅 공식: " + " / ".join(weekly["hook_patterns"])))
         for imp in weekly.get("implications", []):
             blocks.append(_bullet(imp))
         if weekly.get("themes"):

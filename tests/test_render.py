@@ -72,6 +72,21 @@ def test_render_empty_account():
     assert "아직 수집된 데이터가 없습니다" in html
 
 
+def test_render_hook_type_and_pattern():
+    acc = _account()
+    acc["posts"][0]["analysis"].update(hook_type="비주얼형-압도적 풍경",
+                                       pattern="[의외의 장소] + 「여기가 한국?」 프레이밍")
+    acc["posts"][1]["analysis"]["hook_type"] = "가치형-경고"
+    acc["weekly_summary"]["hook_patterns"] = ["[N가지] 실수 나열", "전후 비교"]
+    html = render_html([acc], NOW)
+    assert "비주얼형-압도적 풍경" in html      # 히트 카드 훅 뱃지
+    assert "가치형-경고" in html               # 일반 카드 훅 뱃지
+    assert "📐 패턴" in html
+    assert "여기가 한국?" in html
+    assert "반복 훅 공식" in html
+    assert "전후 비교" in html
+
+
 def test_render_brand_grouping():
     acc1 = _account()                                  # 고고다이브
     acc2 = _account(username="getbarrel", n_posts=6)

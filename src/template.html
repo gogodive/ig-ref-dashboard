@@ -38,6 +38,8 @@
   .summary li { margin-bottom:4px; }
   .summary .themes { margin-top:8px; font-size:12px; color:var(--sub); }
   .summary .when { font-size:11px; color:var(--sub); margin-top:8px; }
+  .hookchip { display:inline-block; background:#eef3fb; color:#1565c0; font-size:11px;
+              padding:2px 8px; border-radius:10px; margin:2px 4px 2px 0; }
   .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
           max-width:900px; margin:0 auto; padding:0 16px 40px; }
   .card { background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
@@ -78,6 +80,9 @@
   .ai .tag { font-weight:700; color:#1565c0; margin-right:4px; }
   .ai.hotai { background:#fff3e0; }
   .ai.hotai .tag { color:#e65100; }
+  .ai .hook { display:inline-block; background:#1565c0; color:#fff; font-size:10px;
+              font-weight:700; padding:1px 7px; border-radius:8px; margin-right:5px; }
+  .ai.hotai .hook { background:#e65100; }
   .empty { text-align:center; color:var(--sub); padding:60px 0; grid-column:1/-1; }
   .filters { max-width:900px; margin:0 auto 12px; padding:0 16px; display:flex; gap:8px; }
   .filters button { padding:6px 16px; border:1px solid var(--line); border-radius:16px;
@@ -116,10 +121,15 @@
           <span>💬 <b>{{ p.metrics.comments | num }}</b></span>
         </div>
         {% if p.analysis and p.analysis.why_hot %}
-        <div class="ai hotai"><span class="tag">🔥 왜 터졌나</span>{{ p.analysis.why_hot }}
+        <div class="ai hotai">
+          {% if p.analysis.hook_type %}<span class="hook">{{ p.analysis.hook_type }}</span>{% endif %}
+          <span class="tag">🔥 왜 터졌나</span>{{ p.analysis.why_hot }}
+          {% if p.analysis.pattern %}<br><span class="tag">📐 패턴</span>{{ p.analysis.pattern }}{% endif %}
           {% if p.analysis.apply %}<br><span class="tag">→ 적용</span>{{ p.analysis.apply }}{% endif %}</div>
         {% elif p.analysis and p.analysis.one_liner %}
-        <div class="ai"><span class="tag">AI</span>{{ p.analysis.one_liner }}</div>
+        <div class="ai">
+          {% if p.analysis.hook_type %}<span class="hook">{{ p.analysis.hook_type }}</span>{% endif %}
+          <span class="tag">AI</span>{{ p.analysis.one_liner }}</div>
         {% endif %}
       </div>
     </div>
@@ -196,6 +206,10 @@
     <div class="summarywrap"><div class="summary">
       <h3>🧠 주간 종합 분석</h3>
       <div class="headline">{{ acc.weekly_summary.headline }}</div>
+      {% if acc.weekly_summary.hook_patterns %}
+      <div class="themes" style="margin:0 0 8px">반복 훅 공식:
+        {% for h in acc.weekly_summary.hook_patterns %}<span class="hookchip">{{ h }}</span>{% endfor %}</div>
+      {% endif %}
       {% if acc.weekly_summary.implications %}
       <ul>{% for imp in acc.weekly_summary.implications %}<li>{{ imp }}</li>{% endfor %}</ul>
       {% endif %}
