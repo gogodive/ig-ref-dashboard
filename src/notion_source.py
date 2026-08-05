@@ -2,11 +2,28 @@
 
 from __future__ import annotations
 
+import logging
 import os
+import re
 
 import requests
 
 API = "https://api.notion.com/v1"
+log = logging.getLogger(__name__)
+
+
+def username_from_url(url: str) -> str:
+    """인스타 프로필 URL에서 핸들만 추출. 쿼리스트링(igsh 등)·슬래시 제거."""
+    if not url:
+        return ""
+    m = re.search(r"instagram\.com/([^/?#]+)", url)
+    if not m:
+        return ""
+    handle = m.group(1).strip().lstrip("@")
+    # /p/, /reel/ 같은 게시물 URL은 계정 핸들이 아님
+    if handle in {"p", "reel", "reels", "explore", "stories"}:
+        return ""
+    return handle
 
 
 def _headers(version: str) -> dict:
@@ -35,9 +52,14 @@ def _monitoring_filter(db_id: str, version: str) -> dict:
 
 
 def fetch_target_accounts(db_id: str, version: str) -> list[dict]:
-    """모니터링 ON 계정들. [{page_id, name, username, benchmark, category}]"""
+    """모니터링 ON 계정들. [{page_id, name, username, benchmark, category}]
+
+    username 칸이 비어 있으면 URL 속성에서 핸들을 자동 추출한다.
+    둘 다 없으면 건너뛰되 경고를 남긴다 (조용히 누락되지 않게).
+    """
     payload: dict = {"filter": _monitoring_filter(db_id, version)}
     accounts: list[dict] = []
+    skipped: list[str] = []
     while True:
         res = requests.post(f"{API}/databases/{db_id}/query",
                             headers=_headers(version), json=payload, timeout=60)
@@ -54,16 +76,34 @@ def fetch_target_accounts(db_id: str, version: str) -> list[dict]:
                         return (prop.get("select") or {}).get("name")
                 return None
 
+            def url_prop():
+                for key, prop in p.items():
+                    if prop.get("type") == "url" and prop.get("url"):
+                        return prop["url"]
+                return ""
+
+            username = _plain_text(p.get("username", {}))
+            if not username:  # username 칸이 비면 URL 에서 핸들 추출
+                username = username_from_url(url_prop())
+                if username:
+                    log.info("username 칸이 비어 URL 에서 추출: @%s", username)
+
             acc = {
                 "page_id": page["id"],
                 "name": _plain_text(p.get("계정명", {})),
-                "username": _plain_text(p.get("username", {})),
+                "username": username,
                 "benchmark": sel("벤치마크"),
                 "category": sel("카테고리"),
             }
             if acc["username"]:
                 accounts.append(acc)
+            else:
+                skipped.append(acc["name"] or page["id"][:8])
         if not body.get("has_more"):
             break
         payload["start_cursor"] = body["next_cursor"]
+
+    if skipped:
+        log.warning("username·URL 이 모두 비어 건너뛴 행 %d개: %s",
+                    len(skipped), ", ".join(skipped))
     return accounts
