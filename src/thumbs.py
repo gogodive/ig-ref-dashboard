@@ -14,6 +14,7 @@ from __future__ import annotations
 import io
 import logging
 import re
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -51,23 +52,30 @@ def save_one(url: str, dest: Path) -> bool:
         return False
 
 
-def ensure(posts: list[dict], username: str, root: Path) -> tuple[int, int]:
+def ensure(posts: list[dict], username: str, root: Path,
+           workers: int = 8) -> tuple[int, int]:
     """게시물 목록의 썸네일을 확보한다. (새로 저장한 수, 실패 수)
 
     각 post 에 thumb_local(상대경로) 를 채운다. 파일이 없고 내려받기도
     실패하면 thumb_local 은 비워 둔다 → 렌더러가 원본 URL 로 폴백한다.
+    받아야 할 것이 여러 장이면 병렬로 내려받는다 (병목이 네트워크라서).
     """
-    saved = failed = 0
+    todo: list[tuple[dict, str]] = []
     for p in posts:
         rel = rel_path(username, p.get("post_id") or "")
-        dest = root / rel
-        if dest.exists():
+        if (root / rel).exists():
             p["thumb_local"] = rel
-            continue
-        url = p.get("thumbnail")
-        if not url:
-            continue
-        if save_one(url, dest):
+        elif p.get("thumbnail"):
+            todo.append((p, rel))
+    if not todo:
+        return 0, 0
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        results = list(ex.map(lambda t: save_one(t[0]["thumbnail"], root / t[1]), todo))
+
+    saved = failed = 0
+    for (p, rel), ok in zip(todo, results):
+        if ok:
             p["thumb_local"] = rel
             saved += 1
         else:
