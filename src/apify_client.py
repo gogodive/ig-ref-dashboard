@@ -71,6 +71,9 @@ def _map_post(m: dict) -> dict:
         "product": "REELS" if is_reel else "FEED",
         "permalink": m.get("url"),
         "thumbnail": m.get("displayUrl"),
+        # 심층분석용 — CDN 링크는 만료되므로 분석 시점에 재수집해야 한다
+        "video_url": m.get("videoUrl"),
+        "duration": m.get("videoDuration"),
         "posted_at": m.get("timestamp"),
         "metrics": {
             # 조회수 필드명이 actor 버전/게시물 유형에 따라 달라 폭넓게 폴백

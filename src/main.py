@@ -19,6 +19,7 @@ from pathlib import Path
 import yaml
 
 from src import analysis as az
+from src import hitqueue
 from src.apify_client import fetch_account, fetch_followers
 from src.merge import hot_post_ids, merge_posts
 from src.notion_source import fetch_target_accounts
@@ -195,6 +196,22 @@ def main() -> int:
                 for a in all_targets]
     for a in accounts:
         a.setdefault("posts", [])
+
+    # 심층분석 큐 갱신 (3배 이상 · 최근 6개월 릴스)
+    queue_path = ROOT / "data" / "hit_queue.json"
+    try:
+        existing = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
+    except json.JSONDecodeError:
+        log.warning("hit_queue.json 손상 — 새로 만듭니다")
+        existing = []
+    targets = []
+    for acc in accounts:
+        for post in hitqueue.deep_targets(acc, now, ratio=cfg["deep_analysis"]["ratio"],
+                                          recent_days=cfg["deep_analysis"]["recent_days"]):
+            targets.append(hitqueue.entry_from_hit(post, acc, now.isoformat()))
+    queue, added, removed = hitqueue.sync(existing, targets, now.isoformat())
+    queue_path.write_text(json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8")
+    log.info("심층분석 큐: %s (신규 %d · 제외 %d)", hitqueue.summary(queue), len(added), len(removed))
 
     site = ROOT / "site"
     site.mkdir(exist_ok=True)

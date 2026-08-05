@@ -8,6 +8,13 @@ apify:
 display_limit: 180           # 대시보드에 계정당 최대 표시 게시물 수
 freeze_days: 30              # 게시 후 이 일수가 지나면 지표 동결(확정)
 hot_ratio: 2.0               # 조회수가 계정 중앙값의 이 배수 이상이면 🔥
+
+# 릴스 심층분석(프레임 단위 리포트) 대상 기준 — 맥의 analyze-reference-reel 스킬이 소비
+deep_analysis:
+  ratio: 3.0                 # 계정 릴스 중앙값 대비 배수
+  recent_days: 180           # 최근 6개월 이내 게시물만
+  notion_db_id: cc87460d41e34515a70084e1672f67b6   # 🎯 성과 좋은 릴스 분석
+
 weekly_summary_weekday: 0    # 주간 종합 요일 (0=월요일)
 
 claude:
