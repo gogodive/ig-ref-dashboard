@@ -12,6 +12,7 @@ import argparse
 import json
 import logging
 import os
+import shutil
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -19,7 +20,7 @@ from pathlib import Path
 import yaml
 
 from src import analysis as az
-from src import hitqueue
+from src import hitqueue, thumbs
 from src.apify_client import fetch_account, fetch_followers
 from src.merge import hot_post_ids, merge_posts
 from src.notion_source import fetch_target_accounts
@@ -126,6 +127,12 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
             if weekly:
                 account["weekly_summary"] = weekly
 
+    # 3.5) 썸네일 로컬 보관 (CDN 링크 만료 대비 — 처음 본 시점에 받아둔다)
+    saved, failed = thumbs.ensure(merged, username, ROOT)
+    if saved or failed:
+        log.info("  썸네일 신규 %d장 저장%s", saved,
+                 f" (만료·실패 {failed}장)" if failed else "")
+
     # 4) 저장
     data_dir.mkdir(exist_ok=True)
     (data_dir / f"{username}.json").write_text(
@@ -217,6 +224,16 @@ def main() -> int:
     site.mkdir(exist_ok=True)
     (site / "index.html").write_text(
         render_html(accounts, now, hot_ratio=cfg["hot_ratio"]), encoding="utf-8")
+
+    # 보관된 썸네일을 배포 폴더로 복사 (site/ 는 gitignore 라 매번 새로 만든다)
+    src_thumbs = ROOT / "thumbs"
+    if src_thumbs.exists():
+        dst = site / "thumbs"
+        if dst.exists():
+            shutil.rmtree(dst)
+        shutil.copytree(src_thumbs, dst)
+        n = sum(1 for _ in dst.rglob("*.webp"))
+        log.info("썸네일 %d장 배포 폴더로 복사", n)
 
     # 허브 페이지 최상단 실행 상태 콜아웃 갱신
     if not args.dry_run and cfg["notion"].get("hub_page_id"):

@@ -106,7 +106,7 @@
         {% if p.frozen %}<span class="badge frozen">확정</span>
         {% else %}<span class="badge live">집계중 D+{{ p._days }}</span>{% endif %}
         {% if p._hot %}<span class="badge hot">{{ p._hot }}</span>{% endif %}
-        {% if p.thumbnail %}<img src="{{ p.thumbnail | thumb }}" alt="" loading="lazy"
+        {% if p.thumb_local or p.thumbnail %}<img src="{{ p | thumb }}" alt="" loading="lazy"
              referrerpolicy="no-referrer"
              onerror="this.outerHTML='&lt;div class=noimg&gt;이미지 만료&lt;/div&gt;'">
         {% else %}<div class="noimg">이미지 없음</div>{% endif %}

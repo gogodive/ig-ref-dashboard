@@ -36,10 +36,19 @@ def _fmt_num(v) -> str:
     return f"{v:,}"
 
 
-def _thumb_proxy(url) -> str:
-    """인스타 CDN 은 릴스 등 일부 이미지에 CORP: same-origin 을 걸어
-    외부 사이트 삽입을 차단하므로, weserv 이미지 프록시를 경유시킨다."""
-    if not url or isinstance(url, Undefined):
+def _thumb_src(post) -> str:
+    """썸네일 주소. 로컬 보관본이 있으면 그걸 쓰고, 없으면 원본을 프록시 경유.
+
+    인스타 CDN 은 ①일부 이미지에 CORP: same-origin 을 걸어 외부 삽입을 막고
+    ②주소에 만료 서명이 붙어 몇 달 뒤 죽는다. 로컬 보관본이 둘 다 해결한다.
+    """
+    if isinstance(post, Undefined) or not post:
+        return ""
+    local = post.get("thumb_local")
+    if local:
+        return str(local)
+    url = post.get("thumbnail")
+    if not url:
         return ""
     return "https://images.weserv.nl/?url=" + urllib.parse.quote(str(url), safe="")
 
@@ -123,7 +132,7 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
     )
     env.filters["num"] = _fmt_num
     env.filters["date"] = _fmt_date
-    env.filters["thumb"] = _thumb_proxy
+    env.filters["thumb"] = _thumb_src
     tpl = env.get_template("template.html")
     gen_date = generated_at.astimezone(KST).date()
 
