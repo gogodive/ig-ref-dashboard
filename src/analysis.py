@@ -68,7 +68,7 @@ def _post_line(p: dict) -> str:
     fmt = "릴스" if p.get("product") == "REELS" else {
         "CAROUSEL_ALBUM": "캐러셀", "IMAGE": "이미지", "VIDEO": "동영상"
     }.get(p.get("media_type"), "게시물")
-    cap = (p.get("caption") or "").replace("\n", " ")[:300]
+    cap = (p.get("caption") or "").replace("\n", " ")[:800]
     return (f"[{fmt}] {p.get('posted_at', '')} | 좋아요 {m.get('likes')} · "
             f"댓글 {m.get('comments')}{views}\n캡션: {cap or '(없음)'}")
 

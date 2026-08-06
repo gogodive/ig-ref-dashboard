@@ -74,7 +74,7 @@ def entry_from_hit(post: dict, account: dict, queued_at: str) -> dict:
         # 공동 게시면 조회수에 남의 오디언스가 섞여 배수를 액면대로 읽으면 안 된다
         "owner": post.get("owner"),
         "coauthors": post.get("coauthors") or [],
-        "caption": (post.get("caption") or "")[:300],
+        "caption": post.get("caption") or "",   # 절단 금지 — CTA 는 캡션 끝에 있다
         "posted_at": post.get("posted_at"),
         "status": PENDING,
         "notion_page_id": None,

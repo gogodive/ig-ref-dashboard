@@ -66,7 +66,9 @@ def _map_post(m: dict) -> dict:
         mtype = "IMAGE"
     return {
         "post_id": m.get("shortCode") or m.get("id") or m.get("url"),
-        "caption": (m.get("caption") or "")[:300],
+        # 절단 금지 — 교환 조건("댓글에 OO 남겨주세요") 같은 CTA 는 캡션 끝에 붙는다.
+        # 300자에서 자르면 그 장치가 통째로 사라져 분석이 틀린다(인스타 상한 2,200자).
+        "caption": m.get("caption") or "",
         "media_type": mtype,
         "product": "REELS" if is_reel else "FEED",
         "permalink": m.get("url"),
