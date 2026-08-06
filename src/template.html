@@ -88,6 +88,9 @@
   .filters button { padding:6px 16px; border:1px solid var(--line); border-radius:16px;
                     background:#fff; font-size:13px; cursor:pointer; color:var(--sub); }
   .filters button.active { background:#262626; color:#fff; border-color:#262626; font-weight:600; }
+  @keyframes flash { 0%,100%{ box-shadow:0 0 0 0 rgba(0,149,246,0); }
+                     20%,60%{ box-shadow:0 0 0 6px rgba(0,149,246,.45); } }
+  .card.flash { animation: flash 1.6s ease-out; }
   .filterempty { display:none; text-align:center; color:var(--sub); padding:40px 0; grid-column:1/-1; }
   .stale { background:#fff8e1; border:1px solid #ffe082; border-radius:6px;
            max-width:868px; margin:0 auto 12px; padding:8px 12px; font-size:12px; color:#8d6e00; }
@@ -100,8 +103,9 @@
 </head>
 <body>
 
-{% macro post_card(p, show_by=false) -%}
-    <div class="card{% if p._hot %} hot{% endif %}" data-fmt="{{ p._fmt }}">
+{% macro post_card(p, show_by=false, key="") -%}
+    <div class="card{% if p._hot %} hot{% endif %}" data-fmt="{{ p._fmt }}"
+         id="card-{{ key }}-{{ p._uid }}">
       <a class="thumb" href="{{ p.permalink }}" target="_blank" rel="noopener">
         {% if p.frozen %}<span class="badge frozen">확정</span>
         {% else %}<span class="badge live">집계중 D+{{ p._days }}</span>{% endif %}
@@ -139,9 +143,9 @@
   <div class="chartwrap">
     <div class="chartlegend">
       <span><i class="dot" style="background:#2a78d6"></i>릴스</span>
-      <span><i class="dot big" style="background:#eb6834"></i>히트 (계정 중앙값 2배↑)</span>
+      <span><i class="dot big" style="background:#eb6834"></i>히트 (계정 중앙값 {{ hot_ratio_label }}배↑)</span>
       <span><i class="dash"></i>중앙값</span>
-      <span class="hint">릴스 조회수 기준 · y축: 조회수(로그) · x축: 게시일</span>
+      <span class="hint">릴스 조회수 기준 · <b>점을 클릭하면 해당 게시물로 이동</b></span>
     </div>
     <div class="chartbox"><canvas id="chart-{{ key }}"></canvas></div>
   </div>
@@ -187,7 +191,7 @@
     {% if g._has_chart %}{{ chart_block(gi ~ "-all") }}{% endif %}
     {{ filter_chips() }}
     <div class="grid">
-      {% for p in g.merged %}{{ post_card(p, show_by=true) }}
+      {% for p in g.merged %}{{ post_card(p, show_by=true, key=gi ~ "-all") }}
       {% else %}<div class="empty">아직 수집된 데이터가 없습니다</div>{% endfor %}
       {% if g.merged %}<div class="filterempty">이 필터에 해당하는 게시물이 없습니다</div>{% endif %}
     </div>
@@ -223,7 +227,7 @@
     {% if acc._has_chart %}{{ chart_block(gi ~ "-" ~ ai) }}{% endif %}
     {{ filter_chips() }}
     <div class="grid">
-      {% for p in acc._cards %}{{ post_card(p) }}
+      {% for p in acc._cards %}{{ post_card(p, key=gi ~ "-" ~ ai) }}
       {% else %}<div class="empty">아직 수집된 데이터가 없습니다</div>{% endfor %}
       {% if acc._cards %}<div class="filterempty">이 필터에 해당하는 게시물이 없습니다</div>{% endif %}
     </div>
@@ -250,7 +254,7 @@ function initChart(key) {
   if (!el) return;
   madeCharts[key] = true;
   const BLUE = "#2a78d6", ORANGE = "#eb6834", GRID = "#e1e0d9", MUTED = "#898781";
-  const pts = cd.points.map(r => ({x: new Date(r[0]).getTime(), y: r[1], hot: r[2] === 1, d: r[0], c: r[3]}));
+  const pts = cd.points.map(r => ({x: new Date(r[0]).getTime(), y: r[1], hot: r[2] === 1, d: r[0], c: r[3], pid: r[4]}));
   const median = cd.median;
   const vmin = Math.min(...pts.map(p => p.y)), vmax = Math.max(...pts.map(p => p.y));
   const medianLine = {id: "ml" + key, afterDatasetsDraw(ch) {
@@ -269,13 +273,21 @@ function initChart(key) {
     ]},
     options: {
       responsive: true, maintainAspectRatio: false, animation: false,
+      onHover: (e, els) => { e.native.target.style.cursor = els.length ? "pointer" : "default"; },
+      onClick: (e, els, ch) => {
+        if (!els.length) return;
+        const el = els[0];
+        const pid = ch.data.datasets[el.datasetIndex].data[el.index].pid;
+        if (pid) jumpToCard(key, pid);
+      },
       plugins: {
         legend: {display: false},
         tooltip: {displayColors: false, callbacks: {
           title: items => items[0].raw.d,
           label: it => ["조회수 " + it.raw.y.toLocaleString() + "회" +
                         (it.raw.hot ? " (계정 중앙값 대비 히트)" : ""),
-                        it.raw.c ? it.raw.c + "…" : ""]
+                        it.raw.c ? it.raw.c + "…" : "",
+                        "클릭하면 게시물로 이동"]
         }}
       },
       scales: {
@@ -325,6 +337,21 @@ document.querySelectorAll(".subnav").forEach(sn => {
     });
   });
 });
+
+// 차트 점 → 해당 게시물 카드로 이동
+function jumpToCard(key, pid) {
+  const card = document.getElementById("card-" + key + "-" + pid);
+  if (!card) return;
+  if (card.style.display === "none") {          // 필터에 가려져 있으면 '전체'로
+    const sub = card.closest(".subsec");
+    const allBtn = sub && sub.querySelector('.filters button[data-fmt="all"]');
+    if (allBtn) allBtn.click();
+  }
+  card.scrollIntoView({behavior: "smooth", block: "center"});
+  card.classList.remove("flash");
+  void card.offsetWidth;                        // 애니메이션 재시작
+  card.classList.add("flash");
+}
 
 // 포맷 필터 (서브섹션 단위, 기본: 릴스)
 function applyFilter(subsec, fmt) {

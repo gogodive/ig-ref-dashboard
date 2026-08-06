@@ -15,8 +15,8 @@ from src.merge import is_reel
 KST = timezone(timedelta(hours=9))
 _TEMPLATE_DIR = Path(__file__).parent
 
-HOT_RATIO = 2.0
-HOT_RATIO_LABELED = 3.0
+HOT_RATIO = 3.0        # 🔥 기준 (config.hot_ratio 로 덮어씀)
+HOT_RATIO_LABELED = 5.0  # 이 배수 이상이면 숫자까지 표기 (예: 🔥 8.2x)
 HOT_MIN_POSTS = 5
 
 # 벤치마크 브랜드별 뱃지 색
@@ -90,7 +90,7 @@ def _chart_payload(posts: list[dict]) -> dict | None:
     """릴스 조회수 산점도 데이터."""
     pts = [
         [_fmt_date(p["posted_at"]), p["metrics"]["views"],
-         1 if p.get("_hot") else 0, (p.get("caption") or "")[:30]]
+         1 if p.get("_hot") else 0, (p.get("caption") or "")[:30], p.get("_uid", "")]
         for p in posts
         if is_reel(p)
         and isinstance(p.get("metrics", {}).get("views"), int) and p["metrics"]["views"] > 0
@@ -154,6 +154,8 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
         for p in acc.get("posts", []):
             p["_days"] = (generated_at - _parse_ts(p["posted_at"])).days
             p["_fmt"] = "reels" if is_reel(p) else "feed"
+            # 협업 릴스는 두 계정에 같은 post_id 로 존재 → 계정명을 붙여 유일하게
+            p["_uid"] = f"{acc['username']}-{p['post_id']}"
         _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
         # 카드로 그릴 대상만 추린다 — 전량(계정당 180개)을 그리면 HTML 이 8MB 를 넘어
         # Pages 배포가 10분 제한을 초과한다. 중앙값·차트는 전량으로 계산하되
@@ -182,5 +184,6 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
     return tpl.render(
         groups=groups,
         chart_json=chart_json,
+        hot_ratio_label=f"{hot_ratio:g}",
         generated_label=generated_at.astimezone(KST).strftime("%Y-%m-%d %H:%M"),
     )

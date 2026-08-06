@@ -12,7 +12,9 @@ render_limit: 60             # 대시보드에 그릴 계정당 카드 수 (히�
 # Pages 아티팩트에 5,800여 파일을 넣으면 배포가 10분 제한(상향 불가)을 넘겨 실패한다.
 thumb_base_url: "https://cdn.jsdelivr.net/gh/gogodive/ig-ref-dashboard@main/"
 freeze_days: 30              # 게시 후 이 일수가 지나면 지표 동결(확정)
-hot_ratio: 2.0               # 조회수가 계정 중앙값의 이 배수 이상이면 🔥
+# 🔥 기준 = 심층분석 대상 기준(deep_analysis.ratio)과 같게 맞춘다.
+# 화면에서 빨간 것 = 심층 리포트가 쌓이는 것, 이 대응이 깨지면 헷갈린다.
+hot_ratio: 3.0               # 조회수가 계정 릴스 중앙값의 이 배수 이상이면 🔥
 
 # 릴스 심층분석(프레임 단위 리포트) 대상 기준 — 맥의 analyze-reference-reel 스킬이 소비
 deep_analysis:
