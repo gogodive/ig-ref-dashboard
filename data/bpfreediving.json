@@ -64,7 +64,7 @@
       "posted_at": "2026-07-22T06:39:30.000Z",
       "metrics": {
         "views": 12351,
-        "likes": -1,
+        "likes": null,
         "comments": 3
       },
       "frozen": false,
@@ -112,7 +112,7 @@
       "posted_at": "2026-06-28T15:56:58.000Z",
       "metrics": {
         "views": 1251,
-        "likes": -1,
+        "likes": null,
         "comments": 8
       },
       "frozen": true,

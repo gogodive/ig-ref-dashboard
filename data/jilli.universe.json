@@ -126,7 +126,7 @@
       "duration": null,
       "posted_at": "2026-02-18T05:47:31.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -199,7 +199,7 @@
       "duration": null,
       "posted_at": "2025-07-04T10:06:11.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 14
       },
       "frozen": true,
@@ -272,7 +272,7 @@
       "duration": null,
       "posted_at": "2025-06-10T07:10:13.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 4
       },
       "frozen": true,
@@ -489,7 +489,7 @@
       "duration": null,
       "posted_at": "2025-04-06T12:22:07.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 4
       },
       "frozen": true,
@@ -686,7 +686,7 @@
       "duration": null,
       "posted_at": "2025-02-17T11:02:43.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 14
       },
       "frozen": true,
@@ -921,7 +921,7 @@
       "duration": null,
       "posted_at": "2024-11-19T08:43:37.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 10
       },
       "frozen": true,
@@ -993,7 +993,7 @@
       "duration": null,
       "posted_at": "2024-11-14T02:22:42.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 6
       },
       "frozen": true,
@@ -1167,7 +1167,7 @@
       "duration": null,
       "posted_at": "2024-10-31T07:15:16.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 9
       },
       "frozen": true,
@@ -1240,7 +1240,7 @@
       "duration": null,
       "posted_at": "2024-10-05T09:01:04.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 11
       },
       "frozen": true,
@@ -2992,7 +2992,7 @@
       "duration": null,
       "posted_at": "2023-08-13T11:12:00.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 6
       },
       "frozen": true,

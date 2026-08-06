@@ -38,7 +38,7 @@
       "duration": null,
       "posted_at": "2026-07-29T04:37:53.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -60,7 +60,7 @@
       "duration": null,
       "posted_at": "2026-07-24T04:33:50.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -83,7 +83,7 @@
       "posted_at": "2026-07-22T03:14:17.000Z",
       "metrics": {
         "views": 1650,
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": false,
@@ -106,7 +106,7 @@
       "posted_at": "2026-07-16T02:19:58.000Z",
       "metrics": {
         "views": 1018,
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -124,7 +124,7 @@
       "duration": null,
       "posted_at": "2026-07-10T03:31:04.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": false,
@@ -142,7 +142,7 @@
       "duration": null,
       "posted_at": "2026-07-08T02:08:15.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -161,7 +161,7 @@
       "posted_at": "2026-06-30T03:16:49.000Z",
       "metrics": {
         "views": 1435,
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -179,7 +179,7 @@
       "duration": null,
       "posted_at": "2026-06-26T02:13:47.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -197,7 +197,7 @@
       "duration": null,
       "posted_at": "2026-06-14T10:00:02.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -215,7 +215,7 @@
       "duration": null,
       "posted_at": "2026-06-11T02:33:05.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -233,7 +233,7 @@
       "duration": null,
       "posted_at": "2026-06-09T02:58:06.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -251,7 +251,7 @@
       "duration": null,
       "posted_at": "2026-06-04T01:09:05.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -269,7 +269,7 @@
       "duration": null,
       "posted_at": "2026-05-27T01:38:16.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -287,7 +287,7 @@
       "duration": null,
       "posted_at": "2026-05-20T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -305,7 +305,7 @@
       "duration": null,
       "posted_at": "2026-05-15T01:11:31.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -323,7 +323,7 @@
       "duration": null,
       "posted_at": "2026-05-08T01:21:38.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -342,7 +342,7 @@
       "posted_at": "2026-04-24T02:37:11.000Z",
       "metrics": {
         "views": 3878,
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -360,7 +360,7 @@
       "duration": null,
       "posted_at": "2026-04-23T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -378,7 +378,7 @@
       "duration": null,
       "posted_at": "2026-04-21T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 5
       },
       "frozen": true,
@@ -396,7 +396,7 @@
       "duration": null,
       "posted_at": "2026-04-17T03:30:25.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -414,7 +414,7 @@
       "duration": null,
       "posted_at": "2026-04-15T02:18:25.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -432,7 +432,7 @@
       "duration": null,
       "posted_at": "2026-04-14T01:20:59.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 9
       },
       "frozen": true,
@@ -450,7 +450,7 @@
       "duration": null,
       "posted_at": "2026-04-10T02:36:40.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -468,7 +468,7 @@
       "duration": null,
       "posted_at": "2026-04-08T01:19:02.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -486,7 +486,7 @@
       "duration": null,
       "posted_at": "2026-04-03T04:39:14.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -504,7 +504,7 @@
       "duration": null,
       "posted_at": "2026-03-31T01:42:11.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -522,7 +522,7 @@
       "duration": null,
       "posted_at": "2026-03-24T02:02:12.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -541,7 +541,7 @@
       "posted_at": "2026-03-20T02:30:00.000Z",
       "metrics": {
         "views": 2850,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -559,7 +559,7 @@
       "duration": null,
       "posted_at": "2026-03-18T05:00:18.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -577,7 +577,7 @@
       "duration": null,
       "posted_at": "2026-03-17T03:40:57.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -595,7 +595,7 @@
       "duration": null,
       "posted_at": "2026-03-13T03:01:57.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -613,7 +613,7 @@
       "duration": null,
       "posted_at": "2026-03-12T04:45:48.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -631,7 +631,7 @@
       "duration": null,
       "posted_at": "2026-03-10T01:54:55.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 6
       },
       "frozen": true,
@@ -649,7 +649,7 @@
       "duration": null,
       "posted_at": "2026-03-06T04:44:17.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -667,7 +667,7 @@
       "duration": null,
       "posted_at": "2026-02-27T01:41:30.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -685,7 +685,7 @@
       "duration": null,
       "posted_at": "2026-02-25T02:39:32.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -704,7 +704,7 @@
       "posted_at": "2026-02-20T02:43:13.000Z",
       "metrics": {
         "views": 7139,
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -727,7 +727,7 @@
       "duration": null,
       "posted_at": "2026-02-13T01:36:43.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -763,7 +763,7 @@
       "duration": null,
       "posted_at": "2026-02-09T01:52:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -781,7 +781,7 @@
       "duration": null,
       "posted_at": "2026-02-06T02:35:34.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -799,7 +799,7 @@
       "duration": null,
       "posted_at": "2026-02-04T02:39:42.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -817,7 +817,7 @@
       "duration": null,
       "posted_at": "2026-01-29T06:41:01.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -835,7 +835,7 @@
       "duration": null,
       "posted_at": "2026-01-27T02:25:55.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -853,7 +853,7 @@
       "duration": null,
       "posted_at": "2026-01-23T01:30:08.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -871,7 +871,7 @@
       "duration": null,
       "posted_at": "2026-01-16T02:50:54.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -889,7 +889,7 @@
       "duration": null,
       "posted_at": "2026-01-12T03:17:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -907,7 +907,7 @@
       "duration": null,
       "posted_at": "2025-12-19T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -925,7 +925,7 @@
       "duration": null,
       "posted_at": "2025-12-11T05:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -943,7 +943,7 @@
       "duration": null,
       "posted_at": "2025-12-09T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -961,7 +961,7 @@
       "duration": null,
       "posted_at": "2025-12-04T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -979,7 +979,7 @@
       "duration": null,
       "posted_at": "2025-12-01T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -997,7 +997,7 @@
       "duration": null,
       "posted_at": "2025-11-28T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1033,7 +1033,7 @@
       "duration": null,
       "posted_at": "2025-11-21T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1051,7 +1051,7 @@
       "duration": null,
       "posted_at": "2025-11-20T02:04:54.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1069,7 +1069,7 @@
       "duration": null,
       "posted_at": "2025-11-18T04:41:20.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1087,7 +1087,7 @@
       "duration": null,
       "posted_at": "2025-11-16T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1105,7 +1105,7 @@
       "duration": null,
       "posted_at": "2025-11-07T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1123,7 +1123,7 @@
       "duration": null,
       "posted_at": "2025-11-05T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 16
       },
       "frozen": true,
@@ -1141,7 +1141,7 @@
       "duration": null,
       "posted_at": "2025-11-03T08:12:11.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1177,7 +1177,7 @@
       "duration": null,
       "posted_at": "2025-10-31T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1195,7 +1195,7 @@
       "duration": null,
       "posted_at": "2025-10-24T01:48:14.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1213,7 +1213,7 @@
       "duration": null,
       "posted_at": "2025-10-21T09:49:35.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1249,7 +1249,7 @@
       "duration": null,
       "posted_at": "2025-10-02T02:10:42.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1267,7 +1267,7 @@
       "duration": null,
       "posted_at": "2025-10-01T00:44:33.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1285,7 +1285,7 @@
       "duration": null,
       "posted_at": "2025-09-30T05:10:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1303,7 +1303,7 @@
       "duration": null,
       "posted_at": "2025-09-26T04:41:03.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1322,7 +1322,7 @@
       "posted_at": "2025-09-25T09:33:31.000Z",
       "metrics": {
         "views": 2228,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1340,7 +1340,7 @@
       "duration": null,
       "posted_at": "2025-09-23T04:47:57.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1358,7 +1358,7 @@
       "duration": null,
       "posted_at": "2025-09-19T07:00:30.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1376,7 +1376,7 @@
       "duration": null,
       "posted_at": "2025-09-16T09:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1394,7 +1394,7 @@
       "duration": null,
       "posted_at": "2025-09-11T09:31:45.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1412,7 +1412,7 @@
       "duration": null,
       "posted_at": "2025-09-08T04:59:15.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1431,7 +1431,7 @@
       "posted_at": "2025-09-05T04:46:24.000Z",
       "metrics": {
         "views": 3487,
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1450,7 +1450,7 @@
       "posted_at": "2025-09-04T02:30:00.000Z",
       "metrics": {
         "views": 363,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1468,7 +1468,7 @@
       "duration": null,
       "posted_at": "2025-09-02T09:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1486,7 +1486,7 @@
       "duration": null,
       "posted_at": "2025-09-01T06:07:44.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1505,7 +1505,7 @@
       "posted_at": "2025-09-01T03:26:18.000Z",
       "metrics": {
         "views": 19743,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1528,7 +1528,7 @@
       "duration": null,
       "posted_at": "2025-08-29T06:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1546,7 +1546,7 @@
       "duration": null,
       "posted_at": "2025-08-26T06:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1564,7 +1564,7 @@
       "duration": null,
       "posted_at": "2025-08-20T01:26:01.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1582,7 +1582,7 @@
       "duration": null,
       "posted_at": "2025-08-20T01:25:27.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1600,7 +1600,7 @@
       "duration": null,
       "posted_at": "2025-08-20T01:24:52.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1618,7 +1618,7 @@
       "duration": null,
       "posted_at": "2025-08-13T08:53:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1636,7 +1636,7 @@
       "duration": null,
       "posted_at": "2025-08-11T10:09:15.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1654,7 +1654,7 @@
       "duration": null,
       "posted_at": "2025-08-08T11:11:51.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1672,7 +1672,7 @@
       "duration": null,
       "posted_at": "2025-08-06T05:09:40.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1690,7 +1690,7 @@
       "duration": null,
       "posted_at": "2025-08-04T09:32:24.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1708,7 +1708,7 @@
       "duration": null,
       "posted_at": "2025-08-01T01:16:23.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1726,7 +1726,7 @@
       "duration": null,
       "posted_at": "2025-07-29T09:04:12.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1744,7 +1744,7 @@
       "duration": null,
       "posted_at": "2025-07-25T04:36:58.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1762,7 +1762,7 @@
       "duration": null,
       "posted_at": "2025-07-18T06:20:05.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1780,7 +1780,7 @@
       "duration": null,
       "posted_at": "2025-07-15T00:56:15.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1799,7 +1799,7 @@
       "posted_at": "2025-07-09T08:01:46.000Z",
       "metrics": {
         "views": 2059,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1817,7 +1817,7 @@
       "duration": null,
       "posted_at": "2025-07-07T05:11:14.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1835,7 +1835,7 @@
       "duration": null,
       "posted_at": "2025-07-04T04:58:44.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1853,7 +1853,7 @@
       "duration": null,
       "posted_at": "2025-07-02T09:31:28.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1871,7 +1871,7 @@
       "duration": null,
       "posted_at": "2025-06-26T05:52:01.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1889,7 +1889,7 @@
       "duration": null,
       "posted_at": "2025-06-15T06:16:41.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1907,7 +1907,7 @@
       "duration": null,
       "posted_at": "2025-06-12T08:50:18.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1925,7 +1925,7 @@
       "duration": null,
       "posted_at": "2025-06-06T01:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1943,7 +1943,7 @@
       "duration": null,
       "posted_at": "2025-06-04T06:53:37.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1961,7 +1961,7 @@
       "duration": null,
       "posted_at": "2025-05-30T04:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1979,7 +1979,7 @@
       "duration": null,
       "posted_at": "2025-05-26T09:13:33.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2016,7 +2016,7 @@
       "posted_at": "2025-05-20T02:03:25.000Z",
       "metrics": {
         "views": 1175,
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2167,7 +2167,7 @@
       "posted_at": "2025-04-30T09:12:14.000Z",
       "metrics": {
         "views": 1014,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2185,7 +2185,7 @@
       "duration": null,
       "posted_at": "2025-04-28T06:44:07.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2203,7 +2203,7 @@
       "duration": null,
       "posted_at": "2025-04-25T08:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2245,7 +2245,7 @@
       "duration": null,
       "posted_at": "2025-04-23T06:33:23.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2263,7 +2263,7 @@
       "duration": null,
       "posted_at": "2025-04-21T09:13:16.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2281,7 +2281,7 @@
       "duration": null,
       "posted_at": "2025-04-18T07:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2299,7 +2299,7 @@
       "duration": null,
       "posted_at": "2025-04-16T07:12:29.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2317,7 +2317,7 @@
       "duration": null,
       "posted_at": "2025-04-15T07:56:49.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2335,7 +2335,7 @@
       "duration": null,
       "posted_at": "2025-04-14T01:42:58.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2354,7 +2354,7 @@
       "posted_at": "2025-04-11T02:09:55.000Z",
       "metrics": {
         "views": 5592,
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2377,7 +2377,7 @@
       "duration": null,
       "posted_at": "2025-04-09T04:42:21.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2395,7 +2395,7 @@
       "duration": null,
       "posted_at": "2025-04-09T00:20:06.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2449,7 +2449,7 @@
       "duration": null,
       "posted_at": "2025-04-01T08:33:30.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2485,7 +2485,7 @@
       "duration": null,
       "posted_at": "2025-03-27T05:03:48.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 16
       },
       "frozen": true,
@@ -2503,7 +2503,7 @@
       "duration": null,
       "posted_at": "2025-03-26T09:22:12.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2521,7 +2521,7 @@
       "duration": null,
       "posted_at": "2025-03-26T05:04:08.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2539,7 +2539,7 @@
       "duration": null,
       "posted_at": "2025-03-25T03:27:13.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2557,7 +2557,7 @@
       "duration": null,
       "posted_at": "2025-03-24T08:08:52.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2599,7 +2599,7 @@
       "duration": null,
       "posted_at": "2025-03-21T08:31:26.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -2617,7 +2617,7 @@
       "duration": null,
       "posted_at": "2025-03-20T04:46:43.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2635,7 +2635,7 @@
       "duration": null,
       "posted_at": "2025-03-14T02:14:46.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2653,7 +2653,7 @@
       "duration": null,
       "posted_at": "2025-03-12T09:57:52.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2671,7 +2671,7 @@
       "duration": null,
       "posted_at": "2025-03-10T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2689,7 +2689,7 @@
       "duration": null,
       "posted_at": "2025-03-07T08:49:55.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2707,7 +2707,7 @@
       "duration": null,
       "posted_at": "2025-03-06T09:38:14.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2725,7 +2725,7 @@
       "duration": null,
       "posted_at": "2025-03-03T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2743,7 +2743,7 @@
       "duration": null,
       "posted_at": "2025-02-20T07:42:30.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2762,7 +2762,7 @@
       "posted_at": "2025-02-17T09:55:53.000Z",
       "metrics": {
         "views": 1182,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2781,7 +2781,7 @@
       "posted_at": "2025-02-14T02:00:00.000Z",
       "metrics": {
         "views": 2062,
-        "likes": 3,
+        "likes": null,
         "comments": 17
       },
       "frozen": true,
@@ -2799,7 +2799,7 @@
       "duration": null,
       "posted_at": "2025-02-12T04:39:47.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2817,7 +2817,7 @@
       "duration": null,
       "posted_at": "2025-02-10T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2835,7 +2835,7 @@
       "duration": null,
       "posted_at": "2025-02-07T01:51:56.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2853,7 +2853,7 @@
       "duration": null,
       "posted_at": "2025-02-06T02:43:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2872,7 +2872,7 @@
       "posted_at": "2025-02-04T08:15:58.000Z",
       "metrics": {
         "views": 1633,
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2890,7 +2890,7 @@
       "duration": null,
       "posted_at": "2025-01-31T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -2908,7 +2908,7 @@
       "duration": null,
       "posted_at": "2025-01-24T06:53:34.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2926,7 +2926,7 @@
       "duration": null,
       "posted_at": "2025-01-22T09:00:39.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2945,7 +2945,7 @@
       "posted_at": "2025-01-20T09:55:56.000Z",
       "metrics": {
         "views": 4798,
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2968,7 +2968,7 @@
       "duration": null,
       "posted_at": "2025-01-17T02:41:42.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2986,7 +2986,7 @@
       "duration": null,
       "posted_at": "2025-01-16T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -3004,7 +3004,7 @@
       "duration": null,
       "posted_at": "2025-01-15T03:07:45.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -3022,7 +3022,7 @@
       "duration": null,
       "posted_at": "2025-01-08T01:32:56.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3040,7 +3040,7 @@
       "duration": null,
       "posted_at": "2025-01-06T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 14
       },
       "frozen": true,
@@ -3059,7 +3059,7 @@
       "posted_at": "2024-12-26T10:06:54.000Z",
       "metrics": {
         "views": 1708,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3078,7 +3078,7 @@
       "posted_at": "2024-12-20T02:00:00.000Z",
       "metrics": {
         "views": 752,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3096,7 +3096,7 @@
       "duration": null,
       "posted_at": "2024-12-18T01:19:27.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3115,7 +3115,7 @@
       "posted_at": "2024-12-13T08:42:52.000Z",
       "metrics": {
         "views": 1136,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3133,7 +3133,7 @@
       "duration": null,
       "posted_at": "2024-12-11T01:54:37.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3152,7 +3152,7 @@
       "posted_at": "2024-12-09T04:51:43.000Z",
       "metrics": {
         "views": 1728,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3170,7 +3170,7 @@
       "duration": null,
       "posted_at": "2024-12-04T02:04:54.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3188,7 +3188,7 @@
       "duration": null,
       "posted_at": "2024-12-02T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3206,7 +3206,7 @@
       "duration": null,
       "posted_at": "2024-11-29T02:17:21.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3224,7 +3224,7 @@
       "duration": null,
       "posted_at": "2024-11-26T03:22:29.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3243,7 +3243,7 @@
       "posted_at": "2024-11-24T02:00:00.000Z",
       "metrics": {
         "views": 571,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3261,7 +3261,7 @@
       "duration": null,
       "posted_at": "2024-11-20T02:00:54.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3279,7 +3279,7 @@
       "duration": null,
       "posted_at": "2024-11-15T04:55:40.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -3297,7 +3297,7 @@
       "duration": null,
       "posted_at": "2024-11-13T02:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3315,7 +3315,7 @@
       "duration": null,
       "posted_at": "2024-11-11T01:56:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3333,7 +3333,7 @@
       "duration": null,
       "posted_at": "2024-11-08T02:18:31.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 47
       },
       "frozen": true,
@@ -3351,7 +3351,7 @@
       "duration": null,
       "posted_at": "2024-11-06T08:34:01.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,

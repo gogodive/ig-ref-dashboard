@@ -80,6 +80,35 @@ def is_reel(post: dict) -> bool:
     return post.get("product") == "REELS" or post.get("media_type") == "VIDEO"
 
 
+HIDDEN_LIKES_FAKE = 3    # 숨김 게시물에 Apify 가 대신 넣는 값(미리보기 프로필 수)
+HIDDEN_LIKES_SHARE = 0.4  # 이 비율 이상이면 계정 전체가 좋아요 숨김
+
+
+def sanitize_likes(posts: list[dict]) -> int:
+    """좋아요 숨김 게시물의 가짜 값을 None 으로 비우고, 비운 개수를 돌려준다.
+
+    인스타는 좋아요를 숨긴 게시물의 실제 수를 주지 않는다. Apify 응답은 두 형태다 —
+    `-1`(명시적 센티널)과 `3`. 후자는 진짜 3 좋아요와 구분이 안 되므로 계정 단위로 본다.
+    한 계정 게시물의 40% 이상이 정확히 3이면 그 계정이 좋아요를 숨긴 것으로 판단한다.
+    (브랜드 계정 158개 게시물이 전부 정확히 3일 수는 없다.)
+    """
+    likes = [p.get("metrics", {}).get("likes") for p in posts]
+    valued = [v for v in likes if isinstance(v, int)]
+    if not valued:
+        return 0
+    fake = sum(1 for v in valued if v == HIDDEN_LIKES_FAKE)
+    account_hides = fake / len(valued) >= HIDDEN_LIKES_SHARE
+    cleared = 0
+    for p in posts:
+        v = p.get("metrics", {}).get("likes")
+        if not isinstance(v, int):
+            continue
+        if v < 0 or (account_hides and v == HIDDEN_LIKES_FAKE):
+            p["metrics"]["likes"] = None
+            cleared += 1
+    return cleared
+
+
 def hot_post_ids(posts: list[dict], ratio: float = 2.0, min_posts: int = 5) -> set[str]:
     """조회수가 릴스 중앙값의 ratio 배 이상인 **릴스** id 집합.
 

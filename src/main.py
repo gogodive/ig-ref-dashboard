@@ -21,7 +21,7 @@ import yaml
 from src import analysis as az
 from src import hitqueue, thumbs
 from src.apify_client import fetch_account, fetch_followers
-from src.merge import hot_post_ids, merge_posts
+from src.merge import hot_post_ids, merge_posts, sanitize_likes
 from src.notion_source import fetch_target_accounts
 from src.notion_write import (build_status_text, update_account_followers,
                               update_status_callout, write_log_card)
@@ -78,6 +78,10 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     merged, new_ids = merge_posts(
         stored.get("posts", []), snap["posts"], now,
         freeze_days=cfg["freeze_days"], limit=cfg["display_limit"])
+
+    hidden = sanitize_likes(merged)
+    if hidden:
+        log.info("  좋아요 숨김 %d건 → 값 비움", hidden)
 
     # posts 모드는 팔로워를 안 주므로 초경량 details 호출로 보충
     followers = snap["followers_count"]

@@ -100,7 +100,7 @@
       "duration": null,
       "posted_at": "2026-07-18T08:04:52.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 17
       },
       "frozen": false,
@@ -1160,7 +1160,7 @@
       "duration": null,
       "posted_at": "2025-09-29T06:46:50.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 27
       },
       "frozen": true,

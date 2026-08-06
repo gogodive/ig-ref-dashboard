@@ -38,7 +38,7 @@
       "duration": null,
       "posted_at": "2026-08-06T08:41:47.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": false,
@@ -56,7 +56,7 @@
       "duration": null,
       "posted_at": "2026-08-06T07:08:04.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -74,7 +74,7 @@
       "duration": null,
       "posted_at": "2026-08-05T06:33:40.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 7
       },
       "frozen": false,
@@ -93,7 +93,7 @@
       "posted_at": "2026-08-05T06:31:28.000Z",
       "metrics": {
         "views": 12324,
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": false,
@@ -118,7 +118,7 @@
       "duration": null,
       "posted_at": "2026-08-05T04:57:42.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -136,7 +136,7 @@
       "duration": null,
       "posted_at": "2026-08-04T10:11:32.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -159,7 +159,7 @@
       "duration": null,
       "posted_at": "2026-08-04T07:20:04.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -209,7 +209,7 @@
       "duration": null,
       "posted_at": "2026-07-31T06:29:22.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 2
       },
       "frozen": false,
@@ -229,7 +229,7 @@
       "thumbnail": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-15/760068550_17929170135365203_3021507130889823992_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gGEnzu2yVIwfEmP9-A42roiFrBsKIGm91tvQNtl9W5Lvj_2DkTJilFaforYnplSrtE&_nc_ohc=AQh_6OG-Y7QQ7kNvwECP2nW&_nc_gid=OV-k0ezw3Q-74cynwB0ODA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHVJjseK8sq6fxOzg0lyr6VFxlGJ9I2vEQa7SWemBQdUA&oe=6A719ADA&_nc_sid=c6f216",
       "posted_at": "2026-07-30T06:29:15.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": false,
@@ -248,7 +248,7 @@
       "thumbnail": "https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/757969571_18417144508148323_3369524023239112485_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEasfnYLNEr5DdKhTvQ7dWZERlgevBPvLbZJf4S57iVsvihS7K_MlObhKVTc4GlTSNQ2RHpg-rRetpUpHJJpT2O&_nc_ohc=SATuXyVN5CkQ7kNvwFJElFI&_nc_gid=CwqXMonJyveuls7wB7iC3A&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQE0HCwyNhOa68kg-21r3HwZ8qLw5qWY0Z1XX_Mp1hlo5g&oe=6A75B4A9&_nc_sid=c6f216",
       "posted_at": "2026-07-29T01:45:17.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -268,7 +268,7 @@
       "thumbnail": "https://instagram.fnap3-1.fna.fbcdn.net/v/t51.82787-15/757699210_18416991775148323_8450663188023931811_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fnap3-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gFRv4sZIMGTiRH0T7Ob9NS1Frd_Lcu5u4ntVs3NqstpU8SrpeCDMO5jYym8thQgtpo&_nc_ohc=uP-ZKMFROe4Q7kNvwHmk-Ek&_nc_gid=sEPLt0e-jlQ7AA4QPWXi0Q&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFY3YFOYHN4WpSFqo3Panb7tUt-0i1JZD2pqpcZm3YARQ&oe=6A7847D7&_nc_sid=c6f216",
       "posted_at": "2026-07-28T01:19:34.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -288,7 +288,7 @@
       "thumbnail": "https://instagram.fmex28-1.fna.fbcdn.net/v/t51.82787-15/759751750_18416991382148323_1872548657056586547_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fmex28-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gF1ZKEt6jFwd0obGj9LnZjnNUD_8CGe6LerIGakf0JFZmkp5Ht1YbZLoDs2LlrCuKM&_nc_ohc=hYJTYtrFzbQQ7kNvwEP5P4o&_nc_gid=XaEbzO65GNPRKEMN97fI4w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHjU9wNivjhvWBWHgu3qVMR27aTy5O4Fzitd0erLwXkUQ&oe=6A76DF4F&_nc_sid=c6f216",
       "posted_at": "2026-07-28T01:16:21.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -309,7 +309,7 @@
       "posted_at": "2026-07-27T12:25:23.000Z",
       "metrics": {
         "views": 3655,
-        "likes": -1,
+        "likes": null,
         "comments": 33
       },
       "frozen": false,
@@ -328,7 +328,7 @@
       "thumbnail": "https://instagram.fcps3-1.fna.fbcdn.net/v/t51.82787-15/753716027_18416223727148323_1780948491706212544_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fcps3-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gH_1CLf_bWbjq5cKLJ4ajliTjwdNTQSZhMo8jzWD2b6cQ6PKtVctmagYejUOkm0N8tIdAFOpnFC_kx-WaMblqj8&_nc_ohc=dbM-y5HtkSkQ7kNvwF2Attk&_nc_gid=RYqZ_J57H2-qDPAi1FNEmQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEPpdLKtC9GbJlZntMgKiGU84Kv_br95C57X1HL2S8vqQ&oe=6A731830&_nc_sid=c6f216",
       "posted_at": "2026-07-23T07:50:48.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -347,7 +347,7 @@
       "thumbnail": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/746394584_18414910543148323_4318364013930677944_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gF6eDsIVMLoSvm5cwv4iAYxgsKi2zwyTdz5RV7mfSV0JwMj1M8o8UMLKnmzFT6oJXxfsCbscVMhYDppL3WWZZsA&_nc_ohc=F43K9eyzKecQ7kNvwHJOy2B&_nc_gid=zvOf2NkmqoX9_wInkjqV-w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQAijPKxRNa3E_IHNuqxwxPj7nnXCnaGVdoYtmAtaipk8A&oe=6A6DDA50&_nc_sid=c6f216",
       "posted_at": "2026-07-15T12:35:04.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -362,7 +362,7 @@
       "thumbnail": "https://scontent-hou1-1.cdninstagram.com/v/t51.82787-15/746909237_18414909934148323_1329312166806865977_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk0MTY1OTk4NzkxNjIyNTQyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=FJvcj1b_DBoQ7kNvwF-EPg8&_nc_oc=AdrnGi4gTIE_ezLTgSNab9-Oz_P1O4QKBio5NgPa24ZtgBv8X1CZHZ6xYnAG7tYBByxkV8FY0wAxmD5BdIOfMeiX&_nc_zt=23&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_gid=JSoD8vvVk6oRtNkgPxLOpA&_nc_ss=72289&oh=00_AQDAQrDbd7xSY0R--88jv0MWGBnS4odGKRxpBLsTZavntg&oe=6A6DC0BE",
       "posted_at": "2026-07-15T08:01:50.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -377,7 +377,7 @@
       "thumbnail": "https://instagram.fbri1-1.fna.fbcdn.net/v/t51.82787-15/746256345_18414778654148323_2237158059066396174_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk0MTA1OTU0NzI3MDg0ODk0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=VO32lfoIJoIQ7kNvwFGnfCk&_nc_oc=AdrTgm40HIXtRoLrxdjIYXsQJpuaYNs2QYQ2gD6blwOP0R86FqgJUSglZ-4YdKSRp0Q&_nc_zt=23&_nc_ht=instagram.fbri1-1.fna&_nc_gid=xMyOrRggT4jELiyvYJQScQ&_nc_ss=72a8c&oh=00_AQACQDFziZxYP2Ja93Qt3kohZfKqbpPRUPuQEC2wCvan-g&oe=6A6DAB45",
       "posted_at": "2026-07-14T12:12:25.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -393,7 +393,7 @@
       "posted_at": "2026-07-13T08:34:18.000Z",
       "metrics": {
         "views": 5665,
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": false,
@@ -408,7 +408,7 @@
       "thumbnail": "https://scontent-lis1-1.cdninstagram.com/v/t51.82787-15/746261202_18414273460148323_8726654506528566443_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-lis1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gGYqulXHLw7hwSMpXGlzxQwYWmKSqGcryVdGVuIh52KpWorgZyzkCivKPX9sviDkH0&_nc_ohc=_6yTlYP-_8gQ7kNvwFRlurv&_nc_gid=uhPeuNGLdKs8QPH3W4rnKw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGqqNtkjCXK0r_8sNZkC_EZe7EXERM1-b-njiv5_1cFhA&oe=6A730019&_nc_sid=c6f216",
       "posted_at": "2026-07-11T10:49:32.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": false,
@@ -423,7 +423,7 @@
       "thumbnail": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-15/741643196_18413912737148323_8833732090562131434_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkzNzExNzA2NDU5MTY5OTE1Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=WqVdNEMK4CkQ7kNvwEiNnpT&_nc_oc=Adp4mIvjqmNUD54dXVUK_52YGjRuSgjF4CpBgNeM6f_L-aTUuQDNpmf-SRi3YFFtTTU&_nc_zt=23&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_gid=lZ9qbQbqbfqpubJGWFZaBw&_nc_ss=72a8c&oh=00_AQDSlqxsMjNS6gi77aj28bcT8w9T38cSYrdrp38m5XTTKg&oe=6A6DDACF",
       "posted_at": "2026-07-09T01:35:51.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
@@ -438,7 +438,7 @@
       "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/736493717_18413833435148323_7180118247692194964_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gH1Uw8kQVCeOJooGxH0WIPiCcuWI5yr-LoPkRquGAA31ZSIQd1CMfM1o_vR48w1x9w&_nc_ohc=3u7kgTejd88Q7kNvwESVdZ3&_nc_gid=-U_8BKk_fk_rdUifa-uqMQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEgjV2yICtLOk32BLE7qx6PXlEXjO6Kgcr8fBm34Ep9yQ&oe=6A7315B3&_nc_sid=c6f216",
       "posted_at": "2026-07-08T12:56:24.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 3
       },
       "frozen": false,
@@ -453,7 +453,7 @@
       "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/736172797_18413666581148323_2785272349007514589_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkzNTkyMTcwMzI0NjMwMDg0MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=bXoGUHK5vb8Q7kNvwE5tGUC&_nc_oc=AdoRrNk8v4belY4trIh6O708aa03NP5e0p_LVIbkjnEx20mkWyVmhulSwAJHQZ8PzT0zNZmbDVMwQrTf7k_MdNSK&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=TKp72CXeTnurr61MUE98nA&_nc_ss=7c689&oh=00_AQBxpqbizaMixn2LjfYyAOQDtfijYBKNeTIWaMFyivcD-g&oe=6A6DCDB2",
       "posted_at": "2026-07-07T10:02:38.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -469,7 +469,7 @@
       "posted_at": "2026-07-06T09:49:53.000Z",
       "metrics": {
         "views": 6130,
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -484,7 +484,7 @@
       "thumbnail": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/731338957_18412743478148323_5913283278708420928_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzkzMTU3MDgzMzEyMTkzODU5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMzI0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=u0rxSDzGT2oQ7kNvwFI2JN2&_nc_oc=AdonOqFBpfR3q4PlDTkE60SP2c09rfc82huiAsBXNzPQvxn6sIYsL_e7VLBlx8hZWhQ&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=znBA3Rkizir9KHQm4ewJew&_nc_ss=72a8c&oh=00_AQAeVwO37YqN1JqNmpYADscaRzzKBfHOTHNOCkapaxLWqA&oe=6A6DB412",
       "posted_at": "2026-07-01T10:00:40.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -499,7 +499,7 @@
       "thumbnail": "https://instagram.fktw6-1.fna.fbcdn.net/v/t51.82787-15/730244822_18412415173148323_6899345676610161655_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fktw6-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gFWwhw0G9nRTxTIH-677P40CvUi2gpfndM8cZznjdcu3hQWeIZHAnpAS82yCVD68vA&_nc_ohc=wWdq8fLYfP8Q7kNvwFJ3Hse&_nc_gid=efjabdP-gIa4VCfHKRB-Nw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGgCLXc8uhv287eNopDkP45vmC0N973HxxBXGittMdMUg&oe=6A784829&_nc_sid=c6f216",
       "posted_at": "2026-06-29T11:14:12.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -515,7 +515,7 @@
       "thumbnail": "https://instagram.fbrs4-1.fna.fbcdn.net/v/t51.82787-15/730854548_18412403428148323_3765060704669653031_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fbrs4-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gENGODoIP1ZOGtcf5Fx-29dTabyeoigqNCq6tw8keChOJeDjPs0FoNFJKXs_G0fxdfNw8OPHCId0u-E07a1D46M&_nc_ohc=3i1uTZjYIgAQ7kNvwFiTRi-&_nc_gid=nS0gJAhXmbJqzmR5OZhA4A&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQF9D4hyLvhdn79ZW7uM7vGDxRCTpa2OEkmR-vCP2ePENA&oe=6A784920&_nc_sid=c6f216",
       "posted_at": "2026-06-29T09:02:50.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -531,7 +531,7 @@
       "thumbnail": "https://instagram.fmel14-1.fna.fbcdn.net/v/t51.82787-15/730090181_18412393282148323_5586827958291516582_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzkzMDAzODA1NDE3OTEzODgzMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=VS1yTm62Yg8Q7kNvwE1ALB4&_nc_oc=Adrtj6pf5z34r_A1bufal7AayO7uxT_ZxHIigUVGKtLGeMiPMuxPnf1oaNKj967oxr8&_nc_zt=23&_nc_ht=instagram.fmel14-1.fna&_nc_gid=zcsIVVpi37fbl9B4o9kKeA&_nc_ss=72a8c&oh=00_AQC96Oeor_ChxHZYpUe7AlFnt5YB2R97ZW47gIna7tOkag&oe=6A6DA954",
       "posted_at": "2026-06-29T07:11:07.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -549,7 +549,7 @@
       "posted_at": "2026-06-26T07:09:21.000Z",
       "metrics": {
         "views": 4516,
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -565,7 +565,7 @@
       "thumbnail": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/730275067_18411864562148323_1686974352268560393_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gF0JZflQf2ROw4fySwZrVdIl_TQzLcFvheWxxh2xcMsyZ8F7D2U134vKGN5_qBBvn3R0d0QM5baHJWyQrVQ49CM&_nc_ohc=d2XwGn3rJ0oQ7kNvwGCXCI1&_nc_gid=D57rOMUkjz363XhJWAjaYw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEa7M5BVnqn-Jv63eb0uNzTqVmgYU-3WcWcBZvD7Ni8uA&oe=6A72E9CB&_nc_sid=c6f216",
       "posted_at": "2026-06-26T07:03:24.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -581,7 +581,7 @@
       "posted_at": "2026-06-25T09:11:39.000Z",
       "metrics": {
         "views": 38295,
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -601,7 +601,7 @@
       "thumbnail": "https://instagram.fflr1-1.fna.fbcdn.net/v/t51.82787-15/730275077_18411389827148323_3344041582049678809_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzkyNTc2NjY1OTQzMzY4NzQ2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=5f6sbAKj7jQQ7kNvwHg97Ov&_nc_oc=AdrzVOLH9rP_nLj3czz-XNJOni_c_eKIgqn9Kw4FUg8HTxEqsDsWMjT7CtA7CN4lZqw&_nc_zt=23&_nc_ht=instagram.fflr1-1.fna&_nc_gid=DKihF1CObETQH3uwMygf7Q&_nc_ss=72a8c&oh=00_AQCfmTtThtP-u0uszo56VofCP0HyIKtXUSHf5iRs731sVg&oe=6A6DA9A9",
       "posted_at": "2026-06-23T09:44:37.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -616,7 +616,7 @@
       "thumbnail": "https://instagram.fyto1-2.fna.fbcdn.net/v/t51.82787-15/728093948_18411389254148323_82489716370731227_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fyto1-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gFH1GiFo9ywLgFdAFiD-bKyLsNVVjD9p9FI6pwQuRJxJPEYyYPklUjx5RNdNZ-TDuDTqWRtWjIj3nRADtPy-lnB&_nc_ohc=QnuVGOkRv6wQ7kNvwGocFNa&_nc_gid=o_8AltG3_qyfMEkVprk0vQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGKop77i-OqwEEB9M9wBkhPpzbAvAnSQoFivDD39RuSiw&oe=6A731579&_nc_sid=c6f216",
       "posted_at": "2026-06-23T09:39:33.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -631,7 +631,7 @@
       "thumbnail": "https://scontent-nrt1-2.cdninstagram.com/v/t51.82787-15/728809697_18411222427148323_4100902992199940643_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkyNTAxNzkwNDYwNjQ1OTY5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=2IduxdmR1vEQ7kNvwG8r61F&_nc_oc=AdqMOGBCLLDbidxh1TzqFcW8RsQIO1UYSTb8aXTGwYNmRTUYpicxV6LNJmHKiV0x9B0&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_gid=d_jnZl5MCgtS_cmQ_Yiz_g&_nc_ss=72289&oh=00_AQBDk15BQtK7fatil_CIIY890anYZB5SbNqrRAMHQ4raDg&oe=6A6DD6B2",
       "posted_at": "2026-06-22T08:56:59.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -648,7 +648,7 @@
       "duration": null,
       "posted_at": "2026-06-22T08:48:32.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -664,7 +664,7 @@
       "thumbnail": "https://instagram.fymq1-1.fna.fbcdn.net/v/t51.82787-15/727242982_18411218071148323_6805262842937815675_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=instagram.fymq1-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gEwU97rylLyfxvHSe5lrFnNtABkzRtczmep680atcre5MCfVUukfmISMVXxVblzB_U&_nc_ohc=xLCfn3ij6FAQ7kNvwF6EF-V&_nc_gid=K1H57vgUwzIOxverPTt84w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEPLKKXwnWeA7cPFhrxpgPdMpsEEPszDkQVgUI3YhgcdA&oe=6A76F866&_nc_sid=c6f216",
       "posted_at": "2026-06-22T08:37:21.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -682,7 +682,7 @@
       "duration": null,
       "posted_at": "2026-06-18T09:51:43.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -701,7 +701,7 @@
       "posted_at": "2026-06-18T09:39:09.000Z",
       "metrics": {
         "views": 5440,
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -717,7 +717,7 @@
       "thumbnail": "https://scontent-nrt1-2.cdninstagram.com/v/t51.82787-15/725860275_18410536132148323_3134389313285401929_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEzbVTCat25lKhUALLppMbSateaoc-1VjcVrRNhy1zdTKKf54_N1OT9q_VYv41dc6vRwgUa-hi1h1na03Rv4goY&_nc_ohc=c7Q3PLYmx44Q7kNvwFNz6oV&_nc_gid=mXEHcn6CgIznKoQKIJANKA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQG8QxAJs6zLG74a4zD20EQhmT-o1IDf3IFV0u5eenktOg&oe=6A72FF8A&_nc_sid=c6f216",
       "posted_at": "2026-06-18T09:33:21.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -732,7 +732,7 @@
       "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/723162091_18410228050148323_8782031089020869210_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=MzkyMDY4OTM5MTc5NDc1ODY1OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=-3w1baUenEkQ7kNvwHVwaMh&_nc_oc=Adp7Eaunn7O3MUvMvhjeaZ_XT0shlvKtyoXI-pp2LTbgyLtiaiPARAuO-8EMJRKS3CI&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=Gr7TNFDMAWWvXQZtcwPNxw&_nc_ss=7ca8c&oh=00_AQAWLIyaiaWh90u5DHWoLv1sLXwVZjbBCAA9goCMED9-uQ&oe=6A6DB4F5",
       "posted_at": "2026-06-16T09:36:59.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -749,7 +749,7 @@
       "duration": null,
       "posted_at": "2026-06-16T09:34:07.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -765,7 +765,7 @@
       "thumbnail": "https://instagram.fwaw3-1.fna.fbcdn.net/v/t51.82787-15/725751009_18410226988148323_3160789626326456857_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=MzkyMDY4NDgyODY0MzY0MzAxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JI28GNdEWrMQ7kNvwH5b5Q0&_nc_oc=AdqMD7oMaEHRb2Q-6pr_H6MLxkSD5H_hAHGSEpKCaadu81wJPqdgQZNn0KCtsWEm_Jw&_nc_zt=23&_nc_ht=instagram.fwaw3-1.fna&_nc_gid=yKtqiA2wWHwxPmoJxOTvQQ&_nc_ss=72a8c&oh=00_AQARtKxrznQ6G02HiiYQnO1mhoi3kx1DTHdqh41M3jb6qg&oe=6A6DC037",
       "posted_at": "2026-06-16T09:27:56.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -780,7 +780,7 @@
       "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/723238824_18409626718148323_3182640965538796152_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFxf1SorJl_BHnzrr1s95EJ4qItPvIIcmVMvV3WNvJPNQ3lo8qweaFi3awqJRL5OXA&_nc_ohc=MJv9j0JbPycQ7kNvwF2X_3G&_nc_gid=zWY0uzh0YHrnMgr-kv1mJQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFaxswstXLSU7TCxeh1PjzJZh0EWi8qrEf5Y2roaRBHsw&oe=6A783CEA&_nc_sid=c6f216",
       "posted_at": "2026-06-12T09:26:15.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -796,7 +796,7 @@
       "thumbnail": "https://scontent-man2-1.cdninstagram.com/v/t51.82787-15/722363979_18409625455148323_2065884548415081363_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=MzkxNzc4MDg3MzQyMTYwODcwOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=EcexohAmJLsQ7kNvwEOeybU&_nc_oc=Adr6_SiqHPBEOr8ANiC7nU_CZoVRov5Qy_Nlt-rGRdjuizCxtTTuTtuQDBQIxL-uzG0&_nc_zt=23&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_gid=zNSVokp-bJfealyvbZ5Nxg&_nc_ss=7c289&oh=00_AQDIWoZ8JITNsBVeVxKSuwNpmDt6cOkmKvhqFHQ98KjnFg&oe=6A6C84AD",
       "posted_at": "2026-06-12T09:18:17.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -811,7 +811,7 @@
       "thumbnail": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/721310295_18409452826148323_7674168099031058537_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=MzkxNjg5MzcwMDA3ODA0MjgwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mjzrG-rymHgQ7kNvwGLvQF5&_nc_oc=Ado-yzYqIbylmjTnFXZGbs429skevY-CBSXSqgBO2u2ZFVAiehZlmTmMV4CcArGEGM7pw-YffafemlMSTH2--If0&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_gid=K-QcvX1eLOnQGCjIX0nG8w&_nc_ss=7d689&oh=00_AQCa-mqlCxAbyCRmUTLzomxFGkRB_2aiqM-CN79Fwl_Dvg&oe=6A6733F2",
       "posted_at": "2026-06-11T03:55:39.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -826,7 +826,7 @@
       "thumbnail": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/721169386_18409162297148323_4149218830455590121_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkxNTQ5NDAzMjcyMjk3ODQ1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=yXbnx2IaRDUQ7kNvwFsZCLA&_nc_oc=AdrvM1gdvnDvDdBgLDD0nkbodr0FYqDwZdTgMfCWvAQDLuZ-_EpxH3FvnTSLQdp2m-I&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=Wgyql-RNvuMbpUb4HXH5QQ&_nc_ss=7ca8c&oh=00_AQDc5SR7oHocD0mAPjiZrk4LLnJzMBdLruvDV4HvkDwt-A&oe=6A65C6D9",
       "posted_at": "2026-06-09T05:34:46.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -841,7 +841,7 @@
       "thumbnail": "https://scontent-atl3-1.cdninstagram.com/v/t51.82787-15/715850275_18408591316148323_8598791396660327356_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=MzkxMjcwNzA5MzgwODY1ODQ3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=8_SO3YYuCroQ7kNvwHy4TXA&_nc_oc=AdqhWID5LTXFYS32IAn_XC_OLGFIqTrxP9-V_9wMXaF5q17wmoGLTts1KhuqIpBhhBlQ2Ltfchc62ySTf6BSG1sq&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=QHK_Cl2jL7Q3sIUHpXpHpw&_nc_ss=72289&oh=00_AQB_qPbnToclea6-KhVFduhxlt5g5MBaIiQX44dcgWnPeg&oe=6A65A0AD",
       "posted_at": "2026-06-05T09:17:36.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -856,7 +856,7 @@
       "thumbnail": "https://scontent-sea1-1.cdninstagram.com/v/t51.82787-15/713763895_18408432601148323_7596454862552093636_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzkxMTkzMjgyOTU3NjgyMjg5OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GxIZsP49A6oQ7kNvwHLo0gu&_nc_oc=AdpzMRfxStmbxd2gXuE1Q9NMIFKxUkwsigf-YCEZTG2Kv9Ar_V_SQKnXuHpk83czpkA&_nc_zt=23&_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_gid=RhiW6JrSDZGOTmKsGOcH-w&_nc_ss=7c289&oh=00_AQDBEm4FL7ytDhcWs2TIt4KYcBIwUd8njAaMWvLmlIO2hQ&oe=6A65C4FA",
       "posted_at": "2026-06-04T07:39:17.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -871,7 +871,7 @@
       "thumbnail": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/714749490_18408431128148323_4656276294902251423_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzkxMTkyMTA2NTk0NjYxMTAxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=v7Ig9kpGysQQ7kNvwFVWN1n&_nc_oc=AdrcvPXkz7zID-eUE1NmiBpU_1yqLOGh6Oc2Oj0DjxKjx7zypJWRpO9uEO2XofvgWRc&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=Lpg3Uren1NO9zoM8FlRNNA&_nc_ss=7ca8c&oh=00_AQBO2T_XiI053mj8NPl3MotmFO2C0mdHxAQYttrB89rBdg&oe=6A659E67",
       "posted_at": "2026-06-04T07:15:54.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -886,7 +886,7 @@
       "thumbnail": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/714775070_18408140368148323_7942827719478365791_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=MzkxMDUxOTY0NjUwNDk2MzM1MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMzA3Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=B9pQDG4oOHcQ7kNvwHLwwH7&_nc_oc=AdpIuziZG0bAL-zOjYRMTOtIYFTC9tyllEVsdpi-jijGw3IAz_U5SFMN0Q4I8dBYKI4&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=d6ZvkZspQ3cXxif3qwAfIA&_nc_ss=7ca8c&oh=00_AQBvu3qTcKMtu1E7SkZbJKyy_pH0mhWM6-IDKTda3FvTcQ&oe=6A65C7AC",
       "posted_at": "2026-06-02T08:51:34.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -902,7 +902,7 @@
       "posted_at": "2026-05-29T09:25:09.000Z",
       "metrics": {
         "views": 6436,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -917,7 +917,7 @@
       "thumbnail": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/709326029_18407370586148323_2643813700589065973_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzkwNjk2MjU4NTQ5NjIxMDE5MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMzA3Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M26Ug_iGz1IQ7kNvwEKeE0F&_nc_oc=AdrXWl1rNaS4F_VlagHRAJBPtubGWMWt5BHmyXX9nxLID1PSXLkhPEOo6OlwZTu1TP4&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_gid=l5-h6DyWhMIQO5bd9yZtRQ&_nc_ss=72689&oh=00_AQBbZqCc20TnUC4yfUWn4LjwtpVGYElf-O5K6cqgHFn6Aw&oe=6A65B9F3",
       "posted_at": "2026-05-28T11:08:58.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -932,7 +932,7 @@
       "thumbnail": "https://scontent-mia3-2.cdninstagram.com/v/t51.82787-15/705757833_18407213440148323_8355198782775086956_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=MzkwNjE5NzA2OTYxNzcxNzkzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=NQmjQBkI3iIQ7kNvwGCrfC7&_nc_oc=AdqNJ8c7iCY0uPgQlCvuNun-mWwZU_z2_gNjIdj67XCoWaJqPVjltdPG6-SATq3CkVU&_nc_zt=23&_nc_ht=scontent-mia3-2.cdninstagram.com&_nc_gid=NrNt_iYpC1ez-E763ScRpw&_nc_ss=7c689&oh=00_AQBe0mtHur1N-D6Hw40BEHU6bLG1KTWf87nfdh5l0L289g&oe=6A65C1E0",
       "posted_at": "2026-05-27T09:50:43.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -947,7 +947,7 @@
       "thumbnail": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/708557691_18407192416148323_1717788507198835089_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=MzkwNjA4MjEzNDAxNzUwOTQ2Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=LtfZx1lo-34Q7kNvwHRTSgr&_nc_oc=AdquDACDI_cQw1uQ0D3WyyAwkfdWbLGo6O6vYowJ91MZzol9SM84A51nkbShGJriDxg&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_gid=gNkgNcdHFBKACiPwhetvPw&_nc_ss=72289&oh=00_AQC5XP7AWudDxW78GtcDiEfiX2nMdrPkQpUkTkrJSjYKjQ&oe=6A65A40D",
       "posted_at": "2026-05-27T05:55:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -962,7 +962,7 @@
       "thumbnail": "https://scontent-mia3-2.cdninstagram.com/v/t51.82787-15/704977813_18407056918148323_3269502037992355384_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-mia3-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFOASUav2fgC_tdv-09G1gg9E58b2ELSg2ndjP0_X3H9RhKuYE3TgdG5EDtrfZbo_M&_nc_ohc=hJmkGxESClsQ7kNvwG9ljnD&_nc_gid=ylqmXp8gR59R9WxmhFgq4A&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQA3bk7p53IkuYZzsgMx7nPp5ctsIkiljhEYshpl9hEPbQ&oe=6A65A416&_nc_sid=c6f216",
       "posted_at": "2026-05-26T10:24:42.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -996,7 +996,7 @@
       "thumbnail": "https://scontent-mia3-3.cdninstagram.com/v/t51.82787-15/705072089_18406315273148323_4493804616831496821_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=MzkwMTg2NjI0MTE4MjEzNTM4Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=1CrRLGiuZyoQ7kNvwElqurW&_nc_oc=AdobW3M3thX-rKVj5oBbJniezaGXhHKfRTqLJwCJh27K_XP9LwJ60O-gWpwfGqdIaSo&_nc_zt=23&_nc_ht=scontent-mia3-3.cdninstagram.com&_nc_gid=zxY43QKO-4dHT_Vvk1vHRw&_nc_ss=72a8c&oh=00_AQDc5YMqkYT9Nrk_Hg5_Dh6XmZsgK6OzrmAJHII1CM8k3w&oe=6A65B445",
       "posted_at": "2026-05-21T10:27:26.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1011,7 +1011,7 @@
       "thumbnail": "https://scontent-atl3-1.cdninstagram.com/v/t51.82787-15/695739151_18405863632148323_1595923741264012565_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg5OTU4MDA5NTk5MTE1NjE5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=XZiIY3nQkrIQ7kNvwHwdrtn&_nc_oc=Adp6NVLkoTmrMhqawPdG07KwrXaGGghVwOXuszDk5-iKuyLtgivBhCio6y0PU9w1TUA&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=x4SKtf3lxua5qACGvvCPxg&_nc_ss=72689&oh=00_AQDaPEOHMrd65WvSvpqU2b31h0lsuE65suGE3YQP6tbTyQ&oe=6A6594DF",
       "posted_at": "2026-05-18T06:36:57.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1027,7 +1027,7 @@
       "posted_at": "2026-05-16T04:00:00.000Z",
       "metrics": {
         "views": 5280,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1042,7 +1042,7 @@
       "thumbnail": "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/674553386_18405448969148323_2621088659459453188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg5NzU1NTU2MTQ1MjkwODY4Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYwMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=asdV5aRtAFMQ7kNvwH4HFnm&_nc_oc=Adp0iEKXCZ1NwzrbyuG8QGaXnD1es2IdELHzpkTO32ZS5AV9frzbd30QFV01-H2LUCY&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=NljdCLNFmC0DsaGLj31eHQ&_nc_ss=7ca8c&oh=00_AQCnTsVCDYWc-L1Xdos7KcJL5gYrOQKkLq0J5WBeiIEFng&oe=6A65A502",
       "posted_at": "2026-05-15T11:34:23.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1057,7 +1057,7 @@
       "thumbnail": "https://scontent-mia5-2.cdninstagram.com/v/t51.82787-15/700692258_18405448867148323_6314847980778763432_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg5NzU1NTE4NzIzNjk4NjAxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYwMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=cqHHZF0xR4UQ7kNvwF4QT16&_nc_oc=AdqpfY-7s82WlLLL_nYA5PO9TodueQVpbdUcjrM5WIXYbXUe3qzjrBclOMsIclcKDq8&_nc_zt=23&_nc_ht=scontent-mia5-2.cdninstagram.com&_nc_gid=7w2VILjgJ91L2qcrIEBE0Q&_nc_ss=72689&oh=00_AQABdXIil45jVv9RifIbksjl_Sozpdw3vZ0Lf45tY_azLA&oe=6A65C51B",
       "posted_at": "2026-05-15T11:33:44.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1072,7 +1072,7 @@
       "thumbnail": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/673045929_18405448774148323_3445731294797756121_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg5NzU1NDg2MTk2MDM1MjI1Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYwMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=-_vvrc9ZAGAQ7kNvwFcy1n7&_nc_oc=AdoqQmRFoDhgrwszoxw6VAKT0awx5yfxG5Wwi3zLHfXv4fNrh7a4uAKuI228FiuBTRo&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=KKKcr4uyJHu7y91b-LAVoQ&_nc_ss=7c289&oh=00_AQBLGuikcvNN-MsGskbZ1ZXig-rBG8BEcZjia8Cz_b3UWg&oe=6A659D2F",
       "posted_at": "2026-05-15T11:33:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1087,7 +1087,7 @@
       "thumbnail": "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/696234216_18405420448148323_2762086636440420901_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg5NzM5NzU5NTY5MzAwNTA2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=PR_A_kVdBFkQ7kNvwF9V-lq&_nc_oc=AdqPseCl7uc1Srn6u7xmCRDzkhnQtRtm67SFP1tT8dVSMnAqH-S1DtButc5j_d6wdyY&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=z6EIj9mYyIybz0sgsgra4g&_nc_ss=7ca8c&oh=00_AQAvdfFRcV7xaLE7bV4jWlCTqJGP4_8nF8bryDBEgwsffQ&oe=6A659709",
       "posted_at": "2026-05-15T06:24:39.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1103,7 +1103,7 @@
       "posted_at": "2026-05-15T05:00:42.000Z",
       "metrics": {
         "views": 5111,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1119,7 +1119,7 @@
       "posted_at": "2026-05-14T05:47:48.000Z",
       "metrics": {
         "views": 6865,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1134,7 +1134,7 @@
       "thumbnail": "https://scontent-lax3-1.cdninstagram.com/v/t51.82787-15/692702603_18405039034148323_8477935697435323322_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg5NTM1NzIzNjc4MzY3Mjk3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Ih2LH-VaorcQ7kNvwF4CaZv&_nc_oc=Adr8A36BHrM50AhibDXzZGaNjibdjS50vl9s_4kFLQyobELSr_yjmKNbXU_apJkSsB7Tgd7GMvxJv9GnUJpBODn0&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_gid=c63ongkQVO8wzTJkhkwtow&_nc_ss=7c289&oh=00_AQBkjC7gI5_J-ENov-YQqFv2GN3XjeioZeeXrflwDyOFaQ&oe=6A659FEA",
       "posted_at": "2026-05-12T10:46:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1149,7 +1149,7 @@
       "thumbnail": "https://instagram.flas1-2.fna.fbcdn.net/v/t51.82787-15/686969805_18404479153148323_4688581293899375154_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.flas1-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gFMAH1BIU559FRpO6nngZAFX4XKYo4cqBOg6Axpht1ePAzgSYQhrgtpWdnWUpA5DZY&_nc_ohc=c_A0zjMRmZ0Q7kNvwG-W1BU&_nc_gid=xs3vHdn89cqKEHfbPvQjcw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQAsj4phxmv8i-cLTQQROQRMaBlBF4fkPSBH3ZrpcJxg6Q&oe=6A65B4F4&_nc_sid=c6f216",
       "posted_at": "2026-05-09T05:00:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1164,7 +1164,7 @@
       "thumbnail": "https://scontent-det1-1.cdninstagram.com/v/t51.82787-15/685170364_18404478799148323_7586293004544626772_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg5MjQ2MzI2MDIwOTc1Njc3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4pJ44PG32EAQ7kNvwFNJVVt&_nc_oc=AdrCyyXjktn0eSl7w7Lm9vzBp2aopJLkidFD3-iA2UYynQ37w0QN-bS3DDHYbR40Bm4&_nc_zt=23&_nc_ht=scontent-det1-1.cdninstagram.com&_nc_gid=qahp-RY5DS-othrCrMOyTQ&_nc_ss=7da8c&oh=00_AQAAmnqwAEHLfU5XqvSfEeN0ddG_d9dH0mdw0LUYiTWuiQ&oe=6A6595C0",
       "posted_at": "2026-05-08T10:57:18.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1179,7 +1179,7 @@
       "thumbnail": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/675472832_18404324851148323_2317593582941581015_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg5MTY3MDU1OTgyMzMxMDMxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=J7Nu1YLdEioQ7kNvwG2pkhH&_nc_oc=Adpb8VMQk9oVWeoB5n2b-W3_K5d7tC-FTQoOf0WoWWnXX-IUgHqUvY5kcPm9wywPsKY&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_gid=rdz5Ml9P4i426INgDyy_Bw&_nc_ss=72289&oh=00_AQB038McbzjCvGuBIKL2mCEcRUWE5Pa9HlgoEKMAZeTLwg&oe=6A65B55C",
       "posted_at": "2026-05-07T11:30:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1194,7 +1194,7 @@
       "thumbnail": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-15/694092006_18404324170148323_4934672344483514440_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gF7SpadTfYpaBaB9xj8BfIf2KlUcOJ2Jwpz8fBTHbM7RjCf0U90uM4OSJVQ26ANSBk&_nc_ohc=ebRmw1I2Pv4Q7kNvwFnqc0I&_nc_gid=NB7QLLthuoccC7YgLsRWpQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQC_psbUvkcqnvbAOYxABSjVca-b_yEQd-lePMNfpChdhQ&oe=6A65BF75&_nc_sid=c6f216",
       "posted_at": "2026-05-07T08:37:39.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1209,7 +1209,7 @@
       "thumbnail": "https://scontent-phl2-1.cdninstagram.com/v/t51.82787-15/684642457_18404192542148323_4756816337206604003_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg5MDk2NzU3MDA3NzkzOTMwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=YJO4pmm_xk0Q7kNvwGaRWre&_nc_oc=AdrFzrIrRKDJnLv4RWGPshUu9zjVTCR1h5ih5ul3s-gTPc_hKkjkHbQTxp0PMqNYGX4&_nc_zt=23&_nc_ht=scontent-phl2-1.cdninstagram.com&_nc_gid=nNEarFo_6X_9yzQ0Kgoapw&_nc_ss=72a8c&oh=00_AQDwsHVQ2Hh0mnbxMXnbHdVMfdc_-bWRu8ffJw9ZgE4bNQ&oe=6A65C188",
       "posted_at": "2026-05-06T09:25:28.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1224,7 +1224,7 @@
       "thumbnail": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/683878920_18403924963148323_8516773184872359685_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg4OTU5NjAxMzQxODA3NDQzMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTM3NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=PZYC1wL_3OUQ7kNvwHJaRJb&_nc_oc=AdrLPWz2N4pZolwBOIf_p2B8WIN0zIpdf-bEq9qBhfXqPFu1YPy3vOW_xeOQGX9AYoY&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=wUz9p850h0QdDWkPwO9zjA&_nc_ss=7ca8c&oh=00_AQAP9DXTUoJgQhtsfI5gcYOXqPgrDKgzI1awLiC8nE6C1g&oe=6A659572",
       "posted_at": "2026-05-04T12:01:26.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1241,7 +1241,7 @@
       "duration": null,
       "posted_at": "2026-04-27T10:22:59.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1257,7 +1257,7 @@
       "thumbnail": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-15/681329848_18402429955148323_2217042332951819842_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gHHconRItMApq7ggRF7I9MsZiIZfbAPh5h2iFRE5ZKSS5pqNER6oAU98qEwDJlZmDA&_nc_ohc=_hDCiQ9cpUkQ7kNvwGAvX_z&_nc_gid=YGbueFr5nNwTbflwH7nqUQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQAh2Kgiy9QsVB_qf25t5w_AVmP6xaghGDprrB2tqxxCQA&oe=6A65BED8&_nc_sid=c6f216",
       "posted_at": "2026-04-24T12:30:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1274,7 +1274,7 @@
       "duration": null,
       "posted_at": "2026-04-16T06:02:40.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1292,7 +1292,7 @@
       "duration": null,
       "posted_at": "2026-04-09T07:27:51.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1310,7 +1310,7 @@
       "duration": null,
       "posted_at": "2026-04-09T07:26:47.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1328,7 +1328,7 @@
       "duration": null,
       "posted_at": "2026-04-09T02:27:48.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1346,7 +1346,7 @@
       "duration": null,
       "posted_at": "2026-04-06T01:57:24.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1364,7 +1364,7 @@
       "duration": null,
       "posted_at": "2026-04-01T00:54:14.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1382,7 +1382,7 @@
       "duration": null,
       "posted_at": "2026-03-27T08:17:49.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1400,7 +1400,7 @@
       "duration": null,
       "posted_at": "2026-03-19T09:15:48.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1418,7 +1418,7 @@
       "duration": null,
       "posted_at": "2026-03-19T09:11:19.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1436,7 +1436,7 @@
       "duration": null,
       "posted_at": "2026-03-19T02:08:49.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1454,7 +1454,7 @@
       "duration": null,
       "posted_at": "2026-03-18T07:13:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -1472,7 +1472,7 @@
       "duration": null,
       "posted_at": "2026-03-18T01:46:36.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1490,7 +1490,7 @@
       "duration": null,
       "posted_at": "2026-03-18T01:38:44.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1508,7 +1508,7 @@
       "duration": null,
       "posted_at": "2026-03-17T07:03:05.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1524,7 +1524,7 @@
       "thumbnail": "https://scontent-lga3-3.cdninstagram.com/v/t51.82787-15/654395180_18396175063148323_554899213234957611_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg1NDY0NjQ5Nzg1ODQ1NDA3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7naq6uZmV0AQ7kNvwEm5rU7&_nc_oc=AdpfXxU5C2DDaFo1AP5miMX5RiXjfHQwXwkzbb8pXGHhLDXsA4Fb3r3fhpj6jalZ9Fo&_nc_zt=23&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_gid=aEwddGMH_h2zYncjv8HT9g&_nc_ss=72a8c&oh=00_AQDfKAhfr2w47Zq2Wx9sVKKtWHppVbMSJT49ToUNDszQqg&oe=6A65A487",
       "posted_at": "2026-03-17T06:41:33.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1541,7 +1541,7 @@
       "duration": null,
       "posted_at": "2026-03-17T06:03:54.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1559,7 +1559,7 @@
       "duration": null,
       "posted_at": "2026-03-16T07:20:34.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1577,7 +1577,7 @@
       "duration": null,
       "posted_at": "2026-03-16T07:07:01.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1595,7 +1595,7 @@
       "duration": null,
       "posted_at": "2026-03-16T07:02:04.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1613,7 +1613,7 @@
       "duration": null,
       "posted_at": "2026-03-06T07:47:21.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1631,7 +1631,7 @@
       "duration": null,
       "posted_at": "2026-03-06T02:49:40.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1650,7 +1650,7 @@
       "posted_at": "2026-03-05T01:06:04.000Z",
       "metrics": {
         "views": 8628,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1668,7 +1668,7 @@
       "duration": null,
       "posted_at": "2026-03-03T08:38:23.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1686,7 +1686,7 @@
       "duration": null,
       "posted_at": "2026-03-03T06:34:34.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1704,7 +1704,7 @@
       "duration": null,
       "posted_at": "2026-02-27T05:57:10.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1722,7 +1722,7 @@
       "duration": null,
       "posted_at": "2026-02-27T05:54:48.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1740,7 +1740,7 @@
       "duration": null,
       "posted_at": "2026-02-26T06:52:43.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1758,7 +1758,7 @@
       "duration": null,
       "posted_at": "2026-02-26T05:44:17.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1776,7 +1776,7 @@
       "duration": null,
       "posted_at": "2026-02-24T08:29:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1794,7 +1794,7 @@
       "duration": null,
       "posted_at": "2026-02-12T05:18:17.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1812,7 +1812,7 @@
       "duration": null,
       "posted_at": "2026-02-12T01:49:42.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1830,7 +1830,7 @@
       "duration": null,
       "posted_at": "2026-02-03T09:00:31.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1848,7 +1848,7 @@
       "duration": null,
       "posted_at": "2026-01-30T07:32:53.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1866,7 +1866,7 @@
       "duration": null,
       "posted_at": "2026-01-28T08:25:47.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1884,7 +1884,7 @@
       "duration": null,
       "posted_at": "2026-01-28T05:49:59.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1902,7 +1902,7 @@
       "duration": null,
       "posted_at": "2026-01-21T05:34:02.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -1920,7 +1920,7 @@
       "duration": null,
       "posted_at": "2026-01-21T01:44:02.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -1938,7 +1938,7 @@
       "duration": null,
       "posted_at": "2025-12-29T08:59:45.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1956,7 +1956,7 @@
       "duration": null,
       "posted_at": "2025-12-29T08:58:23.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1974,7 +1974,7 @@
       "duration": null,
       "posted_at": "2025-12-24T05:12:24.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1992,7 +1992,7 @@
       "duration": null,
       "posted_at": "2025-12-08T08:09:09.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2010,7 +2010,7 @@
       "duration": null,
       "posted_at": "2025-12-03T07:59:11.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -2028,7 +2028,7 @@
       "duration": null,
       "posted_at": "2025-12-02T06:30:07.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2046,7 +2046,7 @@
       "duration": null,
       "posted_at": "2025-12-02T06:23:56.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2064,7 +2064,7 @@
       "duration": null,
       "posted_at": "2025-11-28T08:55:13.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2082,7 +2082,7 @@
       "duration": null,
       "posted_at": "2025-11-28T08:53:25.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2100,7 +2100,7 @@
       "duration": null,
       "posted_at": "2025-11-28T08:52:20.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2119,7 +2119,7 @@
       "posted_at": "2025-11-28T01:57:55.000Z",
       "metrics": {
         "views": 4916,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2137,7 +2137,7 @@
       "duration": null,
       "posted_at": "2025-11-25T06:19:40.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2155,7 +2155,7 @@
       "duration": null,
       "posted_at": "2025-11-25T06:17:57.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2173,7 +2173,7 @@
       "duration": null,
       "posted_at": "2025-11-25T06:14:57.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2191,7 +2191,7 @@
       "duration": null,
       "posted_at": "2025-11-21T08:47:08.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2209,7 +2209,7 @@
       "duration": null,
       "posted_at": "2025-11-21T08:45:25.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2227,7 +2227,7 @@
       "duration": null,
       "posted_at": "2025-11-21T08:16:04.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2245,7 +2245,7 @@
       "duration": null,
       "posted_at": "2025-11-21T08:13:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2263,7 +2263,7 @@
       "duration": null,
       "posted_at": "2025-11-20T10:17:56.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2281,7 +2281,7 @@
       "duration": null,
       "posted_at": "2025-11-20T09:05:52.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2299,7 +2299,7 @@
       "duration": null,
       "posted_at": "2025-11-17T00:45:17.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2317,7 +2317,7 @@
       "duration": null,
       "posted_at": "2025-11-17T00:43:38.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2335,7 +2335,7 @@
       "duration": null,
       "posted_at": "2025-11-17T00:37:58.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2353,7 +2353,7 @@
       "duration": null,
       "posted_at": "2025-11-14T07:12:14.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2371,7 +2371,7 @@
       "duration": null,
       "posted_at": "2025-11-14T07:11:50.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2389,7 +2389,7 @@
       "duration": null,
       "posted_at": "2025-11-14T05:40:14.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2425,7 +2425,7 @@
       "duration": null,
       "posted_at": "2025-11-13T08:45:41.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2443,7 +2443,7 @@
       "duration": null,
       "posted_at": "2025-11-13T08:00:34.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2461,7 +2461,7 @@
       "duration": null,
       "posted_at": "2025-11-13T02:54:15.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2479,7 +2479,7 @@
       "duration": null,
       "posted_at": "2025-11-13T02:52:12.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2497,7 +2497,7 @@
       "duration": null,
       "posted_at": "2025-11-13T02:49:39.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2516,7 +2516,7 @@
       "posted_at": "2025-11-12T07:09:51.000Z",
       "metrics": {
         "views": 5022,
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2534,7 +2534,7 @@
       "duration": null,
       "posted_at": "2025-11-05T09:10:02.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2553,7 +2553,7 @@
       "posted_at": "2025-11-03T02:36:44.000Z",
       "metrics": {
         "views": 6188,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2571,7 +2571,7 @@
       "duration": null,
       "posted_at": "2025-10-30T09:16:06.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2589,7 +2589,7 @@
       "duration": null,
       "posted_at": "2025-10-20T06:58:36.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2607,7 +2607,7 @@
       "duration": null,
       "posted_at": "2025-10-19T03:34:34.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2625,7 +2625,7 @@
       "duration": null,
       "posted_at": "2025-10-18T03:57:30.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2644,7 +2644,7 @@
       "posted_at": "2025-10-16T06:59:35.000Z",
       "metrics": {
         "views": 8799,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2662,7 +2662,7 @@
       "duration": null,
       "posted_at": "2025-10-13T09:22:56.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2680,7 +2680,7 @@
       "duration": null,
       "posted_at": "2025-10-13T09:20:09.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2698,7 +2698,7 @@
       "duration": null,
       "posted_at": "2025-10-13T08:59:04.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2717,7 +2717,7 @@
       "posted_at": "2025-09-30T08:15:55.000Z",
       "metrics": {
         "views": 7116,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2735,7 +2735,7 @@
       "duration": null,
       "posted_at": "2025-09-30T05:56:43.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2753,7 +2753,7 @@
       "duration": null,
       "posted_at": "2025-09-30T05:51:43.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2772,7 +2772,7 @@
       "posted_at": "2025-09-25T08:01:11.000Z",
       "metrics": {
         "views": 10222,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2790,7 +2790,7 @@
       "duration": null,
       "posted_at": "2025-09-23T07:13:22.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2808,7 +2808,7 @@
       "duration": null,
       "posted_at": "2025-09-23T07:02:31.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2827,7 +2827,7 @@
       "posted_at": "2025-09-23T06:56:15.000Z",
       "metrics": {
         "views": 4641,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2845,7 +2845,7 @@
       "duration": null,
       "posted_at": "2025-09-16T07:36:00.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2864,7 +2864,7 @@
       "posted_at": "2025-09-16T07:30:50.000Z",
       "metrics": {
         "views": 3715,
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2882,7 +2882,7 @@
       "duration": null,
       "posted_at": "2025-09-09T08:31:13.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2900,7 +2900,7 @@
       "duration": null,
       "posted_at": "2025-09-08T09:34:21.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2918,7 +2918,7 @@
       "duration": null,
       "posted_at": "2025-09-04T08:15:55.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2936,7 +2936,7 @@
       "duration": null,
       "posted_at": "2025-09-04T08:13:23.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2954,7 +2954,7 @@
       "duration": null,
       "posted_at": "2025-09-04T06:24:36.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -2972,7 +2972,7 @@
       "duration": null,
       "posted_at": "2025-08-28T09:34:46.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -2990,7 +2990,7 @@
       "duration": null,
       "posted_at": "2025-08-28T08:57:57.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3008,7 +3008,7 @@
       "duration": null,
       "posted_at": "2025-08-27T08:49:51.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -3026,7 +3026,7 @@
       "duration": null,
       "posted_at": "2025-08-27T08:47:51.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3044,7 +3044,7 @@
       "duration": null,
       "posted_at": "2025-08-25T08:47:11.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3062,7 +3062,7 @@
       "duration": null,
       "posted_at": "2025-08-25T08:10:11.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3080,7 +3080,7 @@
       "duration": null,
       "posted_at": "2025-08-25T08:06:12.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3098,7 +3098,7 @@
       "duration": null,
       "posted_at": "2025-08-14T08:48:11.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -3116,7 +3116,7 @@
       "duration": null,
       "posted_at": "2025-08-14T08:35:39.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -3134,7 +3134,7 @@
       "duration": null,
       "posted_at": "2025-08-14T07:44:01.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -3152,7 +3152,7 @@
       "duration": null,
       "posted_at": "2025-08-08T08:14:33.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -3170,7 +3170,7 @@
       "duration": null,
       "posted_at": "2025-08-08T08:10:22.000Z",
       "metrics": {
-        "likes": 3,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,

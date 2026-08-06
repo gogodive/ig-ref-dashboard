@@ -197,7 +197,7 @@
       "duration": 36.833,
       "posted_at": "2026-07-23T03:25:46.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 29,
         "views": 6825
       },
@@ -242,7 +242,7 @@
       "duration": null,
       "posted_at": "2026-07-17T04:48:01.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 13
       },
       "frozen": false,
@@ -356,7 +356,7 @@
       "posted_at": "2026-07-01T06:43:36.000Z",
       "metrics": {
         "views": null,
-        "likes": -1,
+        "likes": null,
         "comments": 183
       },
       "frozen": true,
@@ -375,7 +375,7 @@
       "posted_at": "2026-06-29T06:59:53.000Z",
       "metrics": {
         "views": null,
-        "likes": -1,
+        "likes": null,
         "comments": 25
       },
       "frozen": true,

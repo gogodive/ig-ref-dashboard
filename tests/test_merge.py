@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from src.merge import hot_post_ids, is_frozen, merge_posts
+from src.merge import hot_post_ids, is_frozen, merge_posts, sanitize_likes
 
 NOW = datetime(2026, 7, 17, 9, 0, tzinfo=timezone.utc)
 
@@ -127,3 +127,30 @@ def test_hot_is_reels_only():
     hot = hot_post_ids(posts, ratio=2.0)
     assert "img" not in hot
     assert "viral" in hot  # 릴스 중앙값 100 기준 3배
+
+
+def _p(pid, likes):
+    return {"post_id": pid, "posted_at": "2026-07-01T00:00:00+00:00",
+            "metrics": {"likes": likes, "views": 100}}
+
+
+def test_sanitize_likes_비운다_숨김계정의_가짜3():
+    posts = [_p(f"a{i}", 3) for i in range(8)] + [_p("real", 120), _p("neg", -1)]
+    cleared = sanitize_likes(posts)
+    assert cleared == 9                                  # 3짜리 8개 + -1 한 개
+    assert all(p["metrics"]["likes"] is None for p in posts if p["post_id"] != "real")
+    assert posts[8]["metrics"]["likes"] == 120           # 정상값은 그대로
+
+
+def test_sanitize_likes_남긴다_진짜3():
+    """3이 소수면 진짜 좋아요 3개다 — 계정 전체를 숨김으로 보면 안 된다."""
+    posts = [_p(f"a{i}", 50 + i) for i in range(9)] + [_p("tiny", 3)]
+    cleared = sanitize_likes(posts)
+    assert cleared == 0
+    assert posts[-1]["metrics"]["likes"] == 3
+
+
+def test_sanitize_likes_음수는_항상_비운다():
+    posts = [_p(f"a{i}", 50 + i) for i in range(9)] + [_p("hidden", -1)]
+    assert sanitize_likes(posts) == 1
+    assert posts[-1]["metrics"]["likes"] is None

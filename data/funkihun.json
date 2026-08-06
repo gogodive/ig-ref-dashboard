@@ -456,7 +456,7 @@
       "duration": null,
       "posted_at": "2026-05-01T07:44:22.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 3
       },
       "frozen": true,
@@ -474,7 +474,7 @@
       "duration": null,
       "posted_at": "2026-04-30T02:28:07.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 8
       },
       "frozen": true,
@@ -492,7 +492,7 @@
       "duration": null,
       "posted_at": "2026-04-28T10:37:10.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 23
       },
       "frozen": true,
@@ -510,7 +510,7 @@
       "duration": null,
       "posted_at": "2026-04-27T09:36:40.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 22
       },
       "frozen": true,
@@ -528,7 +528,7 @@
       "duration": null,
       "posted_at": "2026-04-26T04:13:05.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 12
       },
       "frozen": true,
@@ -546,7 +546,7 @@
       "duration": null,
       "posted_at": "2026-04-25T04:27:53.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 0
       },
       "frozen": true,
@@ -1697,7 +1697,7 @@
       "posted_at": "2024-11-13T13:05:23.000Z",
       "metrics": {
         "views": 3443,
-        "likes": -1,
+        "likes": null,
         "comments": 4
       },
       "frozen": true,
@@ -1716,7 +1716,7 @@
       "posted_at": "2024-11-11T11:16:10.000Z",
       "metrics": {
         "views": 3167,
-        "likes": -1,
+        "likes": null,
         "comments": 2
       },
       "frozen": true,
@@ -1735,7 +1735,7 @@
       "posted_at": "2024-11-10T13:11:31.000Z",
       "metrics": {
         "views": 3664,
-        "likes": -1,
+        "likes": null,
         "comments": 21
       },
       "frozen": true,
@@ -1754,7 +1754,7 @@
       "posted_at": "2024-11-10T12:06:07.000Z",
       "metrics": {
         "views": 2964,
-        "likes": -1,
+        "likes": null,
         "comments": 6
       },
       "frozen": true,
@@ -1773,7 +1773,7 @@
       "posted_at": "2024-11-09T11:24:23.000Z",
       "metrics": {
         "views": 3001,
-        "likes": -1,
+        "likes": null,
         "comments": 14
       },
       "frozen": true,
@@ -1791,7 +1791,7 @@
       "duration": null,
       "posted_at": "2024-10-28T10:40:03.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 8
       },
       "frozen": true,
@@ -2097,7 +2097,7 @@
       "duration": null,
       "posted_at": "2024-01-22T14:01:08.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2133,7 +2133,7 @@
       "duration": null,
       "posted_at": "2023-12-04T12:17:35.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 5
       },
       "frozen": true,
@@ -2169,7 +2169,7 @@
       "duration": null,
       "posted_at": "2023-11-02T12:25:40.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 4
       },
       "frozen": true,
@@ -2188,7 +2188,7 @@
       "posted_at": "2023-10-30T10:23:24.000Z",
       "metrics": {
         "views": 3057,
-        "likes": -1,
+        "likes": null,
         "comments": 1
       },
       "frozen": true,
@@ -2297,7 +2297,7 @@
       "duration": null,
       "posted_at": "2023-10-13T06:59:22.000Z",
       "metrics": {
-        "likes": -1,
+        "likes": null,
         "comments": 4
       },
       "frozen": true,
@@ -2316,7 +2316,7 @@
       "posted_at": "2023-10-10T23:04:39.000Z",
       "metrics": {
         "views": 2599,
-        "likes": -1,
+        "likes": null,
         "comments": 11
       },
       "frozen": true,
