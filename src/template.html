@@ -51,6 +51,7 @@
            border-radius:10px; color:#fff; }
   .badge.live { background:var(--accent); }
   .badge.frozen { background:#8e8e8e; }
+  .badge.collab { top:32px; background:#6a1b9a; }
   .badge.hot { left:auto; right:8px; background:#ff5722; font-weight:700;
                font-size:15px; padding:5px 12px; border-radius:14px;
                box-shadow:0 2px 8px rgba(255,87,34,.5); }
@@ -110,6 +111,8 @@
         {% if p.frozen %}<span class="badge frozen">확정</span>
         {% else %}<span class="badge live">집계중 D+{{ p._days }}</span>{% endif %}
         {% if p._hot %}<span class="badge hot">{{ p._hot }}</span>{% endif %}
+        {% if p._collab %}<span class="badge collab"
+             title="공동 게시 — 조회수에 @{{ p._collab }} 오디언스가 섞여 있어 배수를 액면대로 읽으면 안 됩니다">🤝 협업</span>{% endif %}
         {% if p.thumb_local or p.thumbnail %}<img src="{{ p | thumb }}" alt="" loading="lazy"
              referrerpolicy="no-referrer"
              onerror="this.outerHTML='&lt;div class=noimg&gt;이미지 만료&lt;/div&gt;'">

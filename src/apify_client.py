@@ -75,6 +75,10 @@ def _map_post(m: dict) -> dict:
         "video_url": m.get("videoUrl"),
         "duration": m.get("videoDuration"),
         "posted_at": m.get("timestamp"),
+        # 협업(공동 게시)이면 성과의 분모가 이 계정이 아니다 — 배수 해석에 반드시 필요
+        "owner": m.get("ownerUsername"),
+        "coauthors": [c.get("username") for c in (m.get("coauthorProducers") or [])
+                      if isinstance(c, dict) and c.get("username")],
         "metrics": {
             # 조회수 필드명이 actor 버전/게시물 유형에 따라 달라 폭넓게 폴백
             "views": (m.get("videoPlayCount") or m.get("videoViewCount")

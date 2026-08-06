@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 
-from src.render import render_html
+from src.render import render_html, _collab_with
 
 NOW = datetime(2026, 7, 17, 9, 0, tzinfo=timezone.utc)
 
@@ -127,3 +127,17 @@ def test_chart_and_hot_are_reels_only():
     html = render_html([acc], NOW)
     assert 'badge hot' not in html  # 이미지 조회수는 히트 판별에서 제외
     assert 'class="card hot"' not in html
+
+
+def test_collab_with_owner불일치면_상대핸들():
+    assert _collab_with({"owner": "nar_ae__"}, "balibiki") == "nar_ae__"
+
+
+def test_collab_with_자기소유면_None():
+    assert _collab_with({"owner": "balibiki", "coauthors": []}, "balibiki") is None
+
+
+def test_collab_with_공동작성자도_잡는다():
+    """owner 는 이 계정인데 coauthor 가 붙은 경우도 노출이 섞인 건 마찬가지."""
+    assert _collab_with({"owner": "soomsamz", "coauthors": ["soomsamz", "waydoo"]},
+                        "soomsamz") == "waydoo"

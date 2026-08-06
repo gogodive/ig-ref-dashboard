@@ -71,6 +71,9 @@ def entry_from_hit(post: dict, account: dict, queued_at: str) -> dict:
         "likes": m.get("likes"),
         "comments": m.get("comments"),
         "duration": post.get("duration"),
+        # 공동 게시면 조회수에 남의 오디언스가 섞여 배수를 액면대로 읽으면 안 된다
+        "owner": post.get("owner"),
+        "coauthors": post.get("coauthors") or [],
         "caption": (post.get("caption") or "")[:300],
         "posted_at": post.get("posted_at"),
         "status": PENDING,

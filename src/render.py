@@ -58,6 +58,19 @@ def _thumb_src(post) -> str:
     return "https://images.weserv.nl/?url=" + urllib.parse.quote(str(url), safe="")
 
 
+def _collab_with(post: dict, username: str) -> str | None:
+    """공동 게시라면 상대 계정 핸들. 아니면 None.
+
+    공동 게시물은 양쪽 피드에 동시에 걸려 조회수에 남의 오디언스가 섞인다.
+    이 계정 중앙값으로 계산한 배수를 액면대로 읽으면 안 되므로 화면에 표시한다.
+    """
+    owner = post.get("owner")
+    if owner and owner != username:
+        return owner
+    others = [c for c in (post.get("coauthors") or []) if c and c != username]
+    return others[0] if others else None
+
+
 def _parse_ts(ts: str) -> datetime:
     return datetime.fromisoformat(ts.replace("+0000", "+00:00").replace("Z", "+00:00"))
 
@@ -156,6 +169,7 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
             p["_fmt"] = "reels" if is_reel(p) else "feed"
             # 협업 릴스는 두 계정에 같은 post_id 로 존재 → 계정명을 붙여 유일하게
             p["_uid"] = f"{acc['username']}-{p['post_id']}"
+            p["_collab"] = _collab_with(p, acc["username"])
         _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
         # 카드로 그릴 대상만 추린다 — 전량(계정당 180개)을 그리면 HTML 이 8MB 를 넘어
         # Pages 배포가 10분 제한을 초과한다. 중앙값·차트는 전량으로 계산하되
