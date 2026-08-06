@@ -223,9 +223,9 @@
     {% if acc._has_chart %}{{ chart_block(gi ~ "-" ~ ai) }}{% endif %}
     {{ filter_chips() }}
     <div class="grid">
-      {% for p in acc.posts %}{{ post_card(p) }}
+      {% for p in acc._cards %}{{ post_card(p) }}
       {% else %}<div class="empty">아직 수집된 데이터가 없습니다</div>{% endfor %}
-      {% if acc.posts %}<div class="filterempty">이 필터에 해당하는 게시물이 없습니다</div>{% endif %}
+      {% if acc._cards %}<div class="filterempty">이 필터에 해당하는 게시물이 없습니다</div>{% endif %}
     </div>
   </div>
   {% endfor %}

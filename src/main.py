@@ -231,7 +231,8 @@ def main() -> int:
     site.mkdir(exist_ok=True)
     (site / "index.html").write_text(
         render_html(accounts, now, hot_ratio=cfg["hot_ratio"],
-                    thumb_base=cfg.get("thumb_base_url", "")), encoding="utf-8")
+                    thumb_base=cfg.get("thumb_base_url", ""),
+                    render_limit=cfg.get("render_limit", 60)), encoding="utf-8")
     # 썸네일은 아티팩트에 넣지 않는다 — 파일 수가 많아 Pages 배포가 10분 제한을
     # 넘겨 실패한다. 저장소에 보관하고 CDN(thumb_base_url)으로 서빙한다.
     n = sum(1 for _ in (ROOT / "thumbs").rglob("*.webp")) if (ROOT / "thumbs").exists() else 0

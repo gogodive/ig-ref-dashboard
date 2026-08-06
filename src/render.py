@@ -116,7 +116,7 @@ def _build_groups(accounts: list[dict]) -> list[dict]:
         accs = by_brand[b]
         merged: list[dict] = []
         for acc in accs:
-            for p in acc.get("posts", []):
+            for p in acc.get("_cards", acc.get("posts", [])):
                 p["_by"] = f"@{acc['username']}"
                 merged.append(p)
         merged.sort(key=lambda p: p["posted_at"], reverse=True)
@@ -131,7 +131,7 @@ def _build_groups(accounts: list[dict]) -> list[dict]:
 
 
 def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float = HOT_RATIO,
-                thumb_base: str = "") -> str:
+                thumb_base: str = "", render_limit: int = 60) -> str:
     global THUMB_BASE
     THUMB_BASE = thumb_base
     env = Environment(
@@ -155,6 +155,15 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
             p["_days"] = (generated_at - _parse_ts(p["posted_at"])).days
             p["_fmt"] = "reels" if is_reel(p) else "feed"
         _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
+        # 카드로 그릴 대상만 추린다 — 전량(계정당 180개)을 그리면 HTML 이 8MB 를 넘어
+        # Pages 배포가 10분 제한을 초과한다. 중앙값·차트는 전량으로 계산하되
+        # 카드는 최신 render_limit 개 + 히트작(오래돼도 유지)만.
+        posts = acc.get("posts", [])
+        keep = posts[:render_limit]
+        kept = {id(p) for p in keep}
+        keep += [p for p in posts[render_limit:] if p.get("_hot") and id(p) not in kept]
+        keep.sort(key=lambda p: p["posted_at"], reverse=True)
+        acc["_cards"] = keep
 
     groups = _build_groups(accounts)
     charts: dict[str, dict] = {}
