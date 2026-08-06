@@ -64,5 +64,9 @@ jobs:
         with:
           path: site
 
+      # 썸네일 보관본(5,800여 파일)이 붙으면서 기본 10분 제한을 넘겨 배포가
+      # 중단된 적이 있다. 파일 수가 많을수록 Pages 큐 처리가 길어진다.
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000   # 30분
