@@ -6,6 +6,10 @@ apify:
   backfill_limit: 180        # --backfill 1회 실행 시 계정당 수집 개수
 
 display_limit: 180           # 대시보드에 계정당 최대 표시 게시물 수
+
+# 썸네일은 저장소에 보관하되 CDN 으로 서빙한다.
+# Pages 아티팩트에 5,800여 파일을 넣으면 배포가 10분 제한(상향 불가)을 넘겨 실패한다.
+thumb_base_url: "https://cdn.jsdelivr.net/gh/gogodive/ig-ref-dashboard@main/"
 freeze_days: 30              # 게시 후 이 일수가 지나면 지표 동결(확정)
 hot_ratio: 2.0               # 조회수가 계정 중앙값의 이 배수 이상이면 🔥
 

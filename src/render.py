@@ -36,17 +36,22 @@ def _fmt_num(v) -> str:
     return f"{v:,}"
 
 
+THUMB_BASE = ""  # render_html 에서 config 값으로 채운다
+
+
 def _thumb_src(post) -> str:
-    """썸네일 주소. 로컬 보관본이 있으면 그걸 쓰고, 없으면 원본을 프록시 경유.
+    """썸네일 주소. 저장소 보관본이 있으면 CDN 경유로, 없으면 원본을 프록시 경유.
 
     인스타 CDN 은 ①일부 이미지에 CORP: same-origin 을 걸어 외부 삽입을 막고
-    ②주소에 만료 서명이 붙어 몇 달 뒤 죽는다. 로컬 보관본이 둘 다 해결한다.
+    ②주소에 만료 서명이 붙어 약 2주면 죽는다. 저장소 보관본이 둘 다 해결한다.
+    보관본을 Pages 아티팩트에 넣으면 파일 수 때문에 배포가 실패하므로
+    저장소를 그대로 읽는 CDN(jsDelivr)으로 서빙한다.
     """
     if isinstance(post, Undefined) or not post:
         return ""
     local = post.get("thumb_local")
     if local:
-        return str(local)
+        return THUMB_BASE + str(local)
     url = post.get("thumbnail")
     if not url:
         return ""
@@ -125,7 +130,10 @@ def _build_groups(accounts: list[dict]) -> list[dict]:
     return groups
 
 
-def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float = HOT_RATIO) -> str:
+def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float = HOT_RATIO,
+                thumb_base: str = "") -> str:
+    global THUMB_BASE
+    THUMB_BASE = thumb_base
     env = Environment(
         loader=FileSystemLoader(_TEMPLATE_DIR),
         autoescape=select_autoescape(["html"]),

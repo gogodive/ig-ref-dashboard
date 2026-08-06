@@ -73,3 +73,11 @@ def test_render_prefers_local_over_proxy():
     assert proxied.startswith("https://images.weserv.nl/?url=")
 
     assert _thumb_src({}) == ""
+
+
+def test_thumb_src_uses_cdn_base(monkeypatch):
+    """저장소 보관본은 CDN 주소로 나가야 한다 (Pages 아티팩트에 안 넣으므로)."""
+    from src import render
+    monkeypatch.setattr(render, "THUMB_BASE", "https://cdn.example/gh/repo@main/")
+    assert render._thumb_src({"thumb_local": "thumbs/acc/p1.webp"}) == \
+        "https://cdn.example/gh/repo@main/thumbs/acc/p1.webp"

@@ -12,7 +12,6 @@ import argparse
 import json
 import logging
 import os
-import shutil
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -231,17 +230,12 @@ def main() -> int:
     site = ROOT / "site"
     site.mkdir(exist_ok=True)
     (site / "index.html").write_text(
-        render_html(accounts, now, hot_ratio=cfg["hot_ratio"]), encoding="utf-8")
-
-    # 보관된 썸네일을 배포 폴더로 복사 (site/ 는 gitignore 라 매번 새로 만든다)
-    src_thumbs = ROOT / "thumbs"
-    if src_thumbs.exists():
-        dst = site / "thumbs"
-        if dst.exists():
-            shutil.rmtree(dst)
-        shutil.copytree(src_thumbs, dst)
-        n = sum(1 for _ in dst.rglob("*.webp"))
-        log.info("썸네일 %d장 배포 폴더로 복사", n)
+        render_html(accounts, now, hot_ratio=cfg["hot_ratio"],
+                    thumb_base=cfg.get("thumb_base_url", "")), encoding="utf-8")
+    # 썸네일은 아티팩트에 넣지 않는다 — 파일 수가 많아 Pages 배포가 10분 제한을
+    # 넘겨 실패한다. 저장소에 보관하고 CDN(thumb_base_url)으로 서빙한다.
+    n = sum(1 for _ in (ROOT / "thumbs").rglob("*.webp")) if (ROOT / "thumbs").exists() else 0
+    log.info("썸네일 %d장 보관 중 (CDN 서빙)", n)
 
     # 허브 페이지 최상단 실행 상태 콜아웃 갱신
     if not args.dry_run and cfg["notion"].get("hub_page_id"):
