@@ -7,9 +7,28 @@ import os
 import re
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 API = "https://api.notion.com/v1"
 log = logging.getLogger(__name__)
+
+
+def _make_session() -> requests.Session:
+    """일시적 오류(연결 끊김·5xx·레이트리밋)를 자동 재시도하는 세션.
+
+    Actions 러너에서 'Connection reset by peer' 한 번에 하루치 실행이
+    통째로 죽은 적이 있어 재시도를 기본으로 둔다.
+    """
+    s = requests.Session()
+    retry = Retry(total=4, connect=4, read=4, backoff_factor=1.5,
+                  status_forcelist=(429, 500, 502, 503, 504),
+                  allowed_methods=frozenset(["GET", "POST", "PATCH"]))
+    s.mount("https://", HTTPAdapter(max_retries=retry))
+    return s
+
+
+SESSION = _make_session()
 
 
 def username_from_url(url: str) -> str:
@@ -41,7 +60,7 @@ def _plain_text(prop: dict) -> str:
 
 def _monitoring_filter(db_id: str, version: str) -> dict:
     """'모니터링' 속성 타입(checkbox/status/select 어느 쪽이든)에 맞는 필터 생성."""
-    res = requests.get(f"{API}/databases/{db_id}", headers=_headers(version), timeout=60)
+    res = SESSION.get(f"{API}/databases/{db_id}", headers=_headers(version), timeout=60)
     res.raise_for_status()
     ptype = res.json().get("properties", {}).get("모니터링", {}).get("type", "checkbox")
     if ptype == "status":
@@ -61,7 +80,7 @@ def fetch_target_accounts(db_id: str, version: str) -> list[dict]:
     accounts: list[dict] = []
     skipped: list[str] = []
     while True:
-        res = requests.post(f"{API}/databases/{db_id}/query",
+        res = SESSION.post(f"{API}/databases/{db_id}/query",
                             headers=_headers(version), json=payload, timeout=60)
         res.raise_for_status()
         body = res.json()

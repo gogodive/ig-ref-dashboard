@@ -10,7 +10,7 @@ from datetime import datetime
 
 import requests
 
-from src.notion_source import _headers
+from src.notion_source import SESSION, _headers
 
 API = "https://api.notion.com/v1"
 log = logging.getLogger(__name__)
@@ -98,7 +98,7 @@ def update_status_callout(page_id: str, text: str, emoji: str, color: str,
     body = {"callout": {"rich_text": rich, "icon": {"emoji": emoji}, "color": color}}
 
     try:
-        res = requests.get(f"{API}/blocks/{page_id}/children",
+        res = SESSION.get(f"{API}/blocks/{page_id}/children",
                            headers=headers, params={"page_size": 20}, timeout=60)
         res.raise_for_status()
         for block in res.json().get("results", []):
@@ -107,7 +107,7 @@ def update_status_callout(page_id: str, text: str, emoji: str, color: str,
             plain = "".join(t.get("plain_text", "")
                             for t in block["callout"].get("rich_text", []))
             if STATUS_MARKER in plain:
-                r = requests.patch(f"{API}/blocks/{block['id']}",
+                r = SESSION.patch(f"{API}/blocks/{block['id']}",
                                    headers=headers, json=body, timeout=60)
                 if r.ok:
                     return True
@@ -115,7 +115,7 @@ def update_status_callout(page_id: str, text: str, emoji: str, color: str,
                 return False
 
         # 표식을 못 찾으면 페이지 끝에 새로 추가 (사용자가 지운 경우 대비)
-        r = requests.patch(f"{API}/blocks/{page_id}/children", headers=headers,
+        r = SESSION.patch(f"{API}/blocks/{page_id}/children", headers=headers,
                            json={"children": [{"object": "block", "type": "callout", **body}]},
                            timeout=60)
         if r.ok:
@@ -128,15 +128,22 @@ def update_status_callout(page_id: str, text: str, emoji: str, color: str,
 
 
 def update_account_followers(page_id: str, followers: int, notion_version: str) -> None:
-    """계정 DB 행의 '팔로워 수' 속성을 최신값으로 갱신 (없는 컬럼이면 조용히 무시)."""
-    res = requests.patch(
-        f"{API}/pages/{page_id}",
-        headers=_headers(notion_version),
-        json={"properties": {"팔로워 수": {"number": followers}}},
-        timeout=60,
-    )
-    if not res.ok:
-        log.debug("팔로워 수 갱신 실패 %s: %s", page_id, res.text[:200])
+    """계정 DB 행의 '팔로워 수' 속성을 최신값으로 갱신.
+
+    부수적인 기능이므로 실패해도 절대 예외를 올리지 않는다 —
+    여기서 터진 ConnectionError 가 하루치 실행 전체를 죽인 적이 있다.
+    """
+    try:
+        res = SESSION.patch(
+            f"{API}/pages/{page_id}",
+            headers=_headers(notion_version),
+            json={"properties": {"팔로워 수": {"number": followers}}},
+            timeout=60,
+        )
+        if not res.ok:
+            log.debug("팔로워 수 갱신 실패 %s: %s", page_id, res.text[:200])
+    except requests.RequestException as e:
+        log.warning("팔로워 수 갱신 중 네트워크 오류 %s: %s", page_id, e)
 
 
 def write_log_card(
@@ -220,12 +227,17 @@ def write_log_card(
         if weekly.get("cadence"):
             blocks.append(_bullet("업로드 주기: " + weekly["cadence"]))
 
-    res = requests.post(
-        f"{API}/pages",
-        headers=_headers(notion_version),
-        json={"parent": {"database_id": log_db_id}, "properties": props, "children": blocks},
-        timeout=60,
-    )
+    try:
+        res = SESSION.post(
+            f"{API}/pages",
+            headers=_headers(notion_version),
+            json={"parent": {"database_id": log_db_id}, "properties": props,
+                  "children": blocks},
+            timeout=60,
+        )
+    except requests.RequestException as e:
+        log.warning("노션 카드 작성 중 네트워크 오류 @%s: %s", acc["username"], e)
+        return None
     if not res.ok:
         log.warning("노션 카드 작성 실패 @%s: %s", acc["username"], res.text[:300])
         return None

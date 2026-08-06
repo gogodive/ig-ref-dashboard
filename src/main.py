@@ -191,8 +191,16 @@ def main() -> int:
     processed: dict[str, dict] = {}
     run_stats: list[dict] = []
     for a in targets:
-        account, stats = process_account(a, cfg, ROOT / "data", now,
-                                         args.dry_run, args.backfill)
+        # 계정 하나에서 예상 못 한 예외가 나도 나머지 계정과 배포는 계속한다
+        try:
+            account, stats = process_account(a, cfg, ROOT / "data", now,
+                                             args.dry_run, args.backfill)
+        except Exception as e:  # noqa: BLE001
+            log.exception("처리 중 예외 @%s — 건너뜁니다", a["username"])
+            account = {**load_stored(ROOT / "data", a["username"]), **a,
+                       "brand": a["name"] or f"@{a['username']}"}
+            stats = {"username": a["username"], "ok": False, "new": 0, "hot": 0,
+                     "error": str(e).splitlines()[0][:200]}
         processed[a["username"]] = account
         run_stats.append(stats)
 
