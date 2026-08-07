@@ -214,6 +214,13 @@ def main() -> int:
                 for a in all_targets]
     for a in accounts:
         a.setdefault("posts", [])
+    # 수집을 시도했다 실패한 계정만 대시보드에 경고를 띄운다
+    # (--only 로 이번에 안 건드린 계정은 저장분이 여전히 최신이다)
+    failed = {s["username"] for s in run_stats if not s["ok"]}
+    for a in accounts:
+        a["_collect_failed"] = a["username"] in failed
+    if failed:
+        log.warning("수집 실패 %d개 계정: %s", len(failed), ", ".join(sorted(failed)))
 
     # 협업 보정 — 공동 게시물은 남의 오디언스가 섞여 배수를 액면대로 읽으면 안 된다.
     # 자체 게시물만으로 중앙값을 내고, 협업분은 상대 계정 기준선과 비교해 큰 쪽으로 나눈다.

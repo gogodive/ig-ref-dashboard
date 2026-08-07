@@ -177,15 +177,14 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
     env.filters["date"] = _fmt_date
     env.filters["thumb"] = _thumb_src
     tpl = env.get_template("template.html")
-    gen_date = generated_at.astimezone(KST).date()
 
     for acc in accounts:
+        # 이번 실행에서 '수집을 시도했는데 실패한' 계정만 알린다.
+        # 날짜만 비교하면 --only 실행에서 손대지 않은 계정까지 전부 실패로 뜬다 —
+        # 안 건드린 계정은 저장분이 여전히 최신이라 경고할 일이 아니다.
         fetched = acc.get("fetched_at")
-        acc["_stale_date"] = None
-        if fetched:
-            fdt = _parse_ts(fetched).astimezone(KST)
-            if fdt.date() != gen_date:
-                acc["_stale_date"] = fdt.strftime("%Y-%m-%d")
+        acc["_stale_date"] = (_parse_ts(fetched).astimezone(KST).strftime("%Y-%m-%d")
+                              if acc.get("_collect_failed") and fetched else None)
         for p in acc.get("posts", []):
             p["_days"] = (generated_at - _parse_ts(p["posted_at"])).days
             p["_fmt"] = "reels" if is_reel(p) else "feed"

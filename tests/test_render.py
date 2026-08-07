@@ -130,6 +130,19 @@ def test_chart_and_hot_are_reels_only():
     assert 'class="card hot"' not in html
 
 
+def test_수집_실패한_계정만_경고():
+    """--only 실행에서 손대지 않은 계정까지 '수집 실패'로 뜨면 안 된다."""
+    hit = _account()
+    hit["_collect_failed"] = True
+    skipped = _account(username="getbarrel")     # 이번 실행에서 시도조차 안 한 계정
+    skipped["brand"] = "배럴"
+    yesterday = (NOW - timedelta(days=1)).isoformat()
+    hit["fetched_at"] = skipped["fetched_at"] = yesterday
+    html = render_html([hit, skipped], NOW)
+    assert html.count("최근 수집 실패") == 1
+    assert "2026-07-16 데이터입니다" in html    # 실패한 계정은 마지막 성공일을 보여준다
+
+
 def _chart(html: str, key: str) -> dict:
     """렌더된 HTML 에서 CHART_DATA 를 뽑아 해당 차트 페이로드를 돌려준다."""
     raw = html.split("const CHART_DATA = ", 1)[1].split(";\n", 1)[0]
