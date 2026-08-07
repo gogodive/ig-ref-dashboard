@@ -49,14 +49,38 @@ jobs:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: python -m src.main ${{ inputs.backfill && '--backfill' || '' }} ${{ inputs.only && format('--only {0}', inputs.only) || '' }}
 
+      # 실행이 도는 동안 로컬(심층분석 스킬)이 data/hit_queue.json 을 push 하면
+      # rebase 가 충돌해 커밋도 배포도 통째로 죽는다. 이 파일만은 원격이 옳다 —
+      # 분석 완료 상태(status·notion_page_id)가 거기 있고, 러너가 갱신한 지표와
+      # 새로 편입된 히트는 다음 실행이 어차피 다시 계산한다.
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data thumbs
           git diff --cached --quiet || git commit -m "chore: daily data update"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            if ! git pull --rebase origin main; then
+              unmerged=$(git diff --name-only --diff-filter=U)
+              others=$(echo "$unmerged" | grep -v '^data/hit_queue\.json$' || true)
+              if [ -z "$unmerged" ] || [ -n "$others" ]; then
+                echo "::error::rebase 중단 (충돌: ${unmerged:-없음})"
+                git rebase --abort || true
+                exit 1
+              fi
+              git checkout --ours data/hit_queue.json
+              git add data/hit_queue.json
+              # 충돌 파일이 유일한 변경이었으면 커밋이 비므로 건너뛴다
+              if git diff --cached --quiet; then
+                git rebase --skip
+              else
+                GIT_EDITOR=true git rebase --continue
+              fi
+            fi
+            git push && exit 0
+            echo "push 경합 — 재시도 $attempt/3"
+          done
+          exit 1
 
       - uses: actions/configure-pages@v5
 
