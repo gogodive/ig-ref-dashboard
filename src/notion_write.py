@@ -161,8 +161,8 @@ def write_log_card(
     m = _summary_metrics(posts, acc.get("followers_count"))
 
     headline = new_posts[0].get("analysis", {}).get("one_liner", "") if new_posts else ""
-    implications = [f"🔥 {p.get('permalink', '')} 가 기준선을 넘었습니다 — 심층분석 대상"
-                    for p in new_hits]
+    if new_hits:
+        headline = f"🔥 새 히트 {len(new_hits)}편" + (f" · {headline}" if headline else "")
 
     props: dict = {
         "제목": {"title": _rt(f"{acc['username']} · {date_str}")},
@@ -170,7 +170,6 @@ def write_log_card(
         "username": {"rich_text": _rt(acc["username"])},
         "게시물수": {"number": m["count"]},
         "핵심 인사이트": {"rich_text": _rt(headline)},
-        "기획 시사점": {"rich_text": _rt(" / ".join(implications))},
         "주요 포맷": {"multi_select": [{"name": f} for f in m["formats"]]},
     }
     if acc.get("page_id"):

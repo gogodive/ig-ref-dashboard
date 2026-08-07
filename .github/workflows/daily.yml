@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       backfill:
-        description: "1회성 백필 (계정당 180개 수집, 과거 히트 분석)"
+        description: "1회성 백필 (계정당 180개 수집 · 분석·노션 기록 생략)"
         type: boolean
         default: false
       only:
