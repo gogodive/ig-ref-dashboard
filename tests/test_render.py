@@ -222,9 +222,12 @@ def test_주간종합은_사라졌다():
     assert "주간 종합" not in html
 
 
-def test_차트에_확대축소가_붙는다():
+def test_차트_조작은_휠이_아니라_버튼():
+    """휠 확대는 페이지 스크롤과 섞여 조준이 안 된다 — 버튼으로만."""
     html = render_html([_account()], NOW)
     assert "chartjs-plugin-zoom" in html
-    assert "hammer.min.js" in html              # 모바일 핀치용
-    assert 'class="zoomreset"' in html
-    assert "스크롤 = 기간 확대/축소" in html
+    assert "hammer.min.js" in html                     # 모바일 핀치용
+    for act in ("in", "out", "left", "right", "reset"):
+        assert f'data-act="{act}"' in html
+    assert "wheel: {enabled: false}" in html
+    assert "＋－ 로 기간 확대/축소, ◀▶ 로 이동" in html

@@ -58,10 +58,13 @@
   .chartlegend .dash { display:inline-block; width:16px; border-top:2px dashed #898781;
                        margin-right:5px; vertical-align:3px; }
   .chartlegend .hint { margin-left:auto; }
-  .zoomreset { position:absolute; top:8px; right:8px; z-index:2; padding:4px 10px;
-               font-size:11px; border:1px solid var(--line); border-radius:12px;
-               background:#fff; color:var(--sub); cursor:pointer; }
-  .zoomreset:hover { color:var(--fg); border-color:var(--sub); }
+  .zoomctl { position:absolute; top:8px; right:8px; z-index:2; display:flex; gap:4px; }
+  .zoomctl button { min-width:28px; padding:3px 8px; font-size:12px; line-height:1.4;
+                    border:1px solid var(--line); border-radius:6px; background:#fff;
+                    color:#262626; cursor:pointer; }
+  .zoomctl button:hover:not(:disabled) { background:#262626; color:#fff; border-color:#262626; }
+  .zoomctl button:disabled { color:#c9c6bf; cursor:default; }
+  .zoomctl button[data-act="reset"] { min-width:auto; font-size:11px; color:var(--sub); }
   @media (max-width:600px){ .chartbox{ height:220px; } .chartlegend .hint{ display:none; } }
   .info { padding:10px 12px; }
   .date { font-size:12px; color:var(--sub); }
@@ -151,10 +154,16 @@
       <span><i class="dot big" style="background:#eb6834"></i>히트 (계정 중앙값 {{ hot_ratio_label }}배↑)</span>
       {# 통합 차트는 계정마다 기준선이 달라 중앙값 선을 긋지 않는다 #}
       {% if not merged %}<span><i class="dash"></i>중앙값</span>{% endif %}
-      <span class="hint">점 클릭 = 게시물로 이동 · <b>스크롤 = 기간 확대/축소</b> · 드래그 = 좌우 이동</span>
+      <span class="hint">점 클릭 = 게시물로 이동 · <b>＋－ 로 기간 확대/축소, ◀▶ 로 이동</b></span>
     </div>
     <div class="chartbox"><canvas id="chart-{{ key }}"></canvas>
-      <button class="zoomreset" data-chart="{{ key }}" hidden>전체 기간</button></div>
+      <div class="zoomctl" data-chart="{{ key }}" hidden>
+        <button data-act="out" title="기간 넓게 보기">－</button>
+        <button data-act="in" title="기간 좁게 보기">＋</button>
+        <button data-act="left" title="이전 기간">◀</button>
+        <button data-act="right" title="다음 기간">▶</button>
+        <button data-act="reset" title="전체 기간으로">전체</button>
+      </div></div>
   </div>
 {%- endmacro %}
 
@@ -281,11 +290,11 @@ function initChart(key) {
         // 통합 피드는 점이 수백 개라 최근 몇 주만 떼어 보려면 가로 확대가 필요하다.
         // x축만 — 세로(조회수)는 로그 눈금이라 배율을 바꾸면 오히려 읽기 어려워진다.
         zoom: !CAN_ZOOM ? undefined : {
-          limits: {x: {minRange: 7 * DAY_MS}},
+          limits: {x: {min: "original", max: "original", minRange: 7 * DAY_MS}},
           pan: {enabled: true, mode: "x", threshold: 5,
-                onPanComplete: ({chart}) => toggleReset(key, chart)},
-          zoom: {mode: "x", wheel: {enabled: true, speed: 0.12}, pinch: {enabled: true},
-                 onZoomComplete: ({chart}) => toggleReset(key, chart)},
+                onPanComplete: ({chart}) => zoomUI(key)},
+          zoom: {mode: "x", wheel: {enabled: false}, pinch: {enabled: true},
+                 onZoomComplete: ({chart}) => zoomUI(key)},
         },
         tooltip: {displayColors: false, callbacks: {
           title: items => items[0].raw.d,
@@ -313,18 +322,36 @@ function initChart(key) {
     plugins: median ? [medianLine] : []
   });
   madeCharts[key] = chart;
+  zoomUI(key);
 }
 
-// 확대 상태일 때만 '전체 기간' 버튼을 보인다
-function toggleReset(key, chart) {
-  const btn = document.querySelector('.zoomreset[data-chart="' + key + '"]');
-  if (btn) btn.hidden = chart.getZoomLevel() <= 1.001;
+// 전체 기간을 보고 있을 때는 이동·복귀 버튼이 할 일이 없다
+function zoomUI(key) {
+  const box = document.querySelector('.zoomctl[data-chart="' + key + '"]');
+  const chart = madeCharts[key];
+  if (!box || !chart || !chart.getZoomLevel) return;
+  const zoomed = chart.getZoomLevel() > 1.001;
+  box.querySelectorAll("button").forEach(b => {
+    if (b.dataset.act !== "in") b.disabled = !zoomed;
+  });
 }
 
-document.querySelectorAll(".zoomreset").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const chart = madeCharts[btn.dataset.chart];
-    if (chart && chart.resetZoom) { chart.resetZoom(); btn.hidden = true; }
+const ZOOM_STEP = 1.5;      // 한 번에 1.5배씩 — 휠보다 예측 가능하게
+const PAN_SHARE = 0.5;      // 화면 폭의 절반씩 이동
+
+document.querySelectorAll(".zoomctl").forEach(box => {
+  box.hidden = !CAN_ZOOM;   // 플러그인이 CDN 에서 안 오면 조작 줄을 감춘다
+  box.addEventListener("click", e => {
+    const act = e.target.dataset && e.target.dataset.act;
+    const chart = madeCharts[box.dataset.chart];
+    if (!act || !chart || !chart.zoom) return;
+    const step = (chart.chartArea ? chart.chartArea.width : 300) * PAN_SHARE;
+    if (act === "in") chart.zoom({x: ZOOM_STEP});
+    else if (act === "out") chart.zoom({x: 1 / ZOOM_STEP});
+    else if (act === "left") chart.pan({x: step});      // 양수 = 과거 쪽으로
+    else if (act === "right") chart.pan({x: -step});
+    else if (act === "reset") chart.resetZoom();
+    zoomUI(box.dataset.chart);
   });
 });
 
