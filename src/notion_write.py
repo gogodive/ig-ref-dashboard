@@ -149,8 +149,7 @@ def update_account_followers(page_id: str, followers: int, notion_version: str) 
 def write_log_card(
     acc: dict,
     new_posts: list[dict],
-    hot_posts: list[dict],
-    weekly: dict | None,
+    new_hits: list[dict],
     now: datetime,
     log_db_id: str,
     notion_version: str,
@@ -161,13 +160,9 @@ def write_log_card(
     posts = acc.get("posts", [])
     m = _summary_metrics(posts, acc.get("followers_count"))
 
-    headline = (weekly or {}).get("headline") or (
-        new_posts[0].get("analysis", {}).get("one_liner", "") if new_posts else ""
-    )
-    implications = (weekly or {}).get("implications") or [
-        p.get("analysis", {}).get("apply", "") for p in hot_posts
-        if p.get("analysis", {}).get("apply")
-    ]
+    headline = new_posts[0].get("analysis", {}).get("one_liner", "") if new_posts else ""
+    implications = [f"🔥 {p.get('permalink', '')} 가 기준선을 넘었습니다 — 심층분석 대상"
+                    for p in new_hits]
 
     props: dict = {
         "제목": {"title": _rt(f"{acc['username']} · {date_str}")},
@@ -204,28 +199,20 @@ def write_log_card(
                 f"{one or (p.get('caption') or '')[:80]} | {p.get('permalink', '')}"
             ))
 
-    if hot_posts:
-        blocks.append(_h2("🔥 히트 게시물 분석"))
-        for p in hot_posts:
-            a = p.get("analysis", {})
-            hook = f"[{a['hook_type']}] " if a.get("hook_type") else ""
-            blocks.append(_bullet(f"{hook}왜 터졌나: {a.get('why_hot', '')} — {p.get('permalink', '')}"))
-            if a.get("pattern"):
-                blocks.append(_bullet(f"📐 재사용 패턴: {a['pattern']}"))
-            if a.get("apply"):
-                blocks.append(_bullet(f"→ 자사 적용: {a['apply']}"))
-
-    if weekly:
-        blocks.append(_h2("🧠 주간 종합"))
-        blocks.append(_para(weekly.get("headline", "")))
-        if weekly.get("hook_patterns"):
-            blocks.append(_bullet("반복 훅 공식: " + " / ".join(weekly["hook_patterns"])))
-        for imp in weekly.get("implications", []):
-            blocks.append(_bullet(imp))
-        if weekly.get("themes"):
-            blocks.append(_bullet("반복 주제: " + ", ".join(weekly["themes"])))
-        if weekly.get("cadence"):
-            blocks.append(_bullet("업로드 주기: " + weekly["cadence"]))
+    # 히트는 AI 요약 대신 성과와 링크만. 프레임 단위 해석은 '🎯 성과 좋은 릴스 분석'
+    # DB 몫이고, 대시보드 카드의 CTA 가 그 리포트로 바로 보낸다.
+    if new_hits:
+        blocks.append(_h2(f"🔥 새로 기준선을 넘은 릴스 {len(new_hits)}편"))
+        for p in new_hits:
+            mm = p.get("metrics", {})
+            r = p.get("_ratio")
+            rtxt = f"평소의 {r:.1f}배 · " if isinstance(r, (int, float)) else ""
+            blocks.append(_bullet(
+                f"{rtxt}조회 {mm.get('views')}·좋아요 {mm.get('likes')}·"
+                f"댓글 {mm.get('comments')} | {p.get('permalink', '')}"
+            ))
+        blocks.append(_para("→ 심층분석은 '🎯 성과 좋은 릴스 분석' DB에 쌓입니다 "
+                            "(대시보드 🔥 카드의 버튼으로 바로 이동)"))
 
     try:
         res = SESSION.post(

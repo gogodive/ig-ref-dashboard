@@ -23,8 +23,6 @@ def _account(username="deeps_freediving", n_posts=6, viral_views=5000):
             "analysis": {"one_liner": "짧은 후킹이 강점", "analyzed_at": NOW.isoformat()},
         })
     posts[0]["metrics"]["views"] = viral_views
-    posts[0]["analysis"]["why_hot"] = "도입 3초 반전"
-    posts[0]["analysis"]["apply"] = "전후 비교 릴스 제작"
     return {
         "brand": "딥스 프리다이빙",
         "username": username,
@@ -32,13 +30,6 @@ def _account(username="deeps_freediving", n_posts=6, viral_views=5000):
         "category": "프리다이빙",
         "followers_count": 18400,
         "fetched_at": NOW.isoformat(),
-        "weekly_summary": {
-            "headline": "결과를 먼저 보여주는 구조",
-            "implications": ["전후 비교 릴스", "공포 극복 서사"],
-            "themes": ["수중풍경", "장비"],
-            "cadence": "주 4회 저녁",
-            "summarized_at": NOW.isoformat(),
-        },
         "posts": posts,
     }
 
@@ -47,8 +38,6 @@ def test_render_smoke():
     html = render_html([_account()], NOW)
     assert "딥스 프리다이빙" in html
     assert "@deeps_freediving" in html
-    assert "주간 종합 분석" in html
-    assert "왜 터졌나" in html          # 히트 심층 분석 패널
     assert "짧은 후킹이 강점" in html    # 한줄 분석
     assert "고고다이브" in html          # 벤치마크 뱃지
     assert "확정" not in html or True
@@ -68,24 +57,15 @@ def test_render_hot_badge():
 def test_render_empty_account():
     acc = _account()
     acc["posts"] = []
-    acc["weekly_summary"] = None
     html = render_html([acc], NOW)
     assert "아직 수집된 데이터가 없습니다" in html
 
 
-def test_render_hook_type_and_pattern():
-    acc = _account()
-    acc["posts"][0]["analysis"].update(hook_type="비주얼형-압도적 풍경",
-                                       pattern="[의외의 장소] + 「여기가 한국?」 프레이밍")
+def test_render_hook_type():
+    acc = _account(viral_views=100)            # 히트 없음 — 전부 일반 카드
     acc["posts"][1]["analysis"]["hook_type"] = "가치형-경고"
-    acc["weekly_summary"]["hook_patterns"] = ["[N가지] 실수 나열", "전후 비교"]
     html = render_html([acc], NOW)
-    assert "비주얼형-압도적 풍경" in html      # 히트 카드 훅 뱃지
     assert "가치형-경고" in html               # 일반 카드 훅 뱃지
-    assert "📐 패턴" in html
-    assert "여기가 한국?" in html
-    assert "반복 훅 공식" in html
-    assert "전후 비교" in html
 
 
 def test_render_brand_grouping():
@@ -97,7 +77,7 @@ def test_render_brand_grouping():
     assert "고고다이브" in html and "라세린" in html
     assert html.count('<section class="brand') == 2
     # 서브탭 = 통합 피드 + 계정
-    assert html.count("통합 피드") == 2
+    assert html.count(">통합 피드</button>") == 2
     assert "딥스 프리다이빙" in html and "배럴" in html
     # 통합 피드 카드에 계정 표시
     assert 'class="byline">@deeps_freediving' in html
@@ -197,3 +177,54 @@ def test_collab_with_공동작성자도_잡는다():
     """owner 는 이 계정인데 coauthor 가 붙은 경우도 노출이 섞인 건 마찬가지."""
     assert _collab_with({"owner": "soomsamz", "coauthors": ["soomsamz", "waydoo"]},
                         "soomsamz") == "waydoo"
+
+
+# ── 🔥 카드: AI 해설 대신 성과 2줄 + 심층분석 리포트 버튼 ──────────────────
+
+PAGE_ID = "3b339eba-97ed-8161-944f-c39beba9948a"
+
+
+def test_히트카드는_성과와_리포트버튼():
+    acc = _account(viral_views=5000)           # 중앙값 100 → 50배
+    html = render_html([acc], NOW, deep_links={"p0": PAGE_ID})
+    assert "이 계정 평소(100회)의 50.0배" in html
+    assert "좋아요율 0.20% · 댓글률 0.020%" in html
+    assert "https://app.notion.com/p/3b339eba97ed8161944fc39beba9948a" in html
+    assert "이 릴스 분석 리포트 열기" in html
+
+
+def test_리포트_없으면_버튼도_없다():
+    """심층분석은 최근 6개월 히트만 대상 — 옛 히트에 헛된 기다림을 달지 않는다."""
+    html = render_html([_account(viral_views=5000)], NOW)   # deep_links 없음
+    assert "app.notion.com" not in html
+    assert "리포트 열기" not in html
+    assert "평소(100회)의 50.0배" in html                    # 성과줄은 그대로
+
+
+def test_히트카드_성과줄은_협업이면_기준을_밝힌다():
+    acc = _account(viral_views=5000)
+    acc["posts"][0].update(_ratio=4.5, _ratio_basis="collab:soomsamz")
+    html = render_html([acc], NOW)
+    assert "공동 게시 — @soomsamz 평소(1,111회)의 4.5배" in html
+
+
+def test_좋아요_숨긴_계정은_댓글률만():
+    acc = _account(viral_views=5000)
+    for p in acc["posts"]:
+        p["metrics"]["likes"] = None
+    html = render_html([acc], NOW)
+    assert "좋아요 비공개" in html
+    assert "좋아요율" not in html
+
+
+def test_주간종합은_사라졌다():
+    html = render_html([_account()], NOW)
+    assert "주간 종합" not in html
+
+
+def test_차트에_확대축소가_붙는다():
+    html = render_html([_account()], NOW)
+    assert "chartjs-plugin-zoom" in html
+    assert "hammer.min.js" in html              # 모바일 핀치용
+    assert 'class="zoomreset"' in html
+    assert "스크롤 = 기간 확대/축소" in html

@@ -75,6 +75,43 @@ def _parse_ts(ts: str) -> datetime:
     return datetime.fromisoformat(ts.replace("+0000", "+00:00").replace("Z", "+00:00"))
 
 
+def _perf_lines(post: dict) -> list[str]:
+    """🔥 카드에 띄울 성과 요약 2줄.
+
+    AI 해설 대신 숫자만 준다 — 해석은 '🎯 성과 좋은 릴스 분석' 리포트 몫이고,
+    카드의 버튼이 거기로 보낸다. 조회수·좋아요·댓글 원수는 바로 위 줄에 이미
+    있으므로 여기서는 **배수와 반응률**만 (겹치면 아무도 안 읽는다).
+    """
+    m = post.get("metrics", {})
+    views = m.get("views")
+    if not isinstance(views, int) or views <= 0:
+        return []
+
+    lines = []
+    r = post.get("_ratio")
+    if isinstance(r, (int, float)) and r > 0:
+        base = round(views / r)
+        basis = post.get("_ratio_basis") or "own"
+        if basis.startswith("collab:"):
+            lines.append(f"공동 게시 — @{basis.split(':', 1)[1]} 평소({base:,}회)의 {r:.1f}배")
+        elif basis == "collab-unknown":
+            lines.append(f"평소({base:,}회)의 {r:.1f}배 — 공동 게시라 실제론 더 낮습니다")
+        else:
+            lines.append(f"이 계정 평소({base:,}회)의 {r:.1f}배")
+
+    likes, comments = m.get("likes"), m.get("comments")
+    rates = []
+    if isinstance(likes, int):
+        rates.append(f"좋아요율 {likes / views * 100:.2f}%")
+    if isinstance(comments, int):
+        rates.append(f"댓글률 {comments / views * 100:.3f}%")
+    if not isinstance(likes, int):
+        rates.append("좋아요 비공개")
+    if rates:
+        lines.append(" · ".join(rates))
+    return lines
+
+
 def _fmt_date(ts: str) -> str:
     if not ts:
         return ""
@@ -106,8 +143,12 @@ def _annotate_hot(posts: list[dict], hot_ratio: float = HOT_RATIO) -> None:
         if not is_reel(p):
             continue
         v = p.get("metrics", {}).get("views")
-        if isinstance(v, int) and v / median >= hot_ratio:
-            ratio = v / median
+        if not isinstance(v, int) or v <= 0:
+            continue
+        # 배수는 히트가 아니어도 남긴다 — 카드 성과줄이 이 값을 읽는다
+        ratio = v / median
+        p["_ratio"], p["_ratio_basis"] = ratio, "own"
+        if ratio >= hot_ratio:
             p["_hot"] = f"🔥 {ratio:.1f}x" if ratio >= HOT_RATIO_LABELED else "🔥"
 
 
@@ -165,8 +206,12 @@ def _build_groups(accounts: list[dict]) -> list[dict]:
     return groups
 
 
+NOTION_PAGE_BASE = "https://app.notion.com/p/"
+
+
 def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float = HOT_RATIO,
-                thumb_base: str = "", render_limit: int = 60) -> str:
+                thumb_base: str = "", render_limit: int = 60,
+                deep_links: dict[str, str] | None = None) -> str:
     global THUMB_BASE
     THUMB_BASE = thumb_base
     env = Environment(
@@ -194,6 +239,13 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
             # collab 모듈이 먼저 돌았으면 그 판정(모니터링 계정 간 공유 포함)을 쓴다
             p["_collab"] = p.get("_collab_with") or _collab_with(p, acc["username"])
         _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
+        # 🔥 카드는 AI 해설 대신 성과 2줄 + 심층분석 리포트 버튼을 단다
+        for p in acc.get("posts", []):
+            if not p.get("_hot"):
+                continue
+            p["_perf"] = _perf_lines(p)
+            page_id = (deep_links or {}).get(p["post_id"])
+            p["_deep_url"] = NOTION_PAGE_BASE + page_id.replace("-", "") if page_id else None
         # 카드로 그릴 대상만 추린다 — 전량(계정당 180개)을 그리면 HTML 이 8MB 를 넘어
         # Pages 배포가 10분 제한을 초과한다. 중앙값·차트는 전량으로 계산하되
         # 카드는 최신 render_limit 개 + 히트작(오래돼도 유지)만.

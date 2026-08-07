@@ -5,7 +5,7 @@ apify:
   # 일일 수집 = 감지 창(최신 posts_limit개) + 창 밖 동결 전 게시물 URL 직접 배치.
   # 동결(30일)된 게시물을 매일 다시 사지 않기 위한 구조 — 창 30 시절 일 ~1,147건 중
   # 58%가 동결분 재구매였다. 창 전체가 처음 보는 글이면(다작·고정핀 잠식) 포화로 보고
-  # saturated_limit 로 재수집한다. 팔로워는 주 1회(weekly_summary_weekday)만 조회.
+  # saturated_limit 로 재수집한다. 팔로워는 주 1회(followers_weekday)만 조회.
   posts_limit: 10            # 새 게시물 감지 창
   saturated_limit: 30        # 감지 창 포화 시 재수집 개수
   backfill_limit: 180        # --backfill 1회 실행 시 계정당 수집 개수
@@ -27,13 +27,11 @@ deep_analysis:
   recent_days: 180           # 최근 6개월 이내 게시물만
   notion_db_id: cc87460d41e34515a70084e1672f67b6   # 🎯 성과 좋은 릴스 분석
 
-weekly_summary_weekday: 0    # 주간 종합 요일 (0=월요일)
+followers_weekday: 0         # 팔로워 수 갱신 요일 (0=월요일) — 하루로 변하는 값이 아니라 주 1회
 
 claude:
   model: claude-sonnet-4-6
-  max_tokens_post: 500       # 게시물 한줄 분석
-  max_tokens_hot: 1000       # 히트 심층 분석
-  max_tokens_weekly: 2000    # 주간 종합
+  max_tokens_post: 500       # 게시물 한줄 분석 (히트 AI 요약·주간 종합은 폐지)
 
 notion:
   accounts_db_id: 85c2aeea0a2949b0885e3959e1bc098d   # 레퍼런스 계정 (분석 대상)

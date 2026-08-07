@@ -29,17 +29,6 @@
   .subnav button.active { background:#262626; color:#fff; border-color:#262626; font-weight:600; }
   .meta { padding:12px 16px; font-size:13px; color:var(--sub); max-width:900px; margin:0 auto; }
   .notice { max-width:900px; margin:0 auto 8px; padding:0 16px; font-size:12px; color:var(--sub); }
-  .summary { max-width:900px; margin:0 auto 16px; padding:14px 16px; background:#fff;
-             border:1px solid var(--line); border-radius:8px; }
-  .summarywrap { max-width:900px; margin:0 auto 16px; padding:0 16px; }
-  .summary h3 { font-size:14px; margin-bottom:8px; }
-  .summary .headline { font-size:14px; font-weight:600; margin-bottom:10px; }
-  .summary ul { padding-left:18px; font-size:13px; }
-  .summary li { margin-bottom:4px; }
-  .summary .themes { margin-top:8px; font-size:12px; color:var(--sub); }
-  .summary .when { font-size:11px; color:var(--sub); margin-top:8px; }
-  .hookchip { display:inline-block; background:#eef3fb; color:#1565c0; font-size:11px;
-              padding:2px 8px; border-radius:10px; margin:2px 4px 2px 0; }
   .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
           max-width:900px; margin:0 auto; padding:0 16px 40px; }
   .card { background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
@@ -69,6 +58,10 @@
   .chartlegend .dash { display:inline-block; width:16px; border-top:2px dashed #898781;
                        margin-right:5px; vertical-align:3px; }
   .chartlegend .hint { margin-left:auto; }
+  .zoomreset { position:absolute; top:8px; right:8px; z-index:2; padding:4px 10px;
+               font-size:11px; border:1px solid var(--line); border-radius:12px;
+               background:#fff; color:var(--sub); cursor:pointer; }
+  .zoomreset:hover { color:var(--fg); border-color:var(--sub); }
   @media (max-width:600px){ .chartbox{ height:220px; } .chartlegend .hint{ display:none; } }
   .info { padding:10px 12px; }
   .date { font-size:12px; color:var(--sub); }
@@ -84,6 +77,12 @@
   .ai .hook { display:inline-block; background:#1565c0; color:#fff; font-size:10px;
               font-weight:700; padding:1px 7px; border-radius:8px; margin-right:5px; }
   .ai.hotai .hook { background:#e65100; }
+  .ai.hotai .perf { line-height:1.5; }
+  .ai.hotai .perf:first-child { font-weight:700; color:#e65100; }
+  .cta { display:block; margin-top:8px; padding:7px 10px; border-radius:6px;
+         background:#e65100; color:#fff; font-size:12px; font-weight:700;
+         text-align:center; text-decoration:none; }
+  .cta:hover { background:#bf360c; }
   .empty { text-align:center; color:var(--sub); padding:60px 0; grid-column:1/-1; }
   .filters { max-width:900px; margin:0 auto 12px; padding:0 16px; display:flex; gap:8px; }
   .filters button { padding:6px 16px; border:1px solid var(--line); border-radius:16px;
@@ -127,12 +126,15 @@
           <span>❤️ <b>{{ p.metrics.likes | num }}</b></span>
           <span>💬 <b>{{ p.metrics.comments | num }}</b></span>
         </div>
-        {% if p.analysis and p.analysis.why_hot %}
+        {% if p._hot %}
         <div class="ai hotai">
-          {% if p.analysis.hook_type %}<span class="hook">{{ p.analysis.hook_type }}</span>{% endif %}
-          <span class="tag">🔥 왜 터졌나</span>{{ p.analysis.why_hot }}
-          {% if p.analysis.pattern %}<br><span class="tag">📐 패턴</span>{{ p.analysis.pattern }}{% endif %}
-          {% if p.analysis.apply %}<br><span class="tag">→ 적용</span>{{ p.analysis.apply }}{% endif %}</div>
+          {% for line in p._perf %}<div class="perf">{{ line }}</div>{% endfor %}
+          {# 리포트가 있을 때만 버튼. 심층분석은 최근 6개월 히트만 대상이라
+             옛 히트에 '대기 중'을 달면 오지 않을 것을 기다리게 만든다 #}
+          {% if p._deep_url %}
+          <a class="cta" href="{{ p._deep_url }}" target="_blank" rel="noopener"
+             onclick="event.stopPropagation()">🎯 이 릴스 분석 리포트 열기</a>
+          {% endif %}</div>
         {% elif p.analysis and p.analysis.one_liner %}
         <div class="ai">
           {% if p.analysis.hook_type %}<span class="hook">{{ p.analysis.hook_type }}</span>{% endif %}
@@ -149,9 +151,10 @@
       <span><i class="dot big" style="background:#eb6834"></i>히트 (계정 중앙값 {{ hot_ratio_label }}배↑)</span>
       {# 통합 차트는 계정마다 기준선이 달라 중앙값 선을 긋지 않는다 #}
       {% if not merged %}<span><i class="dash"></i>중앙값</span>{% endif %}
-      <span class="hint">릴스 조회수 기준 · <b>점을 클릭하면 해당 게시물로 이동</b></span>
+      <span class="hint">점 클릭 = 게시물로 이동 · <b>스크롤 = 기간 확대/축소</b> · 드래그 = 좌우 이동</span>
     </div>
-    <div class="chartbox"><canvas id="chart-{{ key }}"></canvas></div>
+    <div class="chartbox"><canvas id="chart-{{ key }}"></canvas>
+      <button class="zoomreset" data-chart="{{ key }}" hidden>전체 기간</button></div>
   </div>
 {%- endmacro %}
 
@@ -210,24 +213,6 @@
     {% if acc._stale_date %}
     <div class="stale">⚠️ 이 계정은 {{ acc._stale_date }} 데이터입니다 (최근 수집 실패)</div>
     {% endif %}
-    {% if acc.weekly_summary %}
-    <div class="summarywrap"><div class="summary">
-      <h3>🧠 주간 종합 분석</h3>
-      <div class="headline">{{ acc.weekly_summary.headline }}</div>
-      {% if acc.weekly_summary.hook_patterns %}
-      <div class="themes" style="margin:0 0 8px">반복 훅 공식:
-        {% for h in acc.weekly_summary.hook_patterns %}<span class="hookchip">{{ h }}</span>{% endfor %}</div>
-      {% endif %}
-      {% if acc.weekly_summary.implications %}
-      <ul>{% for imp in acc.weekly_summary.implications %}<li>{{ imp }}</li>{% endfor %}</ul>
-      {% endif %}
-      {% if acc.weekly_summary.themes %}
-      <div class="themes">반복 주제: {{ acc.weekly_summary.themes | join(', ') }}
-        {% if acc.weekly_summary.cadence %} · {{ acc.weekly_summary.cadence }}{% endif %}</div>
-      {% endif %}
-      <div class="when">{{ acc.weekly_summary.summarized_at | date }} 기준 · 매주 월요일 갱신</div>
-    </div></div>
-    {% endif %}
     {% if acc._has_chart %}{{ chart_block(gi ~ "-" ~ ai) }}{% endif %}
     {{ filter_chips() }}
     <div class="grid">
@@ -241,6 +226,8 @@
 {% endfor %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.2.0/chartjs-plugin-zoom.min.js"></script>
 <script>
 const CHART_DATA = {{ chart_json | safe }};
 const madeCharts = {};
@@ -250,6 +237,11 @@ function fmtViews(v) {
   if (v >= 1000) return (Math.round(v / 100) / 10).toLocaleString() + "천";
   return String(Math.round(v));
 }
+
+// 줌 플러그인은 CDN 에서 늦게/못 올 수 있다 — 없으면 줌만 빠지고 차트는 그대로 뜬다
+if (window.Chart && window.ChartZoom) { Chart.register(window.ChartZoom); }
+const CAN_ZOOM = !!(window.Chart && window.ChartZoom);
+const DAY_MS = 86400000;
 
 function initChart(key) {
   const cd = CHART_DATA[key];
@@ -269,7 +261,7 @@ function initChart(key) {
     ctx.setLineDash([]); ctx.fillStyle = MUTED; ctx.font = "11px sans-serif";
     ctx.fillText("중앙값 " + fmtViews(median), a.left + 4, yv - 5); ctx.restore();
   }};
-  new Chart(el, {
+  const chart = new Chart(el, {
     type: "scatter",
     data: {datasets: [
       {data: pts.filter(p => !p.hot), backgroundColor: BLUE, borderColor: "#fff", borderWidth: 1.5, pointRadius: 4, pointHoverRadius: 7},
@@ -286,6 +278,15 @@ function initChart(key) {
       },
       plugins: {
         legend: {display: false},
+        // 통합 피드는 점이 수백 개라 최근 몇 주만 떼어 보려면 가로 확대가 필요하다.
+        // x축만 — 세로(조회수)는 로그 눈금이라 배율을 바꾸면 오히려 읽기 어려워진다.
+        zoom: !CAN_ZOOM ? undefined : {
+          limits: {x: {minRange: 7 * DAY_MS}},
+          pan: {enabled: true, mode: "x", threshold: 5,
+                onPanComplete: ({chart}) => toggleReset(key, chart)},
+          zoom: {mode: "x", wheel: {enabled: true, speed: 0.12}, pinch: {enabled: true},
+                 onZoomComplete: ({chart}) => toggleReset(key, chart)},
+        },
         tooltip: {displayColors: false, callbacks: {
           title: items => items[0].raw.d,
           label: it => [it.raw.by,           // 통합 차트에서만 — 어느 계정 글인지
@@ -311,7 +312,21 @@ function initChart(key) {
     },
     plugins: median ? [medianLine] : []
   });
+  madeCharts[key] = chart;
 }
+
+// 확대 상태일 때만 '전체 기간' 버튼을 보인다
+function toggleReset(key, chart) {
+  const btn = document.querySelector('.zoomreset[data-chart="' + key + '"]');
+  if (btn) btn.hidden = chart.getZoomLevel() <= 1.001;
+}
+
+document.querySelectorAll(".zoomreset").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const chart = madeCharts[btn.dataset.chart];
+    if (chart && chart.resetZoom) { chart.resetZoom(); btn.hidden = true; }
+  });
+});
 
 // 브랜드 탭
 document.querySelectorAll("nav button").forEach(btn => {

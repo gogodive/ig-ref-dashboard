@@ -55,7 +55,7 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
 
     수집 실패 시 저장분을 그대로 쓰고 stats.ok=False 로 표시한다.
     backfill 모드: resultsType=posts 로 backfill_limit 개 수집,
-    한줄 분석·노션 카드는 생략하고 히트 심층분석만 전부 실행.
+    한줄 분석·URL 배치·노션 카드는 생략한다.
     """
     username = acc_meta["username"]
     stored = load_stored(data_dir, username)
@@ -106,9 +106,9 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
         log.info("  좋아요 숨김 %d건 → 값 비움", hidden)
 
     # posts 모드는 팔로워를 안 주므로 초경량 details 호출로 보충하되,
-    # 팔로워는 하루로 안 변하니 주 1회(주간 종합 요일)만. 값이 아예 없으면 즉시.
+    # 팔로워는 하루로 안 변하니 주 1회(followers_weekday)만. 값이 아예 없으면 즉시.
     followers = snap["followers_count"]
-    followers_due = (now.weekday() == cfg["weekly_summary_weekday"]
+    followers_due = (now.weekday() == cfg["followers_weekday"]
                      or not stored.get("followers_count"))
     if not followers and followers_due:
         try:
@@ -121,39 +121,19 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
         "brand": acc_meta["name"] or f"@{acc_meta['username']}",
         "followers_count": followers or stored.get("followers_count"),
         "fetched_at": now.isoformat(),
-        "weekly_summary": stored.get("weekly_summary"),
         "posts": merged,
     }
 
-    # 3) 분석 (캐시 없는 것만)
+    # 3) 분석 (캐시 없는 것만) — 새 게시물 한줄 분석만.
+    #    히트작은 AI 요약 대신 성과 요약 + 심층분석 리포트 링크를 대시보드에 띄운다.
     claude_cfg = cfg["claude"]
     new_posts = [p for p in merged if p["post_id"] in set(new_ids)]
-    if not backfill:  # 백필 시 수백 건 한줄 분석 방지 — 과거분은 히트 분석만
+    if not backfill:  # 백필 시 수백 건 한줄 분석 방지
         for p in new_posts:
             if not p.get("analysis", {}).get("one_liner"):
                 result = az.analyze_new_post(account, p, claude_cfg, now)
                 if result:
                     p["analysis"] = {**p.get("analysis", {}), **result}
-
-    hot_ids = hot_post_ids(merged, ratio=cfg["hot_ratio"])
-    hot_analyzed: list[dict] = []
-    for p in merged:
-        if p["post_id"] not in hot_ids:
-            continue
-        if p.get("analysis", {}).get("why_hot"):
-            continue
-        result = az.analyze_hot_post(account, p, cfg["hot_ratio"], claude_cfg, now)
-        if result:
-            p["analysis"] = {**p.get("analysis", {}), **result}
-            hot_analyzed.append(p)
-
-    weekly = None
-    if not backfill and now.weekday() == cfg["weekly_summary_weekday"] and merged:
-        already = (stored.get("weekly_summary") or {}).get("summarized_at", "")
-        if not already.startswith(now.strftime("%Y-%m-%d")):
-            weekly = az.weekly_summary(account, merged, claude_cfg, now)
-            if weekly:
-                account["weekly_summary"] = weekly
 
     # 3.5) 썸네일 로컬 보관 (CDN 링크 만료 대비 — 처음 본 시점에 받아둔다)
     saved, failed = thumbs.ensure(merged, username, ROOT)
@@ -171,17 +151,22 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
         update_account_followers(acc_meta["page_id"], account["followers_count"],
                                  cfg["notion"]["version"])
 
-    # 5) 노션 카드 (새 게시물 또는 주간 종합 있을 때만 · 백필 시 생략)
-    if not backfill and not dry_run and (new_posts or hot_analyzed or weekly):
-        url = write_log_card(account, new_posts, hot_analyzed, weekly, now,
+    # 5) 노션 카드 (새 게시물 또는 새 히트 있을 때만 · 백필 시 생략).
+    #    '새 히트' = 이번 수집으로 기준선을 새로 넘은 릴스. 저장분 기준 히트와
+    #    비교해 알아내므로 별도 상태를 두지 않는다.
+    hot_before = hot_post_ids(stored.get("posts", []), ratio=cfg["hot_ratio"])
+    new_hits = [p for p in merged
+                if p["post_id"] in hot_post_ids(merged, ratio=cfg["hot_ratio"]) - hot_before]
+    if not backfill and not dry_run and (new_posts or new_hits):
+        url = write_log_card(account, new_posts, new_hits, now,
                              cfg["notion"]["log_db_id"], cfg["notion"]["version"],
                              DASHBOARD_URL)
         if url:
             log.info("노션 카드 → %s", url)
 
-    log.info("@%s: 게시물 %d (새 %d, 히트분석 %d%s)", username, len(merged),
-             len(new_posts), len(hot_analyzed), ", 주간종합" if weekly else "")
-    stats.update(new=len(new_posts), hot=len(hot_analyzed))
+    log.info("@%s: 게시물 %d (새 %d, 새 히트 %d)", username, len(merged),
+             len(new_posts), len(new_hits))
+    stats.update(new=len(new_posts), hot=len(new_hits))
     return account, stats
 
 
@@ -192,7 +177,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="노션 카드 작성 생략")
     ap.add_argument("--only", default=None, help="특정 username 만 (콤마 구분)")
     ap.add_argument("--backfill", action="store_true",
-                    help="1회성 백필: 계정당 backfill_limit개 수집, 히트 분석만 실행")
+                    help="1회성 백필: 계정당 backfill_limit개 수집 (분석·노션 기록 생략)")
     args = ap.parse_args()
 
     for key in ("NOTION_TOKEN", "ANTHROPIC_API_KEY", "APIFY_TOKEN"):
@@ -270,13 +255,17 @@ def main() -> int:
     queue, added, removed = hitqueue.sync(existing, targets, now.isoformat())
     queue_path.write_text(json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8")
     log.info("심층분석 큐: %s (신규 %d · 제외 %d)", hitqueue.summary(queue), len(added), len(removed))
+    # 🔥 카드 → 심층분석 리포트 버튼 (분석이 끝난 것만 링크가 생긴다)
+    deep_links = {e["post_id"]: e["notion_page_id"]
+                  for e in queue if e.get("notion_page_id")}
 
     site = ROOT / "site"
     site.mkdir(exist_ok=True)
     (site / "index.html").write_text(
         render_html(accounts, now, hot_ratio=cfg["hot_ratio"],
                     thumb_base=cfg.get("thumb_base_url", ""),
-                    render_limit=cfg.get("render_limit", 60)), encoding="utf-8")
+                    render_limit=cfg.get("render_limit", 60),
+                    deep_links=deep_links), encoding="utf-8")
     # 썸네일은 아티팩트에 넣지 않는다 — 파일 수가 많아 Pages 배포가 10분 제한을
     # 넘겨 실패한다. 저장소에 보관하고 CDN(thumb_base_url)으로 서빙한다.
     n = sum(1 for _ in (ROOT / "thumbs").rglob("*.webp")) if (ROOT / "thumbs").exists() else 0

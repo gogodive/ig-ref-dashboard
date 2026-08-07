@@ -17,7 +17,7 @@ CFG = {
     "apify": {"actor": "a~b", "results_type": "posts", "posts_limit": 10,
               "saturated_limit": 30, "backfill_limit": 180},
     "freeze_days": 30, "display_limit": 180, "hot_ratio": 3.0,
-    "weekly_summary_weekday": 0,
+    "followers_weekday": 0,
     "claude": {}, "notion": {"version": "x"},
 }
 
@@ -36,8 +36,6 @@ def quiet(monkeypatch):
     """무거운 의존성 차단 + 호출 기록."""
     calls = {"fetch": [], "urls": [], "followers": 0}
     monkeypatch.setattr(m.az, "analyze_new_post", lambda *a, **k: None)
-    monkeypatch.setattr(m.az, "analyze_hot_post", lambda *a, **k: None)
-    monkeypatch.setattr(m.az, "weekly_summary", lambda *a, **k: None)
     monkeypatch.setattr(m.thumbs, "ensure", lambda *a, **k: (0, 0))
 
     def fake_fetch(username, actor, results_type, limit):
@@ -97,7 +95,7 @@ def test_팔로워는_평일엔_안_산다(quiet, tmp_path):
     assert account["followers_count"] == 999  # 저장값 유지
 
 
-def test_팔로워는_주간요일엔_산다(quiet, tmp_path):
+def test_팔로워는_지정요일엔_산다(quiet, tmp_path):
     _store(tmp_path, [_post("w1", 1)], followers=999)
     account, _ = m.process_account(META, CFG, tmp_path, MONDAY, dry_run=True)
     assert quiet["followers"] == 1

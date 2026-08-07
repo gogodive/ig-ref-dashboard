@@ -38,5 +38,5 @@ def test_write_log_card_returns_none_on_network_error(monkeypatch):
 
     out = notion_write.write_log_card(
         {"username": "acc", "posts": [], "followers_count": 10},
-        [], [], None, datetime.now(timezone.utc), "db", "2022-06-28", "http://d")
+        [], [], datetime.now(timezone.utc), "db", "2022-06-28", "http://d")
     assert out is None
