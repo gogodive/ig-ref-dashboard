@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 
-from src.merge import hot_post_ids, is_frozen, merge_posts, sanitize_likes
+from src.merge import (detect_saturated, hot_post_ids, is_frozen, merge_posts,
+                       sanitize_likes, stale_unfrozen)
 
 NOW = datetime(2026, 7, 17, 9, 0, tzinfo=timezone.utc)
 
@@ -154,3 +155,35 @@ def test_sanitize_likes_음수는_항상_비운다():
     posts = [_p(f"a{i}", 50 + i) for i in range(9)] + [_p("hidden", -1)]
     assert sanitize_likes(posts) == 1
     assert posts[-1]["metrics"]["likes"] is None
+
+
+# ── 수집 효율화: 감지 창 + URL 배치 대상 선별 ──────────────────────────────
+
+def test_stale_unfrozen_은_창밖_동결전만():
+    """감지 창에 잡힌 것·동결된 것은 빼고, 창 밖 동결 전만 URL 배치 대상."""
+    stored = [_post("in-window", 1), _post("out-live", 10), _post("out-frozen", 40)]
+    fresh = [_post("in-window", 1)]
+    picked = stale_unfrozen(stored, fresh, NOW, freeze_days=30)
+    assert [p["post_id"] for p in picked] == ["out-live"]
+
+
+def test_stale_unfrozen_은_permalink_없으면_제외():
+    p = _post("no-url", 10)
+    del p["permalink"]
+    assert stale_unfrozen([p], [], NOW, freeze_days=30) == []
+
+
+def test_detect_saturated_전부_새글이면_참():
+    stored = [_post("old1", 5), _post("old2", 6)]
+    fresh = [_post("new1", 0), _post("new2", 0)]
+    assert detect_saturated(stored, fresh)
+
+
+def test_detect_saturated_하나라도_아는_글이면_거짓():
+    stored = [_post("old1", 5)]
+    fresh = [_post("new1", 0), _post("old1", 5)]
+    assert not detect_saturated(stored, fresh)
+
+
+def test_detect_saturated_첫_수집은_포화_아님():
+    assert not detect_saturated([], [_post("new1", 0)])

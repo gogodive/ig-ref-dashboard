@@ -20,8 +20,9 @@ import yaml
 
 from src import analysis as az
 from src import collab, hitqueue, thumbs
-from src.apify_client import fetch_account, fetch_followers
-from src.merge import hot_post_ids, merge_posts, sanitize_likes
+from src.apify_client import fetch_account, fetch_followers, fetch_posts_by_url
+from src.merge import (detect_saturated, hot_post_ids, merge_posts,
+                       sanitize_likes, stale_unfrozen)
 from src.notion_source import fetch_target_accounts
 from src.notion_write import (build_status_text, update_account_followers,
                               update_status_callout, write_log_card)
@@ -60,19 +61,40 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     stored = load_stored(data_dir, username)
     stats = {"username": username, "ok": True, "new": 0, "hot": 0, "error": None}
 
-    # 1) 수집
+    # 1) 수집 — 감지 창(최신 N개)으로 새 게시물을 찾고, 창 밖의 동결 전
+    #    게시물만 URL 직접 배치로 갱신한다. 동결분을 매일 다시 사지 않기 위한 구조.
+    actor = cfg["apify"]["actor"]
     if backfill:
         results_type, limit = "posts", cfg["apify"]["backfill_limit"]
     else:
         results_type, limit = cfg["apify"]["results_type"], cfg["apify"]["posts_limit"]
     try:
-        snap = fetch_account(username, cfg["apify"]["actor"], results_type, limit)
+        snap = fetch_account(username, actor, results_type, limit)
+        # 포화 가드: 창 전체가 처음 보는 글이면 창 밖에 새 글이 더 있을 수 있다
+        if not backfill and detect_saturated(stored.get("posts", []), snap["posts"]):
+            log.info("  감지 창 포화 → %d개로 재수집", cfg["apify"]["saturated_limit"])
+            snap = fetch_account(username, actor, results_type,
+                                 cfg["apify"]["saturated_limit"])
     except Exception as e:  # noqa: BLE001
         log.warning("수집 실패 @%s: %s — 저장분 유지", username, e)
         stats.update(ok=False, error=str(e).splitlines()[0][:200])
         fallback = {**stored, **acc_meta, "brand": acc_meta["name"] or f"@{username}"} \
             if stored else {**acc_meta, "brand": acc_meta["name"] or f"@{username}", "posts": []}
         return fallback, stats
+
+    # 1.5) 감지 창 밖 동결 전 게시물 → URL 배치로 지표 갱신 (실패해도 계속 —
+    #      이번에 못 갱신한 지표는 다음 실행이 다시 시도한다)
+    if not backfill:
+        pending = stale_unfrozen(stored.get("posts", []), snap["posts"],
+                                 now, cfg["freeze_days"])
+        if pending:
+            try:
+                refreshed = fetch_posts_by_url([p["permalink"] for p in pending], actor)
+                snap["posts"].extend(refreshed)
+                log.info("  창 밖 동결 전 %d건 URL 갱신 (응답 %d건)",
+                         len(pending), len(refreshed))
+            except Exception as e:  # noqa: BLE001
+                log.warning("URL 배치 실패 @%s: %s", username, str(e).splitlines()[0])
 
     # 2) 병합
     merged, new_ids = merge_posts(
@@ -83,11 +105,14 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     if hidden:
         log.info("  좋아요 숨김 %d건 → 값 비움", hidden)
 
-    # posts 모드는 팔로워를 안 주므로 초경량 details 호출로 보충
+    # posts 모드는 팔로워를 안 주므로 초경량 details 호출로 보충하되,
+    # 팔로워는 하루로 안 변하니 주 1회(주간 종합 요일)만. 값이 아예 없으면 즉시.
     followers = snap["followers_count"]
-    if not followers:
+    followers_due = (now.weekday() == cfg["weekly_summary_weekday"]
+                     or not stored.get("followers_count"))
+    if not followers and followers_due:
         try:
-            followers = fetch_followers(username, cfg["apify"]["actor"])
+            followers = fetch_followers(username, actor)
         except Exception as e:  # noqa: BLE001
             log.warning("팔로워 조회 실패 @%s: %s", username, str(e).splitlines()[0])
 

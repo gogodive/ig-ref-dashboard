@@ -2,7 +2,12 @@
 apify:
   actor: apify~instagram-scraper
   results_type: posts        # posts = 게시물 상세(조회수 포함). details는 조회수가 없어 사용 금지
-  posts_limit: 30            # 일일 비교·갱신 창 (새 게시물 감지 + 30일 내 지표 갱신)
+  # 일일 수집 = 감지 창(최신 posts_limit개) + 창 밖 동결 전 게시물 URL 직접 배치.
+  # 동결(30일)된 게시물을 매일 다시 사지 않기 위한 구조 — 창 30 시절 일 ~1,147건 중
+  # 58%가 동결분 재구매였다. 창 전체가 처음 보는 글이면(다작·고정핀 잠식) 포화로 보고
+  # saturated_limit 로 재수집한다. 팔로워는 주 1회(weekly_summary_weekday)만 조회.
+  posts_limit: 10            # 새 게시물 감지 창
+  saturated_limit: 30        # 감지 창 포화 시 재수집 개수
   backfill_limit: 180        # --backfill 1회 실행 시 계정당 수집 개수
 
 display_limit: 180           # 데이터로 보관할 계정당 게시물 수 (중앙값·히트 판정 근거)

@@ -80,6 +80,33 @@ def is_reel(post: dict) -> bool:
     return post.get("product") == "REELS" or post.get("media_type") == "VIDEO"
 
 
+def detect_saturated(stored_posts: list[dict], fresh_posts: list[dict]) -> bool:
+    """감지 창이 포화됐는가 — 수집분 전부가 처음 보는 게시물이면 창 밖에 더 있을 수 있다.
+
+    감지 창을 줄이면(30→10) 하루에 창 크기보다 많이 올리는 계정에서 게시물을
+    놓칠 수 있다. 고정핀 게시물이 창을 잠식하는 경우도 같다. 이때만 큰 창으로
+    재수집한다. 저장분이 없으면(첫 수집) 원래 전부 새 글이므로 포화가 아니다.
+    """
+    if not stored_posts or not fresh_posts:
+        return False
+    stored_ids = {p["post_id"] for p in stored_posts}
+    return all(p["post_id"] not in stored_ids for p in fresh_posts)
+
+
+def stale_unfrozen(stored_posts: list[dict], fresh_posts: list[dict],
+                   now: datetime, freeze_days: int = FREEZE_DAYS) -> list[dict]:
+    """감지 창에 안 잡혔지만 아직 동결 전이라 지표 갱신이 필요한 저장분.
+
+    이들만 URL 직접 배치로 조회한다 — 동결된 게시물을 매일 다시 사서
+    버리는 낭비(일 ~660건)를 없애는 핵심. permalink 없는 건 조회 불가라 제외.
+    """
+    fresh_ids = {p["post_id"] for p in fresh_posts}
+    return [p for p in stored_posts
+            if p["post_id"] not in fresh_ids
+            and not is_frozen(p["posted_at"], now, freeze_days)
+            and p.get("permalink")]
+
+
 HIDDEN_LIKES_FAKE = 3    # 숨김 게시물에 Apify 가 대신 넣는 값(미리보기 프로필 수)
 HIDDEN_LIKES_SHARE = 0.4  # 이 비율 이상이면 계정 전체가 좋아요 숨김
 

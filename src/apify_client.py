@@ -105,6 +105,26 @@ def fetch_followers(username: str, actor: str) -> int | None:
     return items[0].get("followersCount") or items[0].get("ownerFollowersCount")
 
 
+def fetch_posts_by_url(urls: list[str], actor: str) -> list[dict]:
+    """게시물 URL 목록을 한 번의 실행으로 직접 조회한다 (URL당 결과 1건).
+
+    감지 창(최신 N개) 밖의 동결 전 게시물 지표 갱신용 — 계정 전체를 다시 사는
+    대신 갱신이 필요한 게시물만 산다. 삭제·비공개 게시물은 결과에서 빠지거나
+    에러 항목으로 오므로 post_id/posted_at 없는 항목을 걸러낸다.
+    """
+    if not urls:
+        return []
+    payload = {
+        "directUrls": urls,
+        "resultsType": "posts",
+        "resultsLimit": len(urls),
+        "addParentData": False,
+    }
+    items = _run_actor(actor, payload)
+    posts = [_map_post(m) for m in items]
+    return [p for p in posts if p["post_id"] and p["posted_at"]]
+
+
 def fetch_account(username: str, actor: str, results_type: str, limit: int) -> dict:
     """한 계정의 스냅샷: {followers_count, posts:[...]}. posts 는 최신순."""
     payload = {
