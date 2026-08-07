@@ -82,7 +82,19 @@ def _fmt_date(ts: str) -> str:
 
 
 def _annotate_hot(posts: list[dict], hot_ratio: float = HOT_RATIO) -> None:
-    """릴스 조회수 중앙값 기준 히트 배지 (릴스만 대상)."""
+    """릴스 조회수 중앙값 기준 히트 배지 (릴스만 대상).
+
+    `collab.annotate()` 가 먼저 돌았으면 협업 보정된 `_ratio` 를 쓴다 —
+    남의 계정 오디언스로 번 조회수를 자기 히트로 세지 않기 위해서다.
+    """
+    annotated = [p for p in posts if is_reel(p) and "_ratio" in p]
+    if annotated:
+        for p in annotated:
+            r = p.get("_ratio")
+            if isinstance(r, (int, float)) and r >= hot_ratio:
+                p["_hot"] = f"🔥 {r:.1f}x" if r >= HOT_RATIO_LABELED else "🔥"
+        return
+
     views = [p.get("metrics", {}).get("views") for p in posts if is_reel(p)]
     views = [v for v in views if isinstance(v, int) and v > 0]
     if len(views) < HOT_MIN_POSTS:
@@ -169,7 +181,8 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
             p["_fmt"] = "reels" if is_reel(p) else "feed"
             # 협업 릴스는 두 계정에 같은 post_id 로 존재 → 계정명을 붙여 유일하게
             p["_uid"] = f"{acc['username']}-{p['post_id']}"
-            p["_collab"] = _collab_with(p, acc["username"])
+            # collab 모듈이 먼저 돌았으면 그 판정(모니터링 계정 간 공유 포함)을 쓴다
+            p["_collab"] = p.get("_collab_with") or _collab_with(p, acc["username"])
         _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
         # 카드로 그릴 대상만 추린다 — 전량(계정당 180개)을 그리면 HTML 이 8MB 를 넘어
         # Pages 배포가 10분 제한을 초과한다. 중앙값·차트는 전량으로 계산하되

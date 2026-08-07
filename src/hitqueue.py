@@ -33,6 +33,14 @@ def deep_targets(account: dict, now: datetime,
                  recent_days: int = RECENT_DAYS) -> list[dict]:
     """한 계정에서 심층분석 대상 릴스를 고른다. 각 항목에 _ratio 를 붙여 반환."""
     reels = [p for p in account.get("posts", []) if is_reel(p)]
+    cutoff = now - timedelta(days=recent_days)
+
+    # collab.annotate() 가 먼저 돌았으면 협업 보정된 배수를 쓴다
+    if any("_ratio" in p for p in reels):
+        return [p for p in reels
+                if isinstance(p.get("_ratio"), (int, float)) and p["_ratio"] >= ratio
+                and _parse_ts(p["posted_at"]) >= cutoff]
+
     views = [p["metrics"]["views"] for p in reels
              if isinstance(p.get("metrics", {}).get("views"), int) and p["metrics"]["views"] > 0]
     if len(views) < MIN_REELS:
@@ -41,7 +49,6 @@ def deep_targets(account: dict, now: datetime,
     if median <= 0:
         return []
 
-    cutoff = now - timedelta(days=recent_days)
     out = []
     for p in reels:
         v = p.get("metrics", {}).get("views")
@@ -67,6 +74,7 @@ def entry_from_hit(post: dict, account: dict, queued_at: str) -> dict:
         "category": account.get("category"),
         "followers": account.get("followers_count"),
         "ratio": round(post["_ratio"], 2),
+        "ratio_basis": post.get("_ratio_basis", "own"),   # 협업이면 어느 계정 기준선인지
         "views": m.get("views"),
         "likes": m.get("likes"),
         "comments": m.get("comments"),

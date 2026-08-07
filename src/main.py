@@ -19,7 +19,7 @@ from pathlib import Path
 import yaml
 
 from src import analysis as az
-from src import hitqueue, thumbs
+from src import collab, hitqueue, thumbs
 from src.apify_client import fetch_account, fetch_followers
 from src.merge import hot_post_ids, merge_posts, sanitize_likes
 from src.notion_source import fetch_target_accounts
@@ -214,6 +214,14 @@ def main() -> int:
                 for a in all_targets]
     for a in accounts:
         a.setdefault("posts", [])
+
+    # 협업 보정 — 공동 게시물은 남의 오디언스가 섞여 배수를 액면대로 읽으면 안 된다.
+    # 자체 게시물만으로 중앙값을 내고, 협업분은 상대 계정 기준선과 비교해 큰 쪽으로 나눈다.
+    ctx = collab.build(accounts)
+    collab.annotate(accounts, ctx)
+    n_collab = sum(1 for a in accounts for p in a["posts"] if p.get("_collab_with"))
+    if n_collab:
+        log.info("협업 게시물 %d건 — 배수를 상대 계정 기준선으로 보정", n_collab)
 
     # 심층분석 큐 갱신 (3배 이상 · 최근 6개월 릴스)
     queue_path = ROOT / "data" / "hit_queue.json"
