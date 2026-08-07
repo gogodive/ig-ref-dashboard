@@ -73,7 +73,7 @@ def build_status_text(now: datetime, stats: list[dict], dashboard_url: str) -> t
         f"{now.strftime('%Y-%m-%d %H:%M')} KST",
         f"계정 {len(ok)}/{len(stats)}개 수집",
         f"새 게시물 {new_posts}개",
-        f"🔥히트 분석 {hot}건",
+        f"🔥 새 히트 {hot}건",
     ]
     if failed:
         names = ", ".join("@" + s["username"] for s in failed[:3])

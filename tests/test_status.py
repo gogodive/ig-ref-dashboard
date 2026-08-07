@@ -19,7 +19,7 @@ def test_all_success():
     assert "2026-08-01 07:34 KST" in text
     assert "계정 2/2개 수집" in text
     assert "새 게시물 5개" in text
-    assert "🔥히트 분석 1건" in text
+    assert "🔥 새 히트 1건" in text
     assert "전체 정상" in text
 
 
@@ -45,4 +45,4 @@ def test_failed_accounts_excluded_from_counts():
     stats = [_s("ok", new=2, hot=1), {**_s("bad", new=99, hot=99), "ok": False}]
     text, _, _ = build_status_text(NOW, stats, URL)
     assert "새 게시물 2개" in text
-    assert "🔥히트 분석 1건" in text
+    assert "🔥 새 히트 1건" in text
