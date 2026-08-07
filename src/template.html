@@ -142,12 +142,13 @@
     </div>
 {%- endmacro %}
 
-{% macro chart_block(key) -%}
+{% macro chart_block(key, merged=false) -%}
   <div class="chartwrap">
     <div class="chartlegend">
       <span><i class="dot" style="background:#2a78d6"></i>릴스</span>
       <span><i class="dot big" style="background:#eb6834"></i>히트 (계정 중앙값 {{ hot_ratio_label }}배↑)</span>
-      <span><i class="dash"></i>중앙값</span>
+      {# 통합 차트는 계정마다 기준선이 달라 중앙값 선을 긋지 않는다 #}
+      {% if not merged %}<span><i class="dash"></i>중앙값</span>{% endif %}
       <span class="hint">릴스 조회수 기준 · <b>점을 클릭하면 해당 게시물로 이동</b></span>
     </div>
     <div class="chartbox"><canvas id="chart-{{ key }}"></canvas></div>
@@ -191,7 +192,7 @@
   <div class="subsec active" id="sub-{{ gi }}-all">
     <div class="meta">{{ g.name }} 벤치마크 계정 {{ g.accounts | length }}개 통합 · 최신순
       {% if g.post_total > g.merged | length %}(최근 {{ g.merged | length }}개 표시){% endif %}</div>
-    {% if g._has_chart %}{{ chart_block(gi ~ "-all") }}{% endif %}
+    {% if g._has_chart %}{{ chart_block(gi ~ "-all", merged=true) }}{% endif %}
     {{ filter_chips() }}
     <div class="grid">
       {% for p in g.merged %}{{ post_card(p, show_by=true, key=gi ~ "-all") }}
@@ -257,7 +258,7 @@ function initChart(key) {
   if (!el) return;
   madeCharts[key] = true;
   const BLUE = "#2a78d6", ORANGE = "#eb6834", GRID = "#e1e0d9", MUTED = "#898781";
-  const pts = cd.points.map(r => ({x: new Date(r[0]).getTime(), y: r[1], hot: r[2] === 1, d: r[0], c: r[3], pid: r[4]}));
+  const pts = cd.points.map(r => ({x: new Date(r[0]).getTime(), y: r[1], hot: r[2] === 1, d: r[0], c: r[3], pid: r[4], by: r[5] || ""}));
   const median = cd.median;
   const vmin = Math.min(...pts.map(p => p.y)), vmax = Math.max(...pts.map(p => p.y));
   const medianLine = {id: "ml" + key, afterDatasetsDraw(ch) {
@@ -287,10 +288,11 @@ function initChart(key) {
         legend: {display: false},
         tooltip: {displayColors: false, callbacks: {
           title: items => items[0].raw.d,
-          label: it => ["조회수 " + it.raw.y.toLocaleString() + "회" +
+          label: it => [it.raw.by,           // 통합 차트에서만 — 어느 계정 글인지
+                        "조회수 " + it.raw.y.toLocaleString() + "회" +
                         (it.raw.hot ? " (계정 중앙값 대비 히트)" : ""),
                         it.raw.c ? it.raw.c + "…" : "",
-                        "클릭하면 게시물로 이동"]
+                        "클릭하면 게시물로 이동"].filter(Boolean)
         }}
       },
       scales: {
@@ -307,7 +309,7 @@ function initChart(key) {
             }}}
       }
     },
-    plugins: [medianLine]
+    plugins: median ? [medianLine] : []
   });
 }
 
@@ -344,7 +346,13 @@ document.querySelectorAll(".subnav").forEach(sn => {
 // 차트 점 → 해당 게시물 카드로 이동
 function jumpToCard(key, pid) {
   const card = document.getElementById("card-" + key + "-" + pid);
-  if (!card) return;
+  if (!card) {
+    // 차트는 전량이지만 카드는 최근분 + 히트만 그린다. 카드가 없는 옛 글은
+    // 인스타 원문으로 보낸다 (uid = "username-shortcode", 계정명엔 '-' 가 없다).
+    const sc = pid.slice(pid.indexOf("-") + 1);
+    window.open("https://www.instagram.com/p/" + sc + "/", "_blank", "noopener");
+    return;
+  }
   if (card.style.display === "none") {          // 필터에 가려져 있으면 '전체'로
     const sub = card.closest(".subsec");
     const allBtn = sub && sub.querySelector('.filters button[data-fmt="all"]');

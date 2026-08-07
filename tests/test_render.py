@@ -1,3 +1,4 @@
+import json
 from datetime import datetime, timedelta, timezone
 
 from src.render import render_html, _collab_with
@@ -127,6 +128,48 @@ def test_chart_and_hot_are_reels_only():
     html = render_html([acc], NOW)
     assert 'badge hot' not in html  # 이미지 조회수는 히트 판별에서 제외
     assert 'class="card hot"' not in html
+
+
+def _chart(html: str, key: str) -> dict:
+    """렌더된 HTML 에서 CHART_DATA 를 뽑아 해당 차트 페이로드를 돌려준다."""
+    raw = html.split("const CHART_DATA = ", 1)[1].split(";\n", 1)[0]
+    return json.loads(raw.replace("\\u003c", "<"))[key]
+
+
+def test_통합차트는_카드_상한과_무관하게_전량():
+    """카드는 용량 때문에 잘라도 차트는 개별 계정 차트와 같은 범위를 봐야 한다."""
+    acc1 = _account(n_posts=80)
+    acc2 = _account(username="getbarrel", n_posts=80)
+    acc2["brand"] = "배럴"
+    html = render_html([acc1, acc2], NOW, render_limit=10)
+    merged = _chart(html, "0-all")
+    assert len(merged["points"]) == 160          # 카드 상한(10)·통합 상한(120) 무관
+    assert len(_chart(html, "0-0")["points"]) == 80
+
+
+def test_통합차트는_중앙값_없이_계정명을_준다():
+    acc1 = _account()
+    acc2 = _account(username="getbarrel", n_posts=6)
+    acc2["brand"] = "배럴"
+    html = render_html([acc1, acc2], NOW)
+    merged, single = _chart(html, "0-all"), _chart(html, "0-0")
+    assert "median" not in merged                # 계정별 기준선이 달라 선을 안 긋는다
+    assert "median" in single
+    assert {p[5] for p in merged["points"]} == {"@deeps_freediving", "@getbarrel"}
+    assert len(single["points"][0]) == 5         # 개별 차트엔 계정명이 붙지 않는다
+
+
+def test_통합차트_히트는_계정별_기준을_유지():
+    """조회수가 큰 계정과 작은 계정을 합쳐도 히트 판정은 각자 중앙값 기준이다."""
+    small = _account(viral_views=5000)                        # 100 → 5,000 (50배)
+    big = _account(username="getbarrel", n_posts=6, viral_views=100)
+    big["brand"] = "배럴"
+    for p in big["posts"]:
+        p["metrics"]["views"] = 3000                          # 전부 평탄 → 히트 없음
+    html = render_html([small, big], NOW)
+    pts = _chart(html, "0-all")["points"]
+    hot = [p for p in pts if p[2] == 1]
+    assert len(hot) == 1 and hot[0][1] == 5000                # 3,000 짜리는 히트 아님
 
 
 def test_collab_with_owner불일치면_상대핸들():

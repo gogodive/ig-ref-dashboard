@@ -111,18 +111,27 @@ def _annotate_hot(posts: list[dict], hot_ratio: float = HOT_RATIO) -> None:
             p["_hot"] = f"🔥 {ratio:.1f}x" if ratio >= HOT_RATIO_LABELED else "🔥"
 
 
-def _chart_payload(posts: list[dict]) -> dict | None:
-    """릴스 조회수 산점도 데이터."""
+def _chart_payload(posts: list[dict], merged: bool = False) -> dict | None:
+    """릴스 조회수 산점도 데이터.
+
+    통합 차트(merged)는 중앙값 선을 긋지 않는다 — 중앙값 3천인 계정과 50만인 계정을
+    한 선으로 재면 '선 위 = 잘함'이 되어 틀린다. 히트(주황)는 각 계정 기준이라 그대로
+    유효하다. 대신 어느 계정 글인지 보여야 하므로 계정명을 붙인다.
+    """
     pts = [
         [_fmt_date(p["posted_at"]), p["metrics"]["views"],
          1 if p.get("_hot") else 0, (p.get("caption") or "")[:30], p.get("_uid", "")]
+        + ([p.get("_by", "")] if merged else [])
         for p in posts
         if is_reel(p)
         and isinstance(p.get("metrics", {}).get("views"), int) and p["metrics"]["views"] > 0
     ]
     if len(pts) < HOT_MIN_POSTS:
         return None
-    return {"median": statistics.median(x[1] for x in pts), "points": pts}
+    payload = {"points": pts}
+    if not merged:
+        payload["median"] = statistics.median(x[1] for x in pts)
+    return payload
 
 
 BRAND_ORDER = ["고고다이브", "인투더블루", "딥바이브", "라세린", "시크릿스", "공통"]
@@ -130,7 +139,11 @@ MERGED_FEED_LIMIT = 120  # 통합 피드 최대 표시 수
 
 
 def _build_groups(accounts: list[dict]) -> list[dict]:
-    """계정을 벤치마크 브랜드로 묶고 브랜드별 통합 피드(최신순)를 만든다."""
+    """계정을 벤치마크 브랜드로 묶고 브랜드별 통합 피드(최신순)를 만든다.
+
+    카드는 HTML 용량 때문에 잘라내지만 차트는 전량을 쓴다 — 개별 계정 차트와
+    같은 범위를 봐야 통합/개별을 오갈 때 그림이 어긋나지 않는다.
+    """
     by_brand: dict[str, list[dict]] = {}
     for acc in accounts:
         by_brand.setdefault(acc.get("benchmark") or "공통", []).append(acc)
@@ -139,11 +152,7 @@ def _build_groups(accounts: list[dict]) -> list[dict]:
     groups = []
     for b in order:
         accs = by_brand[b]
-        merged: list[dict] = []
-        for acc in accs:
-            for p in acc.get("_cards", acc.get("posts", [])):
-                p["_by"] = f"@{acc['username']}"
-                merged.append(p)
+        merged = [p for acc in accs for p in acc.get("_cards", acc.get("posts", []))]
         merged.sort(key=lambda p: p["posted_at"], reverse=True)
         groups.append({
             "name": b,
@@ -151,6 +160,7 @@ def _build_groups(accounts: list[dict]) -> list[dict]:
             "accounts": accs,
             "merged": merged[:MERGED_FEED_LIMIT],
             "post_total": len(merged),
+            "_chart_posts": [p for acc in accs for p in acc.get("posts", [])],
         })
     return groups
 
@@ -181,6 +191,7 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
             p["_fmt"] = "reels" if is_reel(p) else "feed"
             # 협업 릴스는 두 계정에 같은 post_id 로 존재 → 계정명을 붙여 유일하게
             p["_uid"] = f"{acc['username']}-{p['post_id']}"
+            p["_by"] = f"@{acc['username']}"   # 통합 피드/차트에서 출처 표시
             # collab 모듈이 먼저 돌았으면 그 판정(모니터링 계정 간 공유 포함)을 쓴다
             p["_collab"] = p.get("_collab_with") or _collab_with(p, acc["username"])
         _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
@@ -197,7 +208,7 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
     groups = _build_groups(accounts)
     charts: dict[str, dict] = {}
     for gi, g in enumerate(groups):
-        payload = _chart_payload(g["merged"])
+        payload = _chart_payload(g["_chart_posts"], merged=True)
         g["_has_chart"] = payload is not None
         if payload:
             charts[f"{gi}-all"] = payload
