@@ -50,7 +50,8 @@ def load_stored(data_dir: Path, username: str) -> dict:
 
 
 def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
-                    dry_run: bool, backfill: bool = False) -> tuple[dict, dict]:
+                    dry_run: bool, backfill: bool = False,
+                    skip_analysis: bool = False) -> tuple[dict, dict]:
     """계정 하나: 수집→병합→분석→저장→노션. (account, stats) 반환.
 
     수집 실패 시 저장분을 그대로 쓰고 stats.ok=False 로 표시한다.
@@ -128,7 +129,7 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     #    히트작은 AI 요약 대신 성과 요약 + 심층분석 리포트 링크를 대시보드에 띄운다.
     claude_cfg = cfg["claude"]
     new_posts = [p for p in merged if p["post_id"] in set(new_ids)]
-    if not backfill:  # 백필 시 수백 건 한줄 분석 방지
+    if not backfill and not skip_analysis:  # 백필 시 수백 건 한줄 분석 방지
         for p in new_posts:
             if not p.get("analysis", {}).get("one_liner"):
                 result = az.analyze_new_post(account, p, claude_cfg, now)
@@ -178,6 +179,8 @@ def main() -> int:
     ap.add_argument("--only", default=None, help="특정 username 만 (콤마 구분)")
     ap.add_argument("--backfill", action="store_true",
                     help="1회성 백필: 계정당 backfill_limit개 수집 (분석·노션 기록 생략)")
+    ap.add_argument("--skip-analysis", action="store_true",
+                    help="Claude 한줄 분석 생략 — 수집·렌더·배포만 (화면 검증용)")
     args = ap.parse_args()
 
     for key in ("NOTION_TOKEN", "ANTHROPIC_API_KEY", "APIFY_TOKEN"):
@@ -207,7 +210,8 @@ def main() -> int:
         # 계정 하나에서 예상 못 한 예외가 나도 나머지 계정과 배포는 계속한다
         try:
             account, stats = process_account(a, cfg, ROOT / "data", now,
-                                             args.dry_run, args.backfill)
+                                             args.dry_run, args.backfill,
+                                             args.skip_analysis)
         except Exception as e:  # noqa: BLE001
             log.exception("처리 중 예외 @%s — 건너뜁니다", a["username"])
             account = {**load_stored(ROOT / "data", a["username"]), **a,

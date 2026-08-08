@@ -123,3 +123,22 @@ def test_URL배치_실패해도_계정은_처리된다(quiet, tmp_path, monkeypa
     account, stats = m.process_account(META, CFG, tmp_path, NOW, dry_run=True)
     assert stats["ok"] is True                    # 다음 실행이 다시 시도하면 된다
     assert any(p["post_id"] == "live" for p in account["posts"])
+
+
+def test_skip_analysis_는_클로드를_안_부른다(quiet, tmp_path, monkeypatch):
+    """화면 검증용 재배포에서 Claude 비용이 붙지 않아야 한다."""
+    called = []
+    monkeypatch.setattr(m.az, "analyze_new_post", lambda *a, **k: called.append(1))
+    _store(tmp_path, [])                                   # 전부 새 게시물
+    m.process_account(META, CFG, tmp_path, NOW, dry_run=True, skip_analysis=True)
+    assert called == []
+    m.process_account(META, CFG, tmp_path, NOW, dry_run=True, skip_analysis=False)
+    assert called == []          # 두 번째는 이미 저장돼 새 게시물이 없다
+
+
+def test_기본값은_분석을_한다(quiet, tmp_path, monkeypatch):
+    called = []
+    monkeypatch.setattr(m.az, "analyze_new_post", lambda *a, **k: called.append(1) or None)
+    _store(tmp_path, [])
+    m.process_account(META, CFG, tmp_path, NOW, dry_run=True)
+    assert len(called) == 2      # 수집분 2건이 전부 새 게시물

@@ -32,8 +32,10 @@
 3. Claude 분석 — 새 게시물 한줄 기획 포인트 (캐시돼 있어 재분석 없음).
    🔥 히트(조회수 ≥ 계정 릴스 중앙값×3)는 AI 요약 대신 **성과 2줄 + 심층 리포트 버튼**을
    달아 '🎯 성과 좋은 릴스 분석' DB의 해당 페이지로 바로 보낸다
-4. 대시보드 렌더 → GitHub Pages 배포
-5. 노션 '레퍼런스 분석 로그' DB에 카드 기록 (새 게시물·새 히트 있는 계정만)
+4. 🎯 심층분석 큐 갱신 — 3배↑ · 최근 6개월 이내 · **게시 7일 경과**한 릴스만.
+   게시 직후 배수는 안 굳어서(D+3 에 3배가 D+30 에 1.5배가 되기도 한다) 익은 뒤에 넣는다
+5. 대시보드 렌더 → GitHub Pages 배포
+6. 노션 '레퍼런스 분석 로그' DB에 카드 기록 (새 게시물·새 히트 있는 계정만)
 
 ## 셋업 (1회)
 
@@ -59,6 +61,7 @@ pip install -r requirements.txt
 export APIFY_TOKEN=... ANTHROPIC_API_KEY=... NOTION_TOKEN=...
 python -m src.main --dry-run          # 노션 기록 없이 점검
 python -m src.main --only getbarrel   # 특정 계정만
+python -m src.main --skip-analysis    # Claude 호출 없이 수집·렌더만 (화면 검증용)
 open site/index.html
 ```
 

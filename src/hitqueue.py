@@ -17,6 +17,7 @@ FAILED = "failed"
 
 DEEP_RATIO = 3.0        # 계정 릴스 중앙값 대비 이 배수 이상
 RECENT_DAYS = 180       # 최근 6개월 이내 게시물만
+MIN_AGE_DAYS = 0        # 게시 후 이 일수가 지나야 대상 (배수가 굳기 전 분석 방지)
 MIN_REELS = 5           # 중앙값을 신뢰할 최소 릴스 수
 
 
@@ -30,16 +31,28 @@ def is_reel(post: dict) -> bool:
 
 def deep_targets(account: dict, now: datetime,
                  ratio: float = DEEP_RATIO,
-                 recent_days: int = RECENT_DAYS) -> list[dict]:
-    """한 계정에서 심층분석 대상 릴스를 고른다. 각 항목에 _ratio 를 붙여 반환."""
+                 recent_days: int = RECENT_DAYS,
+                 min_age_days: int = MIN_AGE_DAYS) -> list[dict]:
+    """한 계정에서 심층분석 대상 릴스를 고른다. 각 항목에 _ratio 를 붙여 반환.
+
+    기간 조건이 양쪽으로 걸린다 —
+    - `recent_days` 보다 오래된 것은 제외 (지금 따라 할 소재가 아니다)
+    - `min_age_days` 가 안 지난 것도 제외. 게시 직후 배수는 아직 안 굳어서,
+      D+3 에 3배로 보이던 게 D+30 에 1.5배가 되기도 한다. 굳은 숫자로만 분석한다.
+    """
     reels = [p for p in account.get("posts", []) if is_reel(p)]
     cutoff = now - timedelta(days=recent_days)
+    ripe = now - timedelta(days=min_age_days)
+
+    def in_window(p) -> bool:
+        posted = _parse_ts(p["posted_at"])
+        return cutoff <= posted <= ripe
 
     # collab.annotate() 가 먼저 돌았으면 협업 보정된 배수를 쓴다
     if any("_ratio" in p for p in reels):
         return [p for p in reels
                 if isinstance(p.get("_ratio"), (int, float)) and p["_ratio"] >= ratio
-                and _parse_ts(p["posted_at"]) >= cutoff]
+                and in_window(p)]
 
     views = [p["metrics"]["views"] for p in reels
              if isinstance(p.get("metrics", {}).get("views"), int) and p["metrics"]["views"] > 0]
@@ -56,7 +69,7 @@ def deep_targets(account: dict, now: datetime,
             continue
         if v / median < ratio:
             continue
-        if _parse_ts(p["posted_at"]) < cutoff:
+        if not in_window(p):
             continue
         out.append({**p, "_ratio": v / median})
     return out

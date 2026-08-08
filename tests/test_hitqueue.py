@@ -81,3 +81,29 @@ def test_sort_pending_first_by_ratio():
     c = {**entry_from_hit({**_reel("c", 999), "_ratio": 99.0}, acc, "t"), "status": DONE}
     queue, _, _ = sync([c], [a, b], "t")
     assert [e["post_id"] for e in queue] == ["b", "a", "c"]
+
+
+# ── 게시 직후 배수는 안 굳었다 — min_age_days ─────────────────────────────
+
+def test_min_age_days_는_갓_올라온_히트를_뺀다():
+    """D+3 에 3배로 보이던 게 D+30 에 1.5배가 되기도 한다. 굳은 뒤에 분석한다."""
+    posts = [_reel(f"p{i}", 100, days_ago=60) for i in range(5)]
+    posts.append(_reel("fresh", 500, days_ago=3))    # 5배지만 사흘밖에 안 됨
+    posts.append(_reel("ripe", 500, days_ago=20))    # 5배 + 충분히 지남
+    ids = {p["post_id"] for p in deep_targets(_account(posts), NOW, min_age_days=7)}
+    assert ids == {"ripe"}
+
+
+def test_min_age_days_0이면_바로_잡는다():
+    posts = [_reel(f"p{i}", 100, days_ago=60) for i in range(5)]
+    posts.append(_reel("fresh", 500, days_ago=1))
+    ids = {p["post_id"] for p in deep_targets(_account(posts), NOW, min_age_days=0)}
+    assert "fresh" in ids
+
+
+def test_min_age_days_는_협업보정_경로에도_적용된다():
+    """collab.annotate() 가 _ratio 를 붙인 뒤에도 같은 기간 조건이 걸려야 한다."""
+    fresh = {**_reel("fresh", 500, days_ago=3), "_ratio": 5.0}
+    ripe = {**_reel("ripe", 500, days_ago=20), "_ratio": 5.0}
+    ids = {p["post_id"] for p in deep_targets(_account([fresh, ripe]), NOW, min_age_days=7)}
+    assert ids == {"ripe"}
