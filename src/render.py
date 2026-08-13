@@ -192,7 +192,10 @@ def _build_groups(accounts: list[dict]) -> list[dict]:
             [b for b in by_brand if b not in BRAND_ORDER]
     groups = []
     for b in order:
-        accs = by_brand[b]
+        # 계정 탭은 팔로워 많은 순 — 규모 큰 레퍼런스를 먼저 보게 한다.
+        # 아직 팔로워를 못 받은 계정(None)은 뒤로 보내고 username 으로 순서를 고정한다.
+        accs = sorted(by_brand[b],
+                      key=lambda a: (-(a.get("followers_count") or 0), a["username"]))
         merged = [p for acc in accs for p in acc.get("_cards", acc.get("posts", []))]
         merged.sort(key=lambda p: p["posted_at"], reverse=True)
         groups.append({

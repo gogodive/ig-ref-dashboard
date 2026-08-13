@@ -1,7 +1,7 @@
 import json
 from datetime import datetime, timedelta, timezone
 
-from src.render import render_html, _collab_with
+from src.render import render_html, _collab_with, _build_groups
 
 NOW = datetime(2026, 7, 17, 9, 0, tzinfo=timezone.utc)
 
@@ -231,3 +231,14 @@ def test_차트_조작은_휠이_아니라_버튼():
         assert f'data-act="{act}"' in html
     assert "wheel: {enabled: false}" in html
     assert "＋－ 로 기간 확대/축소, ◀▶ 로 이동" in html
+
+
+def test_계정탭은_팔로워_많은_순():
+    """규모 큰 레퍼런스를 먼저 본다. 팔로워 미수집은 뒤로."""
+    accs = []
+    for name, f in [("small", 100), ("none", None), ("big", 50000)]:
+        a = _account(username=name)
+        a["followers_count"] = f
+        accs.append(a)
+    g = _build_groups(accs)[0]
+    assert [a["username"] for a in g["accounts"]] == ["big", "small", "none"]
