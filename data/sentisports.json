@@ -6,15 +6,65 @@
   "category": "수영복",
   "brand": "센티",
   "followers_count": 25728,
-  "fetched_at": "2026-08-13T08:12:05.058533+09:00",
+  "fetched_at": "2026-08-14T08:20:07.115888+09:00",
   "posts": [
+    {
+      "post_id": "Db-Sv7AETz-",
+      "caption": "🌻LIMITED EDITION\nSUNFLOWER BUSAN🌻\n\n첫 부산 팝업을 기념하여\n<썬플라워 서포트백>을 만나보세요!\n\n✔ 리미티드 에디션 - 썬플라워 부산\n✔ 신세계 센텀시티몰 팝업 단독 판매\n✔ 준비된 수량 소진 시 종료\n\n📍 신세계 센텀시티 B1F\n📅 8.14(금) 공개",
+      "media_type": "CAROUSEL_ALBUM",
+      "product": "FEED",
+      "permalink": "https://www.instagram.com/p/Db-Sv7AETz-/",
+      "thumbnail": "https://scontent-gru1-1.cdninstagram.com/v/t51.82787-15/773450316_18453284701186564_7164032136976568194_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gG3_ZxXfzA1PASgNUsqC4UYlyuiP1i57-xvE1wQHa6CI1TGOGC2oHbwPEHHB5RfmXs&_nc_ohc=0ZQD3DHzsYAQ7kNvwH4NJDr&_nc_gid=Xpg1kEM4Ey5QlIzKsd0zrw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQED28rAmrHESWUpy6vjLBaVejYWu9KiaJ3p1Wwjzmm0Gw&oe=6A8437DF&_nc_sid=c6f216",
+      "video_url": null,
+      "duration": null,
+      "posted_at": "2026-08-13T08:19:05.000Z",
+      "owner": "sentisports",
+      "coauthors": [],
+      "metrics": {
+        "likes": null,
+        "comments": 6
+      },
+      "frozen": false,
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
+      "analysis": {
+        "one_liner": "리미티드 에디션 + 팝업 단독 판매 조합으로 희소성과 기한 긴박감을 동시에 자극해 오프라인 방문을 유도하는 기획",
+        "hook_type": "호기심형-비밀",
+        "analyzed_at": "2026-08-14T08:20:07.115888+09:00"
+      },
+      "thumb_local": "thumbs/sentisports/Db-Sv7AETz-.webp"
+    },
+    {
+      "post_id": "Db9o0vSGKxB",
+      "caption": "📢 럭키박스 대기 장소 안내\n지난 진행 시 많은 분들이 찾아주셔서,\n보다 원활한 운영을 위해 대기 장소를 안내드립니다.\n\n📍백화점 오픈 전 \n신세계 센텀시티몰 1F GATE 3\n오전 10시부터 교환권 배부\n\n📍백화점 오픈 후\n신세계 센텀시티몰 B1F 센티 팝업 매장에서\n교환권 순서대로 구매가 진행됩니다.\n\n교환권만 받으시면 대기줄을 떠나셔도 됩니다.\n당일 운영시간 내 편한 시간에 다시 방문하여 구매해 주세요.\n\n※ 준비된 수량 소진 시 조기 종료될 수 있습니다.\n※ 백화점 오픈 후 매장 입장 시, \n절대 뛰지말고 질서있게 입장해주세요.",
+      "media_type": "CAROUSEL_ALBUM",
+      "product": "FEED",
+      "permalink": "https://www.instagram.com/p/Db9o0vSGKxB/",
+      "thumbnail": "https://instagram.fgdl17-1.fna.fbcdn.net/v/t51.82787-15/772119311_18453245185186564_2076439312441939206_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fgdl17-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gEDDVJJLPpyyYYl4m1DExED5TyLwjBxFmKimBQ2IgRt6u6m5HwIWcePv-p80WXVX4k&_nc_ohc=fwxBEMITFXEQ7kNvwEd8hXf&_nc_gid=OtEpcjj8YO0eIL9O1NfuvA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHWXvDZFEO1_NHNhT7OwX-fjnLxOkb_1izl72K7kcKo-g&oe=6A842E93&_nc_sid=c6f216",
+      "video_url": null,
+      "duration": null,
+      "posted_at": "2026-08-13T02:12:44.000Z",
+      "owner": "sentisports",
+      "coauthors": [],
+      "metrics": {
+        "likes": 23,
+        "comments": 0
+      },
+      "frozen": false,
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
+      "analysis": {
+        "one_liner": "럭키박스 현장 혼잡 방지를 위한 단계별 대기·교환권 절차 안내로 팬덤의 행동을 사전에 조율하는 운영 공지형 캐러셀",
+        "hook_type": "가치형-약속(How to·N가지)",
+        "analyzed_at": "2026-08-14T08:20:07.115888+09:00"
+      },
+      "thumb_local": "thumbs/sentisports/Db9o0vSGKxB.webp"
+    },
     {
       "post_id": "Dbo6Sw2BcU9",
       "caption": "CARNIVAL COLLECTION\nOPEN 🎉🎉\n\n여성 세미컷 7종\n남성 숏사각 5종, 일반사각 1종\n수모 - 실리콘 8종 / 메쉬 3종\n\n🎁 센티 카카오채널 (@센티스포츠)\n친구 추가 시,\n\n신규 컬렉션 출시 기념\n10% 할인 쿠폰 지급",
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dbo6Sw2BcU9/",
-      "thumbnail": "https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/763334797_18451744810186564_9035446678222270403_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gEhrLjpaCKPh3W3tEWP4S6l-WndPwkNpJWKEW5z-IPRj4_6E37mCTcWUmPnKwlEb5c&_nc_ohc=4lPaT9T6VNQQ7kNvwHfya3b&_nc_gid=XF5jqZb-amxOh_giBZlAXA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFmM4VyRGCyJlZ52dblPkGe-tgfGjTnY2RuC9t9aG-MCg&oe=6A82DDF4&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-lax3-1.cdninstagram.com/v/t51.82787-15/763334797_18451744810186564_9035446678222270403_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gHn27Jsmo2oQlz0IqyhgzX2SSKH97nG_hI3n2mW3Xs8dGCUtPd9JHgWzFDedt2YL54BuCB-O_hhlzfX0JRzUWbw&_nc_ohc=4lPaT9T6VNQQ7kNvwGWp97x&_nc_gid=7iNY_Kb3XLhcsS25LaGhUA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQG9BtmLVoYUF_7JICQYtuVmVlNCeH16cHK1FlUTlhl1Aw&oe=6A842F74&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-05T01:01:30.000Z",
@@ -25,7 +75,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "thumb_local": "thumbs/sentisports/Dbo6Sw2BcU9.webp"
     },
     {
@@ -34,7 +84,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dbo6O63BM_m/",
-      "thumbnail": "https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/764216564_18451744780186564_2141697163335956757_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gHHWNheQBHpsJkQOrh_HFoEygSwZ38r_nYNwAQVQqGk8dDivPyuAtsj1tjcwvfS7rMDuNjXcbGQtqQOKjiqVHhp&_nc_ohc=0lUlrhyoEc0Q7kNvwEA05a-&_nc_gid=OV8iSOL8kgXXrewMt3rUtw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGvgsQNZ3jvTuJFHZiEVz_2BKuDmrLGb_mvHhCFEvs5ZA&oe=6A82E0A1&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/764216564_18451744780186564_2141697163335956757_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gEYdfWbyTRgjKD_Ur8Wphc9M8niW8LBgfuE3h-YYRwhZw_D2L74ee4QKxfJW87eyQ4&_nc_ohc=0lUlrhyoEc0Q7kNvwEvNC6e&_nc_gid=ZkZZs4WfySh8dQ1CYWTCJA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGELHo5z-BbyeSuCTAm04aNz0-LrKLirVjSujHMXj0oPw&oe=6A843221&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-05T01:01:00.000Z",
@@ -45,7 +95,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "thumb_local": "thumbs/sentisports/Dbo6O63BM_m.webp"
     },
     {
@@ -54,7 +104,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dbo6Mg9ScgY/",
-      "thumbnail": "https://instagram.ftrc2-1.fna.fbcdn.net/v/t51.82787-15/765369734_18451744765186564_5984653806616729295_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.ftrc2-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gGXeIXbnHo2xeoPXzMmHCDTqH5_suU1eKqAwIsuokMGkEZozgaeNg7l6hkANUG7pkk&_nc_ohc=SxT_8o2nhycQ7kNvwGz-Jlp&_nc_gid=ET85rHbuGB78eu79XIVmUw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHhfTAeo8rB2oLiyQbV1Zdn7hRaLVvfkixx3ZYzhu5pcA&oe=6A82BE6B&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/765369734_18451744765186564_5984653806616729295_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gEFCFzxuvuW5Jpka3zVuQmddnfNnsXtpaV3djn0nhjLFXjbzw-s6-sQ_KcVANfy5mwG5qoQKtge_RxLpMpTPiHW&_nc_ohc=DIVcfyExIMcQ7kNvwFtFO_n&_nc_gid=azmy3lpaUqNElFRdyvh-NA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEVtPJT3tsz9eotOBK-6Mj1V2jFpd0cykKwkKVqJuewZw&oe=6A840FEB&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-05T01:00:40.000Z",
@@ -65,7 +115,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "thumb_local": "thumbs/sentisports/Dbo6Mg9ScgY.webp"
     },
     {
@@ -74,7 +124,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbnPYWOEdJf/",
-      "thumbnail": "https://instagram.fmil1-1.fna.fbcdn.net/v/t51.82787-15/764440047_18451619704186564_3879693180613357545_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fmil1-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gHrzvi88DglbBtCd4ims3i0lFZ4-BmMyFh59XZR2Yk0EfUvMhpxPPvnY_Anb23dxrY&_nc_ohc=FuFCG9oAEIkQ7kNvwEwIXlD&_nc_gid=quI0BRaGwzIk1og3Cr7i0w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEjaarKFoZuXOMFoupW8uPqrCasTfhtT8qAKxfuFEmH7Q&oe=6A82CBFA&_nc_sid=c6f216",
+      "thumbnail": "https://instagram.fntr6-5.fna.fbcdn.net/v/t51.82787-15/764440047_18451619704186564_3879693180613357545_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fntr6-5.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gEHk6Gl_7dxTSh31k9TmIYORfRW6HFMa0mS4Ib2fQSd8wFc7AaNCmgq7N0vBj_HQgckxa0Ks8ZvuFDqvIeyHeaf&_nc_ohc=FuFCG9oAEIkQ7kNvwFbRgRT&_nc_gid=1BTVgN4SusmBNA5GjTs2Ug&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEhdiCjfIUP-EbN_V6QZZaGUSPuC6Kp7zqrY2-mBCxCAg&oe=6A841D7A&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-04T09:27:07.000Z",
@@ -85,7 +135,7 @@
         "comments": 10
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "analysis": {
         "one_liner": "팝업 한정 럭키박스 + 골든티켓 서프라이즈로 희소성과 궁금증을 동시에 자극하는 오프라인 이벤트 고지 캐러셀",
         "hook_type": "호기심형-비밀",
@@ -99,7 +149,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbnPQHlEf0x/",
-      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/764862476_18451619578186564_8263954910133073280_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk1NjE5NzYzMTg0MzU4MjEzOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMzA3Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=DSU7nDWsbQwQ7kNvwGQ_DWt&_nc_oc=Adr0o4nAyZHQcCTVAk-rusTfxXHLJkZuUSsMBrDpbKT5WwqHd51ROSwoStLc1pJcxFyWzzCGsYh6ExtUHvBXwW_U&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=NBaswnd8zLbF70O4QvUfjQ&_nc_ss=7d689&oh=00_AQE3hUriMhu0UpOJOlpcJZUM5a5e9gZuPjpMPjLTa8c2CQ&oe=6A82EFC7",
+      "thumbnail": "https://instagram.frec47-1.fna.fbcdn.net/v/t51.82787-15/764862476_18451619578186564_8263954910133073280_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.frec47-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gGkaa7upuHOU4XaNgYfctZxOkVu4xG3p9bwRxdWsLDHrWgcyfaP7kzY26sPERQUpzc&_nc_ohc=zruaSao91zUQ7kNvwH7aWs5&_nc_gid=7Xjxo0jDvBLQIV1vug7n9Q&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHLyD9KKvs5KphCLvN3uuJ5__h6hm_hB8dxfX2BR-uy-w&oe=6A844147&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-04T09:25:59.000Z",
@@ -110,7 +160,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "analysis": {
         "one_liner": "팝업 한정 커스텀 체험으로 희소성과 개인화 욕구를 동시에 자극하는 오프라인 이벤트 알림 캐러셀",
         "hook_type": "호기심형-참여 유도",
@@ -124,7 +174,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dbkj8HXEb4r/",
-      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/763276678_18451432750186564_4555957788982126738_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gElUkzgSmwgse9k3elVvABFbxKh0CKRI8pQytE4kQcHSsJna5GnnxH5dVWWHZzu2Aw85EHHNu7awOvHyGmWBE1t&_nc_ohc=euLmiByqZPkQ7kNvwF-WveD&_nc_gid=n7Ht18kc4s-MW0qzLBfvEQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQHogn0pm5X8ZGMS_ZWTY73RAcKePPovNgXpImt_OofZog&oe=6A82CEF8&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-fra3-2.cdninstagram.com/v/t51.82787-15/763276678_18451432750186564_4555957788982126738_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-fra3-2.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gE3lelzmuD6v__CD1gKm1-NGYUYvF1WGUz1jHh4PUCs11M9z3yGj1FpOpl1pGPHzg8vcfTFPseoXNJWQaLTVeUB&_nc_ohc=euLmiByqZPkQ7kNvwHgvHe7&_nc_gid=Vzr-LsR5TWlcp7mRF8erJg&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFKB4s4CYrBxwC-gucmJB9UkYWMantWsgXtBgYlocYflA&oe=6A842078&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-03T08:29:02.000Z",
@@ -135,7 +185,7 @@
         "comments": 2
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "analysis": {
         "one_liner": "컬렉션 이름만 나열해 궁금증을 극대화하는 런칭 D-2 티저 캐러셀 전략",
         "hook_type": "호기심형-비밀",
@@ -149,7 +199,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbkW7tWkY2-/",
-      "thumbnail": "https://instagram.fyvr4-1.fna.fbcdn.net/v/t51.82787-15/763618285_18451415938186564_3704623039233767391_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fyvr4-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gFTa435H47WJORWFawxuSylCVrYaBl3gtpScxJGLPmp8i07Up50QwHIyIOKj6pKlLfkp07zrsnTSMyVLeiVPbyQ&_nc_ohc=ypNN94PYdkgQ7kNvwFhSaGd&_nc_gid=OZMABtHe4yrRZIA-0EFLKw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQE6rvScc5IcrCZMMqhtYYNOSL-sJekdGdlzxd16WTQqaQ&oe=6A82E65F&_nc_sid=c6f216",
+      "thumbnail": "https://instagram.fktw6-1.fna.fbcdn.net/v/t51.82787-15/763618285_18451415938186564_3704623039233767391_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fktw6-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gF_95yFYQqpcmUz4rOnklwEdFeh4gpp2398GXBSZCarNxcPpiJsYi94CNuRbtUp2NY&_nc_ohc=ypNN94PYdkgQ7kNvwHGsRII&_nc_gid=XsrD9hzBlfh_EQThvwIAeQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFs1dhBiGJOUnlvJ7PPLBw5EEIBJ4nS_KDqjA-_4tQUbw&oe=6A8437DF&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-03T06:35:23.000Z",
@@ -160,7 +210,7 @@
         "comments": 6
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "analysis": {
         "one_liner": "컬렉션명과 색상 코드만으로 신제품 출시 직전 긴장감을 극대화하는 런칭 예고 캐러셀",
         "hook_type": "호기심형-비밀",
@@ -174,7 +224,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbcMWzKhFgL/",
-      "thumbnail": "https://instagram.fmel18-1.fna.fbcdn.net/v/t51.82787-15/760434479_18450793849186564_8436103095402932906_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fmel18-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gGRsRpodG-An8Kx_KnoiAlV0gOrR59IpxGlL83NgteVTSpUV_gAtbM26AfdLHP0xMQ&_nc_ohc=Me9Av0d0X88Q7kNvwFaV_1T&_nc_gid=Sg9n5lQpDvtMMA9NrS3n8Q&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQEACcN1QQ7GzSerNqTCB9QQly0lTyGHDn0DKFv2JdWA2Q&oe=6A82F259&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/760434479_18450793849186564_8436103095402932906_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gFyCZ6p4ksmcpmKd9ILOCeDPvpMXmKM4Ml1BNLPXe4t-HiWLQOw0uzcf-gz870XwWt7ksuOyNJG_-uPk4_mM6KH&_nc_ohc=Me9Av0d0X88Q7kNvwFK5v-K&_nc_gid=XDILtGsEDtCWYnwb7Q2d9w&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGnBZilh3uOuSZA5REzKtCMK8yGOvv6Ye0BrOVzKz1YDA&oe=6A8443D9&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-07-31T02:29:07.000Z",
@@ -185,7 +235,7 @@
         "comments": 8
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "analysis": {
         "one_liner": "신상 컬렉션 론칭을 팝업 선공개→온라인 출시 순으로 단계적 기대감을 설계한 이중 CTA 기획",
         "analyzed_at": "2026-08-01T08:32:08.218816+09:00"
@@ -198,7 +248,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DbXzvVhkUGJ/",
-      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/758600406_18450467062186564_4035406577202818765_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gFr7msgrv-36OdEjI5NJMr492v2FOuCJwAmcfr-dGlMzd6vEmZBONh2266MhBy5iFQ&_nc_ohc=hH4jk_wRsZkQ7kNvwHl2gZ1&_nc_gid=NKCTllOtfE55HjGaadH1lQ&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGNB3wKgYx-UnrVVTitOQ8vCFWGXRUrcZoOIlemS7V9SA&oe=6A82DFBC&_nc_sid=c6f216",
+      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/758600406_18450467062186564_4035406577202818765_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gHYHmkJ9K8-_wpGp-bOH1Bhv-g3Q0BrfEec8_Pf5Bg-NEgLX-1SFtgUN7sn1mWtb4Y&_nc_ohc=hH4jk_wRsZkQ7kNvwEDMieg&_nc_gid=m__IcucGtusGwvvZY_BDUw&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQG1xsqBA860q2HdB4TZxnssfDkLji_jOg3mkFExzJ3k-Q&oe=6A84313C&_nc_sid=c6f216",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-07-29T09:36:59.000Z",
@@ -206,10 +256,10 @@
       "coauthors": [],
       "metrics": {
         "likes": null,
-        "comments": 6
+        "comments": 10
       },
       "frozen": false,
-      "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
+      "metrics_updated_at": "2026-08-14T08:20:07.115888+09:00",
       "analysis": {
         "one_liner": "팝업 일정·혜택·장소를 캐러셀로 구조화해 오프라인 이벤트 기대감을 집중 환기하는 공지 포맷",
         "analyzed_at": "2026-07-30T08:33:39.302816+09:00"
@@ -331,7 +381,7 @@
         "likes": null,
         "comments": 60
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-22T08:30:44.579643+09:00"
     },
     {
@@ -346,7 +396,7 @@
         "likes": null,
         "comments": 2
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-07-23T08:32:06.895411+09:00"
     },
     {
@@ -365,7 +415,7 @@
         "likes": null,
         "comments": 2
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
       "thumb_local": "thumbs/sentisports/DawROUKGPR7.webp"
     },
@@ -385,7 +435,7 @@
         "likes": null,
         "comments": 0
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-08-13T08:12:05.058533+09:00",
       "thumb_local": "thumbs/sentisports/DawRI9dGEmq.webp"
     },
@@ -3277,42 +3327,6 @@
       "frozen": true,
       "metrics_updated_at": "2026-07-22T05:38:49.306593+09:00",
       "thumb_local": "thumbs/sentisports/DM1cknYy2WF.webp"
-    },
-    {
-      "post_id": "DMy7HtTpIZ1",
-      "caption": "🏔️ Camou core\n\"카모코어\"의 거침없는 붓칠처럼\n망설임 없이 도전하는 우리의 여름\n\n⭐ 온라인몰 / 팝업스토어 구매 가능\n⭐ 신규 컬렉션 구매 시 미니어쳐 키링 증정",
-      "media_type": "CAROUSEL_ALBUM",
-      "product": "FEED",
-      "permalink": "https://www.instagram.com/p/DMy7HtTpIZ1/",
-      "thumbnail": "https://scontent-lga3-3.cdninstagram.com/v/t39.30808-6/524365156_1303184278484270_155960015993463538_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gHzKHL3-9FPXxVNVQV3och1S1SQSWr_h4xCZv45mUEzXEdNdW2-yrb2f8YfhBnWE3w&_nc_ohc=_BX9toOoKNUQ7kNvwEaGMza&_nc_gid=6UdzHhvT7un8zWMWBlFwTg&edm=ADp7STQAAAAA&ccb=7-5&oh=00_AQHFsXDo2YRBe3T1Ym1_aeDCU9UdS3Vw9g0QfLtWYdIWzw&oe=6A7A6DDB&_nc_sid=c6f216",
-      "video_url": null,
-      "duration": null,
-      "posted_at": "2025-08-01T02:30:03.000Z",
-      "metrics": {
-        "likes": null,
-        "comments": 0
-      },
-      "frozen": true,
-      "metrics_updated_at": "2026-07-22T05:38:49.306593+09:00",
-      "thumb_local": "thumbs/sentisports/DMy7HtTpIZ1.webp"
-    },
-    {
-      "post_id": "DMwWVxPhiSA",
-      "caption": "경영 국가대표 이송은 선수의 \nTIDE & GLOW PICK 을 만나보세요💞\n\n✔️송은 PICK\n☝️타이드폴 BL\n✌️썬스트레이스 GN",
-      "media_type": "CAROUSEL_ALBUM",
-      "product": "FEED",
-      "permalink": "https://www.instagram.com/p/DMwWVxPhiSA/",
-      "thumbnail": "https://scontent-waw2-1.cdninstagram.com/v/t39.30808-6/524135096_1303166468486051_2681009976011814169_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2gH7CPNIyuISVUoNThKfLentqgyCyvqliK3c5bEv5tssmuhpASKQUTXIxvND47wSe7U&_nc_ohc=2PQ-ICN5B6IQ7kNvwH60JwQ&_nc_gid=buD4E4482kdgrJ1PW0P7-A&edm=ADp7STQAAAAA&ccb=7-5&oh=00_AQGn36ZDiCztKAlFMwvPq1ldM8hZNHLBEe4ICvVQbHMORA&oe=6A7A6013&_nc_sid=c6f216",
-      "video_url": null,
-      "duration": null,
-      "posted_at": "2025-07-31T02:30:11.000Z",
-      "metrics": {
-        "likes": null,
-        "comments": 3
-      },
-      "frozen": true,
-      "metrics_updated_at": "2026-07-22T05:38:49.306593+09:00",
-      "thumb_local": "thumbs/sentisports/DMwWVxPhiSA.webp"
     }
   ]
 }
