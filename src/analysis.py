@@ -18,7 +18,10 @@ _SYSTEM = (
     "반드시 지정된 JSON 하나만 출력하고 다른 텍스트는 쓰지 마라."
 )
 
-# 잘 된 콘텐츠 역분석(reverse engineering) 프레임워크 — 훅 분류 체계
+# 잘 된 콘텐츠 역분석(reverse engineering) 프레임워크 — 훅 분류 체계.
+# 원본(marketing-skills)은 4분류이고 비주얼형은 우리가 더한 것이다. 정본은
+# `.claude/skills/analyze-reference-reel/references/frameworks.md` — 여기와 노션
+# `후킹 유형` 속성이 셋 다 같아야 대시보드 뱃지와 심층 리포트가 비교된다.
 HOOK_TAXONOMY = """[훅 분류 체계] hook_type 은 반드시 아래 중 하나를 고르고 세부유형까지 적는다.
 - 호기심형(참여 유도): 비밀 / 예상밖 발견 / 질문 던지기
 - 가치형(저장 유도): 약속(How to·N가지) / 지름길·꿀팁 / 경고(하지 마세요)
