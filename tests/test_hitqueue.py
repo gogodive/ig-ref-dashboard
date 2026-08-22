@@ -107,3 +107,26 @@ def test_min_age_days_는_협업보정_경로에도_적용된다():
     ripe = {**_reel("ripe", 500, days_ago=20), "_ratio": 5.0}
     ids = {p["post_id"] for p in deep_targets(_account([fresh, ripe]), NOW, min_age_days=7)}
     assert ids == {"ripe"}
+
+
+def test_config_의_deep_analysis_값이_전부_main_에_연결돼_있다():
+    """설정에만 있고 코드에 안 꽂힌 값이 없어야 한다.
+
+    min_age_days 를 config·README·노션에 넣고도 main 의 deep_targets 호출에
+    안 넘겨서, 7일 대기 규칙이 한동안 죽어 있었다. deep_targets 자체의 단위
+    테스트는 전부 통과하고 있었기 때문에 아무도 못 잡았다.
+    """
+    import re
+    from pathlib import Path
+
+    import yaml
+
+    root = Path(__file__).resolve().parent.parent
+    cfg = yaml.safe_load((root / "config.yaml").read_text(encoding="utf-8"))
+    src = (root / "src" / "main.py").read_text(encoding="utf-8")
+    call = re.search(r"hitqueue\.deep_targets\((.*?)\)\s*:", src, re.S)
+    assert call, "main.py 에서 deep_targets 호출을 못 찾았다"
+
+    tunables = set(cfg["deep_analysis"]) - {"notion_db_id"}
+    missing = {k for k in tunables if f'"deep_analysis"]["{k}"]' not in call.group(1)}
+    assert not missing, f"config 에만 있고 deep_targets 로 안 넘어가는 값: {missing}"

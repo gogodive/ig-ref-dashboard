@@ -244,7 +244,7 @@ def main() -> int:
     if n_collab:
         log.info("협업 게시물 %d건 — 배수를 상대 계정 기준선으로 보정", n_collab)
 
-    # 심층분석 큐 갱신 (3배 이상 · 최근 6개월 릴스)
+    # 심층분석 큐 갱신 (3배 이상 · recent_days 이내 · min_age_days 경과 릴스)
     queue_path = ROOT / "data" / "hit_queue.json"
     try:
         existing = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
@@ -254,7 +254,8 @@ def main() -> int:
     targets = []
     for acc in accounts:
         for post in hitqueue.deep_targets(acc, now, ratio=cfg["deep_analysis"]["ratio"],
-                                          recent_days=cfg["deep_analysis"]["recent_days"]):
+                                          recent_days=cfg["deep_analysis"]["recent_days"],
+                                          min_age_days=cfg["deep_analysis"]["min_age_days"]):
             targets.append(hitqueue.entry_from_hit(post, acc, now.isoformat()))
     queue, added, removed = hitqueue.sync(existing, targets, now.isoformat())
     queue_path.write_text(json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8")
