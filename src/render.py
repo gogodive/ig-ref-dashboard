@@ -89,15 +89,17 @@ def _perf_lines(post: dict) -> list[str]:
 
     lines = []
     r = post.get("_ratio")
+    basis = post.get("_ratio_basis") or "own"
     if isinstance(r, (int, float)) and r > 0:
         base = round(views / r)
-        basis = post.get("_ratio_basis") or "own"
         if basis.startswith("collab:"):
             lines.append(f"공동 게시 — @{basis.split(':', 1)[1]} 평소({base:,}회)의 {r:.1f}배")
         elif basis == "collab-unknown":
             lines.append(f"평소({base:,}회)의 {r:.1f}배 — 공동 게시라 실제론 더 낮습니다")
         else:
             lines.append(f"이 계정 평소({base:,}회)의 {r:.1f}배")
+    elif basis == "collab-external":
+        lines.append("공동 게시 — 남의 계정 글이라 이 계정 기준 배수를 내지 않습니다")
 
     likes, comments = m.get("likes"), m.get("comments")
     rates = []
@@ -242,12 +244,14 @@ def render_html(accounts: list[dict], generated_at: datetime, hot_ratio: float =
             # collab 모듈이 먼저 돌았으면 그 판정(모니터링 계정 간 공유 포함)을 쓴다
             p["_collab"] = p.get("_collab_with") or _collab_with(p, acc["username"])
         _annotate_hot(acc.get("posts", []), hot_ratio)  # 히트는 각 계정 중앙값 기준
-        # 🔥 카드는 AI 해설 대신 성과 2줄 + 심층분석 리포트 버튼을 단다
+        # 🔥 카드는 AI 해설 대신 성과 2줄 + 심층분석 리포트 버튼을 단다.
+        # 리포트가 있으면 🔥 가 아니어도 단다 — 협업 보정으로 배수가 빠진 뒤에도
+        # 이미 분석해 둔 리포트로 가는 길은 남아 있어야 한다.
         for p in acc.get("posts", []):
-            if not p.get("_hot"):
+            page_id = (deep_links or {}).get(p["post_id"])
+            if not (p.get("_hot") or page_id):
                 continue
             p["_perf"] = _perf_lines(p)
-            page_id = (deep_links or {}).get(p["post_id"])
             p["_deep_url"] = NOTION_PAGE_BASE + page_id.replace("-", "") if page_id else None
         # 카드로 그릴 대상만 추린다 — 전량(계정당 180개)을 그리면 HTML 이 8MB 를 넘어
         # Pages 배포가 10분 제한을 초과한다. 중앙값·차트는 전량으로 계산하되

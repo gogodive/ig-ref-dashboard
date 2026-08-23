@@ -129,7 +129,7 @@
           <span>❤️ <b>{{ p.metrics.likes | num }}</b></span>
           <span>💬 <b>{{ p.metrics.comments | num }}</b></span>
         </div>
-        {% if p._hot %}
+        {% if p._hot or p._deep_url %}
         <div class="ai hotai">
           {% for line in p._perf %}<div class="perf">{{ line }}</div>{% endfor %}
           {# 리포트가 있을 때만 버튼. 심층분석은 최근 6개월 히트만 대상이라

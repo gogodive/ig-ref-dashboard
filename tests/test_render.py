@@ -242,3 +242,21 @@ def test_계정탭은_팔로워_많은_순():
         accs.append(a)
     g = _build_groups(accs)[0]
     assert [a["username"] for a in g["accounts"]] == ["big", "small", "none"]
+
+
+def test_남의_계정_글은_배수줄_대신_이유를_쓴다():
+    acc = _account(viral_views=5000)
+    p = acc["posts"][0]
+    p.update(_ratio=None, _ratio_basis="collab-external", _hot="🔥")
+    html = render_html([acc], NOW)
+    assert "남의 계정 글이라" in html
+    assert "평소(" not in html          # 낼 수 없는 배수를 지어내지 않는다
+
+
+def test_리포트가_있으면_불꽃이_아니어도_버튼이_남는다():
+    """협업 보정으로 배수가 빠져도 이미 분석해 둔 리포트는 닿을 수 있어야 한다."""
+    acc = _account(viral_views=100)     # 히트 없음
+    pid = acc["posts"][0]["post_id"]
+    html = render_html([acc], NOW, deep_links={pid: "3c439eba97ed81b5b611dc398cbbb4ae"})
+    assert "🎯 이 릴스 분석 리포트 열기" in html
+    assert "3c439eba97ed81b5b611dc398cbbb4ae" in html

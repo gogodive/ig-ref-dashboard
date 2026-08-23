@@ -42,9 +42,28 @@ def test_owner_필드로도_협업을_찾는다():
     posts = [reel("p0", 9_000, owner="creator")] + [reel(f"a{i}", 1_000) for i in range(9)]
     ctx = collab.build([acct("brand", posts)])
     assert ctx.is_collab(posts[0], "brand")
-    r, basis = ctx.ratio(posts[0], "brand")
-    assert basis == "collab-unknown"     # creator 를 모니터링하지 않아 기준선을 모름
-    assert r == 9.0                      # 자체 중앙값을 쓰되 근거를 표시한다
+
+
+def test_남의_계정_글은_배수를_안_낸다():
+    """조회수가 남의 오디언스라 우리 중앙값으로 나누면 안 된다.
+
+    실측(2026-08-22): 이 경로가 372.8배·239.4배·144.2배를 만들었고,
+    12편을 열어 보니 전부 남의 계정 도달이거나 유료 증폭이었다.
+    """
+    posts = [reel("p0", 9_000, owner="creator")] + [reel(f"a{i}", 1_000) for i in range(9)]
+    ctx = collab.build([acct("brand", posts)])
+    assert ctx.ratio(posts[0], "brand") == (None, "collab-external")
+
+
+def test_우리가_소유자면_상대를_몰라도_배수를_낸다():
+    """게시물이 우리 계정 것이면 자체 중앙값이 기준선으로 유효하다.
+
+    조회수에 상대 오디언스가 얹혀 부풀긴 하므로 근거를 collab-unknown 으로 남긴다.
+    """
+    posts = [reel("p0", 9_000, owner="brand", coauthors=["creator"])] + \
+            [reel(f"a{i}", 1_000) for i in range(9)]
+    ctx = collab.build([acct("brand", posts)])
+    assert ctx.ratio(posts[0], "brand") == (9.0, "collab-unknown")
 
 
 def test_자체_게시물은_그대로():
