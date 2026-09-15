@@ -6,27 +6,77 @@
   "category": "수영복",
   "brand": "움파",
   "followers_count": 33579,
-  "fetched_at": "2026-09-14T09:21:33.868647+09:00",
+  "fetched_at": "2026-09-15T09:50:28.415860+09:00",
   "posts": [
+    {
+      "post_id": "DdQ3NjHxKPm",
+      "caption": "PETIT BERRY, AGAIN! 🍓\n\n많은 분들이 기다려주셨던 쁘띠베리가 돌아옵니다.\n\n작고 사랑스러운 딸기와 꽃이 가득한 프린트,\n산뜻한 핑크 포인트까지 여러분이 사랑했던 그 모습 그대로♡\n\n다시 돌아온 쁘띠베리를 만나보세요!\n\n9.15 (Tue) 10am\noompaa.co.kr",
+      "media_type": "IMAGE",
+      "product": "FEED",
+      "permalink": "https://www.instagram.com/p/DdQ3NjHxKPm/",
+      "thumbnail": "https://scontent-gru1-1.cdninstagram.com/v/t51.82787-15/798688107_18341638357283854_2176797810655421057_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk4NTkyODQ5Mzg0NTQ4ODYxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=9hRP8Rj0XwoQ7kNvwGk9Lip&_nc_oc=AdoQvAyYgqi1tKlcTmi-qqVN1-jZTUV9clrsHJaHQgpPljXqzCY9JeabN7Np_L0-1sM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_gid=XcQzYWg3WQHfYe4cqDVAFQ&_nc_ss=7a22e&oh=00_AQKp38pPD6btnoeTUgaSM1_LIa1pwz0Sljr-eJUJaQbrOQ&oe=6AAE77C1",
+      "video_url": null,
+      "duration": null,
+      "posted_at": "2026-09-14T09:55:36.000Z",
+      "owner": "oompaa.world",
+      "coauthors": [],
+      "metrics": {
+        "likes": null,
+        "comments": 2
+      },
+      "frozen": false,
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
+      "analysis": {
+        "one_liner": "팬덤이 확인된 인기 패턴의 한정 재출시를 예고하며 재구매 욕구와 기대감을 동시에 자극하는 복각 드롭 기획",
+        "hook_type": "스토리형-여정(지금 무슨 일이)",
+        "analyzed_at": "2026-09-15T09:50:28.415860+09:00"
+      },
+      "thumb_local": "thumbs/oompaa.world/DdQ3NjHxKPm.webp"
+    },
+    {
+      "post_id": "DdP6Yq9Aes4",
+      "caption": "PETIT BERRY, AGAIN! 🍓\n\n많은 분들이 기다려주셨던 쁘띠베리가 돌아옵니다.\n\n작고 사랑스러운 딸기와 꽃이 가득한 프린트,\n산뜻한 핑크 포인트까지 여러분이 사랑했던 그 모습 그대로♡\n\n다시 돌아온 쁘띠베리를 곧 만나보세요!\n\n9.15 (Tue) 10am\noompaa.co.kr",
+      "media_type": "CAROUSEL_ALBUM",
+      "product": "FEED",
+      "permalink": "https://www.instagram.com/p/DdP6Yq9Aes4/",
+      "thumbnail": "https://instagram.fbod1-1.fna.fbcdn.net/v/t51.82787-15/809477368_18341575741283854_631762004691225201_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk4NTY2MDg4ODQ4MDAxMDk0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TMCAoJOqYS4Q7kNvwEgr7mb&_nc_oc=AdrxjncaIiICfkSE8cIuZjoFgPnaoKDKCcrGsaPJ06vAApu_j-26HxREL57nHAczG9s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbod1-1.fna&_nc_gid=tDXvoTedpyVClfrXcvoDxg&_nc_ss=7a22e&oh=00_AQJNLZcbfSlJ_iZzVFrM7c1e2cAD_t0OW_0DP_gd7DKAKg&oe=6AAE7660",
+      "video_url": null,
+      "duration": null,
+      "posted_at": "2026-09-14T01:03:55.000Z",
+      "owner": "oompaa.world",
+      "coauthors": [],
+      "metrics": {
+        "likes": 54,
+        "comments": 0
+      },
+      "frozen": false,
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
+      "analysis": {
+        "one_liner": "인기 패턴 재출시를 '귀환 서사'로 포장해 기존 팬의 구매 욕구를 재점화하는 한정 복각 티저 캐러셀",
+        "hook_type": "스토리형-여정(지금 무슨 일이)",
+        "analyzed_at": "2026-09-15T09:50:28.415860+09:00"
+      },
+      "thumb_local": "thumbs/oompaa.world/DdP6Yq9Aes4.webp"
+    },
     {
       "post_id": "DdK4eDtB4XN",
       "caption": "PETIT BERRY, AGAIN! 🍓\n\n많은 분들이 기다려주셨던 쁘띠베리가 돌아옵니다.\n\n작고 사랑스러운 딸기와 꽃이 가득한 프린트,\n산뜻한 핑크 포인트까지 여러분이 사랑했던 그 모습 그대로♡\n\n다시 돌아온 쁘띠베리를 곧 만나보세요!\n\n9.15 (Tue) 10am\noompaa.co.kr",
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DdK4eDtB4XN/",
-      "thumbnail": "https://scontent-fco2-1.cdninstagram.com/v/t51.82787-15/806249177_18341243242283854_4981117247350907723_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzk4NDI0NTE3NjUyODI0MjEyNTE4MzQxMjQzMjM5MjgzODU0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=ZDp6a7AHqwsQ7kNvwH9AU4B&_nc_oc=Adp-nNYywBFT9SwYQ-F-f1uE7nStaskq42kKx9Mq3dAZnUSboSQ01Uzl-w0ApaNeukI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fco2-1.cdninstagram.com&_nc_gid=b98XiLZjoy1V2Enrj6SH-Q&_nc_ss=7a22e&oh=00_AQJaXT8yM-CKN6F37Vl5OOK57Dw5rRUveCCuAxfj73fHqw&oe=6AAD068A",
-      "video_url": "https://scontent-fco2-1.cdninstagram.com/o1/v/t2/f2/m367/AQMHHz30N6mMj8abVpwCETCme1avHB12HuV-Cd3ZeDjJU-CQsxBZ0bQ0aXqJaeW2C6eAD3LTNaJax7pdbVb6Kr1g9JlIucwKRPuv1QU.mp4?_nc_cat=102&_nc_sid=9ca052&_nc_ht=scontent-fco2-1.cdninstagram.com&_nc_ohc=Dcqp-ABTUjAQ7kNvwFfKChN&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfcjJldmV2cDktcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxMDYyNTUyNDYzNDI2MzgwLCJhc3NldF9hZ2VfZGF5cyI6MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsImJpdHJhdGUiOjIwMzAxMzIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=b98XiLZjoy1V2Enrj6SH-Q&_nc_ss=7a22e&_nc_zt=28&oh=00_AQJ03ZNIYZoaej7a3ah4xVnlEkdgemCyDvyz8YUSchzEqQ&oe=6AAD0E0B",
+      "thumbnail": "https://scontent-elp3-1.cdninstagram.com/v/t51.82787-15/806249177_18341243242283854_4981117247350907723_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzk4NDI0NTE3NjUyODI0MjEyNTE4MzQxMjQzMjM5MjgzODU0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=ZDp6a7AHqwsQ7kNvwHhYckN&_nc_oc=AdqyvSJPZ-PNXRTIxHpxcoZZRSmfcGHJqNNgL5-QB_1xGtpiU3M4Gocwo8XzIuzhimDmvWZ9pWvD9m0nWUvinWae&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-elp3-1.cdninstagram.com&_nc_gid=DBB6rNQj4lcewLV2MzXuZg&_nc_ss=7a22e&oh=00_AQIZp7J4kwFmQel-guibxT29MsN-JKzmtXGXiIM3UUeh7Q&oe=6AAE580A",
+      "video_url": "https://scontent-elp3-1.cdninstagram.com/o1/v/t2/f2/m367/AQMHHz30N6mMj8abVpwCETCme1avHB12HuV-Cd3ZeDjJU-CQsxBZ0bQ0aXqJaeW2C6eAD3LTNaJax7pdbVb6Kr1g9JlIucwKRPuv1QU.mp4?_nc_cat=102&_nc_sid=9ca052&_nc_ht=scontent-elp3-1.cdninstagram.com&_nc_ohc=Dcqp-ABTUjAQ7kNvwG_eU5w&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfcjJldmV2cDktcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxMDYyNTUyNDYzNDI2MzgwLCJhc3NldF9hZ2VfZGF5cyI6MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsImJpdHJhdGUiOjIwMzAxMzIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=DBB6rNQj4lcewLV2MzXuZg&_nc_ss=7a22e&_nc_zt=28&oh=00_AQKjd7jxv0hNmEiCAyrK1UKCEb3uNBW2-6ZPkwLAZiJmkg&oe=6AAE5F8B",
       "duration": 8.009433,
       "posted_at": "2026-09-12T02:15:35.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "views": 5261,
+        "views": 5590,
         "likes": null,
         "comments": 2
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "재출시 예고 콘텐츠로 팬덤 기대감을 극대화하고 날짜·URL로 즉각 행동을 유도하는 컴백 티저 공식",
         "hook_type": "스토리형-여정(지금 무슨 일이)",
@@ -40,18 +90,18 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DdJaoGqh6Rt/",
-      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/804647440_18341149477283854_173616658669725168_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk4MzgzMjQ1MDUzMDI1NTk4MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=VtZ2oI28U6UQ7kNvwHXdMDy&_nc_oc=AdoVNUft4T-sUDgYe8EzFQ3kh9grB38CFXGQnSJnku0Hk96qQWFMzKg36yolP0k7meg&_nc_ad=z-m&_nc_cid=1479&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=JOi3NNeanHs0Ryfq6l61Pw&_nc_ss=7a22e&oh=00_AQL5gQhoELaPnhCGPzo61VEh_Xch-X5mbBOi-US7HEmtug&oe=6AAD1F53",
+      "thumbnail": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/804647440_18341149477283854_173616658669725168_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk4MzgzMjQ1MDUzMDI1NTk4MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TOtov4WEw50Q7kNvwGz_E5R&_nc_oc=AdrLYsHfS4zGRvxVrIBiMQcZVWR8iBlsOGdi6NTvGXvNaEpg8zmbBe1hd1-1Adcss7M&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_gid=bWlB2d3O_jkBw2uVw-LrVw&_nc_ss=7a22e&oh=00_AQITWDnjp-JDtO1b186UTTN_AFtY3jCzDMDba2PgBoS_IQ&oe=6AAE70D3",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-11T12:31:21.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 42,
+        "likes": null,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "단종·시즌오프 제품의 컴백을 암시하는 티저 캡션으로 팬의 기대감과 재구매 욕구를 동시에 자극하는 리런치 예고 포스팅",
         "hook_type": "호기심형-비밀",
@@ -65,18 +115,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DdIiUbTEdFU/",
-      "thumbnail": "https://instagram.frec13-1.fna.fbcdn.net/v/t51.82787-15/803726470_18341089027283854_1968652808354947424_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk4MzU4NDEyNDI0OTM1NTIzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=11UMAt-aN_8Q7kNvwEZbBUa&_nc_oc=AdqmotJgldyhk_DaRyknGUiQ98w_X1sv9KWzlYHxuGbByMCm2iGR-JdVkezIvjtH-Hg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frec13-1.fna&_nc_gid=06G7VkKnBBlcuioJdwAGyQ&_nc_ss=7a22e&oh=00_AQLcTEmIPZ7llXrsTxRiokUUSKano3g0rd0OetaODN9k6A&oe=6AAD22C6",
+      "thumbnail": "https://instagram.ffco5-2.fna.fbcdn.net/v/t51.82787-15/803726470_18341089027283854_1968652808354947424_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk4MzU4NDEyNDI0OTM1NTIzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=8qObTMeuj-UQ7kNvwFpszbi&_nc_oc=AdqhbNeq687CjgFCH09PtMpWrb7FSldgLDJt2M93T1O6wtHL14Modh3HF6raxWwmc6k&_nc_ad=z-m&_nc_cid=1214&_nc_zt=23&_nc_ht=instagram.ffco5-2.fna&_nc_gid=sQnOpjhjycQ-Rgo_h4wk2g&_nc_ss=7a22e&oh=00_AQJ1W0JWzj-zxFxVyWD598XzPHF-15aWe7C5VYHEOmiajg&oe=6AAE7446",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-11T04:18:56.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 118,
+        "likes": 121,
         "comments": 12
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "랜덤 수모 개봉 결과를 '주민 목격담'으로 스토리화해 댓글 자랑을 유도하는 커뮤니티 참여형 캐러셀",
         "hook_type": "호기심형-질문 던지기",
@@ -90,18 +140,18 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DdEMRGPBExw/",
-      "thumbnail": "https://instagram.fhmo6-1.fna.fbcdn.net/v/t51.82787-15/801439371_18340833088283854_5264635547616836397_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk4MjM2MTkyMTk4NTk4OTc0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_6euyVwVn1kQ7kNvwGpufHO&_nc_oc=Adpv78JQ9TTESISZ_xtkIcKIw5d0KqMU6gLlfUCFKUi4DyaoY_yHIPwS-WXI6QcKnZ8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fhmo6-1.fna&_nc_gid=xFLZv6a9j8Lww8mqa-T8jg&_nc_ss=7a22e&oh=00_AQK-1MxCbwIIovkLHQRUGH-X0hHNewTbuj-BltFood0ZFw&oe=6AAD3080",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/801439371_18340833088283854_5264635547616836397_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk4MjM2MTkyMTk4NTk4OTc0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Yo3lxe9RskIQ7kNvwEe7o7U&_nc_oc=AdrzE8ejb5G4UK4eyqENaJboL2_E9PNp-01DEL4xXbEIrJkAn7fKFmL0Dr8By8NsK9zDqrlk8SbGHcybsUSzb8Yb&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=CGeQyOrVkCaSzx_eXq0-fw&_nc_ss=7a22e&oh=00_AQK23fBbQXH0Y0mC4rTHP8bApsxfjRJ1fgaejy4vWA1Y9Q&oe=6AAE8200",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-09T11:51:00.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 118,
+        "likes": 119,
         "comments": 4
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "팬들이 기다린 캐릭터 3번째 등장을 '드디어 왔다'는 감탄사로 터뜨려 기대감을 즉시 해소하는 시리즈 완성 구조",
         "hook_type": "호기심형-예상밖 발견",
@@ -115,7 +165,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DdDCNVNAURs/",
-      "thumbnail": "https://scontent-nrt1-1.cdninstagram.com/v/t51.82787-15/800642825_18340757494283854_1482623216224666788_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk4MjAzNTc1NDc5NjE0MjcwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nfdBWbqYMEYQ7kNvwEEgbjW&_nc_oc=AdruKzT8He-Gr9UVOA4wJ6Nq9Qq-SjIuuwGwDJNQb8u9jRhbWiDmxn2El4YqYOx1hv4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_gid=K1Htx2u2EI_OtHC11xgcCw&_nc_ss=7a22e&oh=00_AQKjVJkLdCpAwolU2QUd-unWiqU9zTgsEHFJ-1d4QWQukA&oe=6AAD19FB",
+      "thumbnail": "https://instagram.fmel16-1.fna.fbcdn.net/v/t51.82787-15/800642825_18340757494283854_1482623216224666788_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk4MjAzNTc1NDc5NjE0MjcwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=kESZFnpZcmEQ7kNvwEUQD6P&_nc_oc=AdoFHiuFD4r6PsHdcJp7jor3aFlHfhQaoRT3evcEi3xUNRYYcgEzqBLEK9TrZd1ELC0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmel16-1.fna&_nc_gid=nXxdDa9yfZuQxDS0hz2yFg&_nc_ss=7a22e&oh=00_AQLwQL74YY8v_3ynk5Pq9-YX-NPNzFyv9CfQjKbiVeQiYA&oe=6AAE6B7B",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-09T01:02:09.000Z",
@@ -126,7 +176,7 @@
         "comments": 4
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "랜덤 가챠 포맷으로 '어떤 캐릭터가 나올지 모른다'는 미지의 설렘을 구매 동기로 전환한 IP 콜라보 수모 출시 게시물",
         "hook_type": "호기심형-비밀",
@@ -140,18 +190,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DdBUNMzkUu2/",
-      "thumbnail": "https://instagram.frix7-1.fna.fbcdn.net/v/t51.82787-15/800450352_18340652899283854_7573954539335041932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=Mzk4MTU1MjA1MzMzNTI3NDgyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=UZuEU_TOfGwQ7kNvwGxW9by&_nc_oc=Adr_LZRqMTiPzVoMvoAuhloOX5b69SDoXcdGHwwNrpvDoKDcR_HWb8TNGlve9RSdYm0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frix7-1.fna&_nc_gid=Y9fsLDbIM7UE2WbWV1hJ-A&_nc_ss=7a22e&oh=00_AQJSbFNDTuQMMwB21T4eLGJehYB-ml10xwxMaZA8XyeTGA&oe=6AAD1228",
+      "thumbnail": "https://scontent-qro3-1.cdninstagram.com/v/t51.82787-15/800450352_18340652899283854_7573954539335041932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk4MTU1MjA1MzMzNTI3NDgyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=UZuEU_TOfGwQ7kNvwGTEO5W&_nc_oc=Adodg9QLd9yc1szvU1ebzt2jaKsBuFS43VW7WDlZ9ueQKrI4pnkejRBxRM-ZRY2GHOo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-qro3-1.cdninstagram.com&_nc_gid=mdmitDp2KfvMLyenclclaA&_nc_ss=7a22e&oh=00_AQJsaOYVWwV8_6sxuvJk9MSo4p5qws3ovvVP3AQugCezXg&oe=6AAE63A8",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-08T09:00:56.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 785,
+        "likes": 801,
         "comments": 10
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "랜덤 언박싱 서프라이즈 포맷으로 '누구를 만날지 모른다'는 두근거림을 구매 전 콘텐츠로 소비시켜 클릭·구매 욕구를 동시에 자극",
         "hook_type": "호기심형-비밀",
@@ -165,18 +215,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DdAdg57gRlM/",
-      "thumbnail": "https://instagram.fmex1-1.fna.fbcdn.net/v/t51.82787-15/799428868_18340607452283854_8125307901323222786_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=Mzk4MTMxMTU3NjE4MjcwMTE3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=G_bO2MjkPW0Q7kNvwHj6xyE&_nc_oc=AdrovVUgPQlCZHc-m9NFbtkYQfK4Ssz570K7-xsSWYZNjXkzc8Ja0c1q9DYO0wJW6bo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmex1-1.fna&_nc_gid=j_z0kt0GQRu2Xgtuv7GDKg&_nc_ss=7a22e&oh=00_AQKTiBjh9gj3oxRlsJy37eYCCO86G1B0-VXEkNvWtXNh7w&oe=6AAD0DEF",
+      "thumbnail": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/799428868_18340607452283854_8125307901323222786_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk4MTMxMTU3NjE4MjcwMTE3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=G_bO2MjkPW0Q7kNvwHDYKsl&_nc_oc=Adp16vzz9sHj4y6cr1dfVTqeA7lIt9Jf8K2rGdMyImnXGLesJRhmt_xAbgnNxipSKJM&_nc_ad=z-m&_nc_cid=1005&_nc_zt=23&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_gid=Awy9tbQ1RXe657C6GgeXfg&_nc_ss=7a22e&oh=00_AQKwCYDtcTQcD3r5G65HHbGSXZolNbbUbXEHq6gge1jo0g&oe=6AAE5F6F",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-08T01:03:01.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 746,
+        "likes": 749,
         "comments": 29
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "랜덤 박스 포맷으로 '어떤 캐릭터를 받을지 모른다'는 서프라이즈 요소를 극대화해 구매 전 기대감과 공유 욕구를 동시에 자극하는 콜라보 굿즈 기획",
         "hook_type": "호기심형-비밀",
@@ -190,7 +240,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dc-2O9mxpy3/",
-      "thumbnail": "https://instagram.frtm1-2.fna.fbcdn.net/v/t51.82787-15/799503763_18340506016283854_7299373932015316554_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk4MDg1NzY0MzM3NTE3Mjc5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=84Kdpa4iMhUQ7kNvwHC8xay&_nc_oc=AdpkDp9U09MI8itMcvtMlY8qq39lFa52Xp7zGHH4D3FJOjT8T-kD0tBymU3_lqWLJac&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frtm1-2.fna&_nc_gid=OgRwG-w50e0bHYJsqCAGzQ&_nc_ss=7a22e&oh=00_AQL4ztWn_aGlzSpKQG7Mo-Lkfs6oBfjLh7qyPIlnZL0W0Q&oe=6AACFFE6",
+      "thumbnail": "https://scontent-nrt1-2.cdninstagram.com/v/t51.82787-15/799503763_18340506016283854_7299373932015316554_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk4MDg1NzY0MzM3NTE3Mjc5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gSS_XuiCTEEQ7kNvwFcZSvT&_nc_oc=AdpPpV8N2KB0hBzgq6gojHwr7oD3Qo3p1Ye6j2187CLG5ZfSa-wYq1uS4VDDbLwYTLg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_gid=dewNjg4yscLCNHHthYcA8w&_nc_ss=7a22e&oh=00_AQL-j5Xh8OhqnGyxQAR94zqbVV2vs0vsHfuYNy7sOdvgkA&oe=6AAE5166",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-07T10:00:42.000Z",
@@ -201,7 +251,7 @@
         "comments": 8
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "IP 콜라보 출시 예고에서 주인공 대신 배경 캐릭터를 힌트로 던져 궁금증을 극대화한 티저 기획",
         "hook_type": "호기심형-비밀",
@@ -215,7 +265,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dc2tnqzxn5M/",
-      "thumbnail": "https://instagram.fbps4-1.fna.fbcdn.net/v/t51.82787-15/794141168_18340001395283854_2746745225320544417_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk3ODU2Nzk1ODk0NjgwNzM3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=cM0r4jwOlTEQ7kNvwGAGf1M&_nc_oc=AdrUrC2VyZxKFXCYHQzBKc7eh4DsQCRVV_P5sqwoDSeT-iMSEJfBtpzMscsBoP56tr8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbps4-1.fna&_nc_gid=1OYwmQYGdeWZLAg0Blpbpg&_nc_ss=7a22e&oh=00_AQLlp4Qct_6U4m3KWexvfOMMP9YypaufKb8ZUJamJdJN8Q&oe=6AAD221A",
+      "thumbnail": "https://scontent-yyz1-1.cdninstagram.com/v/t51.82787-15/794141168_18340001395283854_2746745225320544417_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk3ODU2Nzk1ODk0NjgwNzM3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SRwwNsfp8nQQ7kNvwEW-P5k&_nc_oc=AdoCpZktzpEUzznG4RaVbiCAo7ADbdbZq_CCNuLRBbV86agcrttIOI3e0xeH-vfy0v5eUoX1ZV3LPbgh5K5l-SbK&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_gid=X0DVdYi71dzqsGKngxaC7g&_nc_ss=7a22e&oh=00_AQKse_csWylP1vQyDbupKbPooYlReDfQCgBvjlTOeHtDkg&oe=6AAE739A",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-04T06:11:35.000Z",
@@ -226,7 +276,7 @@
         "comments": 130
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 협업으로 '나의 수영 유형 테스트' 참여형 이벤트를 설계해 댓글 폭발과 바이럴을 동시에 노린 기획",
         "hook_type": "호기심형-질문 던지기",
@@ -240,18 +290,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcxRr9LEQ99/",
-      "thumbnail": "https://instagram.fbhx4-1.fna.fbcdn.net/v/t51.82787-15/793458058_18339683038283854_3444937449249009818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk3NzAzNzQ0MDUzMDc4MjUwMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=e9Nn1Qrln_4Q7kNvwEP8E_9&_nc_oc=AdrbhquV4TmWQkarcfPY9BcpwXVuaFLyVvlj3WgNWu5OuAi42Gsko6X6HatAGv5GZE5gjqTv41H2JzVjWY-kJ0xh&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx4-1.fna&_nc_gid=fQrOkMJjNTCz1gr3zddCqg&_nc_ss=7a22e&oh=00_AQIY4q-wQzIaDr-rg3GALY8n94wAZaptVOF6SaSlwsz64Q&oe=6AAD0700",
+      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/793458058_18339683038283854_3444937449249009818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk3NzAzNzQ0MDUzMDc4MjUwMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=e9Nn1Qrln_4Q7kNvwEd2hsT&_nc_oc=Adr89q7MECpa2x6sOVTE3Ub96-z9q-oXhOl7rb5OcQ1N2D6tVSjPJrzxFOM8wAPSyFI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=V-IJzlTr_BkS7NleCGPbIw&_nc_ss=7a22e&oh=00_AQJjhjiZAAs4ny7A1Y8qwt99-74_-nN598HXomGP1leN1Q&oe=6AAE5880",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-02T03:31:04.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 370,
+        "likes": 382,
         "comments": 3
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 콜라보로 파인애플 드라이백을 캐러셀로 소개해 팬덤 공감과 구매 욕구를 동시에 자극",
         "hook_type": "호기심형-예상밖 발견",
@@ -265,18 +315,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcudmDXgf_o/",
-      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/788684761_18339506485283854_8756121074082738127_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk3NjI0NTQ5MjA2OTA2NjQwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=h06H6tvyZ24Q7kNvwHHRpRx&_nc_oc=AdrDXEQgViyon7X-_p-LkHq0KF6tqd8Ya9xClHABnF0kzonOgyCM0AS5IzZwwFwd8dJOmQ_qEtSNaHHBYK3uiN0l&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=RWIKabcWakp0nwzxD3QiVA&_nc_ss=7a22e&oh=00_AQINlddpkIoblcjsbJYjuMoN-ZZPYg0e1WDIA8aD93w1WA&oe=6AAD2C66",
+      "thumbnail": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/788684761_18339506485283854_8756121074082738127_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk3NjI0NTQ5MjA2OTA2NjQwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=cU8lUX2ScjQQ7kNvwFkLSHp&_nc_oc=AdoxPCPvQsGJjKcJ7tx2A8ndAXBD0D8DCoPYTblBzZNrw5soqDJM-e4rDJ75Fe2hync&_nc_ad=z-m&_nc_cid=1365&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=ouOyPOzJB-6vx4uYlKDOCg&_nc_ss=7a22e&oh=00_AQKQO53_AFY3MgzDYLf5GNvkPi6hrURctUf6buiBi-YU0A&oe=6AAE7DE6",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-01T01:17:24.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 1160,
+        "likes": 1187,
         "comments": 16
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 콜라보로 캐릭터 팬덤을 수영복 구매층으로 연결하는 질문형 참여 유도 캐러셀",
         "hook_type": "호기심형-질문 던지기",
@@ -290,18 +340,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcmxkJlASxL/",
-      "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/788838952_18339015484283854_2549964804644979957_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk3NDA4MTMxNTk5Njk2MTYyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=YlomspOL1K4Q7kNvwEd4L7G&_nc_oc=AdpjjfQEss_VLL_mDjs3eMqh9HQgiDkjfqqR6y05yJioHG-AHg3iNHr5STdgs1paZcM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=s91sfvTi7eUonkmnTZtJxQ&_nc_ss=7a22e&oh=00_AQKeskZytxtpqTDRMxygrlE7l1GQ0kN6y1xqtwn-hInvZA&oe=6AAD0B59",
+      "thumbnail": "https://instagram.fblq3-1.fna.fbcdn.net/v/t51.82787-15/788838952_18339015484283854_2549964804644979957_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk3NDA4MTMxNTk5Njk2MTYyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=-Be7P8cVL9EQ7kNvwHA-W8x&_nc_oc=AdoYdHAZ1go_ZJxtPHJT_QPRy1IB4J1lv1-lz4BUWEqoo-JJuQ9ycZzfGxKxdgTGc7I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fblq3-1.fna&_nc_gid=MNBPblK_dVSkkCrsglkTzg&_nc_ss=7a22e&oh=00_AQIk6Y-gdQWxcaG652DAXP7DbJf_5SBz2sJaFlq-lnNZAw&oe=6AAE5CD9",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-29T01:37:58.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 115,
+        "likes": 116,
         "comments": 3
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 협업으로 캐릭터 팬덤을 수영복 구매층으로 전환하는 팝컬처 콜라보 캐러셀 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -315,7 +365,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DciZZSskdpW/",
-      "thumbnail": "https://instagram.fzcl1-1.fna.fbcdn.net/v/t51.82787-15/785146904_18338720602283854_6440259654117824635_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk3Mjg0ODk0ODk4ODk5MjA3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=aqiprouipu4Q7kNvwGwud-e&_nc_oc=AdprhqXzAcUC0yCHMFuJ53wCRliyGoqKireJnyQcTtMVryZcJ1mRPV0KrSHH1OM_OzQHSAPdDBy2sy_yZrNrnJtm&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fzcl1-1.fna&_nc_gid=2OBveczed8bOEHnNlc524w&_nc_ss=7a22e&oh=00_AQLFC6NaKBZ7tFfOq5-xJIlI22SLAsnr0eZPN3eIuEpvOw&oe=6AAD144F",
+      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/785146904_18338720602283854_6440259654117824635_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk3Mjg0ODk0ODk4ODk5MjA3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=aqiprouipu4Q7kNvwG6rCmE&_nc_oc=Adrx3UP9oGMyfLV_mkBjrWr9OhDUjVgKXbtm764yWAD_1GIPcUCICDLYYnhCDUsjGm8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qaEonBE8s--1jXJMzFrg-Q&_nc_ss=7a22e&oh=00_AQKBnLyuD2UhIzdhyPeWK1wAwUtRDTsSYhN5fSL1aKAqxA&oe=6AAE65CF",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-27T08:49:49.000Z",
@@ -326,7 +376,7 @@
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "베스트셀러 퐁퐁백에 스폰지밥 IP를 입혀 컬래버 한정 에디션으로 시각적 신선함과 구매 긴박감을 동시에 자극하는 캐러셀 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -340,7 +390,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcaBTMsgafo/",
-      "thumbnail": "https://scontent-mad2-1.cdninstagram.com/v/t51.82787-15/781075681_18338215801283854_4952345511389263031_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk3MDQ5MTA4NzU1NDI2OTczOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=dCwvW1VaF4oQ7kNvwFQgBcS&_nc_oc=AdpHc5k7Sk74m08xfMTMIU8UCwoX2kJ_GbPlaJnB3YzIPIieog7--3InjjWgP2mD29BERDyzF8AhY2nAiKFbbC_L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mad2-1.cdninstagram.com&_nc_gid=E6OJFyu7qQBIP4CnJvuSWQ&_nc_ss=7a22e&oh=00_AQK7tKTZzy-6lgH1Da9Uqk5e7NDpRRN7rwdlS3spMEs1TA&oe=6AAD1B56",
+      "thumbnail": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/781075681_18338215801283854_4952345511389263031_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk3MDQ5MTA4NzU1NDI2OTczOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=dCwvW1VaF4oQ7kNvwHywrfD&_nc_oc=AdoW3KrE4-G5E3mah4M1bLfElfJ9ePPuiHGfEU7QRZpRSRCiHaUKGlcShc4ObxMn-tmfIw2kiTKj6EI9d3dm1Dhk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=4ELcPRulugM6stRx8iRxWg&_nc_ss=7a22e&oh=00_AQJKvT5qdZkysSxw2GtRmoq0aAq_fEJCH99u58UeatGWLg&oe=6AAE6CD6",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-24T02:45:21.000Z",
@@ -351,7 +401,7 @@
         "comments": 2
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "수영 후 샤워 루틴으로 제품 라인 확장 + 스폰지밥 IP 연계로 라이프스타일 굿즈 소구",
         "hook_type": "가치형-꿀팁",
@@ -365,18 +415,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcUwdoUgTdD/",
-      "thumbnail": "https://scontent-yyz1-1.cdninstagram.com/v/t51.82787-15/778882514_18337874602283854_6585984881580249602_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk2OTAwOTE3NDc1NDc1OTEyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ITlUl4avFgUQ7kNvwGYImUq&_nc_oc=AdqYC4b2JyfT8-crH9nCrqb01ZHgDlbo272p0QNZFWPu5smwEn22Dn3f7MURoWuHU-E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_gid=8WcH1xt-WH_Y9VnwZoAHAA&_nc_ss=7a22e&oh=00_AQK5GB3YpdSFi_QCncQ5TAI5yLRGHauIV5QZzZrXVfvtxw&oe=6AAD0A71",
+      "thumbnail": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/778882514_18337874602283854_6585984881580249602_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk2OTAwOTE3NDc1NDc1OTEyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ITlUl4avFgUQ7kNvwFjqmLK&_nc_oc=Ado1ACQtveOPUI-5c4j3x--ge52U1RMc9Ox5ETYz0uVlM3w9JoYfXdwQCwz5qVb6sqBrvUJPzQa2R4u4CChNAY1i&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=b53cQQOXbginomZ-rpUuHQ&_nc_ss=7a22e&oh=00_AQL2zsBuAWCquCXl3rD5Bv-WfEevJWuo_BKJ5RoONkVQpA&oe=6AAE5BF1",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-22T01:42:01.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 267,
+        "likes": 268,
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP를 브랜드 무드로 재해석한 컬래버 쇼케이스로, 캐릭터 감성과 시즌 혜택을 동시에 노출해 구매 전환을 유도",
         "hook_type": "비주얼형-의외의 장면",
@@ -390,7 +440,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcSWrjmEQJF/",
-      "thumbnail": "https://instagram.fmad25-1.fna.fbcdn.net/v/t51.82787-15/780089518_18337719013283854_5635876152913606108_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk2ODMzMzUxNjY3NjM2MzcwMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ckpKoumODhEQ7kNvwFwXLko&_nc_oc=AdoVkCPd-XuKTDSkG75zjWXD2VXU3iCIkli710Mc1HfPb-ybULYYMZpw3Pwoh5SjFWY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmad25-1.fna&_nc_gid=Zwr95lfwycz3NckOEWlY5g&_nc_ss=7a22e&oh=00_AQKnvW10rnp6wZeb-q86Io5jQStglAG4NuL-7oFgTrBkUA&oe=6AAD0BA5",
+      "thumbnail": "https://instagram.ftrn5-2.fna.fbcdn.net/v/t51.82787-15/780089518_18337719013283854_5635876152913606108_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk2ODMzMzUxNjY3NjM2MzcwMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=PT5GXDxfmecQ7kNvwFuxFXp&_nc_oc=AdrNi_okhuWB2uuKnblLdjp20v7XMrYvKob_dmydZBwXhtCfyifmFNQUtHCykaYm9nnJBawCKPRO0KwAud6G6d1Y&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftrn5-2.fna&_nc_gid=woJrVw4AnW2MKn9G53o-fg&_nc_ss=7a22e&oh=00_AQI7F7jvBKws10-txhW5vIC1hdcKOYhFxfjWXzSsKTIXxw&oe=6AAE5D25",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-21T03:18:15.000Z",
@@ -401,7 +451,7 @@
         "comments": 10
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "팬덤 IP(뚱이) 한정 콜라보로 '좋아하는 사람 모여라' 공동체 소속감을 자극해 구매 전환까지 유도하는 캐러셀 기획",
         "hook_type": "호기심형-질문 던지기",
@@ -415,7 +465,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcQU0C9kVt1/",
-      "thumbnail": "https://scontent-nrt1-2.cdninstagram.com/v/t51.82787-15/775869482_18337597501283854_4034010001049060382_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk2Nzc2Mjc3NjI0ODAwNDQ4NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tnQhLEwL11IQ7kNvwEpfoRM&_nc_oc=Adq9Gy8ZS12ZEIhyWspjRn790FuAJAVxKufhsUr9gx2qoSdJ_RNhb7bdz2S0Nhp2nIE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_gid=4PGiJBQ_1QCu7Jb1pv3Gbw&_nc_ss=7a22e&oh=00_AQISCN9-wfbZuC8v1CsmUXywjDrJsUAZFyCJDNBXdC-GAA&oe=6AAD0045",
+      "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/775869482_18337597501283854_4034010001049060382_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk2Nzc2Mjc3NjI0ODAwNDQ4NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tnQhLEwL11IQ7kNvwFrOhC0&_nc_oc=AdpyrbmtZVwPlTFxw9JsGzCavLzIA0d58ezf6D9sfulERmdhqLfXsXtx--ZKJMQZQjA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=pbRPpZyn7y36LPOMj-__bA&_nc_ss=7a22e&oh=00_AQI-y_GPjU69cYWq7RJUg7PIj07IN1hHK-WoZzmByCd5vw&oe=6AAE51C5",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-20T08:23:27.000Z",
@@ -426,7 +476,7 @@
         "comments": 5
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "IP 콜라보(스폰지밥) + 기능 설명(방수·자석)으로 팬심과 구매 실용성을 동시에 공략한 캐러셀 제품 소개",
         "hook_type": "가치형-약속(How to·N가지)",
@@ -440,18 +490,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcPl4ZtAQWv/",
-      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/779907688_18337557499283854_8079457882724982100_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzk2NzU1NjM0NDQ0NTU1MjA2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=YHXnFzx_tkQQ7kNvwGhYz4i&_nc_oc=Adpam70NcnxvMuMvqmLnJrncq-2t_sUq2GHn1jZjIAuBcuU4Q8YhWtcXI8zIhJJR1dC-C0BpMFewxBSWr3X24g9a&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=eJvQxPR2pgM3LAz2W5UGBQ&_nc_ss=7a22e&oh=00_AQKfCMRwKVzy6l1L5Fi5HpRJR7EoJXdc-_zh9WPt_1m3Cg&oe=6AACFAB1",
+      "thumbnail": "https://instagram.fgdl1-3.fna.fbcdn.net/v/t51.82787-15/779907688_18337557499283854_8079457882724982100_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzk2NzU1NjM0NDQ0NTU1MjA2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=YHXnFzx_tkQQ7kNvwHYdt84&_nc_oc=AdofmVRfi1v7LOiitRuAHVAJj5ktgmkjromHVrn3bdlRK27uq2SdTUo88oxaQkgJJQ0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgdl1-3.fna&_nc_gid=yXt-pufEKn7hmlg5ntUDGA&_nc_ss=7a22e&oh=00_AQLD_BOpSPThdkiuY2bGjWhHJet_pmYmakkNIj0_RiEWsw&oe=6AAE8471",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-20T01:33:21.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 189,
+        "likes": 190,
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "인기 IP(스폰지밥) 콜라보로 기능성 타월에 팝 컬처 감성을 입혀 한정 에디션 희소성과 시각적 즐거움을 동시에 자극하는 캐러셀 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -465,18 +515,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcOA3eGEdN1/",
-      "thumbnail": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/771808934_18337429360283854_8574466561428388387_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk2NzExMTE5NDI4NDAwMTcxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=X9dKtZnbhtgQ7kNvwECg2NJ&_nc_oc=AdpEIebw1wF0LQWqml7nGCSSG8w_8_XpAH6CKnnbCW4CJ0oIr3cNLLX8A0FxpCwMyI0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=GFZNBPxe_Rmqvpw61nPXnQ&_nc_ss=7a22e&oh=00_AQI07M3li_OJMQ6OZqNoIBZ8iuNuCypDDjKqzUTRUbqUag&oe=6AAD1DBE",
+      "thumbnail": "https://instagram.fhnd3-2.fna.fbcdn.net/v/t51.82787-15/771808934_18337429360283854_8574466561428388387_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk2NzExMTE5NDI4NDAwMTcxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=X9dKtZnbhtgQ7kNvwFE5VTi&_nc_oc=Adoh0_vc9_lQK6ke1wmoYnuYe6Y1ItADUzjVVylt72gakMW3NmJZ2YHpG8AGiK13BAF7K3P-wqrYAXyPFpYzC8F0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fhnd3-2.fna&_nc_gid=nk3YlykP8YD6VcvuWWpNXw&_nc_ss=7a22e&oh=00_AQLIuN0JfJ0uol-rkeF6EDqnzS6Z1_1tk89CNMfFux9pQg&oe=6AAE6F3E",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-19T10:50:40.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 611,
+        "likes": 613,
         "comments": 6
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 콜라보로 베스트셀러 퐁퐁백을 한정 에디션화해 캐릭터 팬덤과 기존 구매층을 동시에 공략한 출시 예고 캐러셀",
         "hook_type": "호기심형-예상밖 발견",
@@ -490,7 +540,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcN3PzFkZuW/",
-      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/775524223_18337417042283854_5874038372165760314_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk2NzA2OTc3MTQ4ODgxNjUxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6cFyvarerAcQ7kNvwFvpICG&_nc_oc=AdqbjoGwoPCRoILnYps35zY8Qn_Pc09ECZqeX023X2dcS8tz3G5GsXwhQ_S50gQY9as&_nc_ad=z-m&_nc_cid=1479&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=E0aD-pKkk5KHqtsnJ_PP-Q&_nc_ss=7a22e&oh=00_AQIE_MIdkZ4GppsOGyxNJ4K71rvw5u2M1NDbus35etiLyQ&oe=6AAD23FC",
+      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/775524223_18337417042283854_5874038372165760314_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk2NzA2OTc3MTQ4ODgxNjUxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6cFyvarerAcQ7kNvwFGTYcr&_nc_oc=AdpiIs5gKePEwPTsFWIfTxhE6qIV0ZaNh1ORl-n8HUSGLPU44iTXm46hTx3C5Op4n34&_nc_ad=z-m&_nc_cid=1479&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=l3UCqm9EkgcFBZfZxIFgVQ&_nc_ss=7a22e&oh=00_AQJAOoVvT2ozoSvnuv0bhcArNP8gRsYXi6Jx0QGk6FGIng&oe=6AAE757C",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-19T09:26:37.000Z",
@@ -501,7 +551,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "IP 콜라보(스폰지밥) 한정 에디션으로 캐릭터 팬덤을 구매 트리거로 전환하는 시즌 한정 캐러셀 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -515,18 +565,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcM-H0mgVol/",
-      "thumbnail": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/778274406_18337346413283854_8808775860801761369_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzk2NjgxODI2NTY2NTUxNjE5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Dl2uHyMx7VMQ7kNvwEFA-7q&_nc_oc=AdqSVufs_vAXtbPZGVlqFkTX-toha8MaMx6JTOMCkP4_l-a884Ow9kmUQFa_ljgsBM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=XjDJ9mNIp4zMm4bgIJk8LQ&_nc_ss=7a22e&oh=00_AQL8UpNEKfjdbseLnHwrIOjY1LkO2O28IhCwsNUMFe6g3A&oe=6AAD0067",
+      "thumbnail": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/778274406_18337346413283854_8808775860801761369_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzk2NjgxODI2NTY2NTUxNjE5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nCgNzGFJlGkQ7kNvwHuLmz1&_nc_oc=Adqu5wQixgXOvlLV_yMiq7WL-SPmkD0RoJhjz6_moo-XJssIp2qUoG3DJSTzXedcr1I&_nc_ad=z-m&_nc_cid=1365&_nc_zt=23&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_gid=aevJ7TZfhAffAR__-yVCSQ&_nc_ss=7a22e&oh=00_AQIabNUQEV0RAX24AAeBdYi2zyRvUs1xqNg5CerNGZst5Q&oe=6AAE51E7",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-19T01:07:27.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 2019,
+        "likes": 2037,
         "comments": 64
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 콜라보로 수영인의 유쾌한 공감을 자극하고, '오늘의 한마디' 질문으로 댓글 참여까지 유도한 위트 있는 한정 출시 예고 캐러셀",
         "hook_type": "호기심형-질문 던지기",
@@ -540,7 +590,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcLrHzOgWsN/",
-      "thumbnail": "https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/778710842_18337247299283854_5799984813593168141_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk2NjQ1MjY2ODk4OTU0MDI0Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=EFZBLN3WxR8Q7kNvwGhIZLW&_nc_oc=Adok4i6-wknsyrhYyxNQD9shetXAUiENYLegamXGUWtkbzbaMFEOfNHC5Kc-4giqBi4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=T7fj_zeIySmJB28B4PWdkQ&_nc_ss=7a22e&oh=00_AQJU4U38sDMdYyqHvTutGDd0hK7Gewvv3ABwT5DUGFybcQ&oe=6AAD2B3C",
+      "thumbnail": "https://scontent-poa1-1.cdninstagram.com/v/t51.82787-15/778710842_18337247299283854_5799984813593168141_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk2NjQ1MjY2ODk4OTU0MDI0Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TESuLWS3xzYQ7kNvwGJHncX&_nc_oc=AdqvhEdk8IOulTM68uWBR8JO72YmARRjbUl5aTu0TSBzg66r-qtGzBM1u5rFE-NAdv4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-poa1-1.cdninstagram.com&_nc_gid=8qF11CtO2xu8PVRW-gMWeA&_nc_ss=7a22e&oh=00_AQIU326x4t8NosX6KIge3NQlh0PVfpaFhPx3-UmkWEfBrw&oe=6AAE7CBC",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-18T13:02:11.000Z",
@@ -551,7 +601,7 @@
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP를 드라이백에 접목해 '파인애플 하우스' 모티프로 시선을 낚는 콜라보 한정판 출시 예고 캐러셀",
         "hook_type": "호기심형-예상밖 발견",
@@ -565,18 +615,18 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcLaYzcka85/",
-      "thumbnail": "https://scontent-fco2-1.cdninstagram.com/v/t51.82787-15/778625499_18337224736283854_8601653032626107538_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk2NjM3ODc2OTY5NDE3MTU5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ue1L4lSFDgUQ7kNvwH3w6Md&_nc_oc=AdoMxQoi92zfg5O8FmKkdtcDEcNbTlVwvrTW8L8QE8ToKJnXESuzdXIitswDEOw1RGk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fco2-1.cdninstagram.com&_nc_gid=ZerAx-kU46BFhfnH1BMo4Q&_nc_ss=7a22e&oh=00_AQKHDsQ1VJ1D6BLkxaD01LODUNXAq5Qz8Hg4V6LSB_4nvw&oe=6AAD2FD9",
+      "thumbnail": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/778625499_18337224736283854_8601653032626107538_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk2NjM3ODc2OTY5NDE3MTU5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=y9mX46e_ePIQ7kNvwFJPP6Y&_nc_oc=AdqH1xii6CdXTYovi6sfqjX1XcjKOsAyX90DArYcRNFImBp-yj0UbarH9i_SqNo-wdJ5Q2kRtJXsXyZWD27uE9JQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=wWZv-X3xBchJrzp0vOn2Kw&_nc_ss=7a22e&oh=00_AQIHh29nqpj3JVNk-Xv0VEMYL_WBjnPxM80Jgz-Lg0asyQ&oe=6AAE8159",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-18T10:35:57.000Z",
       "owner": "oompaa.world",
       "coauthors": [],
       "metrics": {
-        "likes": 1923,
+        "likes": 1928,
         "comments": 55
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP를 수모에 접목해 '귀여운 의외성'으로 스크롤을 멈추고 출시 D-2 긴장감으로 구매를 유도하는 캐릭터 콜라보 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -590,7 +640,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcIESRiEYzY/",
-      "thumbnail": "https://scontent-nrt1-2.cdninstagram.com/v/t51.82787-15/775096856_18336996214283854_2072944762964248578_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk2NTQzODEwNDc1NTk4MDQ1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=soC8lQ8vJIYQ7kNvwHf9B8_&_nc_oc=AdqI96XE82EVSUOPwG_5yreTdSjfh4ZQ1mEIJmUgOqQmC-CCs6b567rfGUM-IiOaaK4i7qNceQwhzxZG_lNJ8adv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_gid=EQbEfmirUC9teBCjHerOFw&_nc_ss=7a22e&oh=00_AQIfZI_x0nqn5au84RfigO8l6zoXwIvrz2oe9jHwLWzGPQ&oe=6AAD1F02",
+      "thumbnail": "https://instagram.fktw5-1.fna.fbcdn.net/v/t51.82787-15/775096856_18336996214283854_2072944762964248578_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk2NTQzODEwNDc1NTk4MDQ1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=hOzMpqfrKbcQ7kNvwF47Ivb&_nc_oc=AdqAcoeY80XXLqE0vKyptt_GQ72hphpF7w5E8rk4IB9P7qHUe8Xv_vieladpJrGAo5w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw5-1.fna&_nc_gid=fLpk43d2hZJSOE6QFjeHfQ&_nc_ss=7a22e&oh=00_AQKiqoJ2YG7Aa3nftFlcUOlHp5PRnaoDiUMSERBU_in5vg&oe=6AAE7082",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-17T03:25:06.000Z",
@@ -601,7 +651,7 @@
         "comments": 6
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 캐릭터(다람이)의 성격을 수영복 콘셉트로 의인화해 출시 D-3 카운트다운 긴장감을 유발하는 캐릭터 스토리텔링 캐러셀",
         "hook_type": "스토리형-여정(지금 무슨 일이)",
@@ -615,7 +665,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcIEJnnkT36/",
-      "thumbnail": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/774970547_18336995638283854_78664430977596003_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk2NTQzNzU0ODU0OTMwMjI2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=s1l98vWgfswQ7kNvwFd8_4x&_nc_oc=AdpU20zHvkXvVq8XzwiELutfJolDGFpeUd4DrvJ9wg21ZJgdxSzm4BNzkqX6DnUtDBVa-ADZ2_NGwkxnSDskTVbw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_gid=a6i6g-W4Jk8Esh2o02baZA&_nc_ss=7a22e&oh=00_AQKcSJXlZ6vfQWhECFhQu1dby7AYRs8tZ0hWwYEgCjvQyA&oe=6AAD0B9A",
+      "thumbnail": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/774970547_18336995638283854_78664430977596003_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk2NTQzNzU0ODU0OTMwMjI2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=s1l98vWgfswQ7kNvwH_dsmw&_nc_oc=Ado5S_lBw5sAzjmSXreLBDVSQY5FUh6XZAdoIos48IldqOKFwxA4mW5v6rpURfP3XNY&_nc_ad=z-m&_nc_cid=1005&_nc_zt=23&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_gid=iMgrofy9KbusNUiRL98hTw&_nc_ss=7a22e&oh=00_AQKzSINPTS9h6xHvz8OlYTL9D8FNhsKR725YcUUeEZZy-g&oe=6AAE5D1A",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-17T03:23:55.000Z",
@@ -626,7 +676,7 @@
         "comments": 4
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "IP 캐릭터(뚱이)를 밤바다 별 패턴에 숨겨 '발견하는 재미'로 스크롤을 멈추게 한 캐러셀 콜라보 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -640,7 +690,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcID_VTRf0K/",
-      "thumbnail": "https://scontent-yyz1-1.cdninstagram.com/v/t51.82787-15/777478457_18336995542283854_8194574210742939684_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk2NTQzNzAxODIzODIyMTU3OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=CytGguoZp2wQ7kNvwEpyCUS&_nc_oc=AdqBCuOcVNGXTN97Y1n-MNWktGxfJ3crXeKcHzOfuztEWGfzRlGHdyjDS6Nr-51rxcM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_gid=v9biKfx_m2eJ6v3Fy2QrVQ&_nc_ss=7a22e&oh=00_AQKOF5wqXyD0qt5e2NqePaPv8cFjwMvCVAO3geQ00mlZdA&oe=6AAD09BF",
+      "thumbnail": "https://scontent-mrs2-2.cdninstagram.com/v/t51.82787-15/777478457_18336995542283854_8194574210742939684_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk2NTQzNzAxODIzODIyMTU3OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=CytGguoZp2wQ7kNvwHgxrv7&_nc_oc=AdopYP1PMw1rpqgmtYhCB3ZFow92hTcdGbsb8P7zrk4oTi_qfGVYFZqQQ8RVaXQcJwl6hXUTi1wforl4HSk9yoND&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_gid=-7mRtfblEHaar74F0glgLA&_nc_ss=7a22e&oh=00_AQJzX-FUvZBx9dhQClzkpaRfbvwKsNm6Uk34rqCUGGyukQ&oe=6AAE5B3F",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-17T03:22:41.000Z",
@@ -651,7 +701,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 콜라보로 수영복에 팝컬처 세계관을 입혀 '입는 즐거움'으로 구매 욕구를 자극하는 캐릭터 무드 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -665,7 +715,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcID5fJxZYL/",
-      "thumbnail": "https://instagram.fval2-1.fna.fbcdn.net/v/t51.82787-15/774761563_18336995449283854_2756272977225658931_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk2NTQzNjYxNjQ5OTM2OTQ4Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=a8HZt18D_b4Q7kNvwHivDNB&_nc_oc=Adr9O8qE9a_8EAeKLrwyNZWsF6gdsjP9hg_iNGIDC-ZfC0RyZ3ndfBDE-JEkGBMZbMw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fval2-1.fna&_nc_gid=7U57BpehnpwbGr3woG7FDw&_nc_ss=7a22e&oh=00_AQIJlWCvxD2H5Q2pt5hFeZOeULOg1lIplqxEb7STxJcieQ&oe=6AAD1BD0",
+      "thumbnail": "https://instagram.flpa2-1.fna.fbcdn.net/v/t51.82787-15/774761563_18336995449283854_2756272977225658931_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk2NTQzNjYxNjQ5OTM2OTQ4Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lSlDRyoQZ1wQ7kNvwHetTfx&_nc_oc=AdqAJE_tjRhg8QulWZfKgTT5SwGu46H4IGaEXENcpophZKp0o0lspMt6nN6AIOEjuSQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.flpa2-1.fna&_nc_gid=1NSpMO5rkAATJ5_82tFgqw&_nc_ss=7a22e&oh=00_AQI1xBzj3vWs8L_fzS7RMR3Cql8eeKzjuINhGOtBuoXBfg&oe=6AAE6D50",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-17T03:21:55.000Z",
@@ -676,7 +726,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 콜라보로 시각적 친숙함을 활용해 '행복한 유영'이라는 감성 메시지로 브랜드 호감도를 높이는 캐릭터 연계 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -690,7 +740,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcIDxmEEW9U/",
-      "thumbnail": "https://scontent-itm1-1.cdninstagram.com/v/t51.82787-15/775523767_18336995206283854_7369429834935657549_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk2NTQzNTk1MDA2NjQyODU3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZYc5PaucH1AQ7kNvwH-Ggw6&_nc_oc=Adpn9TRZBC_p_b_bejNu16e7cLCdkFf68Qcx3pKCtHTbbL9ux_SGUzW_J05ZGnxbQJI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-itm1-1.cdninstagram.com&_nc_gid=jmksBnep4ttVP-3k_-eiWw&_nc_ss=7a22e&oh=00_AQIpoQf5i1JMT6rjlDNyTAR2z3C7mX9KuTlGwEHa5rJt3w&oe=6AAD03CC",
+      "thumbnail": "https://instagram.fagp2-1.fna.fbcdn.net/v/t51.82787-15/775523767_18336995206283854_7369429834935657549_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk2NTQzNTk1MDA2NjQyODU3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZYc5PaucH1AQ7kNvwHUQrk-&_nc_oc=AdrqNhHW_L54rWlPkv_p7oFZj2dXaucQmK68SG6oFAbpRWTulsY1KVs5k-p7I-3OIx0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fagp2-1.fna&_nc_gid=UqyPnWoS_pVZ5SZwK3VVCw&_nc_ss=7a22e&oh=00_AQIYjnLMe6uYyEWXFp0X7QWFVoS-ggAidiUidTVhFg-fGg&oe=6AAE554C",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-17T03:20:38.000Z",
@@ -701,7 +751,7 @@
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP의 상징 요소(꽃·버블)를 수영복 패턴으로 시각화해 캐릭터 팬덤과 수영복 구매욕을 동시에 자극하는 콜라보 기획",
         "hook_type": "비주얼형-의외의 장면",
@@ -715,7 +765,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DcIDqPxkRxj/",
-      "thumbnail": "https://scontent-mel1-1.cdninstagram.com/v/t51.82787-15/774306102_18336994906283854_1573475440599207576_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk2NTQzNDUwNjg5MDQzMDAwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TgBZtlx_qKwQ7kNvwHrupmR&_nc_oc=AdqH21TYiwRYf5PDLEcxPgc9NC00ZRCEkooE2EhMpiECAvyzh_IY4Z2JQfyMkM9qOp5IaQywjLfRhcB0yHiF61MF&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mel1-1.cdninstagram.com&_nc_gid=LrHUzYe-JXksC7EELFjxpQ&_nc_ss=7a22e&oh=00_AQIZoAs9lN4JrU2bB_dBUUgoJGRXk5EhBYUtdJQOV2AKgA&oe=6AACFC9B",
+      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/774306102_18336994906283854_1573475440599207576_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk2NTQzNDUwNjg5MDQzMDAwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TgBZtlx_qKwQ7kNvwEfBQoY&_nc_oc=AdqM3W24vnQlJDKK6frJIU9ngqZ2hd_uQbUb4MandjMVEAY87KBtkSAZulQilOQ0j7rWJd5ECwP0lukITeQt-rJ2&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=fdlt7AcBXMaSs7Xqb6RBag&_nc_ss=7a22e&oh=00_AQJq9ecZZNbAAtxEp0-zMuwSmtbURidxfTxSytAZSdjheA&oe=6AAE865B",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-08-17T03:19:38.000Z",
@@ -726,7 +776,7 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-09-14T09:21:33.868647+09:00",
+      "metrics_updated_at": "2026-09-15T09:50:28.415860+09:00",
       "analysis": {
         "one_liner": "스폰지밥 IP 세계관을 수영복 컨셉에 녹여 팝컬처 감성으로 신제품 출시를 스토리텔링한 캐러셀",
         "hook_type": "스토리형-여정(지금 무슨 일이)",
@@ -3625,43 +3675,6 @@
       "frozen": true,
       "metrics_updated_at": "2026-07-22T05:38:49.306593+09:00",
       "thumb_local": "thumbs/oompaa.world/DVU6NqjEUGq.webp"
-    },
-    {
-      "post_id": "DVPxY5MEVBV",
-      "caption": "𝑮𝒆𝒍𝒂𝒕𝒐 𝑪𝒐𝒍𝒍𝒆𝒄𝒕𝒊𝒐𝒏\n젤라또 위 톡톡 튀는 컬러 토핑의 달콤한 반전✨\n\n한 입 베어 물면 입안 가득 부드럽게 퍼지는 젤라또처럼\n쫀득하고 부드럽게 밀착될 수영복을 소개합니다.\n\n강습 내내 몸을 편안하게 잡아주는 쫀쫀한 텍스처와\n허리 라인에 더해진 섬세한 자수 포인트,\n물속에서 더욱 사랑스럽게 피어오르는 배색의 컬러 토핑까지.\n\n특히 움파에서 처음으로 선보이는 미들컷 라인으로,\n그동안 세미하이컷 착용을 망설였던\n수린이 스위머즈에게도 반가운 소식이 될 것 같아요.\n\n입는 순간 달콤함이 퍼지는\n세 가지 플레이버의 젤라또를 지금 ",
-      "media_type": "VIDEO",
-      "product": "REELS",
-      "permalink": "https://www.instagram.com/p/DVPxY5MEVBV/",
-      "thumbnail": "https://scontent-nrt6-1.cdninstagram.com/v/t51.82787-15/642432604_18310512574283854_2150040464701318182_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-nrt6-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEGuFSsGuW2uKCtTKLMJaVu3XTYxa8ruWSMPqmLSHoIS0PrwLiOM8V_ismLioMdaCU&_nc_ohc=lKz6EIw01DwQ7kNvwFI9vSM&_nc_gid=EDbiBTMy0gBneTEdsNo23Q&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQFLVhV_OTNTb8AYxyowQ6g6UKZRnXjylfEIu4uQErmeRA&oe=6A79BB84&_nc_sid=c6f216",
-      "video_url": "https://scontent-nrt6-1.cdninstagram.com/o1/v/t16/f2/m69/AQOEkEHy4Le8pS8cK3WfPACfy4pmaZdFsypzcyEdUnm0HJnNW02okTBEEM8FNUR94L347kUlepNvv04duHELngxh.mp4?strext=1&_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-nrt6-1.cdninstagram.com&_nc_ohc=LR4rU4JW-sMQ7kNvwHMZtSj&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDY1NzM1OTQxMDk5NzksImFzc2V0X2FnZV9kYXlzIjoxNTksInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=9de6ee3b9a66aea4&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HQXl4R0NZeWdBdmhOU1VIQUFEN1lQSXVEenNzYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0QxNDIwNTBGOEVBN0E0RUIzNDEwNjJFNUZDMkY2QTg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa2oJmAiZThPxUCKAJDMywXQEqgAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=EDbiBTMy0gBneTEdsNo23Q&_nc_zt=28&_nc_ss=7a22e&oh=00_AQEHC5g2hZ_34QVssgBmmNi7vcxvSxG6hqgZO-88zmLTdQ&oe=6A79BE1E",
-      "duration": 53.25,
-      "posted_at": "2026-02-27T03:34:51.000Z",
-      "metrics": {
-        "views": 4994,
-        "likes": null,
-        "comments": 0
-      },
-      "frozen": true,
-      "metrics_updated_at": "2026-07-22T05:38:49.306593+09:00",
-      "thumb_local": "thumbs/oompaa.world/DVPxY5MEVBV.webp"
-    },
-    {
-      "post_id": "DVLixZGkf8o",
-      "caption": "🌊 𝑺𝒆𝒂 𝑺𝒂𝒍𝒕 𝑮𝒆𝒍𝒂𝒕𝒐\n\n시원한 바닷바람을 머금은 듯 상쾌한 블루 바디 위에 더해진 \n네이비와 핑크 컬러 토핑이 위트 있는 반전을 선사합니다.\n\n차분함 속에 반전 매력을 더하고 싶은 날,\n움직일수록 사랑스러움이 드러나는\n씨솔트 젤라또의 단짠 매력을 즐겨보세요.\n\n🍨 𝟸.𝟸𝟽(𝐹𝑅𝐼) 𝟷𝟶𝐴𝑀",
-      "media_type": "CAROUSEL_ALBUM",
-      "product": "FEED",
-      "permalink": "https://www.instagram.com/p/DVLixZGkf8o/",
-      "thumbnail": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/642351681_18310319275283854_8850995946821052809_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gHAPwp91wuRCv7jSJFJ130RMNdBwoOsiVjJE9MXV8-j3wyfAGpAGRmM7MKYPBVcgKw&_nc_ohc=f75hI_GwnMUQ7kNvwGUcObs&_nc_gid=MnPvKt6SJfbJ2RzPNzuukA&edm=ADp7STQBAAAA&ccb=7-5&oh=00_AQGgfRf4FD48NqGWLQltIvCIV1Vnyc3rW-XdJbakKDVevA&oe=6A79D936&_nc_sid=c6f216",
-      "video_url": null,
-      "duration": null,
-      "posted_at": "2026-02-25T12:09:27.000Z",
-      "metrics": {
-        "likes": null,
-        "comments": 1
-      },
-      "frozen": true,
-      "metrics_updated_at": "2026-07-22T05:38:49.306593+09:00",
-      "thumb_local": "thumbs/oompaa.world/DVLixZGkf8o.webp"
     }
   ]
 }
