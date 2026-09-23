@@ -37,8 +37,10 @@ deep_analysis:
 followers_weekday: 0         # 팔로워 수 갱신 요일 (0=월요일) — 하루로 변하는 값이 아니라 주 1회
 
 claude:
-  model: claude-sonnet-4-6
-  max_tokens_post: 500       # 게시물 한줄 분석 (히트 AI 요약·주간 종합은 폐지)
+  model: claude-opus-5-5
+  # Opus 5.5 는 사고(thinking)를 끌 수 없고 사고 토큰이 max_tokens 를 함께 먹는다.
+  # 500 이면 사고가 예산을 다 쓰고 JSON 본문이 안 나와 파싱이 터진다 — 여유를 둔다.
+  max_tokens_post: 2000      # 게시물 한줄 분석 (히트 AI 요약·주간 종합은 폐지)
 
 notion:
   accounts_db_id: 85c2aeea0a2949b0885e3959e1bc098d   # 레퍼런스 계정 (분석 대상)

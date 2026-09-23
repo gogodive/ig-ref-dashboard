@@ -44,6 +44,10 @@ def _call(system: str, user: str, model: str, max_tokens: int) -> dict:
             "max_tokens": max_tokens,
             "system": system,
             "messages": [{"role": "user", "content": user}],
+            # Opus 5.5 는 사고를 끌 수 없어(disabled·budget_tokens 둘 다 400)
+            # effort 가 유일한 조절 수단이다. 기본값은 medium 인데 이 작업은
+            # 훅 분류 + 한 문장이라 low 로 충분하다 — 사고 토큰과 비용을 줄인다.
+            "output_config": {"effort": "low"},
         },
         timeout=180,
     )
