@@ -51,7 +51,11 @@ def _call(system: str, user: str, model: str, max_tokens: int) -> dict:
         },
         timeout=180,
     )
-    res.raise_for_status()
+    if not res.ok:
+        # raise_for_status() 는 "400 Bad Request" 만 남기고 API 가 준 이유를 버린다.
+        # 2026-09-29 에 요청이 그대로인데 29건이 전부 400 으로 거부됐는데, 이유가
+        # 로그에 없어 원인을 못 짚었다 — 본문을 붙여 둔다.
+        raise RuntimeError(f"{res.status_code} {res.text[:500]}")
     text = "".join(b.get("text", "") for b in res.json().get("content", [])
                    if b.get("type") == "text")
     return _parse_json(text)

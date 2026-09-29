@@ -21,7 +21,7 @@ import yaml
 from src import analysis as az
 from src import collab, hitqueue, thumbs
 from src.apify_client import fetch_account, fetch_followers, fetch_posts_by_url
-from src.merge import (detect_saturated, hot_post_ids, merge_posts,
+from src.merge import (detect_saturated, hot_post_ids, is_frozen, merge_posts,
                        sanitize_likes, stale_unfrozen)
 from src.notion_source import fetch_target_accounts
 from src.notion_write import (build_status_text, update_account_followers,
@@ -29,6 +29,7 @@ from src.notion_write import (build_status_text, update_account_followers,
 from src.render import render_html
 
 KST = timezone(timedelta(hours=9))
+ANALYSIS_RETRY_DAYS = 7   # 한줄 분석이 실패한 게시물을 다시 시도하는 기간
 ROOT = Path(__file__).parent.parent
 DASHBOARD_URL = "https://gogodive.github.io/ig-ref-dashboard/"
 
@@ -129,8 +130,15 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     #    히트작은 AI 요약 대신 성과 요약 + 심층분석 리포트 링크를 대시보드에 띄운다.
     claude_cfg = cfg["claude"]
     new_posts = [p for p in merged if p["post_id"] in set(new_ids)]
+    # 분석 대상은 새 게시물 + 최근 ANALYSIS_RETRY_DAYS 일 안에 분석이 실패한 게시물.
+    # 분석 실패는 예외를 삼키고 넘어가므로, 새 게시물만 보면 한 번 실패한 글은
+    # 다음 날 '새 글'이 아니게 돼 한줄 분석 없이 영구히 남는다(2026-09-29 29건).
+    # new_posts 자체는 넓히지 않는다 — 노션 로그 카드·「새 게시물 N개」 집계가 쓴다.
+    to_analyze = [p for p in merged
+                  if p["post_id"] in set(new_ids)
+                  or not is_frozen(p["posted_at"], now, ANALYSIS_RETRY_DAYS)]
     if not backfill and not skip_analysis:  # 백필 시 수백 건 한줄 분석 방지
-        for p in new_posts:
+        for p in to_analyze:
             if not p.get("analysis", {}).get("one_liner"):
                 result = az.analyze_new_post(account, p, claude_cfg, now)
                 if result:

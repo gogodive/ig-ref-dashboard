@@ -133,7 +133,7 @@ def test_skip_analysis_는_클로드를_안_부른다(quiet, tmp_path, monkeypat
     m.process_account(META, CFG, tmp_path, NOW, dry_run=True, skip_analysis=True)
     assert called == []
     m.process_account(META, CFG, tmp_path, NOW, dry_run=True, skip_analysis=False)
-    assert called == []          # 두 번째는 이미 저장돼 새 게시물이 없다
+    assert called == [1, 1]      # skip 으로 분석 없이 저장된 최근 글은 다음 정상 실행이 채운다
 
 
 def test_기본값은_분석을_한다(quiet, tmp_path, monkeypatch):
@@ -142,3 +142,21 @@ def test_기본값은_분석을_한다(quiet, tmp_path, monkeypatch):
     _store(tmp_path, [])
     m.process_account(META, CFG, tmp_path, NOW, dry_run=True)
     assert len(called) == 2      # 수집분 2건이 전부 새 게시물
+
+
+def test_최근_분석실패글은_다시_시도한다(quiet, tmp_path, monkeypatch):
+    """한 번 실패한 글이 다음 날 '새 글'이 아니게 돼 영구히 빠지던 문제(2026-09-29 29건)."""
+    called = []
+    monkeypatch.setattr(m.az, "analyze_new_post",
+                        lambda acc, p, *a, **k: called.append(p["post_id"]) or None)
+    _store(tmp_path, [_post("w1", 1), _post("w2", 2), _post("failed", 3), _post("old", 20)])
+    m.process_account(META, CFG, tmp_path, NOW, dry_run=True)
+    assert "failed" in called          # 3일 전 · 분석 없음 → 재시도
+    assert "old" not in called         # 재시도 기간(7일)을 넘긴 글은 건드리지 않는다
+
+
+def test_재시도는_새_게시물_집계를_부풀리지_않는다(quiet, tmp_path):
+    """새 게시물 수는 노션 로그 카드·허브 콜아웃에 그대로 찍힌다."""
+    _store(tmp_path, [_post("w1", 1), _post("w2", 2), _post("failed", 3)])
+    _, stats = m.process_account(META, CFG, tmp_path, NOW, dry_run=True)
+    assert stats["new"] == 0           # 셋 다 이미 저장된 글이다
