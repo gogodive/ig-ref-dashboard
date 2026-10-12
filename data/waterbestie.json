@@ -6,7 +6,7 @@
   "category": "프리다이빙",
   "brand": "waterbestie",
   "followers_count": 28151,
-  "fetched_at": "2026-10-11T10:11:08.628682+09:00",
+  "fetched_at": "2026-10-12T10:38:28.234102+09:00",
   "posts": [
     {
       "post_id": "DeOqRyClJel",
@@ -215,7 +215,7 @@
         "likes": 53,
         "comments": 29
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-10-10T10:52:49.206541+09:00",
       "analysis": {
         "one_liner": "자세 변화에 따른 이퀄라이징 실패 의문을 그래프 비교로 시각화해 공구 전환까지 연결한 교육형 캐러셀",
