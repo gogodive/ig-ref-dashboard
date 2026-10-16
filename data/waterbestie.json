@@ -6,7 +6,7 @@
   "category": "프리다이빙",
   "brand": "waterbestie",
   "followers_count": 28151,
-  "fetched_at": "2026-10-15T09:45:34.795974+09:00",
+  "fetched_at": "2026-10-16T09:38:47.114190+09:00",
   "posts": [
     {
       "post_id": "DeOqRyClJel",
@@ -162,7 +162,7 @@
         "likes": 126,
         "comments": 22
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-10-10T10:52:49.206541+09:00",
       "analysis": {
         "one_liner": "마스크 김서림 해결법 3가지 선택지로 댓글 참여를 유도하는 커뮤니티 투표형 포맷",
