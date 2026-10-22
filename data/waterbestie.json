@@ -6,7 +6,7 @@
   "category": "프리다이빙",
   "brand": "waterbestie",
   "followers_count": 28151,
-  "fetched_at": "2026-10-21T09:48:51.189188+09:00",
+  "fetched_at": "2026-10-22T09:50:21.450336+09:00",
   "posts": [
     {
       "post_id": "DeOqRyClJel",
@@ -136,7 +136,7 @@
         "likes": 175,
         "comments": 8
       },
-      "frozen": false,
+      "frozen": true,
       "metrics_updated_at": "2026-10-10T10:52:49.206541+09:00",
       "analysis": {
         "one_liner": "'왜 나만 못하지?' 공감 질문으로 시작해 덕다이빙 입수 팁을 단계별로 전달하고 다음 편 예고로 팔로우를 유도하는 시리즈형 튜토리얼 릴스",
