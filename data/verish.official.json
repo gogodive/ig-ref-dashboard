@@ -6,7 +6,7 @@
   "category": "애슬레저",
   "brand": "베리시",
   "followers_count": 173163,
-  "fetched_at": "2026-10-25T09:28:48.702969+09:00",
+  "fetched_at": "2026-10-25T12:45:31.111651+09:00",
   "posts": [
     {
       "post_id": "De1NNbZvy26",
@@ -14,7 +14,7 @@
       "media_type": "IMAGE",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/De1NNbZvy26/",
-      "thumbnail": "https://instagram.fwaw7-1.fna.fbcdn.net/v/t51.82787-15/859698104_18132100007489376_2520845213407519395_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAxNDE3Mjc0MDI1MTQ5NTg2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6DP6HuYXsVkQ7kNvwHFpax0&_nc_oc=AdqeJOXZj21qReCc_XRXo5rr6fC-Qxc7xGeoZ4u9AY_ey2cMQdat-4MqpVwnNz9zyKI&_nc_ad=z-m&_nc_cid=1249&_nc_zt=23&_nc_ht=instagram.fwaw7-1.fna&_nc_gid=kGLCew9vK_NE-kuQy2x54A&_nc_ss=7a20f&oh=00_AQPGBdztfhTOFDdzbVA8TKAT8sImQzclAroO1akq618OQQ&oe=6AE30B7E",
+      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/859698104_18132100007489376_2520845213407519395_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAxNDE3Mjc0MDI1MTQ5NTg2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6DP6HuYXsVkQ7kNvwFICER9&_nc_oc=AdrW6--fmvx-O3P1gjoA6EIgg-k750y4xqBz7g_kNsU2pg3wvSZtRwWDxyi8yfErxT4&_nc_ad=z-m&_nc_cid=1753&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ynUAQ0U6ainwCqDoaHxsug&_nc_ss=7a20f&oh=00_AQNezVqTuIt7AY2Yi_VRiHA1kdXXGMW3r48WhDuP-dndVQ&oe=6AE343BE",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-23T10:00:04.000Z",
@@ -23,11 +23,16 @@
         "daming_tea"
       ],
       "metrics": {
-        "likes": 133,
+        "likes": 138,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "란제리×밀크티 의외의 콜라보 팝업을 이미지로 알리고, 음료 구매·QR 경품으로 오프라인 참여를 유도한 이벤트형 게시물",
+        "hook_type": "호기심형-예상밖 발견",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/De1NNbZvy26.webp"
     },
     {
@@ -36,18 +41,23 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/De1FRKNES1y/",
-      "thumbnail": "https://scontent-mad1-1.cdninstagram.com/v/t51.82787-15/858702317_18132085325489376_1249284782128441546_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=NDAxNDA2MTI5NzM4OTg4NDMwMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=8GUcd2l8EjgQ7kNvwFfG6cy&_nc_oc=AdpxTnw6mvWrOjbt7UoghKrsFZB9gbQM8L5RoeA191wRMkd1js375O8yG4ziWsplb1lxoR2aSGbNPjd7-PuLP0aR&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_gid=sFiEghF8G2PbjY_m_svz6Q&_nc_ss=7a20f&oh=00_AQM1G7jDjYVVWyRP7I7djpLKpTfDXBnkSoZ-i1whQU4t2A&oe=6AE3220C",
+      "thumbnail": "https://scontent-nrt1-1.cdninstagram.com/v/t51.82787-15/858702317_18132085325489376_1249284782128441546_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=NDAxNDA2MTI5NzM4OTg4NDMwMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=8GUcd2l8EjgQ7kNvwFMUueK&_nc_oc=AdolxfkUS0fV7K2rEnLNKVMM9SBBGm1PN-Ax0JnOJWolHMJrNPqmTBSm9nd19hqVob4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_gid=zpiHXpFYKU9KpjRSH_Cxjw&_nc_ss=7a20f&oh=00_AQNVgNFmjCPNpBYyELnNguCfgrcLvt0euZJbn636lHSgMQ&oe=6AE35A4C",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-23T08:02:03.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "likes": 43,
+        "likes": 44,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "팝업 DIY(참 조합·프린트 커스텀) 체험을 예고하는 캐러셀, 참여형 오프라인 경험이 훅이나 반응 저조",
+        "hook_type": "스토리형-여정(지금 무슨 일이)",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/De1FRKNES1y.webp"
     },
     {
@@ -56,18 +66,23 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/De1FFYzH68G/",
-      "thumbnail": "https://instagram.fcul3-1.fna.fbcdn.net/v/t51.82787-15/860589845_18132086207489376_9019241916349054878_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAxNDA2NjUyNjA1MjEyNDc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=yPW44R1LiGoQ7kNvwHD1O8Y&_nc_oc=AdrCJRSHsEiNOXSgSWvOh6TQeuq7XA5XO32EGyVS1f3WJ1QqUB5tGb8jNY2fZNvzg4k&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcul3-1.fna&_nc_gid=WJGf0DQsC8MyQfc-jIv30w&_nc_ss=7a20f&oh=00_AQPp4LxyEewsYXBc8tKXxNCKvIuDZk-kZ-UXS8R6LcMO1Q&oe=6AE3400B",
+      "thumbnail": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/860589845_18132086207489376_9019241916349054878_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAxNDA2NjUyNjA1MjEyNDc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=yPW44R1LiGoQ7kNvwGqFBo0&_nc_oc=AdqXq4AePR5AhcD05ZMJw6sdeEQhl1R_hltLbWbjOvDmVsWYNDdcof8y2-E9ey-LJvabCxwtxgxSflhHYp8hfRwd&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=NUj-T4ZOErBUUuBAOMj9IQ&_nc_ss=7a20f&oh=00_AQPSVBC5jNe6GnCu_GJDl1HfZJcbooHL6VXXPh6-g0fk5g&oe=6AE3400B",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-23T08:00:01.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "likes": 72,
+        "likes": 75,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "페스티벌 참여 예고 캐러셀로 '내일 만나요' 현장감과 감성 카피를 엮었으나 참여 유도 장치가 없어 댓글 0",
+        "hook_type": "스토리형-여정(지금 무슨 일이)",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/De1FFYzH68G.webp"
     },
     {
@@ -76,18 +91,23 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/De0ckJPH78r/",
-      "thumbnail": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/858994501_18132065543489376_3803897356785943160_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=NDAxMzk1ODMxMjQ5OTA5MTM4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tCCe6LFBAoIQ7kNvwG9EWie&_nc_oc=AdoX-Dj1xmi0fkrxcZzuxktnQmI-BZg4_rbhIIcpSgKsp23BAkOlwspcPvGxUnkF02g&_nc_ad=z-m&_nc_cid=1365&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=o0KOzmI9b2ijTshjo0lxyg&_nc_ss=7a20f&oh=00_AQNv_3RrwH0onZJqOJgoC7_6WvZSkUfQFSzJH1C_l1HQvg&oe=6AE31397",
+      "thumbnail": "https://scontent-atl3-1.cdninstagram.com/v/t51.82787-15/858994501_18132065543489376_3803897356785943160_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=NDAxMzk1ODMxMjQ5OTA5MTM4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tCCe6LFBAoIQ7kNvwFvy9wY&_nc_oc=AdpIixSBDOcjdgKrq_l8WitkkLNeA0nGciMYvwKLw2piQ_JuF9efWTMtoJl7ugwHT0E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=TjSNhpDfzlEtoxR9AAXZRg&_nc_ss=7a20f&oh=00_AQMpg3E0mfr5Vnnz0igVvXW_TWxCy-QX2oZv8bX9dU1BLw&oe=6AE34BD7",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-23T02:06:38.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "likes": 461,
+        "likes": 470,
         "comments": 4
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "태풍으로 바뀐 팝업 일정 공지를 캐러셀로 풀며 체험·사은품·할인 혜택을 묶어 방문을 유도한 오프라인 이벤트형 게시물",
+        "hook_type": "스토리형-여정(지금 무슨 일이)",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/De0ckJPH78r.webp"
     },
     {
@@ -96,7 +116,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DewQDw_H4Ig/",
-      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/858864015_18131824838489376_4620830508599412119_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAxMjc2NzMxNjU2NDQ3NzMyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nTnstx-ehxwQ7kNvwEfMbTw&_nc_oc=AdqDfX_P_-IkpBm7dlTtzMgw5OAOxggxdlIjnbh5Q2LjN3R-VejkrJqj51nIpAQqKK-ZOgRB-8T8KM15LbO2sEnA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=po9o-AHE8ryhm3u-D8txgw&_nc_ss=7a20f&oh=00_AQOf93d1wLUgGlWapGJE3J-c0z3osxZJrpqpz3GLk1I-7Q&oe=6AE32A09",
+      "thumbnail": "https://instagram.fltn3-1.fna.fbcdn.net/v/t51.82787-15/858864015_18131824838489376_4620830508599412119_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMjc2NzMxNjU2NDQ3NzMyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nTnstx-ehxwQ7kNvwEdLqYk&_nc_oc=AdozveuLjC__f-0f5TYJNP5P_RJh6BJR6ShaZzHrPLpsEQqJJyGZ_k2yeqniEq1QBifWlj4pZFSbOz5cy4NP4yDT&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fltn3-1.fna&_nc_gid=ChhrJx0q7QQ1bZfzwtndGQ&_nc_ss=7a20f&oh=00_AQMNl77JnBTuOXQ_u4wlIgkIjgPuyn5rR8DiK7Tr0L1Xdw&oe=6AE36249",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-21T11:00:02.000Z",
@@ -105,11 +125,16 @@
         "welter_experiment"
       ],
       "metrics": {
-        "likes": 177,
+        "likes": 181,
         "comments": 3
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "웰터 콜라보 팝업 설치존 인증샷+태그 UGC 이벤트 캐러셀, 아우터 경품으로 오프라인 방문 유도",
+        "hook_type": "호기심형-질문 던지기",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DewQDw_H4Ig.webp"
     },
     {
@@ -118,7 +143,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Deq_0FpkTPw/",
-      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/844444466_18130483556489376_3350621494551937811_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNjEwNjM0NTk5NjY2MTMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QPwZIoEfHr4Q7kNvwENfs6S&_nc_oc=AdrwH0LT3w4yXpzDreygcHf8kk3mpds9fJjNYzLLJNPe7P_qIdMzcQQw9vZu4GjmlFg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=oVFcoEqwpQP9c39pHZ0KXw&_nc_ss=7a20f&oh=00_AQOsVcBkKq0MkOuMTs8PvsxQuGKC8YVYYwTXe6GUzNnRBw&oe=6AE33548",
+      "thumbnail": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/844444466_18130483556489376_3350621494551937811_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNjEwNjM0NTk5NjY2MTMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QPwZIoEfHr4Q7kNvwEfUbn1&_nc_oc=Adr_XaM6wrnntVMB8-YwEUB8bhUNcnZiTQVeItd5dBvZGAGjaVWwodNoIyRm0K9IsGQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=jgy7lWeHJasP0oXckyNiIg&_nc_ss=7a20f&oh=00_AQNRFCF4ujuCGJy4PfxEN5j7Ni_MIQftzpo_WTJGG9Rqyw&oe=6AE36D88",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-19T10:02:03.000Z",
@@ -129,7 +154,12 @@
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "'몸에 닿는 온도' 촉감 카피로 F/W 이너웨어 보온감을 감성 캐러셀로 전달, 참여 유도 장치는 약함",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/Deq_0FpkTPw.webp"
     },
     {
@@ -138,18 +168,23 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DeY-JaKEe5u/",
-      "thumbnail": "https://instagram.fnap7-1.fna.fbcdn.net/v/t51.82787-15/847745502_18130483481489376_5814510670297291960_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjEwNTM5NTI1Njk2ODkzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=PCw7zCJpg8sQ7kNvwFIHkOm&_nc_oc=AdqWvKNh_d27B60bS9oCoelZyE0q62fS_-w1L2_qcb6iC6X0B-fg1tHxSv-tfgFOr7g&_nc_ad=z-m&_nc_cid=1028&_nc_zt=23&_nc_ht=instagram.fnap7-1.fna&_nc_gid=xtFPy0P6pHr9lAk2HShdVA&_nc_ss=7a20f&oh=00_AQP7-Y5MLNR_cpgfSxYvEPrWYVBIcqLdyL6cm7Ysltmocg&oe=6AE32F48",
+      "thumbnail": "https://instagram.fbcn16-1.fna.fbcdn.net/v/t51.82787-15/847745502_18130483481489376_5814510670297291960_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjEwNTM5NTI1Njk2ODkzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=PCw7zCJpg8sQ7kNvwHe9XOV&_nc_oc=Ado6EKd7EHpAzU3TEs26-JQqNXGl4gRKCjf7NkEGuanhnGMQhecBnQiHMMuGcXLhyvI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbcn16-1.fna&_nc_gid=pnrEfQji9jv91vkQLFu4Aw&_nc_ss=7a20f&oh=00_AQMdDNYKu4CVuYHHKFGxy6OnUd1iCML5lxCB3FR_xpHx0A&oe=6AE36788",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-19T10:01:02.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "likes": 58,
+        "likes": 59,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "웜터치 슬리머 신제품을 밀착 실루엣·따뜻한 촉감 비주얼로 보여준 국영문 캐러셀, 감성 위주라 댓글 유도는 약함",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeY-JaKEe5u.webp"
     },
     {
@@ -158,7 +193,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Deq_mWoEcbe/",
-      "thumbnail": "https://instagram.fzmm1-1.fna.fbcdn.net/v/t51.82787-15/846593178_18130483358489376_8898711318192167141_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjEwNDg5ODY2ODE1MDY4OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_drfjIXWFY0Q7kNvwEiLIJF&_nc_oc=Ado-f-rsJLQ0ms2t5zn9Os5xJZZkNJLFSID6oyjLf25BIfvsoRod7L7zEcAVVcIEWgY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fzmm1-1.fna&_nc_gid=srAHJztLKC6CP79FkguB3g&_nc_ss=7a20f&oh=00_AQMFgs7pYyDLShCgwqOCWqh5bvaZjES2FHm3cSNbr8IOdw&oe=6AE32B8C",
+      "thumbnail": "https://instagram.flap2-1.fna.fbcdn.net/v/t51.82787-15/846593178_18130483358489376_8898711318192167141_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjEwNDg5ODY2ODE1MDY4OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_drfjIXWFY0Q7kNvwFawWy4&_nc_oc=AdrUzDct5AhaORkqqxuwzOe-8QLII2v3eE-YHvpgjLjwJiKf468guWgpOjXwAPumlYjuB8lpvdnlOOHUzIySembl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.flap2-1.fna&_nc_gid=7rqi1SG1HCN1lkjB4uDaQA&_nc_ss=7a20f&oh=00_AQNhOqBwdasvmHkxhSWxh8Zm6p7j62Kdthix3GH9jfdHUQ&oe=6AE363CC",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-19T10:00:06.000Z",
@@ -171,7 +206,12 @@
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "브랜드 콜라보 캐러셀로 '바람·온도·움직임' 감각 카피와 화보를 결합해 겨울 무드를 전달",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/Deq_mWoEcbe.webp"
     },
     {
@@ -180,19 +220,24 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DejRSXBNjke/",
-      "thumbnail": "https://instagram.fein1-2.fna.fbcdn.net/v/t51.71878-15/847550109_1384014840453563_5300685391621388438_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTEyNDEyMTc0NzUzNjE1ODE1NjU1MDA4NDg5MzQ2NTE%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=rNAUZnzoocQQ7kNvwGTMbSK&_nc_oc=AdqDCHe97hMlTx_VajeJRHUgbBUqd46CeWQHQM_rsP0S63n719aAxcnl_L0gx-QdZtE&_nc_ad=z-m&_nc_cid=1207&_nc_zt=23&_nc_ht=instagram.fein1-2.fna&_nc_gid=AAoB0b9hOSFeOjQDYq08eA&_nc_ss=7a20f&oh=00_AQO75k-Js8rYrp7oyB5h9dymseLhvS7lzE-xg92QIxH9qg&oe=6AE30C30",
-      "video_url": "https://instagram.fein1-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMxnfURuw01bX_JcqXqDzESZMGxHchRcbJ5R_J0p_cZ3SS1ctiwej9I6elLOqGJv9gR1i0JUmF2gAgecEmHggarhNQVYXJlpVFm__I.mp4?_nc_cat=105&_nc_oc=AdpLADP7JdslrSHm7dTgiR6vaBQQvei1drO_te8egCdfmP7FaNxtWq0RbCiYyE_SRD8&_nc_sid=5e9851&_nc_ht=instagram.fein1-1.fna.fbcdn.net&_nc_ohc=9BmB4_eWuPYQ7kNvwG8IQw_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTU2NTUwMDMzODkzNDcwMiwiYXNzZXRfYWdlX2RheXMiOjEyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=bbfaac689e45cfcb&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82MUUyRDkyQzdENEU0QTJBQkY5NEFDMUY1ODhCQjNEQV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzc1QUJDQTQ1MTkxNTQyOTdBN0U5ODhGNzUwODBDQjk4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbczsi5jvTHBRUCKAJDMywXQDN1P3ztkWgYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=AAoB0b9hOSFeOjQDYq08eA&_nc_ss=70980&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPbvHWmK-ovPKB5KbJH1aDojWUNt2iqZegn_kqmb4sXiA&oe=6ADF47E2",
+      "thumbnail": "https://instagram.fmex34-1.fna.fbcdn.net/v/t51.71878-15/847550109_1384014840453563_5300685391621388438_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTEyNDEyMTc0NzUzNjE1ODE1NjU1MDA4NDg5MzQ2NTE%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=rNAUZnzoocQQ7kNvwFVXd0L&_nc_oc=Ador2cAulIMhZA58OvVaf9Tc64NP17I37e3I7SLrgS3DBqNRVAeitAcM3s_PSs_5pz_mKSaAxAqvLD3oLXf3D-fZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmex34-1.fna&_nc_gid=1GUbAyx2jy0bCIAUFBje_A&_nc_ss=7a20f&oh=00_AQMhfmPNTRbVw4oX3fsE9kcjQH_s38x2eIIH_8wJ_ghZmA&oe=6AE34470",
+      "video_url": "https://instagram.fmex34-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMxnfURuw01bX_JcqXqDzESZMGxHchRcbJ5R_J0p_cZ3SS1ctiwej9I6elLOqGJv9gR1i0JUmF2gAgecEmHggarhNQVYXJlpVFm__I.mp4?_nc_cat=105&_nc_oc=Ados3wjZwEh_9d--DvvVF-rixxGAC8-H1imQp3XOj08ZmjUiC3Lbu0kXX33DssRV_dduuS7BbydeASdDSb9fgPxj&_nc_sid=5e9851&_nc_ht=instagram.fmex34-1.fna.fbcdn.net&_nc_ohc=9BmB4_eWuPYQ7kNvwHtV4Cr&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTU2NTUwMDMzODkzNDcwMiwiYXNzZXRfYWdlX2RheXMiOjEyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=bbfaac689e45cfcb&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82MUUyRDkyQzdENEU0QTJBQkY5NEFDMUY1ODhCQjNEQV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzc1QUJDQTQ1MTkxNTQyOTdBN0U5ODhGNzUwODBDQjk4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbczsi5jvTHBRUCKAJDMywXQDN1P3ztkWgYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=1GUbAyx2jy0bCIAUFBje_A&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_ss=70580&oh=00_AQMHaPpWqiC_9RzvZ-myqr4_paxRFnB_sVylABkoDe42Tw&oe=6ADF47E2",
       "duration": 19.480091,
       "posted_at": "2026-10-16T10:00:34.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "views": 25550,
-        "likes": 196,
+        "views": 25726,
+        "likes": 197,
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "'발열' 키워드로 움직임·호흡·체온을 감각적 영상미로 풀어낸 무드형 릴스, 조회 대비 참여는 낮음",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DejRSXBNjke.webp"
     },
     {
@@ -201,7 +246,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DejRQV9EQSI/",
-      "thumbnail": "https://instagram.fpbc5-1.fna.fbcdn.net/v/t51.82787-15/844394521_18130483034489376_5316225802995054307_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjEwMzU3MDg4NTc2MzUzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Vyx_yIcCWrkQ7kNvwFe7Siq&_nc_oc=AdpAOzUy1J9Cwzk3HJTP6Q4F72m3anFmdLExZVVAyq5VW0AI8Jfm5c7ONzQF1XrBJmifOtetqlgmTC5IDQ2DTppy&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpbc5-1.fna&_nc_gid=QzV-3JEhi6kayyuoGgIdOQ&_nc_ss=7a20f&oh=00_AQOejJRzIWRVgAw04ANoJVNcysbRcO6rbemcb98sIITwJg&oe=6AE31BCF",
+      "thumbnail": "https://instagram.frtm1-1.fna.fbcdn.net/v/t51.82787-15/844394521_18130483034489376_5316225802995054307_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjEwMzU3MDg4NTc2MzUzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Vyx_yIcCWrkQ7kNvwFyqina&_nc_oc=AdrUV5LysBM99DL7rC0PmJGjRw0TBG6FMP5PprGtsqbxHKFofr0xQFMxfK1pWfodCuw&_nc_ad=z-m&_nc_cid=1207&_nc_zt=23&_nc_ht=instagram.frtm1-1.fna&_nc_gid=Chqz4J6qr_paCfOz9IQFTA&_nc_ss=7a20f&oh=00_AQN7ay0haEL1o8P8iq6MxvyH6tp8j6ah2d9V2y3gQmnuUg&oe=6AE3540F",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-16T10:00:06.000Z",
@@ -212,7 +257,12 @@
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "'발열' 한 단어와 움직임·호흡·온도의 감각 서사를 캐러셀로 풀어 F/W 기능을 브랜드 무드로 각인",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DejRQV9EQSI.webp"
     },
     {
@@ -221,19 +271,24 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DeeIKn-N11t/",
-      "thumbnail": "https://scontent-itm1-1.cdninstagram.com/v/t51.71878-15/845620874_1998360090853791_5689098583184314715_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=NDAwNzY3NjYzMjg5MjkyMzI0NTIxNDk4NDM1NzIyODU3Nzc%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=vDXiEF3AgV4Q7kNvwEwLFiK&_nc_oc=Adrk6ZQcpc5bkN_7MRbgh0y0reVWz-ZiC3simz1K6adprx40BQ3ahRToT6knbdVgnN4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-itm1-1.cdninstagram.com&_nc_gid=cXMIlmphXUG85ub5SFqWjg&_nc_ss=7a20f&oh=00_AQMjBKvYIOgBoofL0AjcsM07AyEk7650bZr8eOinA9Df2A&oe=6AE30982",
-      "video_url": "https://scontent-itm1-1.cdninstagram.com/o1/v/t2/f2/m86/AQNTYyl0Spvuuq2AwJhrl-Jnt6WKGX2LEU6QXYxCYQNmXDKr1gZWgNC8VKIKt0EbhoW8Ud_Bq2hvI4o41y8sLfBLCoK_3wnQsZE_t2E.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-itm1-1.cdninstagram.com&_nc_ohc=iXsUjG299LIQ7kNvwHm6qxd&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjE0OTg0MzA4ODk1MjQ5MiwiYXNzZXRfYWdlX2RheXMiOjEyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9b98fbbc34c1637c&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FM0RDQjMyNzNDN0Q0REE1OERCMjAxNEIxNUQ4NjNBM192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0ZBRTcxQzg2QjcyOTRGMTA5RUY3NDhFOUQ2OTQ4MjY1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYsp6aq9HRBxUCKAJDMywXQDo1P3ztkWgYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=cXMIlmphXUG85ub5SFqWjg&_nc_zt=28&_nc_ss=70980&oh=00_AQM2sbX1E2_nESVhMMIcFu-jxgcaVPAMWCZDeQjoLL5IDQ&oe=6ADF3F6F",
+      "thumbnail": "https://instagram.fvit1-1.fna.fbcdn.net/v/t51.71878-15/845620874_1998360090853791_5689098583184314715_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNzY3NjYzMjg5MjkyMzI0NTIxNDk4NDM1NzIyODU3Nzc%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=vDXiEF3AgV4Q7kNvwEYHefC&_nc_oc=AdoX3iVr59ToTed2DY_-2EroMIliiuj5jWtzcVbukJ2C_abXgx6kTlwjfGKjAqr36ng&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fvit1-1.fna&_nc_gid=fALqpX9R3Mu1AsgkZIrxrg&_nc_ss=7a20f&oh=00_AQOWnSeoklnv15_IIyp5v9CN195UGsBcmqfkDtGeTAZU3w&oe=6AE341C2",
+      "video_url": "https://instagram.fvit1-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQNTYyl0Spvuuq2AwJhrl-Jnt6WKGX2LEU6QXYxCYQNmXDKr1gZWgNC8VKIKt0EbhoW8Ud_Bq2hvI4o41y8sLfBLCoK_3wnQsZE_t2E.mp4?_nc_cat=110&_nc_oc=AdqT30gZDAwXX17_PodLch1JPo3r7M3u4Mat32a9UYoCKk8FTTT7Lfn4IsxVlLqtOM8&_nc_sid=5e9851&_nc_ht=instagram.fvit1-1.fna.fbcdn.net&_nc_ohc=iXsUjG299LIQ7kNvwFOQFZE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjE0OTg0MzA4ODk1MjQ5MiwiYXNzZXRfYWdlX2RheXMiOjEyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9b98fbbc34c1637c&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FM0RDQjMyNzNDN0Q0REE1OERCMjAxNEIxNUQ4NjNBM192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0ZBRTcxQzg2QjcyOTRGMTA5RUY3NDhFOUQ2OTQ4MjY1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYsp6aq9HRBxUCKAJDMywXQDo1P3ztkWgYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=fALqpX9R3Mu1AsgkZIrxrg&_nc_ss=70980&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMkOn_Vn-Tz8KRIctkLJJB4j9B2zKYhiiPjMvN6fUFGbw&oe=6ADF77AF",
       "duration": 26.213877,
       "posted_at": "2026-10-14T10:05:07.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "views": 35094,
-        "likes": 246,
+        "views": 35282,
+        "likes": 247,
         "comments": 2
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "손끝·몸의 맞닿음을 시적 카피와 감각적 무빙으로 풀어낸 무드형 브랜드 필름 릴스",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeeIKn-N11t.webp"
     },
     {
@@ -242,18 +297,23 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DeeHrbzEW8a/",
-      "thumbnail": "https://instagram.fein1-2.fna.fbcdn.net/v/t51.82787-15/845808617_18130482680489376_3574054165530177009_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjEwMjExNjc3OTIzMTEyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=uULy_4npeScQ7kNvwFwrSLr&_nc_oc=AdrUiY4tYnwtWUb0pihXQhHYUV1UqB9IbEmzRc0fIIwOnmVzIBq2PtRIRDDQdAsjYB4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fein1-2.fna&_nc_gid=qQfJKhbVkUl2qw21lzGwcQ&_nc_ss=7a20f&oh=00_AQNqTwnN-M1QammmbLe8tc9LTSG_6hPB0uxdcmNtWdvV0g&oe=6AE332A0",
+      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/845808617_18130482680489376_3574054165530177009_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwNjEwMjExNjc3OTIzMTEyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=uULy_4npeScQ7kNvwHwnBc-&_nc_oc=Adr2mnjHivas-b_nd56YhAX_6uqmD87MQ7j1qIFxyaC4e0AZApPH5viHkA-qaL_R_6CjsYJqXFFEJAkmAeK6_Fu3&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=LPsw5qCRSWCJbmxt4ODN5Q&_nc_ss=7a20f&oh=00_AQOEvCtpYnMZQ07w8uMl5ngxXWVNJlkSrQk6_iTOeK-j8w&oe=6AE36AE0",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-14T10:00:03.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "likes": 211,
+        "likes": 212,
         "comments": 0
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "맞닿는 손끝·몸의 온도를 감성 캐러셀로 풀어 애슬레저의 촉감을 연출했지만, 질문이 없어 댓글 0",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeeHrbzEW8a.webp"
     },
     {
@@ -274,7 +334,12 @@
       },
       "frozen": false,
       "metrics_updated_at": "2026-10-23T09:51:37.481692+09:00",
-      "thumb_local": "thumbs/verish.official/DeeHBtTH3c2.webp"
+      "thumb_local": "thumbs/verish.official/DeeHBtTH3c2.webp",
+      "analysis": {
+        "one_liner": "'한국 안 가도 성수 18종 체험' 대만 팝업을 측정·피팅·추첨 3단 혜택 캐러셀로 풀어낸 해외 오프라인 고지형",
+        "hook_type": "호기심형-예상밖 발견",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      }
     },
     {
       "post_id": "DeY-mCNt3UN",
@@ -282,8 +347,8 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DeY-mCNt3UN/",
-      "thumbnail": "https://scontent-mrs2-1.cdninstagram.com/v/t51.71878-15/843117010_28718786457741344_7255641513986918368_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=NDAwNjIyNzE2MTE0NzQ3MTExNzExMTkxMzQ1MzcyODcwMDM%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=7tZXQumgQdkQ7kNvwGqiUBh&_nc_oc=AdplbmrNKk_vNv21sNGjaRfTDeFTWnozb1XffmHKujM1RGD9HYedRjcyEfJd9erKzJAX0RvIaxVw32OVu3hfgY1h&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_gid=d0_zo5S8FHOs1I9EVpN_UA&_nc_ss=7a20f&oh=00_AQMSq70Ks4ZPOmx9ShwvcBEOQhRyJ5GUJK3lE48gCBvgsg&oe=6AE31EF7",
-      "video_url": "https://scontent-mrs2-3.cdninstagram.com/o1/v/t2/f2/m367/AQNxLWZBGg6zvlvP7WDjWiU_-TdZyby98OgaE1-OpD_Q5qhHW0QLAXy-zm2zj9t1-POBnafjcQxRtact2cy-AFv8ds7V6DwC8_X8J92siqv8hA.mp4?_nc_cat=108&_nc_sid=9ca052&_nc_ht=scontent-mrs2-3.cdninstagram.com&_nc_ohc=ChIhRHW0ATYQ7kNvwHZW4ms&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MTExOTEzNDIyMDYyMDM2OCwiYXNzZXRfYWdlX2RheXMiOjEyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjcsImJpdHJhdGUiOjYyODg4NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=d0_zo5S8FHOs1I9EVpN_UA&_nc_zt=28&_nc_ss=7a20f&oh=00_AQMrAIiB8NU2ROABV_IEgEzoGMzwsMvi8D5uh6Y5_51kuA&oe=6AE32F64",
+      "thumbnail": "https://scontent-ams2-1.cdninstagram.com/v/t51.71878-15/843117010_28718786457741344_7255641513986918368_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=NDAwNjIyNzE2MTE0NzQ3MTExNzExMTkxMzQ1MzcyODcwMDM%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=7tZXQumgQdkQ7kNvwEXLhil&_nc_oc=Adrjx4C1Vjz81R2-EBPk6S44IHarYMl1wIAnMAm16s9FxZ-Kqbdj-iAv_gAsIJWdscDq6Eord5A5EPhDMp7QZYno&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=zpe0plQU3bMB_QDZjgCIpA&_nc_ss=7a20f&oh=00_AQM3KwdTd1XAcrVyVK9j_QuBzDLe96dSADUWuzeb5TkJMQ&oe=6AE35737",
+      "video_url": "https://scontent-ams2-1.cdninstagram.com/o1/v/t2/f2/m367/AQNxLWZBGg6zvlvP7WDjWiU_-TdZyby98OgaE1-OpD_Q5qhHW0QLAXy-zm2zj9t1-POBnafjcQxRtact2cy-AFv8ds7V6DwC8_X8J92siqv8hA.mp4?_nc_cat=108&_nc_sid=9ca052&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_ohc=ChIhRHW0ATYQ7kNvwH9PybK&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MTExOTEzNDIyMDYyMDM2OCwiYXNzZXRfYWdlX2RheXMiOjEyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjcsImJpdHJhdGUiOjYyODg4NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=zpe0plQU3bMB_QDZjgCIpA&_nc_zt=28&_nc_ss=7a20f&oh=00_AQNVLvbs7LcEncvLDVksjnQJywn5-TlitC91BUXuUgt2YA&oe=6AE367A4",
       "duration": 27.421314,
       "posted_at": "2026-10-12T10:05:05.000Z",
       "owner": "verish.official",
@@ -291,12 +356,17 @@
         "welter_experiment"
       ],
       "metrics": {
-        "views": 25334,
-        "likes": 188,
+        "views": 25453,
+        "likes": 189,
         "comments": 6
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "바람·공기·몸의 움직임을 감각적 영상으로 담은 브랜드 협업 무드 릴스, 조회는 높으나 참여 유도 장치 부족",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeY-mCNt3UN.webp"
     },
     {
@@ -305,7 +375,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DeY9_4vEezx/",
-      "thumbnail": "https://instagram.fadl5-1.fna.fbcdn.net/v/t51.82787-15/846824997_18130481561489376_8427410431223310695_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNjA5MzY2ODI2ODIyNDc2Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=CRtzoN-MZjAQ7kNvwEdeMrL&_nc_oc=AdoGB_N1ril3xFOVTVvkuSqB7D6KDHhXkY0czxtTEP4njFvNRbMNky8o2ddhJLQIE-W9aiZVHc6x1S8dGJloNpZg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fadl5-1.fna&_nc_gid=IMlDT1c6WO1uWqB-a_ywWw&_nc_ss=7a20f&oh=00_AQMDw9UW_QrUQlwVGCgNiq-hnLdfPTlE8xasVBOaKvpxxg&oe=6AE334FD",
+      "thumbnail": "https://instagram.fhnd7-1.fna.fbcdn.net/v/t51.82787-15/846824997_18130481561489376_8427410431223310695_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwNjA5MzY2ODI2ODIyNDc2Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=CRtzoN-MZjAQ7kNvwGUKxnp&_nc_oc=AdrfSzwBe9f4p3E5Flrjm1QkvhtJ1FhebAlFd__9g_PUt4xEz8VnFbgrcZNz9jnaKQo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fhnd7-1.fna&_nc_gid=uvGwGAxKhl2cSxr4CTfDWA&_nc_ss=7a20f&oh=00_AQOu38KU4wHqQs9TRt6ATm9S4zsFOkJnhKqVnba1LD9rXw&oe=6AE36D3D",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-12T10:00:02.000Z",
@@ -314,11 +384,16 @@
         "welter_experiment"
       ],
       "metrics": {
-        "likes": 238,
+        "likes": 239,
         "comments": 4
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "바람·공기·온도를 감각적 무드로 풀어낸 콜라보 캐러셀, 기능 대신 착용 감각을 화보로 전달",
+        "hook_type": "비주얼형-ASMR·감각 자극",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeY9_4vEezx.webp"
     },
     {
@@ -327,18 +402,23 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DeT0bCdEUmQ/",
-      "thumbnail": "https://instagram.fmel7-1.fna.fbcdn.net/v/t51.82787-15/842555168_18130047917489376_3287143389033798872_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzg5MjcyNTk1OTIyNDAxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=_r9EkElROsUQ7kNvwEHRtc6&_nc_oc=AdoNV0te8zhoUEH2RGh7UgHQoLwi_NhmCSjKXZMFS_GBV44DEEwL258tWGFPTgB3Q3myAY1z_Yn4g2rf2rZdBuWR&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmel7-1.fna&_nc_gid=_C-4s_J0znFPDsieAEZWeQ&_nc_ss=7a20f&oh=00_AQPFOLy61Rm5Sh3b9ufTbWay7cAjAsjA3TN3qwy_Ccjukg&oe=6AE33304",
+      "thumbnail": "https://instagram.fpfb5-1.fna.fbcdn.net/v/t51.82787-15/842555168_18130047917489376_3287143389033798872_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzg5MjcyNTk1OTIyNDAxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_r9EkElROsUQ7kNvwHWeovk&_nc_oc=AdpMEBvJhHKJcVZeQ8Qy8OADYZzizAGI_TPKqnRcymxA6CMfZTMQgtxIyIWD3qyIw-U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpfb5-1.fna&_nc_gid=8RTe4SECtuFJR_adPrQ9gw&_nc_ss=7a20f&oh=00_AQMJESzDVCl0xL5k7gvhYrnew168_s7L5sp824HWmsDcRA&oe=6AE36B44",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-10T10:02:00.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "likes": 10180,
+        "likes": 10197,
         "comments": 249
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "중화권 셀럽 앰버서더 발탁을 'SHAPE THROUGH LAYERS' 캐러셀 화보로 공개해 스타일 다양성 각인",
+        "hook_type": "비주얼형-의외의 장면",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeT0bCdEUmQ.webp"
     },
     {
@@ -347,18 +427,23 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/DeT0mcbkS2I/",
-      "thumbnail": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/840849515_18130047971489376_3771828004197491188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=NDAwMzg5MzUxMDEwOTUxMDUzMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QGpSHqUL9LkQ7kNvwFKOtGK&_nc_oc=Adraw7EQH0xsp_jWy2BD7kDeXpPJIMXVZbGNpmaQ0KsmHTTu3bOKbi4IIpWE-gsvtBU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=413rijJKV855Dz-y4BRH6w&_nc_ss=7a20f&oh=00_AQO7N-0wLmhF7Wzl5-HATwJqG6WtxUviREnuD_0BvC2s0w&oe=6AE324D8",
+      "thumbnail": "https://instagram.ficn3-3.fna.fbcdn.net/v/t51.82787-15/840849515_18130047971489376_3771828004197491188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzg5MzUxMDEwOTUxMDUzMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QGpSHqUL9LkQ7kNvwHwuAsQ&_nc_oc=AdoQxejYZF3wPM24xLQjFpInjiKdn97ig2m6JMw165gakjIrnoJuRgq__dsYYoHFnBo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ficn3-3.fna&_nc_gid=ibZI64zp2-s8sSwZUg23Vw&_nc_ss=7a20f&oh=00_AQO1J-HKbxh64YZyskirKj6KH05aPvaR2kGh_mqJQARB3g&oe=6AE35D18",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-10T10:01:01.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "likes": 9456,
+        "likes": 9472,
         "comments": 303
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "중화권 셀럽 앰버서더 발탁 캐러셀, 레이어드 화보 비주얼과 팬덤 유입으로 참여를 견인",
+        "hook_type": "비주얼형-의외의 장면",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeT0mcbkS2I.webp"
     },
     {
@@ -367,19 +452,24 @@
       "media_type": "VIDEO",
       "product": "REELS",
       "permalink": "https://www.instagram.com/p/DeT0eVGNOBi/",
-      "thumbnail": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/837715145_18130048058489376_664544078781584297_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=NDAwNDc3NTI3NjMxODA4OTMxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=X_0lZe20P70Q7kNvwG7Tqta&_nc_oc=AdpOnaxL2ZDgC9qzRI04ZG3g0rpYzLuyL1e7DuleyuzkaKH7lK1fd4xgA24srIPTe5Y&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=pMRE0jy4hPqVwU-pOn7S2w&_nc_ss=7a20f&oh=00_AQP6xpDhrUGzDIb6CwGOoQ3KT23FmkGtVGoDT0vUdQQB_w&oe=6AE31D8D",
-      "video_url": "https://scontent-cdg6-1.cdninstagram.com/o1/v/t2/f2/m86/AQNP-r4eR50D0H5ZeIYyy9yRWa1wIFzOKauF6stQ-5jaDh1tpnK5oSqnXKhHYelPUuGwvw5ny16G-xZblXrpXPNjlvDYhNCN46N3rqc.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_ohc=M_m3kv0PJDIQ7kNvwEYaUKu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQUQuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA5ODUxMjAwOTg0ODQ2MywiYXNzZXRfYWdlX2RheXMiOjE1LCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6MjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=5a92f522719c4609&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yMjk4OTQxMzMyRDc0NkE5ODhDRkQ5QzY0NkFBMjc4Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzQ1NUVCQjJGMzk5NjQwOEZCMjM5QkE1RkY5OTA3ODhCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaemoei6MXzAxUCKAJDMywXQDvKfvnbItEYEmRhc2hfYmFzZWxpbmVfMV92MREAdfAHZazBAQA&_nc_gid=pMRE0jy4hPqVwU-pOn7S2w&_nc_zt=28&_nc_ss=70980&oh=00_AQN_KDi6u18MHI2ruDovWCK5UDrbL94HVy4uu3lTqAGbYw&oe=6ADF4328",
+      "thumbnail": "https://instagram.fwaw7-1.fna.fbcdn.net/v/t51.82787-15/837715145_18130048058489376_664544078781584297_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc3NTI3NjMxODA4OTMxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=X_0lZe20P70Q7kNvwGRAxO_&_nc_oc=Ado8D1raIDj-GFGlC4FmiJauY2m_cAm81YtgNroGvdU4hoMyU2u05sbs3Mt3MpGrb8s&_nc_ad=z-m&_nc_cid=1249&_nc_zt=23&_nc_ht=instagram.fwaw7-1.fna&_nc_gid=yLRICoP4_k6-P5IV3PbnIg&_nc_ss=7a20f&oh=00_AQM4NhD24n9NfviwXJZERvo6Wrj6KbQeM4vfy2A4JLFAiQ&oe=6AE355CD",
+      "video_url": "https://instagram.fwaw7-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQNP-r4eR50D0H5ZeIYyy9yRWa1wIFzOKauF6stQ-5jaDh1tpnK5oSqnXKhHYelPUuGwvw5ny16G-xZblXrpXPNjlvDYhNCN46N3rqc.mp4?_nc_cat=103&_nc_oc=AdpfRrbKLwLINGl1JTY75-hrUJkNkc5d4DCGGgK9HUuRxzvN2jdSiEhqeSoxN6J5Xts&_nc_sid=5e9851&_nc_ht=instagram.fwaw7-1.fna.fbcdn.net&_nc_ohc=M_m3kv0PJDIQ7kNvwF7npi-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQUQuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA5ODUxMjAwOTg0ODQ2MywiYXNzZXRfYWdlX2RheXMiOjE1LCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6MjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=5a92f522719c4609&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yMjk4OTQxMzMyRDc0NkE5ODhDRkQ5QzY0NkFBMjc4Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzQ1NUVCQjJGMzk5NjQwOEZCMjM5QkE1RkY5OTA3ODhCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaemoei6MXzAxUCKAJDMywXQDvKfvnbItEYEmRhc2hfYmFzZWxpbmVfMV92MREAdfAHZazBAQA&_nc_gid=yLRICoP4_k6-P5IV3PbnIg&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_ss=70980&oh=00_AQO5SP-cFOKqh0EIqaWTpJBDg3xSFxCikCTzsT6d1XpVrg&oe=6ADF7B68",
       "duration": 27.817333,
       "posted_at": "2026-10-10T10:00:18.000Z",
       "owner": "verish.official",
       "coauthors": [],
       "metrics": {
-        "views": 244877,
-        "likes": 16142,
+        "views": 247396,
+        "likes": 16222,
         "comments": 424
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "중화권 셀럽 앰배서더 발탁 릴스로 'SHAPE THROUGH LAYERS' 레이어드 스타일링 비주얼과 팬덤 도달을 동시에 노림",
+        "hook_type": "비주얼형-의외의 장면",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/DeT0eVGNOBi.webp"
     },
     {
@@ -388,7 +478,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dd_HP44k9dS/",
-      "thumbnail": "https://instagram.fsvq4-1.fna.fbcdn.net/v/t51.82787-15/829406685_18104004632122414_8641376296810989130_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5ODcyOTg0MjI5MjEyNzMzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=MpQTikoGyuMQ7kNvwEF4GEu&_nc_oc=AdrFq38bUeXCAYOfVJ2Ht1tK09TfQzDimx5Pf_Qp6JpUqVqfY5Hlw8aGiyNI7gnVIXE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsvq4-1.fna&_nc_gid=78qEseM81tkL9H_rCFZMZg&_nc_ss=7a20f&oh=00_AQOyDU6fkqVlpqtNYl8BMZnX877R0WnvUQ4seA6hkXgGRQ&oe=6AE31F0C",
+      "thumbnail": "https://instagram.fsyd7-1.fna.fbcdn.net/v/t51.82787-15/829406685_18104004632122414_8641376296810989130_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5ODcyOTg0MjI5MjEyNzMzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjE2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=MpQTikoGyuMQ7kNvwFtUQN6&_nc_oc=AdpJn1Vd77kFDgG8TW5F8VSuzfNMPKgoyDML-eEBc3_pnxexQ1aG0HzKPsAbSDI2R6EP2BQ4BJLYeQpkUVUf6FbC&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsyd7-1.fna&_nc_gid=GzOrBysfF0IKDCE9LnWigQ&_nc_ss=7a20f&oh=00_AQN8pGxSgt8zzi5XjZUD3XSggVMXCFI4jNQxhGpQEvo_KA&oe=6AE3574C",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-10-02T09:00:03.000Z",
@@ -397,11 +487,16 @@
         "verish.official"
       ],
       "metrics": {
-        "likes": 365,
+        "likes": 366,
         "comments": 1
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "애슬레저 브랜드가 카페 메뉴를 캐러셀로 공개해 '깨뜨려 먹는 디저트' 같은 의외성으로 브랜드 경험을 확장",
+        "hook_type": "호기심형-예상밖 발견",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/Dd_HP44k9dS.webp"
     },
     {
@@ -410,7 +505,7 @@
       "media_type": "CAROUSEL_ALBUM",
       "product": "FEED",
       "permalink": "https://www.instagram.com/p/Dd2pG19iXlO/",
-      "thumbnail": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/829474524_18135032971726886_3010941707171319644_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk5NjU1NTc1NzA2OTEzMzQyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=OwtPGUcwRU4Q7kNvwEKxTQh&_nc_oc=AdogLFsGptaCtelXGaQr_2QL6xCFa0Bt2-m_74isYp5XQxxo-jGZCbgbKuxucHIqMkQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=_-Tx2KipeOF-3UvqbWi3JQ&_nc_ss=7a20f&oh=00_AQOUEVDraAC-f7UnB0fWYYt1vimShkJ19Rq8SC-aFIv24g&oe=6AE3402C",
+      "thumbnail": "https://scontent-syd2-1.cdninstagram.com/v/t51.82787-15/829474524_18135032971726886_3010941707171319644_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk5NjU1NTc1NzA2OTEzMzQyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=OwtPGUcwRU4Q7kNvwFFn6au&_nc_oc=AdqT1BXUlly4Lo5o0ctJfR0efdmjzJG9Zcwj_QhMZp8JzOjHtBy9QY9YVchQB4ECUPg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_gid=T5BL-XIZAMBdtkvmw2wVBQ&_nc_ss=7a20f&oh=00_AQOBw5LRH6I3mSvjmAbM4FVumbfK98A6DR0OXQ1TLcm4Tg&oe=6AE3402C",
       "video_url": null,
       "duration": null,
       "posted_at": "2026-09-29T02:03:19.000Z",
@@ -424,7 +519,12 @@
         "comments": 9
       },
       "frozen": false,
-      "metrics_updated_at": "2026-10-25T09:28:48.702969+09:00",
+      "metrics_updated_at": "2026-10-25T12:45:31.111651+09:00",
+      "analysis": {
+        "one_liner": "페스티벌×브랜드 협업을 티켓 오픈·컬렉션 드롭 일정 캐러셀로 공개해 이벤트 기대감과 구매 동선을 만든 기획",
+        "hook_type": "스토리형-여정(지금 무슨 일이)",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      },
       "thumb_local": "thumbs/verish.official/Dd2pG19iXlO.webp"
     },
     {

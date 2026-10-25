@@ -6,7 +6,7 @@
   "category": "프리다이빙",
   "brand": "waterbestie",
   "followers_count": 28151,
-  "fetched_at": "2026-10-25T09:28:48.702969+09:00",
+  "fetched_at": "2026-10-25T12:45:31.111651+09:00",
   "posts": [
     {
       "post_id": "DeOqRyClJel",
@@ -26,7 +26,12 @@
       },
       "frozen": false,
       "metrics_updated_at": "2026-10-10T10:52:49.206541+09:00",
-      "thumb_local": "thumbs/waterbestie/DeOqRyClJel.webp"
+      "thumb_local": "thumbs/waterbestie/DeOqRyClJel.webp",
+      "analysis": {
+        "one_liner": "'배우려니 걱정되나요?' 질문 훅으로 수영실력·숨참기·나이 불안을 FAQ 캐러셀로 해소하는 입문 장벽 제거형",
+        "hook_type": "호기심형-질문 던지기",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      }
     },
     {
       "post_id": "DeJj7YaCf4r",
@@ -47,7 +52,12 @@
       },
       "frozen": false,
       "metrics_updated_at": "2026-10-10T10:52:49.206541+09:00",
-      "thumb_local": "thumbs/waterbestie/DeJj7YaCf4r.webp"
+      "thumb_local": "thumbs/waterbestie/DeJj7YaCf4r.webp",
+      "analysis": {
+        "one_liner": "첫 수업 전 장비 착용법 4가지를 릴스 체크리스트로 제시하고 공유를 유도해 초보 저장·확산을 노린 기획",
+        "hook_type": "가치형-약속(How to·N가지)",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      }
     },
     {
       "post_id": "DeCAqTvBDMD",
@@ -68,7 +78,12 @@
       },
       "frozen": false,
       "metrics_updated_at": "2026-10-10T10:52:49.206541+09:00",
-      "thumb_local": "thumbs/waterbestie/DeCAqTvBDMD.webp"
+      "thumb_local": "thumbs/waterbestie/DeCAqTvBDMD.webp",
+      "analysis": {
+        "one_liner": "이퀄라이징 실패 시 학생 반응 3유형 상황극 릴스로 공감 유발, '나는 몇 번?' 질문으로 댓글 참여 유도",
+        "hook_type": "호기심형-질문 던지기",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      }
     },
     {
       "post_id": "Dd73lW_zjS9",
@@ -89,7 +104,12 @@
       },
       "frozen": false,
       "metrics_updated_at": "2026-10-10T10:52:49.206541+09:00",
-      "thumb_local": "thumbs/waterbestie/Dd73lW_zjS9.webp"
+      "thumb_local": "thumbs/waterbestie/Dd73lW_zjS9.webp",
+      "analysis": {
+        "one_liner": "'왜 안 내려가지?' 질문 훅으로 초보 고민을 짚고 덕다이빙 4단계 릴스로 풀어 수업 상담 유도",
+        "hook_type": "호기심형-질문 던지기",
+        "analyzed_at": "2026-10-25T12:45:31.111651+09:00"
+      }
     },
     {
       "post_id": "Ddq8xwoq-i_",
