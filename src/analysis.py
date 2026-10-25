@@ -31,7 +31,24 @@ HOOK_TAXONOMY = """[훅 분류 체계] hook_type 은 반드시 아래 중 하나
 예: "호기심형-예상밖 발견", "가치형-경고", "비주얼형-압도적 풍경\""""
 
 
+class CreditExhausted(RuntimeError):
+    """Anthropic 크레딧 잔액 부족 — 이번 실행 안에서는 풀리지 않는다."""
+
+
+# 잔액 부족은 한 실행 안에서 풀리지 않으므로 첫 건에서 멈춘다. 계속 부르면
+# 하루 150~190건이 전부 거절됐다(2026-09-29~10-25 실측). 실행은 매번 새 프로세스라
+# 다음 실행은 다시 False 에서 시작한다.
+_credit_exhausted = False
+
+
+def credit_exhausted() -> bool:
+    return _credit_exhausted
+
+
 def _call(system: str, user: str, model: str, max_tokens: int) -> dict:
+    global _credit_exhausted
+    if _credit_exhausted:
+        raise CreditExhausted("이번 실행에서 이미 크레딧 부족을 받아 호출을 생략했다")
     res = requests.post(
         "https://api.anthropic.com/v1/messages",
         headers={
@@ -52,6 +69,11 @@ def _call(system: str, user: str, model: str, max_tokens: int) -> dict:
         timeout=180,
     )
     if not res.ok:
+        if res.status_code == 400 and "credit balance" in res.text:
+            _credit_exhausted = True
+            log.error("Anthropic 크레딧 부족 — 이번 실행의 한줄 분석을 모두 건너뛴다: %s",
+                      res.text[:300])
+            raise CreditExhausted(res.text[:300])
         # raise_for_status() 는 "400 Bad Request" 만 남기고 API 가 준 이유를 버린다.
         # 2026-09-29 에 요청이 그대로인데 29건이 전부 400 으로 거부됐는데, 이유가
         # 로그에 없어 원인을 못 짚었다 — 본문을 붙여 둔다.
@@ -101,6 +123,8 @@ def analyze_new_post(acc: dict, post: dict, cfg: dict, now: datetime) -> dict | 
             "hook_type": str(out.get("hook_type", ""))[:40],
             "analyzed_at": now.isoformat(),
         }
+    except CreditExhausted:
+        return None  # 첫 건에서 이미 오류를 남겼다 — 같은 경고를 수백 번 반복하지 않는다
     except Exception as e:  # noqa: BLE001
         log.warning("한줄 분석 실패 @%s %s: %s", acc["username"], post["post_id"], e)
         return None

@@ -160,3 +160,21 @@ def test_재시도는_새_게시물_집계를_부풀리지_않는다(quiet, tmp_
     _store(tmp_path, [_post("w1", 1), _post("w2", 2), _post("failed", 3)])
     _, stats = m.process_account(META, CFG, tmp_path, NOW, dry_run=True)
     assert stats["new"] == 0           # 셋 다 이미 저장된 글이다
+
+
+def test_분석_실패_건수를_센다(quiet, tmp_path):
+    """허브 상태가 이 숫자를 받아 「⚠️ 한줄 분석 N건 실패」를 띄운다."""
+    _store(tmp_path, [])                       # 수집분 2건이 새 게시물, 분석은 None(실패)
+    _, stats = m.process_account(META, CFG, tmp_path, NOW, dry_run=True)
+    assert stats["analysis_failed"] == 2
+
+
+def test_analysis_days_로_밀린_분석을_채운다(quiet, tmp_path, monkeypatch):
+    """크레딧 충전 후 7일 재시도 창을 넘긴 글(2026-09-27~ 488건)을 한 번에 채우는 경로."""
+    called = []
+    monkeypatch.setattr(m.az, "analyze_new_post",
+                        lambda acc, p, *a, **k: called.append(p["post_id"]) or None)
+    _store(tmp_path, [_post("w1", 1), _post("w2", 2), _post("d20", 20), _post("d40", 40)])
+    m.process_account(META, CFG, tmp_path, NOW, dry_run=True, analysis_days=30)
+    assert "d20" in called                     # 기본 7일로는 빠졌을 글
+    assert "d40" not in called                 # 창 밖은 여전히 건드리지 않는다

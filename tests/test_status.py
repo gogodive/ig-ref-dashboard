@@ -46,3 +46,26 @@ def test_failed_accounts_excluded_from_counts():
     text, _, _ = build_status_text(NOW, stats, URL)
     assert "새 게시물 2개" in text
     assert "🔥 새 히트 1건" in text
+
+
+def test_한줄_분석_실패도_경고로_띄운다():
+    """분석은 실패해도 워크플로가 성공으로 끝나, 650건이 빠지는 동안 허브가 「전체 정상」이었다."""
+    stats = [{**_s("a", new=3), "analysis_failed": 150}, {**_s("b", new=2), "analysis_failed": 2}]
+    text, emoji, color = build_status_text(NOW, stats, URL, credit_exhausted=True)
+    assert emoji == "⚠️" and color == "yellow_background"
+    assert "한줄 분석 152건 실패" in text
+    assert "크레딧 부족" in text
+    assert "전체 정상" not in text
+
+
+def test_크레딧_문제가_아니면_이유를_붙이지_않는다():
+    stats = [{**_s("a"), "analysis_failed": 1}]
+    text, _, _ = build_status_text(NOW, stats, URL)
+    assert "한줄 분석 1건 실패" in text
+    assert "크레딧" not in text
+
+
+def test_분석_실패_0건이면_전체_정상():
+    stats = [{**_s("a", new=1), "analysis_failed": 0}]
+    text, emoji, _ = build_status_text(NOW, stats, URL)
+    assert emoji == "✅" and "전체 정상" in text

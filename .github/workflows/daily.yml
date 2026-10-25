@@ -13,6 +13,10 @@ on:
         description: "특정 username만 (콤마 구분, 비우면 전체)"
         type: string
         default: ""
+      analysis_days:
+        description: "한줄 분석이 없는 글을 며칠 전까지 다시 시도할지 (비우면 7). 크레딧 충전 후 밀린 분석을 채울 때 30"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -47,7 +51,7 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: python -m src.main ${{ inputs.backfill && '--backfill' || '' }} ${{ inputs.only && format('--only {0}', inputs.only) || '' }}
+        run: python -m src.main ${{ inputs.backfill && '--backfill' || '' }} ${{ inputs.only && format('--only {0}', inputs.only) || '' }} ${{ inputs.analysis_days && format('--analysis-days {0}', inputs.analysis_days) || '' }}
 
       # 실행이 도는 동안 로컬(심층분석 스킬)이 data/hit_queue.json 을 push 하면
       # rebase 가 충돌해 커밋도 배포도 통째로 죽는다. 이 파일만은 원격이 옳다 —

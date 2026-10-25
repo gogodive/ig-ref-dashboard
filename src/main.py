@@ -52,7 +52,8 @@ def load_stored(data_dir: Path, username: str) -> dict:
 
 def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
                     dry_run: bool, backfill: bool = False,
-                    skip_analysis: bool = False) -> tuple[dict, dict]:
+                    skip_analysis: bool = False,
+                    analysis_days: int = ANALYSIS_RETRY_DAYS) -> tuple[dict, dict]:
     """계정 하나: 수집→병합→분석→저장→노션. (account, stats) 반환.
 
     수집 실패 시 저장분을 그대로 쓰고 stats.ok=False 로 표시한다.
@@ -61,7 +62,8 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     """
     username = acc_meta["username"]
     stored = load_stored(data_dir, username)
-    stats = {"username": username, "ok": True, "new": 0, "hot": 0, "error": None}
+    stats = {"username": username, "ok": True, "new": 0, "hot": 0, "error": None,
+             "analysis_failed": 0}
 
     # 1) 수집 — 감지 창(최신 N개)으로 새 게시물을 찾고, 창 밖의 동결 전
     #    게시물만 URL 직접 배치로 갱신한다. 동결분을 매일 다시 사지 않기 위한 구조.
@@ -136,13 +138,15 @@ def process_account(acc_meta: dict, cfg: dict, data_dir: Path, now: datetime,
     # new_posts 자체는 넓히지 않는다 — 노션 로그 카드·「새 게시물 N개」 집계가 쓴다.
     to_analyze = [p for p in merged
                   if p["post_id"] in set(new_ids)
-                  or not is_frozen(p["posted_at"], now, ANALYSIS_RETRY_DAYS)]
+                  or not is_frozen(p["posted_at"], now, analysis_days)]
     if not backfill and not skip_analysis:  # 백필 시 수백 건 한줄 분석 방지
         for p in to_analyze:
             if not p.get("analysis", {}).get("one_liner"):
                 result = az.analyze_new_post(account, p, claude_cfg, now)
                 if result:
                     p["analysis"] = {**p.get("analysis", {}), **result}
+                else:
+                    stats["analysis_failed"] += 1
 
     # 3.5) 썸네일 로컬 보관 (CDN 링크 만료 대비 — 처음 본 시점에 받아둔다)
     saved, failed = thumbs.ensure(merged, username, ROOT)
@@ -189,6 +193,9 @@ def main() -> int:
                     help="1회성 백필: 계정당 backfill_limit개 수집 (분석·노션 기록 생략)")
     ap.add_argument("--skip-analysis", action="store_true",
                     help="Claude 한줄 분석 생략 — 수집·렌더·배포만 (화면 검증용)")
+    ap.add_argument("--analysis-days", type=int, default=ANALYSIS_RETRY_DAYS,
+                    help=f"한줄 분석이 없는 글을 며칠 전까지 다시 시도할지 (기본 "
+                         f"{ANALYSIS_RETRY_DAYS}). 크레딧 충전 후 밀린 분석을 채울 때 30 등으로")
     args = ap.parse_args()
 
     for key in ("NOTION_TOKEN", "ANTHROPIC_API_KEY", "APIFY_TOKEN"):
@@ -219,7 +226,7 @@ def main() -> int:
         try:
             account, stats = process_account(a, cfg, ROOT / "data", now,
                                              args.dry_run, args.backfill,
-                                             args.skip_analysis)
+                                             args.skip_analysis, args.analysis_days)
         except Exception as e:  # noqa: BLE001
             log.exception("처리 중 예외 @%s — 건너뜁니다", a["username"])
             account = {**load_stored(ROOT / "data", a["username"]), **a,
@@ -286,7 +293,8 @@ def main() -> int:
 
     # 허브 페이지 최상단 실행 상태 콜아웃 갱신
     if not args.dry_run and cfg["notion"].get("hub_page_id"):
-        text, emoji, color = build_status_text(now, run_stats, DASHBOARD_URL)
+        text, emoji, color = build_status_text(now, run_stats, DASHBOARD_URL,
+                                               credit_exhausted=az.credit_exhausted())
         if args.backfill:
             text = "[백필] " + text
         update_status_callout(cfg["notion"]["hub_page_id"], text, emoji, color,

@@ -62,12 +62,19 @@ def _summary_metrics(posts: list[dict], followers) -> dict:
 STATUS_MARKER = "마지막 실행"  # 허브 페이지 상태 콜아웃을 찾는 표식
 
 
-def build_status_text(now: datetime, stats: list[dict], dashboard_url: str) -> tuple[str, str, str]:
-    """실행 요약 한 줄. (텍스트, 이모지, 노션 색상) 반환."""
+def build_status_text(now: datetime, stats: list[dict], dashboard_url: str,
+                      credit_exhausted: bool = False) -> tuple[str, str, str]:
+    """실행 요약 한 줄. (텍스트, 이모지, 노션 색상) 반환.
+
+    한줄 분석 실패도 경고로 띄운다. 분석은 실패해도 예외를 삼키므로 워크플로는
+    성공으로 끝나고, 이걸 안 띄우면 2026-09-29~10-25 처럼 크레딧이 바닥나 650건이
+    빠지는 동안에도 허브가 「전체 정상」이라고 말한다.
+    """
     ok = [s for s in stats if s["ok"]]
     failed = [s for s in stats if not s["ok"]]
     new_posts = sum(s["new"] for s in ok)
     hot = sum(s["hot"] for s in ok)
+    analysis_failed = sum(s.get("analysis_failed", 0) for s in ok)
 
     parts = [
         f"{now.strftime('%Y-%m-%d %H:%M')} KST",
@@ -75,10 +82,17 @@ def build_status_text(now: datetime, stats: list[dict], dashboard_url: str) -> t
         f"새 게시물 {new_posts}개",
         f"🔥 새 히트 {hot}건",
     ]
+    warned = False
     if failed:
         names = ", ".join("@" + s["username"] for s in failed[:3])
         more = f" 외 {len(failed) - 3}개" if len(failed) > 3 else ""
         parts.append(f"⚠️ 수집 실패 {len(failed)}개 ({names}{more}) — 기존 데이터 유지됨")
+        warned = True
+    if analysis_failed:
+        reason = " — Anthropic 크레딧 부족, 충전 필요" if credit_exhausted else ""
+        parts.append(f"⚠️ 한줄 분석 {analysis_failed}건 실패{reason}")
+        warned = True
+    if warned:
         emoji, color = "⚠️", "yellow_background"
     else:
         parts.append("전체 정상")
